@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>picox: xrandom.c ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">picox
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('xrandom_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">関数</a> &#124;
+<a href="#var-members">変数</a>  </div>
+  <div class="headertitle">
+<div class="title">xrandom.c ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>擬似乱数生成実装  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="xcore_8h_source.html">picox/core/xcore.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+xrandom.c の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="xrandom_8c__incl.png" border="0" usemap="#xrandom_8c" alt=""/></div>
+<map name="xrandom_8c" id="xrandom_8c">
+<area shape="rect" id="node3" href="xcore_8h.html" title="picox/core/xcore.h" alt="" coords="985,80,1113,107"/>
+<area shape="rect" id="node23" href="xconfig_8h.html" title="picox/xconfig.h" alt="" coords="821,155,931,181"/>
+<area shape="rect" id="node25" href="xcompiler_8h_source.html" title="picox/core/detail/xcompiler.h" alt="" coords="955,155,1143,181"/>
+<area shape="rect" id="node27" href="xpreprocessor_8h.html" title="プリプロセッサユーティリティ " alt="" coords="1167,155,1381,181"/>
+<area shape="rect" id="node29" href="xstddef_8h.html" title="共通の型やマクロ定義等 " alt="" coords="1406,155,1580,181"/>
+<area shape="rect" id="node31" href="xdebug_8h.html" title="デバッグログやassert等の定義 " alt="" coords="1605,155,1779,181"/>
+<area shape="rect" id="node33" href="xutils_8h.html" title="低レベルなあれこれ雑多なユーティリティ集 " alt="" coords="1804,155,1967,181"/>
+<area shape="rect" id="node35" href="xstring_8h.html" title="標準Cライブラリstring.hの拡張定義 " alt="" coords="1991,155,2161,181"/>
+<area shape="rect" id="node37" href="xstdlib_8h.html" title="主にmalloc系関数の定義 " alt="" coords="2185,155,2356,181"/>
+<area shape="rect" id="node39" href="xstream_8h.html" title="入出力を抽象化するストリーム定義 " alt="" coords="2380,155,2559,181"/>
+<area shape="rect" id="node41" href="xstdio_8h.html" title="stdio.h系関数定義 " alt="" coords="2583,155,2749,181"/>
+<area shape="rect" id="node43" href="xrandom_8h.html" title="擬似乱数生成定義 " alt="" coords="2774,155,2956,181"/>
+<area shape="rect" id="node45" href="xtime_8h.html" title="picox/core/detail/xtime.h" alt="" coords="2981,155,3144,181"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ga0e249d870e73d87af69adf4b56250fbc"><td class="memItemLeft" align="right" valign="top">
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xrandom.html#ga0e249d870e73d87af69adf4b56250fbc">x_rand</a> (void)</td></tr>
+<tr class="memdesc:ga0e249d870e73d87af69adf4b56250fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 ~ UINT_MAXの範囲の擬似乱数を返します <br /></td></tr>
+<tr class="separator:ga0e249d870e73d87af69adf4b56250fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85c28fc62c2e6551150b169868b3bf50"><td class="memItemLeft" align="right" valign="top">
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xrandom.html#ga85c28fc62c2e6551150b169868b3bf50">x_rand16</a> (void)</td></tr>
+<tr class="memdesc:ga85c28fc62c2e6551150b169868b3bf50"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 ~ UINT16_MAXの範囲の擬似乱数を返します <br /></td></tr>
+<tr class="separator:ga85c28fc62c2e6551150b169868b3bf50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84763f956489912111161850942e2b4c"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xrandom.html#ga84763f956489912111161850942e2b4c">x_rand32</a> (void)</td></tr>
+<tr class="memdesc:ga84763f956489912111161850942e2b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 ~ UINT32_MAXの範囲の擬似乱数を返します <br /></td></tr>
+<tr class="separator:ga84763f956489912111161850942e2b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9891d2d94194f2ca8248dd616055cb25"><td class="memItemLeft" align="right" valign="top">
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xrandom.html#ga9891d2d94194f2ca8248dd616055cb25">x_rand8</a> (void)</td></tr>
+<tr class="memdesc:ga9891d2d94194f2ca8248dd616055cb25"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 ~ UINT8_MAXの範囲の擬似乱数を返します <br /></td></tr>
+<tr class="separator:ga9891d2d94194f2ca8248dd616055cb25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25ad300c9b79f8ae31071f656d9c2f65"><td class="memItemLeft" align="right" valign="top">
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xrandom.html#ga25ad300c9b79f8ae31071f656d9c2f65">x_randrange</a> (unsigned min, unsigned max)</td></tr>
+<tr class="memdesc:ga25ad300c9b79f8ae31071f656d9c2f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">min ~ maxの範囲の擬似乱数を返します <br /></td></tr>
+<tr class="separator:ga25ad300c9b79f8ae31071f656d9c2f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63fc645668003ed18c998ea2381f1ef6"><td class="memItemLeft" align="right" valign="top">
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xrandom.html#ga63fc645668003ed18c998ea2381f1ef6">x_randrange16</a> (uint16_t min, uint16_t max)</td></tr>
+<tr class="memdesc:ga63fc645668003ed18c998ea2381f1ef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">min ~ maxの範囲の擬似乱数を返します <br /></td></tr>
+<tr class="separator:ga63fc645668003ed18c998ea2381f1ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga995959bc68be8ce6905951764be600f8"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xrandom.html#ga995959bc68be8ce6905951764be600f8">x_randrange32</a> (uint32_t min, uint32_t max)</td></tr>
+<tr class="memdesc:ga995959bc68be8ce6905951764be600f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">min ~ maxの範囲の擬似乱数を返します <br /></td></tr>
+<tr class="separator:ga995959bc68be8ce6905951764be600f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3497c6e8880f6d936fbaac4940f47928"><td class="memItemLeft" align="right" valign="top">
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xrandom.html#ga3497c6e8880f6d936fbaac4940f47928">x_randrange8</a> (uint8_t min, uint8_t max)</td></tr>
+<tr class="memdesc:ga3497c6e8880f6d936fbaac4940f47928"><td class="mdescLeft">&#160;</td><td class="mdescRight">min ~ maxの範囲の擬似乱数を返します <br /></td></tr>
+<tr class="separator:ga3497c6e8880f6d936fbaac4940f47928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba429aa84adf65b69732c149335722f5"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xrandom.html#gaba429aa84adf65b69732c149335722f5">x_srand</a> (uint32_t seed)</td></tr>
+<tr class="memdesc:gaba429aa84adf65b69732c149335722f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">randが生成する擬似乱数の種を設定します <br /></td></tr>
+<tr class="separator:gaba429aa84adf65b69732c149335722f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:ac93e9944ac2b8c7fbb79d1c688fa457c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac93e9944ac2b8c7fbb79d1c688fa457c"></a>
+static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>xor16</b> = 1</td></tr>
+<tr class="separator:ac93e9944ac2b8c7fbb79d1c688fa457c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04178412698450a10a513d974c7966de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04178412698450a10a513d974c7966de"></a>
+static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>xor32</b> = 1</td></tr>
+<tr class="separator:a04178412698450a10a513d974c7966de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2abb02f747edef5d737ef97b023be73"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2abb02f747edef5d737ef97b023be73"></a>
+static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>xor8</b> = 1</td></tr>
+<tr class="separator:ab2abb02f747edef5d737ef97b023be73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>擬似乱数生成実装 </p>
+<dl class="section author"><dt>著者</dt><dd>MaskedW </dd></dl>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_295ce2a6370ae0a688a0222b881c77ca.html">picox</a></li><li class="navelem"><a class="el" href="dir_334975c5f7f258e1ec06bfc6b10c4fd2.html">core</a></li><li class="navelem"><a class="el" href="dir_db566c2ae50ab4e7ff384a2af9bd29a2.html">detail</a></li><li class="navelem"><a class="el" href="xrandom_8c.html">xrandom.c</a></li>
+    <li class="footer">2016年05月06日(金) 17時21分20秒作成 - picox / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

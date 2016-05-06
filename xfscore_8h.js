@@ -1,0 +1,27 @@
+var xfscore_8h =
+[
+    [ "XSTAT_IS_DIRECTORY", "group__xfscore.html#gaf7f00122748e69f673b18b4be6d27cf1", null ],
+    [ "XSTAT_IS_REGULAR", "group__xfscore.html#gaa96325d079a5e7bfa1a49400b6803675", null ],
+    [ "XSTAT_MODE_DIRECTORY", "group__xfscore.html#ga182a22bd489c2177ab47a9dcaaa39a01", null ],
+    [ "XSTAT_MODE_REGULAR", "group__xfscore.html#ga36262a814f82fa6fec08662dcd6a788e", null ],
+    [ "XSTAT_MODE_TYPEMASK", "group__xfscore.html#ga92a230651d072af8f756f5fd0dfbac89", null ],
+    [ "XFsTreeWalker", "group__xfscore.html#ga7f4f16ed79eaa08a401d5eb561fac3a6", null ],
+    [ "XVirtualFsChdirFunc", "group__xfscore.html#gac13d4f0440072cbdc3cb16b18894ab7e", null ],
+    [ "XVirtualFsClosedirFunc", "group__xfscore.html#gabcfea0fb24b3070d52a2d389003d7013", null ],
+    [ "XVirtualFsCloseFunc", "group__xfscore.html#gaab8be4eda22439cd5b121a8d8f123a69", null ],
+    [ "XVirtualFsFlushFunc", "group__xfscore.html#gabc9ee07ebdf93b44e645a7beb155c3a1", null ],
+    [ "XVirtualFsGetcwdFunc", "group__xfscore.html#ga1119c67b17a0f5d9e209f0c1cfea72a2", null ],
+    [ "XVirtualFsMkdirFunc", "group__xfscore.html#ga9befcf41e23aab323fe4e14c398c2c66", null ],
+    [ "XVirtualFsOpendirFunc", "group__xfscore.html#ga0a600d9f5c2e0709c411cc5ef958d8d6", null ],
+    [ "XVirtualFsOpenFunc", "group__xfscore.html#gac290536e2833965dc696c4c94a7b905a", null ],
+    [ "XVirtualFsReaddirFunc", "group__xfscore.html#ga327c3587297bab09e7658658610eef8f", null ],
+    [ "XVirtualFsReadFunc", "group__xfscore.html#gabc781a9d8f11d76721043067f2b7650d", null ],
+    [ "XVirtualFsRemoveFunc", "group__xfscore.html#ga02f08074f8af524c8e1ecbae6891b351", null ],
+    [ "XVirtualFsRenameFunc", "group__xfscore.html#ga5e61b9b268626daa845f46f5a580236d", null ],
+    [ "XVirtualFsSeekFunc", "group__xfscore.html#gae09dc858effd548b4dbff8f257f5b884", null ],
+    [ "XVirtualFsStatFunc", "group__xfscore.html#gaa174d45b9db1e1458d340773df1fccf3", null ],
+    [ "XVirtualFsTellFunc", "group__xfscore.html#gab593922cc07fd400912ab4de414c2a30", null ],
+    [ "XVirtualFsUtimeFunc", "group__xfscore.html#ga375662cadf5b2576480599038065ad17", null ],
+    [ "XVirtualFsWriteFunc", "group__xfscore.html#gae9a424610d68f72d32a1f9a1d86fe879", null ],
+    [ "xvfs_init", "group__xfscore.html#gae1ca9ebe3e699a3ba080f6b5b84c23c8", null ]
+];

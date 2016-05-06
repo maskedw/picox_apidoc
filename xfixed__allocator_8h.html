@@ -1,0 +1,471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>picox: xfixed_allocator.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">picox
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('xfixed__allocator_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">データ構造</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">xfixed_allocator.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fixed memory allocator.  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="xcore_8h_source.html">picox/core/xcore.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+xfixed_allocator.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="xfixed__allocator_8h__incl.png" border="0" usemap="#xfixed__allocator_8h" alt=""/></div>
+<map name="xfixed__allocator_8h" id="xfixed__allocator_8h">
+<area shape="rect" id="node3" href="xcore_8h.html" title="picox/core/xcore.h" alt="" coords="985,80,1113,107"/>
+<area shape="rect" id="node23" href="xconfig_8h.html" title="picox/xconfig.h" alt="" coords="821,155,931,181"/>
+<area shape="rect" id="node25" href="xcompiler_8h_source.html" title="picox/core/detail/xcompiler.h" alt="" coords="955,155,1143,181"/>
+<area shape="rect" id="node27" href="xpreprocessor_8h.html" title="プリプロセッサユーティリティ " alt="" coords="1167,155,1381,181"/>
+<area shape="rect" id="node29" href="xstddef_8h.html" title="共通の型やマクロ定義等 " alt="" coords="1406,155,1580,181"/>
+<area shape="rect" id="node31" href="xdebug_8h.html" title="デバッグログやassert等の定義 " alt="" coords="1605,155,1779,181"/>
+<area shape="rect" id="node33" href="xutils_8h.html" title="低レベルなあれこれ雑多なユーティリティ集 " alt="" coords="1804,155,1967,181"/>
+<area shape="rect" id="node35" href="xstring_8h.html" title="標準Cライブラリstring.hの拡張定義 " alt="" coords="1991,155,2161,181"/>
+<area shape="rect" id="node37" href="xstdlib_8h.html" title="主にmalloc系関数の定義 " alt="" coords="2185,155,2356,181"/>
+<area shape="rect" id="node39" href="xstream_8h.html" title="入出力を抽象化するストリーム定義 " alt="" coords="2380,155,2559,181"/>
+<area shape="rect" id="node41" href="xstdio_8h.html" title="stdio.h系関数定義 " alt="" coords="2583,155,2749,181"/>
+<area shape="rect" id="node43" href="xrandom_8h.html" title="擬似乱数生成定義 " alt="" coords="2774,155,2956,181"/>
+<area shape="rect" id="node45" href="xtime_8h.html" title="picox/core/detail/xtime.h" alt="" coords="2981,155,3144,181"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="xfixed__allocator_8h__dep__incl.png" border="0" usemap="#xfixed__allocator_8hdep" alt=""/></div>
+<map name="xfixed__allocator_8hdep" id="xfixed__allocator_8hdep">
+<area shape="rect" id="node3" href="xfixed__allocator_8c.html" title="xfixed_allocator.c" alt="" coords="5,80,128,107"/>
+</map>
+</div>
+</div>
+<p><a href="xfixed__allocator_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+データ構造</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_fixed_allocator.html">XFixedAllocator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:abf149db5878516fdb1386a5aa4236a1f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf149db5878516fdb1386a5aa4236a1f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>XFALLOC_MIN_ALIGNMENT</b>&#160;&#160;&#160;(<a class="el" href="group__xstddef.html#gadeef6290b39bd34860120a0173555374">X_ALIGN_OF</a>(size_t))</td></tr>
+<tr class="separator:abf149db5878516fdb1386a5aa4236a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a7ab77f54d7eb04195697d99d453bb0c6"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xfixed__allocator_8h.html#a7ab77f54d7eb04195697d99d453bb0c6">xfalloc_alignment</a> (const <a class="el" href="struct_x_fixed_allocator.html">XFixedAllocator</a> *self)</td></tr>
+<tr class="separator:a7ab77f54d7eb04195697d99d453bb0c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32361e0e30926a922cbcc8b300eedd04"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xfixed__allocator_8h.html#a32361e0e30926a922cbcc8b300eedd04">xfalloc_allocate</a> (<a class="el" href="struct_x_fixed_allocator.html">XFixedAllocator</a> *self)</td></tr>
+<tr class="separator:a32361e0e30926a922cbcc8b300eedd04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ab5648a3261b80628f2843be5a9bd9b"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xfixed__allocator_8h.html#a7ab5648a3261b80628f2843be5a9bd9b">xfalloc_block_size</a> (const <a class="el" href="struct_x_fixed_allocator.html">XFixedAllocator</a> *self)</td></tr>
+<tr class="separator:a7ab5648a3261b80628f2843be5a9bd9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbe71461b9f5617ca74e63eea1ade7f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xfixed__allocator_8h.html#abbe71461b9f5617ca74e63eea1ade7f7">xfalloc_clear</a> (<a class="el" href="struct_x_fixed_allocator.html">XFixedAllocator</a> *self)</td></tr>
+<tr class="separator:abbe71461b9f5617ca74e63eea1ade7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a1aadb55fb8d93fd65ccfde64a74b7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xfixed__allocator_8h.html#a0a1aadb55fb8d93fd65ccfde64a74b7d">xfalloc_deallocate</a> (<a class="el" href="struct_x_fixed_allocator.html">XFixedAllocator</a> *self, void *ptr)</td></tr>
+<tr class="separator:a0a1aadb55fb8d93fd65ccfde64a74b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64390cc01e6dec56435967c2682e608b"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xfixed__allocator_8h.html#a64390cc01e6dec56435967c2682e608b">xfalloc_heap</a> (const <a class="el" href="struct_x_fixed_allocator.html">XFixedAllocator</a> *self)</td></tr>
+<tr class="separator:a64390cc01e6dec56435967c2682e608b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fd73434a6cca9acebdc778067d140ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xfixed__allocator_8h.html#a9fd73434a6cca9acebdc778067d140ff">xfalloc_init</a> (<a class="el" href="struct_x_fixed_allocator.html">XFixedAllocator</a> *self, void *heap, size_t heap_size, size_t block_size, size_t alignment)</td></tr>
+<tr class="separator:a9fd73434a6cca9acebdc778067d140ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf7108368344bb87bdd0a486ba28c53"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xfixed__allocator_8h.html#a7bf7108368344bb87bdd0a486ba28c53">xfalloc_num_blocks</a> (const <a class="el" href="struct_x_fixed_allocator.html">XFixedAllocator</a> *self)</td></tr>
+<tr class="separator:a7bf7108368344bb87bdd0a486ba28c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a165f3c1c249759722b1ce00761620351"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xfixed__allocator_8h.html#a165f3c1c249759722b1ce00761620351">xfalloc_remain_blocks</a> (const <a class="el" href="struct_x_fixed_allocator.html">XFixedAllocator</a> *self)</td></tr>
+<tr class="separator:a165f3c1c249759722b1ce00761620351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Fixed memory allocator. </p>
+<p>メモリを固定サイズのブロックに分割してメモリアロケーションを行います。 通常のmallocを使用した場合との主な違いは以下の通りです。 </p><hr/>
+<p>[利点]</p>
+<ol type="1">
+<li>超高速</li>
+</ol>
+<p>一般的に可変長メモリアロケータのメモリ確保と解放にかかる時間は不定です。固 定メモリブロックでは一定かつ、ほぼ1オペレーションで処理が完了します。</p>
+<ol type="1">
+<li>余分なヘッダ領域を一切使用しない</li>
+</ol>
+<p>一般的な可変長メモリ確保では、例えば指定サイズのメモリにヘッダ情報の格納用 に4~16バイト程度追加で確保されます。このアロケータではヘッダ領域を一切使用 しません。</p>
+<ol type="1">
+<li>絶対に断片化しない</li>
+</ol>
+<p>固定サイズのブロックなので当然ですが、何度メモリ確保と解放を繰り返しても断 片化しません。 </p><hr/>
+<p>[欠点]</p>
+<ol type="1">
+<li>確保サイズにバラつきがあると無駄が多い <hr/>
+</li>
+</ol>
+<p>[利用例]</p>
+<ul>
+<li>確保するメモリサイズが固定の部分で使用する。</li>
+<li>小サイズ(1~32バイト程度)メモリ確保用の高速アロケータとして使用する。</li>
+</ul>
+<pre class="fragment">@author  MaskedW</pre></div><h2 class="groupheader">関数詳解</h2>
+<a class="anchor" id="a7ab77f54d7eb04195697d99d453bb0c6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t xfalloc_alignment </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_x_fixed_allocator.html">XFixedAllocator</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>ブロックのアラインメントを返します </p>
+
+</div>
+</div>
+<a class="anchor" id="a32361e0e30926a922cbcc8b300eedd04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* xfalloc_allocate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_fixed_allocator.html">XFixedAllocator</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ヒープから1ブロックを取り出して返します </p>
+
+</div>
+</div>
+<a class="anchor" id="a7ab5648a3261b80628f2843be5a9bd9b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t xfalloc_block_size </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_x_fixed_allocator.html">XFixedAllocator</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>1ブロックのサイズを返します </p>
+
+</div>
+</div>
+<a class="anchor" id="abbe71461b9f5617ca74e63eea1ade7f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xfalloc_clear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_fixed_allocator.html">XFixedAllocator</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ヒープを初期状態に戻します </p>
+
+</div>
+</div>
+<a class="anchor" id="a0a1aadb55fb8d93fd65ccfde64a74b7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xfalloc_deallocate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_fixed_allocator.html">XFixedAllocator</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ヒープにブロックを返却します</p>
+<p>ptrがNULLの時は何もしません。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a64390cc01e6dec56435967c2682e608b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* xfalloc_heap </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_x_fixed_allocator.html">XFixedAllocator</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>ヒープメモリを返します </p>
+
+</div>
+</div>
+<a class="anchor" id="a9fd73434a6cca9acebdc778067d140ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xfalloc_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_fixed_allocator.html">XFixedAllocator</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>heap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>heap_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>block_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>alignment</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>メモリブロックを初期化します</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">heap</td><td>ブロック化するメモリ領域 </td></tr>
+    <tr><td class="paramname">heap_size</td><td>heap領域のバイト数 </td></tr>
+    <tr><td class="paramname">block_size</td><td>1ブロックのサイズ </td></tr>
+    <tr><td class="paramname">alignment</td><td>ブロックのアラインメント</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>heap != NULL</li>
+<li>heap_size &gt; 0</li>
+<li>block_size &gt; 0</li>
+<li>alignment &gt;= <a class="el" href="group__xstddef.html#gadeef6290b39bd34860120a0173555374" title="型typeのアライメントを返します。 ">X_ALIGN_OF(size_t)</a></li>
+<li>alignment == 2のべき乗</li>
+</ul>
+</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>heapが指すアドレスと、block_sizeはアライメントに切り上げられます。 その結果、意図したブロック分けができていない場合がありますので、はじめからア ラインメントを意識した引数を用意するか初期化後に、必要量を満たせているか確認 した方がよいでしょう。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7bf7108368344bb87bdd0a486ba28c53"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t xfalloc_num_blocks </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_x_fixed_allocator.html">XFixedAllocator</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>heapの総ブロック数を返します </p>
+
+</div>
+</div>
+<a class="anchor" id="a165f3c1c249759722b1ce00761620351"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t xfalloc_remain_blocks </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_x_fixed_allocator.html">XFixedAllocator</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>heapの残りブロック数を返します </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_295ce2a6370ae0a688a0222b881c77ca.html">picox</a></li><li class="navelem"><a class="el" href="dir_1650413cd754fade3fb0b4bd9f31c0b4.html">allocator</a></li><li class="navelem"><a class="el" href="xfixed__allocator_8h.html">xfixed_allocator.h</a></li>
+    <li class="footer">2016年05月06日(金) 17時21分17秒作成 - picox / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

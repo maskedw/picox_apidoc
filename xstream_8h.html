@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>picox: xstream.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">picox
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('xstream_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">データ構造</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">xstream.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>入出力を抽象化するストリーム定義  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="xstream_8h__dep__incl.png" border="0" usemap="#xstream_8hdep" alt=""/></div>
+<map name="xstream_8hdep" id="xstream_8hdep">
+<area shape="rect" id="node3" href="xcore_8h.html" title="xcore.h" alt="" coords="903,80,968,107"/>
+<area shape="rect" id="node5" href="xfixed__allocator_8h.html" title="Fixed memory allocator. " alt="" coords="43,155,165,181"/>
+<area shape="rect" id="node9" href="xpico__allocator_8h.html" title="Pico variable memory allocator. " alt="" coords="328,155,448,181"/>
+<area shape="rect" id="node17" href="xstack__allocator_8h.html" title="Stack memory allocator. " alt="" coords="592,155,720,181"/>
+<area shape="rect" id="node21" href="xbyte__array_8h.html" title="可変長バイト配列 " alt="" coords="152,229,253,256"/>
+<area shape="rect" id="node24" href="xfifo__buffer_8h.html" title="xfifo_buffer.h" alt="" coords="473,155,567,181"/>
+<area shape="rect" id="node26" href="xintrusive__list_8h.html" title="ノード侵入型のダブルリンクリストコンテナです。 " alt="" coords="241,304,351,331"/>
+<area shape="rect" id="node29" href="xmessage__buffer_8h.html" title="xmessage_buffer.h" alt="" coords="744,155,875,181"/>
+<area shape="rect" id="node31" href="xdebug_8c.html" title="デバッグログやassert等の実装 " alt="" coords="899,155,973,181"/>
+<area shape="rect" id="node33" href="xrandom_8c.html" title="擬似乱数生成実装 " alt="" coords="997,155,1080,181"/>
+<area shape="rect" id="node35" href="xstring_8c.html" title="標準Cライブラリstring.hの拡張実装 " alt="" coords="1104,155,1176,181"/>
+<area shape="rect" id="node37" href="xfscore_8h.html" title="xfscore.h" alt="" coords="1197,229,1272,256"/>
+<area shape="rect" id="node68" href="xfpath_8h.html" title="ファイルパス操作ユーティリティ定義 " alt="" coords="1201,155,1268,181"/>
+<area shape="rect" id="node71" href="xargparser_8h.html" title="xargparser.h" alt="" coords="1345,155,1439,181"/>
+<area shape="rect" id="node75" href="xtokenizer_8h.html" title="xtokenizer.h" alt="" coords="1464,155,1557,181"/>
+<area shape="rect" id="node79" href="xdynamic__string_8h.html" title="動的文字列モジュール " alt="" coords="1581,155,1709,181"/>
+<area shape="rect" id="node7" href="xfixed__allocator_8c.html" title="xfixed_allocator.c" alt="" coords="5,229,128,256"/>
+<area shape="rect" id="node11" href="xpico__allocator_8c.html" title="xpico_allocator.c" alt="" coords="328,229,448,256"/>
+<area shape="rect" id="node13" href="xramfs_8h.html" title="RAMファイルシステム定義 " alt="" coords="449,304,521,331"/>
+<area shape="rect" id="node15" href="xramfs_8c.html" title="RAMファイルシステム実装 " alt="" coords="260,379,332,405"/>
+<area shape="rect" id="node19" href="xstack__allocator_8c.html" title="xstack_allocator.c" alt="" coords="592,229,720,256"/>
+<area shape="rect" id="node39" href="xfatfs_8h.html" title="FatFsをバックエンドとするファイル操作定義 " alt="" coords="1248,304,1312,331"/>
+<area shape="rect" id="node43" href="xfpath_8c.html" title="xfpath.c" alt="" coords="1337,304,1404,331"/>
+<area shape="rect" id="node45" href="xvfs_8h.html" title="xvfs.h" alt="" coords="1429,304,1483,331"/>
+<area shape="rect" id="node55" href="xposixfs_8h.html" title="POSIX APIによるファイル操作定義 " alt="" coords="950,304,1031,331"/>
+<area shape="rect" id="node60" href="xromfs_8h.html" title="ROMファイルシステム定義 " alt="" coords="1056,304,1128,331"/>
+<area shape="rect" id="node64" href="xspiffs_8h.html" title="spiffsをバックエンドとするファイル操作定義 " alt="" coords="1153,304,1223,331"/>
+<area shape="rect" id="node41" href="xfatfs_8c.html" title="xfatfs.c" alt="" coords="1248,379,1312,405"/>
+<area shape="rect" id="node47" href="xunionfs_8h.html" title="xunionfs.h" alt="" coords="1415,379,1496,405"/>
+<area shape="rect" id="node51" href="xsinglefs_8h.html" title="xsinglefs.h" alt="" coords="1521,379,1604,405"/>
+<area shape="rect" id="node53" href="xvfs_8c.html" title="xvfs.c" alt="" coords="1337,379,1391,405"/>
+<area shape="rect" id="node49" href="xfs_8h.html" title="xfs.h" alt="" coords="1431,453,1481,480"/>
+<area shape="rect" id="node57" href="xposixfs_8c.html" title="xposixfs.c" alt="" coords="950,379,1031,405"/>
+<area shape="rect" id="node62" href="xromfs_8c.html" title="RAMファイルシステム実装 " alt="" coords="1056,379,1128,405"/>
+<area shape="rect" id="node66" href="xspiffs_8c.html" title="xspiffs.c" alt="" coords="1153,379,1223,405"/>
+<area shape="rect" id="node73" href="xargparser_8c.html" title="xargparser.c" alt="" coords="1345,229,1439,256"/>
+<area shape="rect" id="node77" href="xtokenizer_8c.html" title="xtokenizer.c" alt="" coords="1464,229,1557,256"/>
+<area shape="rect" id="node81" href="xdynamic__string_8c.html" title="xdynamic_string.c" alt="" coords="1581,229,1709,256"/>
+</map>
+</div>
+</div>
+<p><a href="xstream_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+データ構造</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_mem_stream.html">XMemStream</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">メモリに対して入出力を行うストリーム型です  <a href="struct_x_mem_stream.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_stream.html">XStream</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストリームを表す抽象型です  <a href="struct_x_stream.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:gae5eb77da2845e58bfdb5c31d3682bb20"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#gae5eb77da2845e58bfdb5c31d3682bb20">X_MEMSTREAM_TAG</a>&#160;&#160;&#160;(<a class="el" href="group__xstddef.html#ga0e495ec9a611df7a9dc686ec49aa64be">X_MAKE_TAG</a>('X', 'M', 'M', 'S'))</td></tr>
+<tr class="memdesc:gae5eb77da2845e58bfdb5c31d3682bb20"><td class="mdescLeft">&#160;</td><td class="mdescRight">XMemStreamのタグです <br /></td></tr>
+<tr class="separator:gae5eb77da2845e58bfdb5c31d3682bb20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab607963252da3095f961bf0f8bcff108"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#gab607963252da3095f961bf0f8bcff108">X_STREAM_TAG</a>&#160;&#160;&#160;(<a class="el" href="group__xstddef.html#ga0e495ec9a611df7a9dc686ec49aa64be">X_MAKE_TAG</a>('X', 'S', 'T', 'R'))</td></tr>
+<tr class="memdesc:gab607963252da3095f961bf0f8bcff108"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストリームタグの初期値です <br /></td></tr>
+<tr class="separator:gab607963252da3095f961bf0f8bcff108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">stream_function_pointers</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>ストリームにセットする関数ポインタ型のグループです</p>
+<p>戻り値のint型はエラーステータスを返し、0は正常終了、0以外はエラーを表します 。 </p>
+</div></td></tr>
+<tr class="memitem:gaf52b7622691eaed31105e96844f7bdf9"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#gaf52b7622691eaed31105e96844f7bdf9">XStreamReadFunc</a>) (void *driver, void *dst, size_t size, size_t *nread)</td></tr>
+<tr class="memdesc:gaf52b7622691eaed31105e96844f7bdf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストリームからの読み出し関数ポインタ型です  <a href="group__xstream.html#gaf52b7622691eaed31105e96844f7bdf9">[詳解]</a><br /></td></tr>
+<tr class="separator:gaf52b7622691eaed31105e96844f7bdf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga96ecc672a8faf4b1c08957e82322e8d4"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#ga96ecc672a8faf4b1c08957e82322e8d4">XStreamWriteFunc</a>) (void *driver, const void *src, size_t size, size_t *nwritten)</td></tr>
+<tr class="memdesc:ga96ecc672a8faf4b1c08957e82322e8d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストリームへの書き込み関数ポインタ型です  <a href="group__xstream.html#ga96ecc672a8faf4b1c08957e82322e8d4">[詳解]</a><br /></td></tr>
+<tr class="separator:ga96ecc672a8faf4b1c08957e82322e8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7888a47f0b3779af776b803fc0a7468"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#gaf7888a47f0b3779af776b803fc0a7468">XStreamSeekFunc</a>) (void *driver, <a class="el" href="group__xstddef.html#ga0bdeff19d49868d285c1bb23ca87bf76">XOffset</a> offset, <a class="el" href="group__xstddef.html#ga988c074c9467b48a58b58808cd980ea7">XSeekMode</a> mode)</td></tr>
+<tr class="memdesc:gaf7888a47f0b3779af776b803fc0a7468"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストリームの現在位置を移動する関数ポインタ型です  <a href="group__xstream.html#gaf7888a47f0b3779af776b803fc0a7468">[詳解]</a><br /></td></tr>
+<tr class="separator:gaf7888a47f0b3779af776b803fc0a7468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7eb46fb973fc85c991ae9607d98e7f2c"><td class="memItemLeft" align="right" valign="top">
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#ga7eb46fb973fc85c991ae9607d98e7f2c">XStreamTellFunc</a>) (void *driver, <a class="el" href="group__xstddef.html#gadcc4f92c69a1bbdb4449015227943685">XSize</a> *pos)</td></tr>
+<tr class="memdesc:ga7eb46fb973fc85c991ae9607d98e7f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストリームの現在位置を取得する関数ポインタ型です <br /></td></tr>
+<tr class="separator:ga7eb46fb973fc85c991ae9607d98e7f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8be938fa034f1a12c414b0a15f3a8ce3"><td class="memItemLeft" align="right" valign="top">
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#ga8be938fa034f1a12c414b0a15f3a8ce3">XStreamSizeFunc</a>) (void *driver, <a class="el" href="group__xstddef.html#gadcc4f92c69a1bbdb4449015227943685">XSize</a> *size)</td></tr>
+<tr class="memdesc:ga8be938fa034f1a12c414b0a15f3a8ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストリームのバイト数を取得する関数ポインタ型です <br /></td></tr>
+<tr class="separator:ga8be938fa034f1a12c414b0a15f3a8ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac19f754eae914086e82264d93dd1d4fd"><td class="memItemLeft" align="right" valign="top">
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#gac19f754eae914086e82264d93dd1d4fd">XStreamFlushFunc</a>) (void *driver)</td></tr>
+<tr class="memdesc:gac19f754eae914086e82264d93dd1d4fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストリームのバッファリングをフラッシュする関数ポインタ型です <br /></td></tr>
+<tr class="separator:gac19f754eae914086e82264d93dd1d4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d314afd99d4880ff8361e1614129a6c"><td class="memItemLeft" align="right" valign="top">
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#ga0d314afd99d4880ff8361e1614129a6c">XStreamCloseFunc</a>) (void *driver)</td></tr>
+<tr class="memdesc:ga0d314afd99d4880ff8361e1614129a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストリームのフラッシュと、リソースの開放を行う関数ポインタ型です <br /></td></tr>
+<tr class="separator:ga0d314afd99d4880ff8361e1614129a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f982506a2bed11539547e4e24685df4"><td class="memItemLeft" align="right" valign="top">
+typedef const char *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#ga1f982506a2bed11539547e4e24685df4">XStreamErrorStringFunc</a>) (int errcode)</td></tr>
+<tr class="memdesc:ga1f982506a2bed11539547e4e24685df4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストリームが返したエラーステータスに対応する文字列を返す関数ポインタ型です <br /></td></tr>
+<tr class="separator:ga1f982506a2bed11539547e4e24685df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ga4c86e6c4e7ba264a57c0988b9b863a5a"><td class="memItemLeft" align="right" valign="top">
+static <a class="el" href="struct_x_mem_stream.html">XMemStream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#ga4c86e6c4e7ba264a57c0988b9b863a5a">x_memstream_cast</a> (<a class="el" href="struct_x_stream.html">XStream</a> *stream)</td></tr>
+<tr class="memdesc:ga4c86e6c4e7ba264a57c0988b9b863a5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">tagがXMemStreamと一致していなければNULLを返します <br /></td></tr>
+<tr class="separator:ga4c86e6c4e7ba264a57c0988b9b863a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga319a34fbd0c55f0af280dba3f9b7e889"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#ga319a34fbd0c55f0af280dba3f9b7e889">xmemstream_init</a> (<a class="el" href="struct_x_mem_stream.html">XMemStream</a> *self, void *mem, size_t size, size_t capacity)</td></tr>
+<tr class="memdesc:ga319a34fbd0c55f0af280dba3f9b7e889"><td class="mdescLeft">&#160;</td><td class="mdescRight">メモリストリームを初期化します  <a href="group__xstream.html#ga319a34fbd0c55f0af280dba3f9b7e889">[詳解]</a><br /></td></tr>
+<tr class="separator:ga319a34fbd0c55f0af280dba3f9b7e889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89bdff95a0b93b00d5b2bf6464712d10"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#ga89bdff95a0b93b00d5b2bf6464712d10">xstream_close</a> (<a class="el" href="struct_x_stream.html">XStream</a> *self)</td></tr>
+<tr class="memdesc:ga89bdff95a0b93b00d5b2bf6464712d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストリームの終了処理を行います  <a href="group__xstream.html#ga89bdff95a0b93b00d5b2bf6464712d10">[詳解]</a><br /></td></tr>
+<tr class="separator:ga89bdff95a0b93b00d5b2bf6464712d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4fc0d5a126d17e23020be3b89494ec4d"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#ga4fc0d5a126d17e23020be3b89494ec4d">xstream_error</a> (const <a class="el" href="struct_x_stream.html">XStream</a> *self)</td></tr>
+<tr class="memdesc:ga4fc0d5a126d17e23020be3b89494ec4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">最後のエラー値を返します <br /></td></tr>
+<tr class="separator:ga4fc0d5a126d17e23020be3b89494ec4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf4305f5aa2fe7f89783c604a17f1761"><td class="memItemLeft" align="right" valign="top">
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#gadf4305f5aa2fe7f89783c604a17f1761">xstream_error_string</a> (const <a class="el" href="struct_x_stream.html">XStream</a> *self, int errcode)</td></tr>
+<tr class="memdesc:gadf4305f5aa2fe7f89783c604a17f1761"><td class="mdescLeft">&#160;</td><td class="mdescRight">エラー値の文字列表現を返します <br /></td></tr>
+<tr class="separator:gadf4305f5aa2fe7f89783c604a17f1761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa51711a720be70e637796e97b8da30af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#gaa51711a720be70e637796e97b8da30af">xstream_flush</a> (<a class="el" href="struct_x_stream.html">XStream</a> *self)</td></tr>
+<tr class="memdesc:gaa51711a720be70e637796e97b8da30af"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストリームの終了処理を行います  <a href="group__xstream.html#gaa51711a720be70e637796e97b8da30af">[詳解]</a><br /></td></tr>
+<tr class="separator:gaa51711a720be70e637796e97b8da30af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b24de0166d34be36968c6005239dc97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#ga1b24de0166d34be36968c6005239dc97">xstream_getc</a> (<a class="el" href="struct_x_stream.html">XStream</a> *self)</td></tr>
+<tr class="memdesc:ga1b24de0166d34be36968c6005239dc97"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストリームから1バイトを読みだし、intにキャストして返します  <a href="group__xstream.html#ga1b24de0166d34be36968c6005239dc97">[詳解]</a><br /></td></tr>
+<tr class="separator:ga1b24de0166d34be36968c6005239dc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae99cb19d94fcd462c58011897706691d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#gae99cb19d94fcd462c58011897706691d">xstream_gets</a> (<a class="el" href="struct_x_stream.html">XStream</a> *self, char *dst, size_t size, char **result, bool *overflow)</td></tr>
+<tr class="memdesc:gae99cb19d94fcd462c58011897706691d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストリームから1行を取り出します  <a href="group__xstream.html#gae99cb19d94fcd462c58011897706691d">[詳解]</a><br /></td></tr>
+<tr class="separator:gae99cb19d94fcd462c58011897706691d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45b01663b3df515a77f26359f547c8e7"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#ga45b01663b3df515a77f26359f547c8e7">xstream_init</a> (<a class="el" href="struct_x_stream.html">XStream</a> *self)</td></tr>
+<tr class="memdesc:ga45b01663b3df515a77f26359f547c8e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストリームの初期化を行います <br /></td></tr>
+<tr class="separator:ga45b01663b3df515a77f26359f547c8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5af08c6f41f794c51c3217dee68b6c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#gaa5af08c6f41f794c51c3217dee68b6c5">xstream_printf</a> (<a class="el" href="struct_x_stream.html">XStream</a> *self, const char *fmt,...)</td></tr>
+<tr class="memdesc:gaa5af08c6f41f794c51c3217dee68b6c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストリームにvprintf形式の出力を行います  <a href="group__xstream.html#gaa5af08c6f41f794c51c3217dee68b6c5">[詳解]</a><br /></td></tr>
+<tr class="separator:gaa5af08c6f41f794c51c3217dee68b6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac09657ebfa26e99f85bb5649f18c7f94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#gac09657ebfa26e99f85bb5649f18c7f94">xstream_putc</a> (<a class="el" href="struct_x_stream.html">XStream</a> *self, int c)</td></tr>
+<tr class="memdesc:gac09657ebfa26e99f85bb5649f18c7f94"><td class="mdescLeft">&#160;</td><td class="mdescRight">cをunsigned charにキャストしてストリームに書き込みます  <a href="group__xstream.html#gac09657ebfa26e99f85bb5649f18c7f94">[詳解]</a><br /></td></tr>
+<tr class="separator:gac09657ebfa26e99f85bb5649f18c7f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ab63bfeab8a7e279ba7d9c57b4f06b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#ga5ab63bfeab8a7e279ba7d9c57b4f06b9">xstream_read</a> (<a class="el" href="struct_x_stream.html">XStream</a> *self, void *dst, size_t size, size_t *nread)</td></tr>
+<tr class="memdesc:ga5ab63bfeab8a7e279ba7d9c57b4f06b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストリームからdstにsizeバイトの読み出しを試みます  <a href="group__xstream.html#ga5ab63bfeab8a7e279ba7d9c57b4f06b9">[詳解]</a><br /></td></tr>
+<tr class="separator:ga5ab63bfeab8a7e279ba7d9c57b4f06b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4097503e2b2903ec42c31608c90b2a9b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#ga4097503e2b2903ec42c31608c90b2a9b">xstream_seek</a> (<a class="el" href="struct_x_stream.html">XStream</a> *self, <a class="el" href="group__xstddef.html#ga0bdeff19d49868d285c1bb23ca87bf76">XOffset</a> offset, <a class="el" href="group__xstddef.html#ga988c074c9467b48a58b58808cd980ea7">XSeekMode</a> mode)</td></tr>
+<tr class="memdesc:ga4097503e2b2903ec42c31608c90b2a9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストリームの現在位置を移動します  <a href="group__xstream.html#ga4097503e2b2903ec42c31608c90b2a9b">[詳解]</a><br /></td></tr>
+<tr class="separator:ga4097503e2b2903ec42c31608c90b2a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf31d923fafaf9ce86ee607db015b2efe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#gaf31d923fafaf9ce86ee607db015b2efe">xstream_tell</a> (<a class="el" href="struct_x_stream.html">XStream</a> *self, <a class="el" href="group__xstddef.html#gadcc4f92c69a1bbdb4449015227943685">XSize</a> *pos)</td></tr>
+<tr class="memdesc:gaf31d923fafaf9ce86ee607db015b2efe"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストリームの現在位置をposに格納します  <a href="group__xstream.html#gaf31d923fafaf9ce86ee607db015b2efe">[詳解]</a><br /></td></tr>
+<tr class="separator:gaf31d923fafaf9ce86ee607db015b2efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga93d1899809f11100d2d3fdfba43ef750"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#ga93d1899809f11100d2d3fdfba43ef750">xstream_vprintf</a> (<a class="el" href="struct_x_stream.html">XStream</a> *self, const char *fmt, va_list args)</td></tr>
+<tr class="memdesc:ga93d1899809f11100d2d3fdfba43ef750"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストリームにvprintf形式の出力を行います  <a href="group__xstream.html#ga93d1899809f11100d2d3fdfba43ef750">[詳解]</a><br /></td></tr>
+<tr class="separator:ga93d1899809f11100d2d3fdfba43ef750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d6fcd719683f28bfbce83babc00e050"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstream.html#ga4d6fcd719683f28bfbce83babc00e050">xstream_write</a> (<a class="el" href="struct_x_stream.html">XStream</a> *self, const void *src, size_t size, size_t *nwritten)</td></tr>
+<tr class="memdesc:ga4d6fcd719683f28bfbce83babc00e050"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストリームにsrcからsizeバイトの書き込みを試みます  <a href="group__xstream.html#ga4d6fcd719683f28bfbce83babc00e050">[詳解]</a><br /></td></tr>
+<tr class="separator:ga4d6fcd719683f28bfbce83babc00e050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>入出力を抽象化するストリーム定義 </p>
+<dl class="section author"><dt>著者</dt><dd>MaskedW </dd></dl>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_295ce2a6370ae0a688a0222b881c77ca.html">picox</a></li><li class="navelem"><a class="el" href="dir_334975c5f7f258e1ec06bfc6b10c4fd2.html">core</a></li><li class="navelem"><a class="el" href="dir_db566c2ae50ab4e7ff384a2af9bd29a2.html">detail</a></li><li class="navelem"><a class="el" href="xstream_8h.html">xstream.h</a></li>
+    <li class="footer">2016年05月06日(金) 17時21分20秒作成 - picox / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

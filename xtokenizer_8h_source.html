@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>picox: xtokenizer.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">picox
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('xtokenizer_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">xtokenizer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="xtokenizer_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * License: MIT license</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * Copyright (c) &lt;2015&gt; &lt;MaskedW [maskedw00@gmail.com]&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * Permission is hereby granted, free of charge, to any person</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * obtaining a copy of this software and associated documentation</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * files (the &quot;Software&quot;), to deal in the Software without</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * restriction, including without limitation the rights to use, copy,</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * modify, merge, publish, distribute, sublicense, and/or sell copies</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * of the Software, and to permit persons to whom the Software is</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * furnished to do so, subject to the following conditions:</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * The above copyright notice and this permission notice shall be</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * included in all copies or substantial portions of the Software.</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> * BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> * SOFTWARE.</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#ifndef picox_misc_xtokenizer_h_</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#define picox_misc_xtokenizer_h_</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="xcore_8h.html">picox/core/xcore.h</a>&gt;</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="struct_x_tokenizer.html">   65</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_x_tokenizer.html">XTokenizer</a></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">char</span>*       row;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">char</span>**      tokens;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">int</span>         ntokens;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;} <a class="code" href="struct_x_tokenizer.html">XTokenizer</a>;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__xtokenizer.html#gaba9064757bd8feb2547f7f270b775cb3">xtok_init</a>(<a class="code" href="struct_x_tokenizer.html">XTokenizer</a>* <span class="keyword">self</span>, <span class="keyword">const</span> <span class="keywordtype">char</span>* row, <span class="keywordtype">char</span> separater, <span class="keywordtype">int</span> max_tokens);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__xtokenizer.html#gac5a88d9ece676b9d48173771ff9e1a90">xtok_release</a>(<a class="code" href="struct_x_tokenizer.html">XTokenizer</a>* <span class="keyword">self</span>);</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">char</span>*</div><div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="group__xtokenizer.html#ga1fd6764361404603012e643766624bab">  107</a></span>&#160;<a class="code" href="group__xtokenizer.html#ga1fd6764361404603012e643766624bab">xtok_ref_token</a>(<span class="keyword">const</span> <a class="code" href="struct_x_tokenizer.html">XTokenizer</a>* <span class="keyword">self</span>, <span class="keywordtype">int</span> col)</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    X_ASSERT(<span class="keyword">self</span>);</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    X_ASSERT(<a class="code" href="group__xutils.html#ga8f8016a75691c6c39fae144c8ca55fac">x_is_within</a>(col, 0, self-&gt;ntokens));</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">self</span>-&gt;tokens[col];</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span></div><div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="group__xtokenizer.html#ga11566932664e239b7c645e29870362b5">  118</a></span>&#160;<a class="code" href="group__xtokenizer.html#ga11566932664e239b7c645e29870362b5">xtok_num_tokens</a>(<span class="keyword">const</span> <a class="code" href="struct_x_tokenizer.html">XTokenizer</a>* <span class="keyword">self</span>)</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;{</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    X_ASSERT(<span class="keyword">self</span>);</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">self</span>-&gt;ntokens;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif // picox_misc_xtokenizer_h_</span></div><div class="ttc" id="group__xutils_html_ga8f8016a75691c6c39fae144c8ca55fac"><div class="ttname"><a href="group__xutils.html#ga8f8016a75691c6c39fae144c8ca55fac">x_is_within</a></div><div class="ttdeci">static bool x_is_within(int32_t x, int32_t begin, int32_t end)</div><div class="ttdoc">(begin &lt;= x) &amp;&amp; (x &lt; end)を判定します。 </div><div class="ttdef"><b>Definition:</b> xutils.h:710</div></div>
+<div class="ttc" id="group__xtokenizer_html_ga11566932664e239b7c645e29870362b5"><div class="ttname"><a href="group__xtokenizer.html#ga11566932664e239b7c645e29870362b5">xtok_num_tokens</a></div><div class="ttdeci">static int xtok_num_tokens(const XTokenizer *self)</div><div class="ttdoc">列数を返します </div><div class="ttdef"><b>Definition:</b> xtokenizer.h:118</div></div>
+<div class="ttc" id="group__xtokenizer_html_gac5a88d9ece676b9d48173771ff9e1a90"><div class="ttname"><a href="group__xtokenizer.html#gac5a88d9ece676b9d48173771ff9e1a90">xtok_release</a></div><div class="ttdeci">void xtok_release(XTokenizer *self)</div><div class="ttdoc">オブジェクトが保持するリソースを解放します。 </div><div class="ttdef"><b>Definition:</b> xtokenizer.c:98</div></div>
+<div class="ttc" id="group__xtokenizer_html_gaba9064757bd8feb2547f7f270b775cb3"><div class="ttname"><a href="group__xtokenizer.html#gaba9064757bd8feb2547f7f270b775cb3">xtok_init</a></div><div class="ttdeci">bool xtok_init(XTokenizer *self, const char *row, char separater, int max_tokens)</div><div class="ttdoc">文字列を指定文字で列に分解します。 </div><div class="ttdef"><b>Definition:</b> xtokenizer.c:42</div></div>
+<div class="ttc" id="group__xtokenizer_html_ga1fd6764361404603012e643766624bab"><div class="ttname"><a href="group__xtokenizer.html#ga1fd6764361404603012e643766624bab">xtok_ref_token</a></div><div class="ttdeci">static const char * xtok_ref_token(const XTokenizer *self, int col)</div><div class="ttdoc">列を参照します </div><div class="ttdef"><b>Definition:</b> xtokenizer.h:107</div></div>
+<div class="ttc" id="xcore_8h_html"><div class="ttname"><a href="xcore_8h.html">xcore.h</a></div></div>
+<div class="ttc" id="struct_x_tokenizer_html"><div class="ttname"><a href="struct_x_tokenizer.html">XTokenizer</a></div><div class="ttdoc">トークン化した文字列の管理構造体 </div><div class="ttdef"><b>Definition:</b> xtokenizer.h:65</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_295ce2a6370ae0a688a0222b881c77ca.html">picox</a></li><li class="navelem"><a class="el" href="dir_fc86d02d91b49358f7c47929ad36b20e.html">misc</a></li><li class="navelem"><a class="el" href="xtokenizer_8h.html">xtokenizer.h</a></li>
+    <li class="footer">2016年05月06日(金) 17時21分17秒作成 - picox / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

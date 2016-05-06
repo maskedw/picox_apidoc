@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>picox: xvfs.c ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">picox
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('xvfs_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">xvfs.c ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="xvfs_8h_source.html">picox/filesystem/xvfs.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+xvfs.c の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="xvfs_8c__incl.png" border="0" usemap="#xvfs_8c" alt=""/></div>
+<map name="xvfs_8c" id="xvfs_8c">
+<area shape="rect" id="node3" href="xvfs_8h.html" title="picox/filesystem/xvfs.h" alt="" coords="973,80,1125,107"/>
+<area shape="rect" id="node5" href="xfscore_8h.html" title="picox/filesystem/xfscore.h" alt="" coords="963,155,1136,181"/>
+<area shape="rect" id="node7" href="xcore_8h.html" title="picox/core/xcore.h" alt="" coords="985,304,1113,331"/>
+<area shape="rect" id="node51" href="xfpath_8h.html" title="ファイルパス操作ユーティリティ定義 " alt="" coords="1027,229,1193,256"/>
+<area shape="rect" id="node27" href="xconfig_8h.html" title="picox/xconfig.h" alt="" coords="821,379,931,405"/>
+<area shape="rect" id="node29" href="xcompiler_8h_source.html" title="picox/core/detail/xcompiler.h" alt="" coords="955,379,1143,405"/>
+<area shape="rect" id="node31" href="xpreprocessor_8h.html" title="プリプロセッサユーティリティ " alt="" coords="1167,379,1381,405"/>
+<area shape="rect" id="node33" href="xstddef_8h.html" title="共通の型やマクロ定義等 " alt="" coords="1406,379,1580,405"/>
+<area shape="rect" id="node35" href="xdebug_8h.html" title="デバッグログやassert等の定義 " alt="" coords="1605,379,1779,405"/>
+<area shape="rect" id="node37" href="xutils_8h.html" title="低レベルなあれこれ雑多なユーティリティ集 " alt="" coords="1804,379,1967,405"/>
+<area shape="rect" id="node39" href="xstring_8h.html" title="標準Cライブラリstring.hの拡張定義 " alt="" coords="1991,379,2161,405"/>
+<area shape="rect" id="node41" href="xstdlib_8h.html" title="主にmalloc系関数の定義 " alt="" coords="2185,379,2356,405"/>
+<area shape="rect" id="node43" href="xstream_8h.html" title="入出力を抽象化するストリーム定義 " alt="" coords="2380,379,2559,405"/>
+<area shape="rect" id="node45" href="xstdio_8h.html" title="stdio.h系関数定義 " alt="" coords="2583,379,2749,405"/>
+<area shape="rect" id="node47" href="xrandom_8h.html" title="擬似乱数生成定義 " alt="" coords="2774,379,2956,405"/>
+<area shape="rect" id="node49" href="xtime_8h.html" title="picox/core/detail/xtime.h" alt="" coords="2981,379,3144,405"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a9d9bbc6b577063c0ac2e8c1b4b190670"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d9bbc6b577063c0ac2e8c1b4b190670"></a>
+static <a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>X__DefaultFlush</b> ()</td></tr>
+<tr class="separator:a9d9bbc6b577063c0ac2e8c1b4b190670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e6bd4fcecf2ee2bb7a0ec96049a2677"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e6bd4fcecf2ee2bb7a0ec96049a2677"></a>
+static <a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>X__DefaultFunc</b> ()</td></tr>
+<tr class="separator:a4e6bd4fcecf2ee2bb7a0ec96049a2677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad446431a67bc125c7c94bc2e3e675707"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad446431a67bc125c7c94bc2e3e675707"></a>
+static <a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>X__DefaultOpen</b> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path, <a class="el" href="group__xstddef.html#ga5cc0f4c9468cbd29423c6d9bdb59d6e1">XOpenMode</a> mode, <a class="el" href="struct_x_file.html">XFile</a> **o_fp)</td></tr>
+<tr class="separator:ad446431a67bc125c7c94bc2e3e675707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad998aed964ab5edf98da5ffe6c53fbb6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad998aed964ab5edf98da5ffe6c53fbb6"></a>
+static <a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>X__DefaultOpendir</b> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path, <a class="el" href="struct_x_dir.html">XDir</a> **o_dir)</td></tr>
+<tr class="separator:ad998aed964ab5edf98da5ffe6c53fbb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a900033238964cbea81d3e7b380e299d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a900033238964cbea81d3e7b380e299d8"></a>
+static <a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>X__DoCopyTree</b> (X__CopyTreeWorkBuf *work, int tail)</td></tr>
+<tr class="separator:a900033238964cbea81d3e7b380e299d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae37f6587c06c2f85faf99fafdf7b01d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae37f6587c06c2f85faf99fafdf7b01d2"></a>
+static <a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>X__DoRmTree</b> (X__RmTreeWorkBuf *work, int tail)</td></tr>
+<tr class="separator:ae37f6587c06c2f85faf99fafdf7b01d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ef5d0ab197076d8714142a59abed85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07ef5d0ab197076d8714142a59abed85"></a>
+static <a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>X__DoWalkTree</b> (X__WalkTreeWorkBuf *work, int tail)</td></tr>
+<tr class="separator:a07ef5d0ab197076d8714142a59abed85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79bfd60579ae3e465780953a9d3d2def"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga79bfd60579ae3e465780953a9d3d2def">xvfs_chdir</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path)</td></tr>
+<tr class="memdesc:ga79bfd60579ae3e465780953a9d3d2def"><td class="mdescLeft">&#160;</td><td class="mdescRight">カレントディレクトリを変更します  <a href="group__xvfs.html#ga79bfd60579ae3e465780953a9d3d2def">[詳解]</a><br /></td></tr>
+<tr class="separator:ga79bfd60579ae3e465780953a9d3d2def"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb63fd227eb02fd07446ba7a76dcfb4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#gaeb63fd227eb02fd07446ba7a76dcfb4d">xvfs_close</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp)</td></tr>
+<tr class="memdesc:gaeb63fd227eb02fd07446ba7a76dcfb4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルをクローズします  <a href="group__xvfs.html#gaeb63fd227eb02fd07446ba7a76dcfb4d">[詳解]</a><br /></td></tr>
+<tr class="separator:gaeb63fd227eb02fd07446ba7a76dcfb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71bc611d87c9da69536da8cc1bdf53c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga71bc611d87c9da69536da8cc1bdf53c7">xvfs_closedir</a> (<a class="el" href="struct_x_dir.html">XDir</a> *dir)</td></tr>
+<tr class="memdesc:ga71bc611d87c9da69536da8cc1bdf53c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">ディレクトリをクローズします  <a href="group__xvfs.html#ga71bc611d87c9da69536da8cc1bdf53c7">[詳解]</a><br /></td></tr>
+<tr class="separator:ga71bc611d87c9da69536da8cc1bdf53c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9597f50d535527984f08d567397f1c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#gae9597f50d535527984f08d567397f1c7">xvfs_copyfile</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *src, const char *dst)</td></tr>
+<tr class="memdesc:gae9597f50d535527984f08d567397f1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルをコピーします  <a href="group__xvfs.html#gae9597f50d535527984f08d567397f1c7">[詳解]</a><br /></td></tr>
+<tr class="separator:gae9597f50d535527984f08d567397f1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c1d4fc80acec9eef1edc6ac2949d7d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga7c1d4fc80acec9eef1edc6ac2949d7d9">xvfs_copyfile2</a> (<a class="el" href="struct_x_file.html">XFile</a> *src, <a class="el" href="struct_x_file.html">XFile</a> *dst)</td></tr>
+<tr class="memdesc:ga7c1d4fc80acec9eef1edc6ac2949d7d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルをコピーします  <a href="group__xvfs.html#ga7c1d4fc80acec9eef1edc6ac2949d7d9">[詳解]</a><br /></td></tr>
+<tr class="separator:ga7c1d4fc80acec9eef1edc6ac2949d7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed739af858126aaaa631086d59c60a6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#gaed739af858126aaaa631086d59c60a6a">xvfs_copytree</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *src, const char *dst)</td></tr>
+<tr class="memdesc:gaed739af858126aaaa631086d59c60a6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ディレクトリツリーをコピーします  <a href="group__xvfs.html#gaed739af858126aaaa631086d59c60a6a">[詳解]</a><br /></td></tr>
+<tr class="separator:gaed739af858126aaaa631086d59c60a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6716d0494e9ee364da4bc9dbc55f5aae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga6716d0494e9ee364da4bc9dbc55f5aae">xvfs_exists</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path, bool *exists)</td></tr>
+<tr class="memdesc:ga6716d0494e9ee364da4bc9dbc55f5aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">パスが存在するかどうかを判定します  <a href="group__xvfs.html#ga6716d0494e9ee364da4bc9dbc55f5aae">[詳解]</a><br /></td></tr>
+<tr class="separator:ga6716d0494e9ee364da4bc9dbc55f5aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7af89aa71af3d27e4b036a0c73d72714"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga7af89aa71af3d27e4b036a0c73d72714">xvfs_flush</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp)</td></tr>
+<tr class="memdesc:ga7af89aa71af3d27e4b036a0c73d72714"><td class="mdescLeft">&#160;</td><td class="mdescRight">バッファされたデータを出力します  <a href="group__xvfs.html#ga7af89aa71af3d27e4b036a0c73d72714">[詳解]</a><br /></td></tr>
+<tr class="separator:ga7af89aa71af3d27e4b036a0c73d72714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ae46549fa58afc31a53bc09a3fd58bf"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga0ae46549fa58afc31a53bc09a3fd58bf">xvfs_getc</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp)</td></tr>
+<tr class="memdesc:ga0ae46549fa58afc31a53bc09a3fd58bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルから1文字を読み込みます <br /></td></tr>
+<tr class="separator:ga0ae46549fa58afc31a53bc09a3fd58bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11e3b8ac67a90d30b37f0ee5d9650a1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga11e3b8ac67a90d30b37f0ee5d9650a1d">xvfs_getcwd</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, char *buf, size_t size)</td></tr>
+<tr class="memdesc:ga11e3b8ac67a90d30b37f0ee5d9650a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">カレントディレクトリを取得します  <a href="group__xvfs.html#ga11e3b8ac67a90d30b37f0ee5d9650a1d">[詳解]</a><br /></td></tr>
+<tr class="separator:ga11e3b8ac67a90d30b37f0ee5d9650a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f59a0630a1e3d928eff9033b042533d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga4f59a0630a1e3d928eff9033b042533d">xvfs_gets</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp, char *dst, size_t size, char **result, bool *overflow)</td></tr>
+<tr class="memdesc:ga4f59a0630a1e3d928eff9033b042533d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルから1行を読み込みます  <a href="group__xvfs.html#ga4f59a0630a1e3d928eff9033b042533d">[詳解]</a><br /></td></tr>
+<tr class="separator:ga4f59a0630a1e3d928eff9033b042533d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae1ca9ebe3e699a3ba080f6b5b84c23c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfscore.html#gae1ca9ebe3e699a3ba080f6b5b84c23c8">xvfs_init</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs)</td></tr>
+<tr class="separator:gae1ca9ebe3e699a3ba080f6b5b84c23c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38242d6be44be8ab5797db2c9b4e5c6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_x_stream.html">XStream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga38242d6be44be8ab5797db2c9b4e5c6d">xvfs_init_stream</a> (<a class="el" href="struct_x_stream.html">XStream</a> *stream, <a class="el" href="struct_x_file.html">XFile</a> *fp)</td></tr>
+<tr class="separator:ga38242d6be44be8ab5797db2c9b4e5c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab897dceef1d46e2def7c83384fc940e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#gab897dceef1d46e2def7c83384fc940e0">xvfs_is_directory</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path, bool *isdir)</td></tr>
+<tr class="memdesc:gab897dceef1d46e2def7c83384fc940e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">パスがディレクトリかどうかを判定します  <a href="group__xvfs.html#gab897dceef1d46e2def7c83384fc940e0">[詳解]</a><br /></td></tr>
+<tr class="separator:gab897dceef1d46e2def7c83384fc940e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58f3b2ca0c1638ec33ce6ce1effc47da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga58f3b2ca0c1638ec33ce6ce1effc47da">xvfs_is_regular</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path, bool *isreg)</td></tr>
+<tr class="memdesc:ga58f3b2ca0c1638ec33ce6ce1effc47da"><td class="mdescLeft">&#160;</td><td class="mdescRight">パスが通常ファイルかどうかを判定します  <a href="group__xvfs.html#ga58f3b2ca0c1638ec33ce6ce1effc47da">[詳解]</a><br /></td></tr>
+<tr class="separator:ga58f3b2ca0c1638ec33ce6ce1effc47da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd60a9b4c9bcd329380f076049d7400e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#gabd60a9b4c9bcd329380f076049d7400e">xvfs_makedirs</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path, bool exist_ok)</td></tr>
+<tr class="memdesc:gabd60a9b4c9bcd329380f076049d7400e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ディレクトリを作成します  <a href="group__xvfs.html#gabd60a9b4c9bcd329380f076049d7400e">[詳解]</a><br /></td></tr>
+<tr class="separator:gabd60a9b4c9bcd329380f076049d7400e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga202958fd2255973eaf823edd3e9957d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga202958fd2255973eaf823edd3e9957d6">xvfs_mkdir</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path)</td></tr>
+<tr class="memdesc:ga202958fd2255973eaf823edd3e9957d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">ディレクトリを作成します  <a href="group__xvfs.html#ga202958fd2255973eaf823edd3e9957d6">[詳解]</a><br /></td></tr>
+<tr class="separator:ga202958fd2255973eaf823edd3e9957d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b0b71e8995a1f12a54ee83d0dd085b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga6b0b71e8995a1f12a54ee83d0dd085b0">xvfs_open</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path, <a class="el" href="group__xstddef.html#ga5cc0f4c9468cbd29423c6d9bdb59d6e1">XOpenMode</a> mode, <a class="el" href="struct_x_file.html">XFile</a> **o_fp)</td></tr>
+<tr class="memdesc:ga6b0b71e8995a1f12a54ee83d0dd085b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルをオープンします  <a href="group__xvfs.html#ga6b0b71e8995a1f12a54ee83d0dd085b0">[詳解]</a><br /></td></tr>
+<tr class="separator:ga6b0b71e8995a1f12a54ee83d0dd085b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3391848c56c1503097c6652bf8f3238f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga3391848c56c1503097c6652bf8f3238f">xvfs_opendir</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path, <a class="el" href="struct_x_dir.html">XDir</a> **o_dir)</td></tr>
+<tr class="memdesc:ga3391848c56c1503097c6652bf8f3238f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ディレクトリをオープンします  <a href="group__xvfs.html#ga3391848c56c1503097c6652bf8f3238f">[詳解]</a><br /></td></tr>
+<tr class="separator:ga3391848c56c1503097c6652bf8f3238f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3fec688c2459db67898381e7f96b9cbe"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga3fec688c2459db67898381e7f96b9cbe">xvfs_printf</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp, const char *fmt,...)</td></tr>
+<tr class="memdesc:ga3fec688c2459db67898381e7f96b9cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルにprintf形式で文字列を書き込みます <br /></td></tr>
+<tr class="separator:ga3fec688c2459db67898381e7f96b9cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7ff67ae8bdd36c4148a9feac5b0ea0c"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#gad7ff67ae8bdd36c4148a9feac5b0ea0c">xvfs_putc</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp, int c)</td></tr>
+<tr class="memdesc:gad7ff67ae8bdd36c4148a9feac5b0ea0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルに1文字を書き込みます <br /></td></tr>
+<tr class="separator:gad7ff67ae8bdd36c4148a9feac5b0ea0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61a57319436e541c901f5be5ad39899a"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga61a57319436e541c901f5be5ad39899a">xvfs_puts</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp, const char *str)</td></tr>
+<tr class="memdesc:ga61a57319436e541c901f5be5ad39899a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルに文字列を書き込みます <br /></td></tr>
+<tr class="separator:ga61a57319436e541c901f5be5ad39899a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58984709d55b60424c75d7e0f55c98d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga58984709d55b60424c75d7e0f55c98d7">xvfs_read</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp, void *dst, size_t size, size_t *nread)</td></tr>
+<tr class="memdesc:ga58984709d55b60424c75d7e0f55c98d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルからデータを読み込みます  <a href="group__xvfs.html#ga58984709d55b60424c75d7e0f55c98d7">[詳解]</a><br /></td></tr>
+<tr class="separator:ga58984709d55b60424c75d7e0f55c98d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab6301c3f59e328276c0a02fc9acc17b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#gab6301c3f59e328276c0a02fc9acc17b9">xvfs_readdir</a> (<a class="el" href="struct_x_dir.html">XDir</a> *dir, <a class="el" href="struct_x_dir_ent.html">XDirEnt</a> *dirent, <a class="el" href="struct_x_dir_ent.html">XDirEnt</a> **result)</td></tr>
+<tr class="memdesc:gab6301c3f59e328276c0a02fc9acc17b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ディレクトリから要素を読み込みます  <a href="group__xvfs.html#gab6301c3f59e328276c0a02fc9acc17b9">[詳解]</a><br /></td></tr>
+<tr class="separator:gab6301c3f59e328276c0a02fc9acc17b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b11e8d18fe2b01350bd47fd422bc1df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga0b11e8d18fe2b01350bd47fd422bc1df">xvfs_remove</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path)</td></tr>
+<tr class="memdesc:ga0b11e8d18fe2b01350bd47fd422bc1df"><td class="mdescLeft">&#160;</td><td class="mdescRight">エントリを削除します  <a href="group__xvfs.html#ga0b11e8d18fe2b01350bd47fd422bc1df">[詳解]</a><br /></td></tr>
+<tr class="separator:ga0b11e8d18fe2b01350bd47fd422bc1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga768b99cd973473c988396e6c91af98da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga768b99cd973473c988396e6c91af98da">xvfs_rename</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *oldpath, const char *newpath)</td></tr>
+<tr class="memdesc:ga768b99cd973473c988396e6c91af98da"><td class="mdescLeft">&#160;</td><td class="mdescRight">エントリの名前や位置を変更します  <a href="group__xvfs.html#ga768b99cd973473c988396e6c91af98da">[詳解]</a><br /></td></tr>
+<tr class="separator:ga768b99cd973473c988396e6c91af98da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga65957daeeb127f62bd7b647b3bfb8889"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga65957daeeb127f62bd7b647b3bfb8889">xvfs_rmtree</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path)</td></tr>
+<tr class="memdesc:ga65957daeeb127f62bd7b647b3bfb8889"><td class="mdescLeft">&#160;</td><td class="mdescRight">ディレクトリツリーを削除します  <a href="group__xvfs.html#ga65957daeeb127f62bd7b647b3bfb8889">[詳解]</a><br /></td></tr>
+<tr class="separator:ga65957daeeb127f62bd7b647b3bfb8889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4cee8299cc93baca9b177a75e5e66da2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga4cee8299cc93baca9b177a75e5e66da2">xvfs_seek</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp, <a class="el" href="group__xstddef.html#ga0bdeff19d49868d285c1bb23ca87bf76">XOffset</a> pos, <a class="el" href="group__xstddef.html#ga988c074c9467b48a58b58808cd980ea7">XSeekMode</a> whence)</td></tr>
+<tr class="memdesc:ga4cee8299cc93baca9b177a75e5e66da2"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイル位置を変更します  <a href="group__xvfs.html#ga4cee8299cc93baca9b177a75e5e66da2">[詳解]</a><br /></td></tr>
+<tr class="separator:ga4cee8299cc93baca9b177a75e5e66da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8db2123dc934a4bb6ed5070c8b1c8114"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga8db2123dc934a4bb6ed5070c8b1c8114">xvfs_stat</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path, <a class="el" href="struct_x_stat.html">XStat</a> *statbuf)</td></tr>
+<tr class="memdesc:ga8db2123dc934a4bb6ed5070c8b1c8114"><td class="mdescLeft">&#160;</td><td class="mdescRight">エントリの状態を取得します  <a href="group__xvfs.html#ga8db2123dc934a4bb6ed5070c8b1c8114">[詳解]</a><br /></td></tr>
+<tr class="separator:ga8db2123dc934a4bb6ed5070c8b1c8114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f9c849768cfed8ae181a1e9afde58de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga8f9c849768cfed8ae181a1e9afde58de">xvfs_tell</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp, <a class="el" href="group__xstddef.html#gadcc4f92c69a1bbdb4449015227943685">XSize</a> *pos)</td></tr>
+<tr class="memdesc:ga8f9c849768cfed8ae181a1e9afde58de"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイル位置を取得します  <a href="group__xvfs.html#ga8f9c849768cfed8ae181a1e9afde58de">[詳解]</a><br /></td></tr>
+<tr class="separator:ga8f9c849768cfed8ae181a1e9afde58de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac93fa9664be488b850c0ad0a5bc77f9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#gac93fa9664be488b850c0ad0a5bc77f9a">xvfs_utime</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path, <a class="el" href="group__xstddef.html#ga0546cc405ace3f593aa4a09ccc2c88bb">XTime</a> time)</td></tr>
+<tr class="memdesc:gac93fa9664be488b850c0ad0a5bc77f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">エントリのタイムスタンプを変更します  <a href="group__xvfs.html#gac93fa9664be488b850c0ad0a5bc77f9a">[詳解]</a><br /></td></tr>
+<tr class="separator:gac93fa9664be488b850c0ad0a5bc77f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b2078783baf382572ae0f05972daf80"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga5b2078783baf382572ae0f05972daf80">xvfs_vprintf</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp, const char *fmt, va_list args)</td></tr>
+<tr class="memdesc:ga5b2078783baf382572ae0f05972daf80"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルにvprintf形式で文字列を書き込みます <br /></td></tr>
+<tr class="separator:ga5b2078783baf382572ae0f05972daf80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58ec2a6c28aa1d5c4a900f74e4552042"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga58ec2a6c28aa1d5c4a900f74e4552042">xvfs_walktree</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path, <a class="el" href="group__xfscore.html#ga7f4f16ed79eaa08a401d5eb561fac3a6">XFsTreeWalker</a> walker, void *userptr)</td></tr>
+<tr class="memdesc:ga58ec2a6c28aa1d5c4a900f74e4552042"><td class="mdescLeft">&#160;</td><td class="mdescRight">ディレクトリツリーを走査します  <a href="group__xvfs.html#ga58ec2a6c28aa1d5c4a900f74e4552042">[詳解]</a><br /></td></tr>
+<tr class="separator:ga58ec2a6c28aa1d5c4a900f74e4552042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ffef677a070ebb1ba5dd6ac812a5fd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga4ffef677a070ebb1ba5dd6ac812a5fd5">xvfs_write</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp, const void *src, size_t size, size_t *nwritten)</td></tr>
+<tr class="memdesc:ga4ffef677a070ebb1ba5dd6ac812a5fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルにデータを書き込みます  <a href="group__xvfs.html#ga4ffef677a070ebb1ba5dd6ac812a5fd5">[詳解]</a><br /></td></tr>
+<tr class="separator:ga4ffef677a070ebb1ba5dd6ac812a5fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><dl class="section author"><dt>著者</dt><dd>MaskedW </dd></dl>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_295ce2a6370ae0a688a0222b881c77ca.html">picox</a></li><li class="navelem"><a class="el" href="dir_e3be2385c94fc93b1a1cade2fa68aeff.html">filesystem</a></li><li class="navelem"><a class="el" href="xvfs_8c.html">xvfs.c</a></li>
+    <li class="footer">2016年05月06日(金) 17時21分21秒作成 - picox / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

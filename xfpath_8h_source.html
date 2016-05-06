@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>picox: xfpath.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">picox
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('xfpath_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">xfpath.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="xfpath_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * License: MIT license</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * Copyright (c) &lt;2016&gt; &lt;MaskedW [maskedw00@gmail.com]&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * Permission is hereby granted, free of charge, to any person</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * obtaining a copy of this software and associated documentation</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * files (the &quot;Software&quot;), to deal in the Software without</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * restriction, including without limitation the rights to use, copy,</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * modify, merge, publish, distribute, sublicense, and/or sell copies</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * of the Software, and to permit persons to whom the Software is</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * furnished to do so, subject to the following conditions:</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * The above copyright notice and this permission notice shall be</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * included in all copies or substantial portions of the Software.</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> * BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> * SOFTWARE.</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#ifndef picox_filesystem_xfpath_h_</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#define picox_filesystem_xfpath_h_</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="xcore_8h.html">picox/core/xcore.h</a>&gt;</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="group__xfpath.html#ga59afd663e95fb97cddee84c1d51301a2">xfpath_join</a>(<span class="keywordtype">char</span>* p1, <span class="keyword">const</span> <span class="keywordtype">char</span>* p2, <span class="keywordtype">size_t</span> size);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="group__xfpath.html#ga94dfbf32512002d96382827a2adf0d30">xfpath_resolve_dot</a>(<span class="keywordtype">char</span>* path);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<a class="code" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> <a class="code" href="group__xfpath.html#ga2ec4946c33fa18af16843700d9e8fe32">xfpath_resolve</a>(<span class="keywordtype">char</span>* dst, <span class="keyword">const</span> <span class="keywordtype">char</span>* cwd, <span class="keyword">const</span> <span class="keywordtype">char</span>* path, <span class="keywordtype">size_t</span> size);</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="group__xfpath.html#gae0f122236285cc1e0153a28c66fcc138">xfpath_top</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path, <span class="keywordtype">char</span>** o_end);</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="group__xfpath.html#ga0a35a1a6c8039d5d5fe865dab0206462">xfpath_tail</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path, <span class="keyword">const</span> <span class="keywordtype">char</span>* end, <span class="keywordtype">char</span>** o_end);</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="group__xfpath.html#ga40badaed8067245baaaed3fe08e7fbe7">xfpath_name</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path, <span class="keywordtype">char</span>** o_end);</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="group__xfpath.html#ga626d59d85486620532af08e57431b4b7">xfpath_suffix</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path, <span class="keywordtype">char</span>** o_end);</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="group__xfpath.html#ga64a1b41212e95e40e04c5605b4683afc">xfpath_stem</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path, <span class="keywordtype">char</span>** o_end);</div><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="group__xfpath.html#gabde4cda8afeffcba38cf719f951c551d">xfpath_parent</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path, <span class="keyword">const</span> <span class="keywordtype">char</span>* end, <span class="keywordtype">char</span>** o_end);</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div><div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="keywordtype">char</span> <a class="code" href="group__xfpath.html#ga078c5836d8e2d26f2a4e7d9a408000ae">xfpath_drive</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__xfpath.html#ga791462349dd0ea438e4cf42211699fac">xfpath_is_root</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__xfpath.html#gabe2c3b8b3377d079519562fd4552a7ba">xfpath_is_absolute</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__xfpath.html#ga31ae1d47e42ce93739649e4c0322d5bd">xfpath_is_relative</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div><div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div><div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;}</div><div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div><div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div><div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div><div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* picox_filesystem_xfpath_h_ */</span><span class="preprocessor"></span></div><div class="ttc" id="group__xfpath_html_ga078c5836d8e2d26f2a4e7d9a408000ae"><div class="ttname"><a href="group__xfpath.html#ga078c5836d8e2d26f2a4e7d9a408000ae">xfpath_drive</a></div><div class="ttdeci">char xfpath_drive(const char *path)</div><div class="ttdef"><b>Definition:</b> xfpath.c:299</div></div>
+<div class="ttc" id="group__xstddef_html_ga63aa705ad3f45cf2de1c067026facda4"><div class="ttname"><a href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a></div><div class="ttdeci">XError</div><div class="ttdoc">errnoの代替として使用する共通のエラーコードを表す列挙型です </div><div class="ttdef"><b>Definition:</b> xstddef.h:362</div></div>
+<div class="ttc" id="group__xfpath_html_ga791462349dd0ea438e4cf42211699fac"><div class="ttname"><a href="group__xfpath.html#ga791462349dd0ea438e4cf42211699fac">xfpath_is_root</a></div><div class="ttdeci">bool xfpath_is_root(const char *path)</div><div class="ttdef"><b>Definition:</b> xfpath.c:311</div></div>
+<div class="ttc" id="group__xfpath_html_gabde4cda8afeffcba38cf719f951c551d"><div class="ttname"><a href="group__xfpath.html#gabde4cda8afeffcba38cf719f951c551d">xfpath_parent</a></div><div class="ttdeci">char * xfpath_parent(const char *path, const char *end, char **o_end)</div><div class="ttdoc">パスの上位パスを返します </div><div class="ttdef"><b>Definition:</b> xfpath.c:271</div></div>
+<div class="ttc" id="group__xfpath_html_ga2ec4946c33fa18af16843700d9e8fe32"><div class="ttname"><a href="group__xfpath.html#ga2ec4946c33fa18af16843700d9e8fe32">xfpath_resolve</a></div><div class="ttdeci">XError xfpath_resolve(char *dst, const char *cwd, const char *path, size_t size)</div><div class="ttdoc">パスを正規化します </div><div class="ttdef"><b>Definition:</b> xfpath.c:127</div></div>
+<div class="ttc" id="group__xfpath_html_gae0f122236285cc1e0153a28c66fcc138"><div class="ttname"><a href="group__xfpath.html#gae0f122236285cc1e0153a28c66fcc138">xfpath_top</a></div><div class="ttdeci">char * xfpath_top(const char *path, char **o_end)</div><div class="ttdoc">パスの先頭要素を返します </div><div class="ttdef"><b>Definition:</b> xfpath.c:150</div></div>
+<div class="ttc" id="group__xfpath_html_ga64a1b41212e95e40e04c5605b4683afc"><div class="ttname"><a href="group__xfpath.html#ga64a1b41212e95e40e04c5605b4683afc">xfpath_stem</a></div><div class="ttdeci">char * xfpath_stem(const char *path, char **o_end)</div><div class="ttdoc">パスのファイル名から拡張子を除いた部分を返します </div><div class="ttdef"><b>Definition:</b> xfpath.c:244</div></div>
+<div class="ttc" id="group__xfpath_html_ga94dfbf32512002d96382827a2adf0d30"><div class="ttname"><a href="group__xfpath.html#ga94dfbf32512002d96382827a2adf0d30">xfpath_resolve_dot</a></div><div class="ttdeci">char * xfpath_resolve_dot(char *path)</div><div class="ttdoc">パス中に含まれる&quot;..&quot;や&quot;.&quot;を展開した結果を返します </div><div class="ttdef"><b>Definition:</b> xfpath.c:79</div></div>
+<div class="ttc" id="group__xfpath_html_gabe2c3b8b3377d079519562fd4552a7ba"><div class="ttname"><a href="group__xfpath.html#gabe2c3b8b3377d079519562fd4552a7ba">xfpath_is_absolute</a></div><div class="ttdeci">bool xfpath_is_absolute(const char *path)</div><div class="ttdef"><b>Definition:</b> xfpath.c:328</div></div>
+<div class="ttc" id="group__xfpath_html_ga0a35a1a6c8039d5d5fe865dab0206462"><div class="ttname"><a href="group__xfpath.html#ga0a35a1a6c8039d5d5fe865dab0206462">xfpath_tail</a></div><div class="ttdeci">char * xfpath_tail(const char *path, const char *end, char **o_end)</div><div class="ttdoc">パスの末尾要素を返します </div><div class="ttdef"><b>Definition:</b> xfpath.c:166</div></div>
+<div class="ttc" id="xcore_8h_html"><div class="ttname"><a href="xcore_8h.html">xcore.h</a></div></div>
+<div class="ttc" id="group__xfpath_html_ga40badaed8067245baaaed3fe08e7fbe7"><div class="ttname"><a href="group__xfpath.html#ga40badaed8067245baaaed3fe08e7fbe7">xfpath_name</a></div><div class="ttdeci">char * xfpath_name(const char *path, char **o_end)</div><div class="ttdoc">パスのファイル名を返します </div><div class="ttdef"><b>Definition:</b> xfpath.c:208</div></div>
+<div class="ttc" id="group__xfpath_html_ga59afd663e95fb97cddee84c1d51301a2"><div class="ttname"><a href="group__xfpath.html#ga59afd663e95fb97cddee84c1d51301a2">xfpath_join</a></div><div class="ttdeci">char * xfpath_join(char *p1, const char *p2, size_t size)</div><div class="ttdoc">sizeバイトの領域を持つパスp1とパスp2を連結して返します </div><div class="ttdef"><b>Definition:</b> xfpath.c:42</div></div>
+<div class="ttc" id="group__xfpath_html_ga626d59d85486620532af08e57431b4b7"><div class="ttname"><a href="group__xfpath.html#ga626d59d85486620532af08e57431b4b7">xfpath_suffix</a></div><div class="ttdeci">char * xfpath_suffix(const char *path, char **o_end)</div><div class="ttdoc">パスのファイル名の拡張子を返します </div><div class="ttdef"><b>Definition:</b> xfpath.c:214</div></div>
+<div class="ttc" id="group__xfpath_html_ga31ae1d47e42ce93739649e4c0322d5bd"><div class="ttname"><a href="group__xfpath.html#ga31ae1d47e42ce93739649e4c0322d5bd">xfpath_is_relative</a></div><div class="ttdeci">bool xfpath_is_relative(const char *path)</div><div class="ttdef"><b>Definition:</b> xfpath.c:341</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_295ce2a6370ae0a688a0222b881c77ca.html">picox</a></li><li class="navelem"><a class="el" href="dir_e3be2385c94fc93b1a1cade2fa68aeff.html">filesystem</a></li><li class="navelem"><a class="el" href="xfpath_8h.html">xfpath.h</a></li>
+    <li class="footer">2016年05月06日(金) 17時21分15秒作成 - picox / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

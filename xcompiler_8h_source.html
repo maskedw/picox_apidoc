@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>picox: xcompiler.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">picox
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('xcompiler_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">xcompiler.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * License: MIT license</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * Copyright (c) &lt;2015&gt; &lt;MaskedW [maskedw00@gmail.com]&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * Permission is hereby granted, free of charge, to any person</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * obtaining a copy of this software and associated documentation</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * files (the &quot;Software&quot;), to deal in the Software without</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * restriction, including without limitation the rights to use, copy,</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * modify, merge, publish, distribute, sublicense, and/or sell copies</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * of the Software, and to permit persons to whom the Software is</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * furnished to do so, subject to the following conditions:</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * The above copyright notice and this permission notice shall be</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * included in all copies or substantial portions of the Software.</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> * BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> * SOFTWARE.</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifndef picox_core_detail_xcompiler_h_</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#define picox_core_detail_xcompiler_h_</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#ifdef __STDC_VERSION__</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">    #if (__STDC_VERSION__ &gt;= 199901L)</span></div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">        #define X_COMPILER_C99 (1)</span></div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">    #else</span></div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">        #define X_COMPILER_C99 (0)</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">    #endif</span></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#else</span></div><div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="group__xcompiler.html#gab47642941ceb9b58219b881e86c63ce8">   67</a></span>&#160;<span class="preprocessor">    #define X_COMPILER_C99 (0)</span></div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#if defined __GNUC__ &amp;&amp; defined __GNUC_MINOR__</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">    #define X_GNUC_PREREQ(maj, min) \</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">        ((__GNUC__ &lt;&lt; 16) + __GNUC_MINOR__ &gt;= ((maj) &lt;&lt; 16) + (min))</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#else</span></div><div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group__xcompiler.html#ga76bfb6102234e25b1a91ec8a495fcffe">   78</a></span>&#160;<span class="preprocessor">    #define X_GNUC_PREREQ(maj, min) 0</span></div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">/* コンパイラごとの設定のロード */</span></div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#if defined(__GNUC__)</span></div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">    #include &lt;picox/core/detail/compiler/xgcc.h&gt;</span></div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#elif defined(__RENESAS__)</span></div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">    #include &lt;<a class="code" href="xrenesas_8h.html">picox/core/detail/compiler/xrenesas.h</a>&gt;</span></div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#ifndef X_INLINE</span></div><div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="group__xcompiler.html#gaed18af59d0aa97a8680040be51bdb706">  100</a></span>&#160;<span class="preprocessor">    #define X_INLINE  static inline</span></div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#ifndef X_ALWAYS_INLINE</span></div><div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="group__xcompiler.html#ga3a450cf8aea2f3419053e0c74b6067cb">  111</a></span>&#160;<span class="preprocessor">    #define X_ALWAYS_INLINE static inline</span></div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#ifndef X_HAS_VARIADIC_MACROS</span></div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">    #if X_COMPILER_C99 &gt; 0</span></div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">        #define X_HAS_VARIADIC_MACROS   (1)</span></div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">    #endif</span></div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#ifndef X_HAS_TYPEOF</span></div><div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="group__xcompiler.html#gad558d912e6d3262a264052a7d2deaa84">  137</a></span>&#160;<span class="preprocessor">    #define X_HAS_TYPEOF    (0)</span></div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#ifndef X_LIKELY</span></div><div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="group__xcompiler.html#ga25f5890813ae9bdce04e90fbd59014b5">  148</a></span>&#160;<span class="preprocessor">    #define X_LIKELY(x)         x</span></div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#ifndef X_UNLIKELY</span></div><div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="group__xcompiler.html#gafa060369006773d944805317d55733dd">  158</a></span>&#160;<span class="preprocessor">    #define X_UNLIKELY(x)         x</span></div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">#ifndef X_HAS_STATEMENT_EXPRESSIONS</span></div><div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="group__xcompiler.html#gaa396314f0d37ab3e004086178d77ef2a">  182</a></span>&#160;<span class="preprocessor">    #define X_HAS_STATEMENT_EXPRESSIONS (0)</span></div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">#ifndef X_MEMORY_BARRIER</span></div><div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="group__xcompiler.html#ga60a221f754814eb6e38c6651c172e8e8">  190</a></span>&#160;<span class="preprocessor">    #define X_MEMORY_BARRIER</span></div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#ifndef X_UNREACHABE</span></div><div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="group__xcompiler.html#gaf9e7d109fb85788d185e9304230b82e4">  198</a></span>&#160;<span class="preprocessor">    #define X_UNREACHABE    for (;;)</span></div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="preprocessor">#ifndef X_DEPRECATED</span></div><div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="group__xcompiler.html#ga45e7a3e4d7e321bbc08eaabd29058ea3">  215</a></span>&#160;<span class="preprocessor">    #define X_DEPRECATED</span></div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor">#ifndef X_FUNC</span></div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">    #define X_FUNC  __func__</span></div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor">#ifndef X_PACKED_PRE_BEGIN</span></div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor">    #define X_PACKED_PRE_BEGIN</span></div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">#ifndef X_PACKED_POST_BEGIN</span></div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor">    #define X_PACKED_POST_BEGIN</span></div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor">#ifndef X_PACKED_PRE_END</span></div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor">    #define X_PACKED_PRE_END</span></div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="preprocessor">#ifndef X_PACKED_POST_END</span></div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="preprocessor">    #define X_PACKED_POST_END</span></div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor">#ifndef NULL</span></div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="preprocessor">    #define NULL    ((void*)0)</span></div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="preprocessor">#ifndef EOF</span></div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor">    #define EOF     (-1)</span></div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="preprocessor">#endif // picox_core_detail_xcompiler_h_</span></div><div class="ttc" id="xrenesas_8h_html"><div class="ttname"><a href="xrenesas_8h.html">xrenesas.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_295ce2a6370ae0a688a0222b881c77ca.html">picox</a></li><li class="navelem"><a class="el" href="dir_334975c5f7f258e1ec06bfc6b10c4fd2.html">core</a></li><li class="navelem"><a class="el" href="dir_db566c2ae50ab4e7ff384a2af9bd29a2.html">detail</a></li><li class="navelem"><b>xcompiler.h</b></li>
+    <li class="footer">2016年05月06日(金) 17時21分14秒作成 - picox / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

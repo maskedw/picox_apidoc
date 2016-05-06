@@ -1,0 +1,27 @@
+var annotated_dup =
+[
+    [ "XByteArray", "struct_x_byte_array.html", null ],
+    [ "XDir", "struct_x_dir.html", null ],
+    [ "XDirEnt", "struct_x_dir_ent.html", "struct_x_dir_ent" ],
+    [ "XFatFs", "struct_x_fat_fs.html", null ],
+    [ "XFifoBuffer", "struct_x_fifo_buffer.html", null ],
+    [ "XFile", "struct_x_file.html", null ],
+    [ "XFixedAllocator", "struct_x_fixed_allocator.html", "struct_x_fixed_allocator" ],
+    [ "XIntrusiveList", "struct_x_intrusive_list.html", null ],
+    [ "XIntrusiveNode", "struct_x_intrusive_node.html", "struct_x_intrusive_node" ],
+    [ "XMaxAlign", "union_x_max_align.html", "union_x_max_align" ],
+    [ "XMemStream", "struct_x_mem_stream.html", "struct_x_mem_stream" ],
+    [ "XMessageBuffer", "struct_x_message_buffer.html", null ],
+    [ "XMessageHeader", "union_x_message_header.html", "union_x_message_header" ],
+    [ "XPicoAllocator", "struct_x_pico_allocator.html", "struct_x_pico_allocator" ],
+    [ "XPosixFs", "struct_x_posix_fs.html", null ],
+    [ "XRamFs", "struct_x_ram_fs.html", null ],
+    [ "XRomFs", "struct_x_rom_fs.html", null ],
+    [ "XSpiFFs", "struct_x_spi_f_fs.html", null ],
+    [ "XStackAllocator", "struct_x_stack_allocator.html", "struct_x_stack_allocator" ],
+    [ "XStat", "struct_x_stat.html", "struct_x_stat" ],
+    [ "XStream", "struct_x_stream.html", "struct_x_stream" ],
+    [ "XTimeVal", "struct_x_time_val.html", "struct_x_time_val" ],
+    [ "XTokenizer", "struct_x_tokenizer.html", null ],
+    [ "XVirtualFs", "struct_x_virtual_fs.html", null ]
+];

@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>picox: xstring.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">picox
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('xstring_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">xstring.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>標準Cライブラリstring.hの拡張定義  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="xstring_8h__dep__incl.png" border="0" usemap="#xstring_8hdep" alt=""/></div>
+<map name="xstring_8hdep" id="xstring_8hdep">
+<area shape="rect" id="node3" href="xcore_8h.html" title="xcore.h" alt="" coords="903,80,968,107"/>
+<area shape="rect" id="node5" href="xfixed__allocator_8h.html" title="Fixed memory allocator. " alt="" coords="43,155,165,181"/>
+<area shape="rect" id="node9" href="xpico__allocator_8h.html" title="Pico variable memory allocator. " alt="" coords="328,155,448,181"/>
+<area shape="rect" id="node17" href="xstack__allocator_8h.html" title="Stack memory allocator. " alt="" coords="592,155,720,181"/>
+<area shape="rect" id="node21" href="xbyte__array_8h.html" title="可変長バイト配列 " alt="" coords="152,229,253,256"/>
+<area shape="rect" id="node24" href="xfifo__buffer_8h.html" title="xfifo_buffer.h" alt="" coords="473,155,567,181"/>
+<area shape="rect" id="node26" href="xintrusive__list_8h.html" title="ノード侵入型のダブルリンクリストコンテナです。 " alt="" coords="241,304,351,331"/>
+<area shape="rect" id="node29" href="xmessage__buffer_8h.html" title="xmessage_buffer.h" alt="" coords="744,155,875,181"/>
+<area shape="rect" id="node31" href="xdebug_8c.html" title="デバッグログやassert等の実装 " alt="" coords="899,155,973,181"/>
+<area shape="rect" id="node33" href="xrandom_8c.html" title="擬似乱数生成実装 " alt="" coords="997,155,1080,181"/>
+<area shape="rect" id="node35" href="xstring_8c.html" title="標準Cライブラリstring.hの拡張実装 " alt="" coords="1104,155,1176,181"/>
+<area shape="rect" id="node37" href="xfscore_8h.html" title="xfscore.h" alt="" coords="1197,229,1272,256"/>
+<area shape="rect" id="node68" href="xfpath_8h.html" title="ファイルパス操作ユーティリティ定義 " alt="" coords="1201,155,1268,181"/>
+<area shape="rect" id="node71" href="xargparser_8h.html" title="xargparser.h" alt="" coords="1345,155,1439,181"/>
+<area shape="rect" id="node75" href="xtokenizer_8h.html" title="xtokenizer.h" alt="" coords="1464,155,1557,181"/>
+<area shape="rect" id="node79" href="xdynamic__string_8h.html" title="動的文字列モジュール " alt="" coords="1581,155,1709,181"/>
+<area shape="rect" id="node7" href="xfixed__allocator_8c.html" title="xfixed_allocator.c" alt="" coords="5,229,128,256"/>
+<area shape="rect" id="node11" href="xpico__allocator_8c.html" title="xpico_allocator.c" alt="" coords="328,229,448,256"/>
+<area shape="rect" id="node13" href="xramfs_8h.html" title="RAMファイルシステム定義 " alt="" coords="449,304,521,331"/>
+<area shape="rect" id="node15" href="xramfs_8c.html" title="RAMファイルシステム実装 " alt="" coords="260,379,332,405"/>
+<area shape="rect" id="node19" href="xstack__allocator_8c.html" title="xstack_allocator.c" alt="" coords="592,229,720,256"/>
+<area shape="rect" id="node39" href="xfatfs_8h.html" title="FatFsをバックエンドとするファイル操作定義 " alt="" coords="1248,304,1312,331"/>
+<area shape="rect" id="node43" href="xfpath_8c.html" title="xfpath.c" alt="" coords="1337,304,1404,331"/>
+<area shape="rect" id="node45" href="xvfs_8h.html" title="xvfs.h" alt="" coords="1429,304,1483,331"/>
+<area shape="rect" id="node55" href="xposixfs_8h.html" title="POSIX APIによるファイル操作定義 " alt="" coords="950,304,1031,331"/>
+<area shape="rect" id="node60" href="xromfs_8h.html" title="ROMファイルシステム定義 " alt="" coords="1056,304,1128,331"/>
+<area shape="rect" id="node64" href="xspiffs_8h.html" title="spiffsをバックエンドとするファイル操作定義 " alt="" coords="1153,304,1223,331"/>
+<area shape="rect" id="node41" href="xfatfs_8c.html" title="xfatfs.c" alt="" coords="1248,379,1312,405"/>
+<area shape="rect" id="node47" href="xunionfs_8h.html" title="xunionfs.h" alt="" coords="1415,379,1496,405"/>
+<area shape="rect" id="node51" href="xsinglefs_8h.html" title="xsinglefs.h" alt="" coords="1521,379,1604,405"/>
+<area shape="rect" id="node53" href="xvfs_8c.html" title="xvfs.c" alt="" coords="1337,379,1391,405"/>
+<area shape="rect" id="node49" href="xfs_8h.html" title="xfs.h" alt="" coords="1431,453,1481,480"/>
+<area shape="rect" id="node57" href="xposixfs_8c.html" title="xposixfs.c" alt="" coords="950,379,1031,405"/>
+<area shape="rect" id="node62" href="xromfs_8c.html" title="RAMファイルシステム実装 " alt="" coords="1056,379,1128,405"/>
+<area shape="rect" id="node66" href="xspiffs_8c.html" title="xspiffs.c" alt="" coords="1153,379,1223,405"/>
+<area shape="rect" id="node73" href="xargparser_8c.html" title="xargparser.c" alt="" coords="1345,229,1439,256"/>
+<area shape="rect" id="node77" href="xtokenizer_8c.html" title="xtokenizer.c" alt="" coords="1464,229,1557,256"/>
+<area shape="rect" id="node81" href="xdynamic__string_8c.html" title="xdynamic_string.c" alt="" coords="1581,229,1709,256"/>
+</map>
+</div>
+</div>
+<p><a href="xstring_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ga5439489e6d07071c73dc2562f7d0c85f"><td class="memItemLeft" align="right" valign="top">
+static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga5439489e6d07071c73dc2562f7d0c85f">x_btos</a> (bool cond)</td></tr>
+<tr class="memdesc:ga5439489e6d07071c73dc2562f7d0c85f"><td class="mdescLeft">&#160;</td><td class="mdescRight">真偽値に対応する"true" or "false"の文字列を返します <br /></td></tr>
+<tr class="separator:ga5439489e6d07071c73dc2562f7d0c85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa458b159ef0ac5e371318f5e48647c49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#gaa458b159ef0ac5e371318f5e48647c49">x_memblt</a> (void *dst, const void *src, size_t width, size_t height, size_t dstride, size_t sstride)</td></tr>
+<tr class="memdesc:gaa458b159ef0ac5e371318f5e48647c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">srcからdstにメモリの矩形コピーを行います。  <a href="group__xstring.html#gaa458b159ef0ac5e371318f5e48647c49">[詳解]</a><br /></td></tr>
+<tr class="separator:gaa458b159ef0ac5e371318f5e48647c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6be88d801c4223bbad5e957ada685c6a"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga6be88d801c4223bbad5e957ada685c6a">x_memequal</a> (const void *p1, const void *p2, size_t n)</td></tr>
+<tr class="memdesc:ga6be88d801c4223bbad5e957ada685c6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">(memcmp(p1, p2) == 0)と同じです <br /></td></tr>
+<tr class="separator:ga6be88d801c4223bbad5e957ada685c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad5ca4d9864f7bce74848b820ef039ace"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#gad5ca4d9864f7bce74848b820ef039ace">x_memlrot</a> (void *p, size_t shift, size_t size, size_t n)</td></tr>
+<tr class="memdesc:gad5ca4d9864f7bce74848b820ef039ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">sizeバイトの要素n個からなる配列pの要素を左方向にshift個分回転移動させます。 <br /></td></tr>
+<tr class="separator:gad5ca4d9864f7bce74848b820ef039ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6648fb3b4fecbaf84d8d66c9ec56082f"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga6648fb3b4fecbaf84d8d66c9ec56082f">x_memmem</a> (const void *p1, size_t n1, const void *p2, size_t n2)</td></tr>
+<tr class="memdesc:ga6648fb3b4fecbaf84d8d66c9ec56082f"><td class="mdescLeft">&#160;</td><td class="mdescRight">n1バイトの大きさを持つp1からn2バイトのp2が最初に現れた位置のポインタを返します  <a href="group__xstring.html#ga6648fb3b4fecbaf84d8d66c9ec56082f">[詳解]</a><br /></td></tr>
+<tr class="separator:ga6648fb3b4fecbaf84d8d66c9ec56082f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9acb14ea38c7a6cf09aeffffe89a0202"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga9acb14ea38c7a6cf09aeffffe89a0202">x_memrandom</a> (void *p, size_t n)</td></tr>
+<tr class="memdesc:ga9acb14ea38c7a6cf09aeffffe89a0202"><td class="mdescLeft">&#160;</td><td class="mdescRight">nバイトの領域を持つpをランダムな値で埋めます <br /></td></tr>
+<tr class="separator:ga9acb14ea38c7a6cf09aeffffe89a0202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa66056281a9ba252f96c4dcd0737d36f"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#gaa66056281a9ba252f96c4dcd0737d36f">x_memrandom_alpha</a> (void *p, size_t n)</td></tr>
+<tr class="memdesc:gaa66056281a9ba252f96c4dcd0737d36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">nバイトの領域を持つpをランダムなアルファベット[a-zA-Z]で埋めます <br /></td></tr>
+<tr class="separator:gaa66056281a9ba252f96c4dcd0737d36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga437ff3f2cf9a29df18606e02782cd634"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga437ff3f2cf9a29df18606e02782cd634">x_memrchr</a> (const void *p, int c, size_t n)</td></tr>
+<tr class="memdesc:ga437ff3f2cf9a29df18606e02782cd634"><td class="mdescLeft">&#160;</td><td class="mdescRight">memchr()の逆走査版です  <a href="group__xstring.html#ga437ff3f2cf9a29df18606e02782cd634">[詳解]</a><br /></td></tr>
+<tr class="separator:ga437ff3f2cf9a29df18606e02782cd634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92196f5cd0b32c416b0fd421471cd7f1"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga92196f5cd0b32c416b0fd421471cd7f1">x_memreverse</a> (void *p, size_t size, size_t n)</td></tr>
+<tr class="memdesc:ga92196f5cd0b32c416b0fd421471cd7f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">sizeバイトの要素n個からなる配列pの要素を逆順に並べ替えます。 <br /></td></tr>
+<tr class="separator:ga92196f5cd0b32c416b0fd421471cd7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6a42c99c70bf691692d4865bf4acebc"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#gae6a42c99c70bf691692d4865bf4acebc">x_memrrot</a> (void *p, size_t shift, size_t size, size_t n)</td></tr>
+<tr class="memdesc:gae6a42c99c70bf691692d4865bf4acebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">sizeバイトの要素n個からなる配列pの要素を右方向にshift個分回転移動させます。 <br /></td></tr>
+<tr class="separator:gae6a42c99c70bf691692d4865bf4acebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga80e73f88b919708bfb7d49cd7c86c617"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga80e73f88b919708bfb7d49cd7c86c617">x_memswap</a> (void *a, void *b, size_t size)</td></tr>
+<tr class="memdesc:ga80e73f88b919708bfb7d49cd7c86c617"><td class="mdescLeft">&#160;</td><td class="mdescRight">aとbからsizeバイトを入れ替えます。 <br /></td></tr>
+<tr class="separator:ga80e73f88b919708bfb7d49cd7c86c617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0998fd402f0aebe2d0510817846db460"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga0998fd402f0aebe2d0510817846db460">x_stpcpy</a> (char *dst, const char *src)</td></tr>
+<tr class="memdesc:ga0998fd402f0aebe2d0510817846db460"><td class="mdescLeft">&#160;</td><td class="mdescRight">srcをdstにコピーし、コピーした文字列の終端のポインタを返します  <a href="group__xstring.html#ga0998fd402f0aebe2d0510817846db460">[詳解]</a><br /></td></tr>
+<tr class="separator:ga0998fd402f0aebe2d0510817846db460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a8b8fb38560089325e41021f4890a98"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga5a8b8fb38560089325e41021f4890a98">x_stpncpy</a> (char *dst, const char *src, size_t n)</td></tr>
+<tr class="memdesc:ga5a8b8fb38560089325e41021f4890a98"><td class="mdescLeft">&#160;</td><td class="mdescRight">長さ制限付きのx_stpcpy()です  <a href="group__xstring.html#ga5a8b8fb38560089325e41021f4890a98">[詳解]</a><br /></td></tr>
+<tr class="separator:ga5a8b8fb38560089325e41021f4890a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga96864b765fc446330c8358f356746567"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga96864b765fc446330c8358f356746567">x_stpncpy2</a> (char *dst, const char *src, size_t n)</td></tr>
+<tr class="memdesc:ga96864b765fc446330c8358f356746567"><td class="mdescLeft">&#160;</td><td class="mdescRight">0埋め無し版のx_stpncpy()です  <a href="group__xstring.html#ga96864b765fc446330c8358f356746567">[詳解]</a><br /></td></tr>
+<tr class="separator:ga96864b765fc446330c8358f356746567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9995961b4424beb1fc46b615e3c9ed2c"><td class="memItemLeft" align="right" valign="top">
+char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga9995961b4424beb1fc46b615e3c9ed2c">x_stprcpy</a> (char *dst, const char *src)</td></tr>
+<tr class="memdesc:ga9995961b4424beb1fc46b615e3c9ed2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">dstにsrcを逆順でコピーし、コピーした文字列の終端のポインタを返します <br /></td></tr>
+<tr class="separator:ga9995961b4424beb1fc46b615e3c9ed2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff896d2fbbde545dc10efc669cdb1557"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#gaff896d2fbbde545dc10efc669cdb1557">x_strcasecmp</a> (const char *s1, const char *s2)</td></tr>
+<tr class="memdesc:gaff896d2fbbde545dc10efc669cdb1557"><td class="mdescLeft">&#160;</td><td class="mdescRight">大文字小文字の違いを無視したstrcmp()です。  <a href="group__xstring.html#gaff896d2fbbde545dc10efc669cdb1557">[詳解]</a><br /></td></tr>
+<tr class="separator:gaff896d2fbbde545dc10efc669cdb1557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad31afb12ce1f647555229052fdbf0682"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#gad31afb12ce1f647555229052fdbf0682">x_strcaseequal</a> (const char *s1, const char *s2)</td></tr>
+<tr class="memdesc:gad31afb12ce1f647555229052fdbf0682"><td class="mdescLeft">&#160;</td><td class="mdescRight">大文字小文字の違いを無視したx_strequal()です <br /></td></tr>
+<tr class="separator:gad31afb12ce1f647555229052fdbf0682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga413483b6090ed7ae75bf41c6fd6dd1d1"><td class="memItemLeft" align="right" valign="top">
+char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga413483b6090ed7ae75bf41c6fd6dd1d1">x_strcasepbrk</a> (const char *str, const char *accept)</td></tr>
+<tr class="memdesc:ga413483b6090ed7ae75bf41c6fd6dd1d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">大文字小文字の違いを無視したstrpbrk()です。 <br /></td></tr>
+<tr class="separator:ga413483b6090ed7ae75bf41c6fd6dd1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee9949b2f0b3a1d9279ce0c34a03b730"><td class="memItemLeft" align="right" valign="top">
+char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#gaee9949b2f0b3a1d9279ce0c34a03b730">x_strcaserpbrk</a> (const char *str, const char *accept)</td></tr>
+<tr class="memdesc:gaee9949b2f0b3a1d9279ce0c34a03b730"><td class="mdescLeft">&#160;</td><td class="mdescRight">大文字小文字の違いを無視したx_strrpbrk()です。 <br /></td></tr>
+<tr class="separator:gaee9949b2f0b3a1d9279ce0c34a03b730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56c0c2c67ed3d3f03401292a3adf7c97"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga56c0c2c67ed3d3f03401292a3adf7c97">x_strcasestr</a> (const char *s1, const char *s2)</td></tr>
+<tr class="memdesc:ga56c0c2c67ed3d3f03401292a3adf7c97"><td class="mdescLeft">&#160;</td><td class="mdescRight">大文字小文字の違いを無視したstrstr()です。  <a href="group__xstring.html#ga56c0c2c67ed3d3f03401292a3adf7c97">[詳解]</a><br /></td></tr>
+<tr class="separator:ga56c0c2c67ed3d3f03401292a3adf7c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1458858005753738627b3a9e0051e0cc"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga1458858005753738627b3a9e0051e0cc">x_strchrnul</a> (const char *s, int c)</td></tr>
+<tr class="memdesc:ga1458858005753738627b3a9e0051e0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列s中にはじめに文字cが現れた位置へのポインタを返します  <a href="group__xstring.html#ga1458858005753738627b3a9e0051e0cc">[詳解]</a><br /></td></tr>
+<tr class="separator:ga1458858005753738627b3a9e0051e0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00196bce4d7a6d85aed5d3186433e4b1"><td class="memItemLeft" align="right" valign="top">
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga00196bce4d7a6d85aed5d3186433e4b1">x_strcountcaseequal</a> (const char *a, const char *b)</td></tr>
+<tr class="memdesc:ga00196bce4d7a6d85aed5d3186433e4b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">大文字小文字の違いを無視したx_strcountequal()です。 <br /></td></tr>
+<tr class="separator:ga00196bce4d7a6d85aed5d3186433e4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0911bf65c18dcfaae4c797ae0c33369e"><td class="memItemLeft" align="right" valign="top">
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga0911bf65c18dcfaae4c797ae0c33369e">x_strcountequal</a> (const char *a, const char *b)</td></tr>
+<tr class="memdesc:ga0911bf65c18dcfaae4c797ae0c33369e"><td class="mdescLeft">&#160;</td><td class="mdescRight">a,bを比較し、一致するバイト数を返します <br /></td></tr>
+<tr class="separator:ga0911bf65c18dcfaae4c797ae0c33369e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59b49cb72ee02599d5541d74d589e198"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga59b49cb72ee02599d5541d74d589e198">x_strdup</a> (const char *str)</td></tr>
+<tr class="memdesc:ga59b49cb72ee02599d5541d74d589e198"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列の複製をヒープから生成して返します  <a href="group__xstring.html#ga59b49cb72ee02599d5541d74d589e198">[詳解]</a><br /></td></tr>
+<tr class="separator:ga59b49cb72ee02599d5541d74d589e198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga909e0f4045625955c22fdfeff29be584"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga909e0f4045625955c22fdfeff29be584">x_strdup2</a> (const char *str, <a class="el" href="group__xstddef.html#ga9cf5d1449388ee9902b286ba7149c693">XMallocFunc</a> malloc_func)</td></tr>
+<tr class="memdesc:ga909e0f4045625955c22fdfeff29be584"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定のメモリ確保関数を使用して複製した文字列を返します  <a href="group__xstring.html#ga909e0f4045625955c22fdfeff29be584">[詳解]</a><br /></td></tr>
+<tr class="separator:ga909e0f4045625955c22fdfeff29be584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08d4fd64e2a21840e8e61af9298a24c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga08d4fd64e2a21840e8e61af9298a24c5">x_strequal</a> (const char *s1, const char *s2)</td></tr>
+<tr class="memdesc:ga08d4fd64e2a21840e8e61af9298a24c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列s1とs2が一致するかどうかを返します。  <a href="group__xstring.html#ga08d4fd64e2a21840e8e61af9298a24c5">[詳解]</a><br /></td></tr>
+<tr class="separator:ga08d4fd64e2a21840e8e61af9298a24c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2fb0c2ebd3ad9affcbecac157bc68c0a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga2fb0c2ebd3ad9affcbecac157bc68c0a">x_strlcat</a> (char *dst, const char *src, size_t dsize)</td></tr>
+<tr class="memdesc:ga2fb0c2ebd3ad9affcbecac157bc68c0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">srcから最大でdsize - strlen(dst) - 1バイトの文字列をdstに連結します  <a href="group__xstring.html#ga2fb0c2ebd3ad9affcbecac157bc68c0a">[詳解]</a><br /></td></tr>
+<tr class="separator:ga2fb0c2ebd3ad9affcbecac157bc68c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga637b70a9026fbf60fc55625b6b19d5dd"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga637b70a9026fbf60fc55625b6b19d5dd">x_strlcpy</a> (char *dst, const char *src, size_t n)</td></tr>
+<tr class="memdesc:ga637b70a9026fbf60fc55625b6b19d5dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">srcから最大でn - 1バイトをdstにコピーします  <a href="group__xstring.html#ga637b70a9026fbf60fc55625b6b19d5dd">[詳解]</a><br /></td></tr>
+<tr class="separator:ga637b70a9026fbf60fc55625b6b19d5dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac84406ebe5b85fea6f4bfd5c20e03d0"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#gaac84406ebe5b85fea6f4bfd5c20e03d0">x_strlstrip</a> (char *str, const char *space)</td></tr>
+<tr class="memdesc:gaac84406ebe5b85fea6f4bfd5c20e03d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列の前からspaceに含まれる文字列を取り除いた結果を返します。  <a href="group__xstring.html#gaac84406ebe5b85fea6f4bfd5c20e03d0">[詳解]</a><br /></td></tr>
+<tr class="separator:gaac84406ebe5b85fea6f4bfd5c20e03d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaacd3736face8274fcb935f79bd6c45db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#gaacd3736face8274fcb935f79bd6c45db">x_strncasecmp</a> (const char *s1, const char *s2, size_t n)</td></tr>
+<tr class="memdesc:gaacd3736face8274fcb935f79bd6c45db"><td class="mdescLeft">&#160;</td><td class="mdescRight">大文字小文字の違いを無視したstrncmp()です。  <a href="group__xstring.html#gaacd3736face8274fcb935f79bd6c45db">[詳解]</a><br /></td></tr>
+<tr class="separator:gaacd3736face8274fcb935f79bd6c45db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8eacba2eedfc4cf3c995dedf30fb1182"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga8eacba2eedfc4cf3c995dedf30fb1182">x_strncasestr</a> (const char *s1, const char *s2, size_t n)</td></tr>
+<tr class="memdesc:ga8eacba2eedfc4cf3c995dedf30fb1182"><td class="mdescLeft">&#160;</td><td class="mdescRight">大文字小文字の違いを無視したx_strnstr()です  <a href="group__xstring.html#ga8eacba2eedfc4cf3c995dedf30fb1182">[詳解]</a><br /></td></tr>
+<tr class="separator:ga8eacba2eedfc4cf3c995dedf30fb1182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6dfacb376038731365ec60c8a75759e3"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga6dfacb376038731365ec60c8a75759e3">x_strncpy2</a> (char *dst, const char *src, size_t n)</td></tr>
+<tr class="memdesc:ga6dfacb376038731365ec60c8a75759e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">0埋め無し版のx_strncpy()です  <a href="group__xstring.html#ga6dfacb376038731365ec60c8a75759e3">[詳解]</a><br /></td></tr>
+<tr class="separator:ga6dfacb376038731365ec60c8a75759e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63da138736e3fc321ae5434ac1bd26a4"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga63da138736e3fc321ae5434ac1bd26a4">x_strndup</a> (const char *str, size_t n)</td></tr>
+<tr class="memdesc:ga63da138736e3fc321ae5434ac1bd26a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">複製する最大バイト数を指定できるstrdup()です  <a href="group__xstring.html#ga63da138736e3fc321ae5434ac1bd26a4">[詳解]</a><br /></td></tr>
+<tr class="separator:ga63da138736e3fc321ae5434ac1bd26a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1928e81746855062165c03c7cce3524"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#gad1928e81746855062165c03c7cce3524">x_strndup2</a> (const char *str, size_t n, <a class="el" href="group__xstddef.html#ga9cf5d1449388ee9902b286ba7149c693">XMallocFunc</a> malloc_func)</td></tr>
+<tr class="memdesc:gad1928e81746855062165c03c7cce3524"><td class="mdescLeft">&#160;</td><td class="mdescRight">メモリ確保関数と最大バイト数を指定して複製した文字列を返します  <a href="group__xstring.html#gad1928e81746855062165c03c7cce3524">[詳解]</a><br /></td></tr>
+<tr class="separator:gad1928e81746855062165c03c7cce3524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7cf74f5e5781eb071c887d804d73827"><td class="memItemLeft" align="right" valign="top">
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#gad7cf74f5e5781eb071c887d804d73827">x_strnlen</a> (const char *s, size_t n)</td></tr>
+<tr class="memdesc:gad7cf74f5e5781eb071c887d804d73827"><td class="mdescLeft">&#160;</td><td class="mdescRight">長さ指定付きのstrlen()です <br /></td></tr>
+<tr class="separator:gad7cf74f5e5781eb071c887d804d73827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62e4e290f93fba9c2ecd9a579e00f9bb"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga62e4e290f93fba9c2ecd9a579e00f9bb">x_strnstr</a> (const char *s1, const char *s2, size_t n)</td></tr>
+<tr class="memdesc:ga62e4e290f93fba9c2ecd9a579e00f9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">長さ制限付きのstrstr()です  <a href="group__xstring.html#ga62e4e290f93fba9c2ecd9a579e00f9bb">[詳解]</a><br /></td></tr>
+<tr class="separator:ga62e4e290f93fba9c2ecd9a579e00f9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3ebc4d096a7da4593aee4d634666b3e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#gae3ebc4d096a7da4593aee4d634666b3e">x_strreplace</a> (char *dst, size_t size, size_t len, size_t dn, const char *src, size_t sn)</td></tr>
+<tr class="memdesc:gae3ebc4d096a7da4593aee4d634666b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">sizeバイトの領域を持つ長さlenのdstの先頭からdnバイトをsnバイトのsrcで上書きします  <a href="group__xstring.html#gae3ebc4d096a7da4593aee4d634666b3e">[詳解]</a><br /></td></tr>
+<tr class="separator:gae3ebc4d096a7da4593aee4d634666b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d86da246e0de8e921890aa2c46af9ad"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga4d86da246e0de8e921890aa2c46af9ad">x_strreverse</a> (char *str)</td></tr>
+<tr class="memdesc:ga4d86da246e0de8e921890aa2c46af9ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列を逆転させた結果を返します。  <a href="group__xstring.html#ga4d86da246e0de8e921890aa2c46af9ad">[詳解]</a><br /></td></tr>
+<tr class="separator:ga4d86da246e0de8e921890aa2c46af9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga048b776c3102a5057b154c0a3dfabf6f"><td class="memItemLeft" align="right" valign="top">
+char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga048b776c3102a5057b154c0a3dfabf6f">x_strrpbrk</a> (const char *str, const char *accept)</td></tr>
+<tr class="memdesc:ga048b776c3102a5057b154c0a3dfabf6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">strpbrk()の逆走査版です。 <br /></td></tr>
+<tr class="separator:ga048b776c3102a5057b154c0a3dfabf6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga794c5a964c6ef3e7c51a486b0a2ceef5"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga794c5a964c6ef3e7c51a486b0a2ceef5">x_strrstrip</a> (char *str, const char *space)</td></tr>
+<tr class="memdesc:ga794c5a964c6ef3e7c51a486b0a2ceef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列の後ろからspaceに含まれる文字列を取り除いた結果を返します。  <a href="group__xstring.html#ga794c5a964c6ef3e7c51a486b0a2ceef5">[詳解]</a><br /></td></tr>
+<tr class="separator:ga794c5a964c6ef3e7c51a486b0a2ceef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga133a91b825d64574d7b5007f84272511"><td class="memItemLeft" align="right" valign="top">
+char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga133a91b825d64574d7b5007f84272511">x_strskipchr</a> (const char *s, int c)</td></tr>
+<tr class="memdesc:ga133a91b825d64574d7b5007f84272511"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列sの先頭にcが続く間読み飛ばし、そのポインタを返します <br /></td></tr>
+<tr class="separator:ga133a91b825d64574d7b5007f84272511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8eadb127a5b50fee28ed680666cb10e0"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga8eadb127a5b50fee28ed680666cb10e0">x_strstrip</a> (char *str, const char *space)</td></tr>
+<tr class="memdesc:ga8eadb127a5b50fee28ed680666cb10e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列の前後からspaceに含まれる文字列を取り除いた結果を返します。  <a href="group__xstring.html#ga8eadb127a5b50fee28ed680666cb10e0">[詳解]</a><br /></td></tr>
+<tr class="separator:ga8eadb127a5b50fee28ed680666cb10e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3ad89471e0ed4ab3c887d252c1002cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#gaf3ad89471e0ed4ab3c887d252c1002cb">x_strtobool</a> (const char *str, bool def, bool *ok)</td></tr>
+<tr class="memdesc:gaf3ad89471e0ed4ab3c887d252c1002cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列をboolに変換して返します。  <a href="group__xstring.html#gaf3ad89471e0ed4ab3c887d252c1002cb">[詳解]</a><br /></td></tr>
+<tr class="separator:gaf3ad89471e0ed4ab3c887d252c1002cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga68fdc02723b77ed4e985d1b3eae48883"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga68fdc02723b77ed4e985d1b3eae48883">x_strtodouble</a> (const char *str, double def, bool *ok)</td></tr>
+<tr class="memdesc:ga68fdc02723b77ed4e985d1b3eae48883"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列をdoubleに変換して返します。  <a href="group__xstring.html#ga68fdc02723b77ed4e985d1b3eae48883">[詳解]</a><br /></td></tr>
+<tr class="separator:ga68fdc02723b77ed4e985d1b3eae48883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga563e96b8ac8cc4e4685451a973d97c64"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga563e96b8ac8cc4e4685451a973d97c64">x_strtofloat</a> (const char *str, float def, bool *ok)</td></tr>
+<tr class="memdesc:ga563e96b8ac8cc4e4685451a973d97c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列をfloatに変換して返します。  <a href="group__xstring.html#ga563e96b8ac8cc4e4685451a973d97c64">[詳解]</a><br /></td></tr>
+<tr class="separator:ga563e96b8ac8cc4e4685451a973d97c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9cac5b9e16641910e8f1d536a859b681"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga9cac5b9e16641910e8f1d536a859b681">x_strtoint32</a> (const char *str, int32_t def, bool *ok)</td></tr>
+<tr class="memdesc:ga9cac5b9e16641910e8f1d536a859b681"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列をint32_tに変換して返します。  <a href="group__xstring.html#ga9cac5b9e16641910e8f1d536a859b681">[詳解]</a><br /></td></tr>
+<tr class="separator:ga9cac5b9e16641910e8f1d536a859b681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga35ded307a8d31dda4d3f022a929e553e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#ga35ded307a8d31dda4d3f022a929e553e">x_strtolower</a> (char *str)</td></tr>
+<tr class="memdesc:ga35ded307a8d31dda4d3f022a929e553e"><td class="mdescLeft">&#160;</td><td class="mdescRight">strに含まれるアルファベットを全て小文字に変換して返します  <a href="group__xstring.html#ga35ded307a8d31dda4d3f022a929e553e">[詳解]</a><br /></td></tr>
+<tr class="separator:ga35ded307a8d31dda4d3f022a929e553e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab36a54b42a85a3af4c4b8be36d48bcbe"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga5cc0f4c9468cbd29423c6d9bdb59d6e1">XOpenMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#gab36a54b42a85a3af4c4b8be36d48bcbe">x_strtomode</a> (const char *modestr)</td></tr>
+<tr class="memdesc:gab36a54b42a85a3af4c4b8be36d48bcbe"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>"r", "r+"</code>等のfopen()で使用するモード指定文字列をXOpenModeに変換して返します <br /></td></tr>
+<tr class="separator:gab36a54b42a85a3af4c4b8be36d48bcbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabbb1b4a26f2037955e98ca2fac2601e0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#gabbb1b4a26f2037955e98ca2fac2601e0">x_strtouint32</a> (const char *str, uint32_t def, bool *ok)</td></tr>
+<tr class="memdesc:gabbb1b4a26f2037955e98ca2fac2601e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列をuint32_tに変換して返します。  <a href="group__xstring.html#gabbb1b4a26f2037955e98ca2fac2601e0">[詳解]</a><br /></td></tr>
+<tr class="separator:gabbb1b4a26f2037955e98ca2fac2601e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac60ab2fa518466d3836666cd92cc86d1"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstring.html#gac60ab2fa518466d3836666cd92cc86d1">x_strtoupper</a> (char *str)</td></tr>
+<tr class="memdesc:gac60ab2fa518466d3836666cd92cc86d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">strに含まれるアルファベットを全て大文字に変換して返します  <a href="group__xstring.html#gac60ab2fa518466d3836666cd92cc86d1">[詳解]</a><br /></td></tr>
+<tr class="separator:gac60ab2fa518466d3836666cd92cc86d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>標準Cライブラリstring.hの拡張定義 </p>
+<dl class="section author"><dt>著者</dt><dd>MaskedW </dd></dl>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_295ce2a6370ae0a688a0222b881c77ca.html">picox</a></li><li class="navelem"><a class="el" href="dir_334975c5f7f258e1ec06bfc6b10c4fd2.html">core</a></li><li class="navelem"><a class="el" href="dir_db566c2ae50ab4e7ff384a2af9bd29a2.html">detail</a></li><li class="navelem"><a class="el" href="xstring_8h.html">xstring.h</a></li>
+    <li class="footer">2016年05月06日(金) 17時21分20秒作成 - picox / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

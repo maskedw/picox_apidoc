@@ -1,0 +1,1286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>picox: Xvfs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">picox
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li class="current"><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('group__xvfs.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">Xvfs<div class="ingroups"><a class="el" href="group__filesystem.html">Filesystem</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>異なるファイルシステムを共通のインターフェースで操作するための抽象化層です  
+<a href="#details">[詳解]</a></p>
+<div class="dynheader">
+Xvfs 連携図</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="group__xvfs.png" border="0" alt="" usemap="#group____xvfs"/>
+<map name="group____xvfs" id="group____xvfs">
+<area shape="rect" id="node1" href="group__filesystem.html" title="Filesystem" alt="" coords="6,5,93,32"/>
+</map>
+</td></tr></table></center>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:gaf4af770c6e683ebd7f771df1675cd690"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf4af770c6e683ebd7f771df1675cd690"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_VFS_TAG</b>&#160;&#160;&#160;(<a class="el" href="group__xstddef.html#ga0e495ec9a611df7a9dc686ec49aa64be">X_MAKE_TAG</a>('X', 'V', 'I', 'F'))</td></tr>
+<tr class="separator:gaf4af770c6e683ebd7f771df1675cd690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ga79bfd60579ae3e465780953a9d3d2def"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga79bfd60579ae3e465780953a9d3d2def">xvfs_chdir</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path)</td></tr>
+<tr class="memdesc:ga79bfd60579ae3e465780953a9d3d2def"><td class="mdescLeft">&#160;</td><td class="mdescRight">カレントディレクトリを変更します  <a href="#ga79bfd60579ae3e465780953a9d3d2def">[詳解]</a><br /></td></tr>
+<tr class="separator:ga79bfd60579ae3e465780953a9d3d2def"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb63fd227eb02fd07446ba7a76dcfb4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#gaeb63fd227eb02fd07446ba7a76dcfb4d">xvfs_close</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp)</td></tr>
+<tr class="memdesc:gaeb63fd227eb02fd07446ba7a76dcfb4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルをクローズします  <a href="#gaeb63fd227eb02fd07446ba7a76dcfb4d">[詳解]</a><br /></td></tr>
+<tr class="separator:gaeb63fd227eb02fd07446ba7a76dcfb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71bc611d87c9da69536da8cc1bdf53c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga71bc611d87c9da69536da8cc1bdf53c7">xvfs_closedir</a> (<a class="el" href="struct_x_dir.html">XDir</a> *dir)</td></tr>
+<tr class="memdesc:ga71bc611d87c9da69536da8cc1bdf53c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">ディレクトリをクローズします  <a href="#ga71bc611d87c9da69536da8cc1bdf53c7">[詳解]</a><br /></td></tr>
+<tr class="separator:ga71bc611d87c9da69536da8cc1bdf53c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9597f50d535527984f08d567397f1c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#gae9597f50d535527984f08d567397f1c7">xvfs_copyfile</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *src, const char *dst)</td></tr>
+<tr class="memdesc:gae9597f50d535527984f08d567397f1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルをコピーします  <a href="#gae9597f50d535527984f08d567397f1c7">[詳解]</a><br /></td></tr>
+<tr class="separator:gae9597f50d535527984f08d567397f1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c1d4fc80acec9eef1edc6ac2949d7d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga7c1d4fc80acec9eef1edc6ac2949d7d9">xvfs_copyfile2</a> (<a class="el" href="struct_x_file.html">XFile</a> *src, <a class="el" href="struct_x_file.html">XFile</a> *dst)</td></tr>
+<tr class="memdesc:ga7c1d4fc80acec9eef1edc6ac2949d7d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルをコピーします  <a href="#ga7c1d4fc80acec9eef1edc6ac2949d7d9">[詳解]</a><br /></td></tr>
+<tr class="separator:ga7c1d4fc80acec9eef1edc6ac2949d7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed739af858126aaaa631086d59c60a6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#gaed739af858126aaaa631086d59c60a6a">xvfs_copytree</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *src, const char *dst)</td></tr>
+<tr class="memdesc:gaed739af858126aaaa631086d59c60a6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ディレクトリツリーをコピーします  <a href="#gaed739af858126aaaa631086d59c60a6a">[詳解]</a><br /></td></tr>
+<tr class="separator:gaed739af858126aaaa631086d59c60a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6716d0494e9ee364da4bc9dbc55f5aae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga6716d0494e9ee364da4bc9dbc55f5aae">xvfs_exists</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path, bool *exists)</td></tr>
+<tr class="memdesc:ga6716d0494e9ee364da4bc9dbc55f5aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">パスが存在するかどうかを判定します  <a href="#ga6716d0494e9ee364da4bc9dbc55f5aae">[詳解]</a><br /></td></tr>
+<tr class="separator:ga6716d0494e9ee364da4bc9dbc55f5aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7af89aa71af3d27e4b036a0c73d72714"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga7af89aa71af3d27e4b036a0c73d72714">xvfs_flush</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp)</td></tr>
+<tr class="memdesc:ga7af89aa71af3d27e4b036a0c73d72714"><td class="mdescLeft">&#160;</td><td class="mdescRight">バッファされたデータを出力します  <a href="#ga7af89aa71af3d27e4b036a0c73d72714">[詳解]</a><br /></td></tr>
+<tr class="separator:ga7af89aa71af3d27e4b036a0c73d72714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ae46549fa58afc31a53bc09a3fd58bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0ae46549fa58afc31a53bc09a3fd58bf"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga0ae46549fa58afc31a53bc09a3fd58bf">xvfs_getc</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp)</td></tr>
+<tr class="memdesc:ga0ae46549fa58afc31a53bc09a3fd58bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルから1文字を読み込みます <br /></td></tr>
+<tr class="separator:ga0ae46549fa58afc31a53bc09a3fd58bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11e3b8ac67a90d30b37f0ee5d9650a1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga11e3b8ac67a90d30b37f0ee5d9650a1d">xvfs_getcwd</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, char *buf, size_t size)</td></tr>
+<tr class="memdesc:ga11e3b8ac67a90d30b37f0ee5d9650a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">カレントディレクトリを取得します  <a href="#ga11e3b8ac67a90d30b37f0ee5d9650a1d">[詳解]</a><br /></td></tr>
+<tr class="separator:ga11e3b8ac67a90d30b37f0ee5d9650a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f59a0630a1e3d928eff9033b042533d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga4f59a0630a1e3d928eff9033b042533d">xvfs_gets</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp, char *dst, size_t size, char **result, bool *overflow)</td></tr>
+<tr class="memdesc:ga4f59a0630a1e3d928eff9033b042533d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルから1行を読み込みます  <a href="#ga4f59a0630a1e3d928eff9033b042533d">[詳解]</a><br /></td></tr>
+<tr class="separator:ga4f59a0630a1e3d928eff9033b042533d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38242d6be44be8ab5797db2c9b4e5c6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_x_stream.html">XStream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga38242d6be44be8ab5797db2c9b4e5c6d">xvfs_init_stream</a> (<a class="el" href="struct_x_stream.html">XStream</a> *stream, <a class="el" href="struct_x_file.html">XFile</a> *fp)</td></tr>
+<tr class="separator:ga38242d6be44be8ab5797db2c9b4e5c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab897dceef1d46e2def7c83384fc940e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#gab897dceef1d46e2def7c83384fc940e0">xvfs_is_directory</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path, bool *isdir)</td></tr>
+<tr class="memdesc:gab897dceef1d46e2def7c83384fc940e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">パスがディレクトリかどうかを判定します  <a href="#gab897dceef1d46e2def7c83384fc940e0">[詳解]</a><br /></td></tr>
+<tr class="separator:gab897dceef1d46e2def7c83384fc940e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58f3b2ca0c1638ec33ce6ce1effc47da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga58f3b2ca0c1638ec33ce6ce1effc47da">xvfs_is_regular</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path, bool *isreg)</td></tr>
+<tr class="memdesc:ga58f3b2ca0c1638ec33ce6ce1effc47da"><td class="mdescLeft">&#160;</td><td class="mdescRight">パスが通常ファイルかどうかを判定します  <a href="#ga58f3b2ca0c1638ec33ce6ce1effc47da">[詳解]</a><br /></td></tr>
+<tr class="separator:ga58f3b2ca0c1638ec33ce6ce1effc47da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd60a9b4c9bcd329380f076049d7400e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#gabd60a9b4c9bcd329380f076049d7400e">xvfs_makedirs</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path, bool exist_ok)</td></tr>
+<tr class="memdesc:gabd60a9b4c9bcd329380f076049d7400e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ディレクトリを作成します  <a href="#gabd60a9b4c9bcd329380f076049d7400e">[詳解]</a><br /></td></tr>
+<tr class="separator:gabd60a9b4c9bcd329380f076049d7400e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga202958fd2255973eaf823edd3e9957d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga202958fd2255973eaf823edd3e9957d6">xvfs_mkdir</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path)</td></tr>
+<tr class="memdesc:ga202958fd2255973eaf823edd3e9957d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">ディレクトリを作成します  <a href="#ga202958fd2255973eaf823edd3e9957d6">[詳解]</a><br /></td></tr>
+<tr class="separator:ga202958fd2255973eaf823edd3e9957d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b0b71e8995a1f12a54ee83d0dd085b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga6b0b71e8995a1f12a54ee83d0dd085b0">xvfs_open</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path, <a class="el" href="group__xstddef.html#ga5cc0f4c9468cbd29423c6d9bdb59d6e1">XOpenMode</a> mode, <a class="el" href="struct_x_file.html">XFile</a> **o_fp)</td></tr>
+<tr class="memdesc:ga6b0b71e8995a1f12a54ee83d0dd085b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルをオープンします  <a href="#ga6b0b71e8995a1f12a54ee83d0dd085b0">[詳解]</a><br /></td></tr>
+<tr class="separator:ga6b0b71e8995a1f12a54ee83d0dd085b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3391848c56c1503097c6652bf8f3238f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga3391848c56c1503097c6652bf8f3238f">xvfs_opendir</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path, <a class="el" href="struct_x_dir.html">XDir</a> **o_dir)</td></tr>
+<tr class="memdesc:ga3391848c56c1503097c6652bf8f3238f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ディレクトリをオープンします  <a href="#ga3391848c56c1503097c6652bf8f3238f">[詳解]</a><br /></td></tr>
+<tr class="separator:ga3391848c56c1503097c6652bf8f3238f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3fec688c2459db67898381e7f96b9cbe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3fec688c2459db67898381e7f96b9cbe"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga3fec688c2459db67898381e7f96b9cbe">xvfs_printf</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp, const char *fmt,...)</td></tr>
+<tr class="memdesc:ga3fec688c2459db67898381e7f96b9cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルにprintf形式で文字列を書き込みます <br /></td></tr>
+<tr class="separator:ga3fec688c2459db67898381e7f96b9cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7ff67ae8bdd36c4148a9feac5b0ea0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad7ff67ae8bdd36c4148a9feac5b0ea0c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#gad7ff67ae8bdd36c4148a9feac5b0ea0c">xvfs_putc</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp, int c)</td></tr>
+<tr class="memdesc:gad7ff67ae8bdd36c4148a9feac5b0ea0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルに1文字を書き込みます <br /></td></tr>
+<tr class="separator:gad7ff67ae8bdd36c4148a9feac5b0ea0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61a57319436e541c901f5be5ad39899a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga61a57319436e541c901f5be5ad39899a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga61a57319436e541c901f5be5ad39899a">xvfs_puts</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp, const char *str)</td></tr>
+<tr class="memdesc:ga61a57319436e541c901f5be5ad39899a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルに文字列を書き込みます <br /></td></tr>
+<tr class="separator:ga61a57319436e541c901f5be5ad39899a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58984709d55b60424c75d7e0f55c98d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga58984709d55b60424c75d7e0f55c98d7">xvfs_read</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp, void *dst, size_t size, size_t *nread)</td></tr>
+<tr class="memdesc:ga58984709d55b60424c75d7e0f55c98d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルからデータを読み込みます  <a href="#ga58984709d55b60424c75d7e0f55c98d7">[詳解]</a><br /></td></tr>
+<tr class="separator:ga58984709d55b60424c75d7e0f55c98d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab6301c3f59e328276c0a02fc9acc17b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#gab6301c3f59e328276c0a02fc9acc17b9">xvfs_readdir</a> (<a class="el" href="struct_x_dir.html">XDir</a> *dir, <a class="el" href="struct_x_dir_ent.html">XDirEnt</a> *dirent, <a class="el" href="struct_x_dir_ent.html">XDirEnt</a> **result)</td></tr>
+<tr class="memdesc:gab6301c3f59e328276c0a02fc9acc17b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ディレクトリから要素を読み込みます  <a href="#gab6301c3f59e328276c0a02fc9acc17b9">[詳解]</a><br /></td></tr>
+<tr class="separator:gab6301c3f59e328276c0a02fc9acc17b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b11e8d18fe2b01350bd47fd422bc1df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga0b11e8d18fe2b01350bd47fd422bc1df">xvfs_remove</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path)</td></tr>
+<tr class="memdesc:ga0b11e8d18fe2b01350bd47fd422bc1df"><td class="mdescLeft">&#160;</td><td class="mdescRight">エントリを削除します  <a href="#ga0b11e8d18fe2b01350bd47fd422bc1df">[詳解]</a><br /></td></tr>
+<tr class="separator:ga0b11e8d18fe2b01350bd47fd422bc1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga768b99cd973473c988396e6c91af98da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga768b99cd973473c988396e6c91af98da">xvfs_rename</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *oldpath, const char *newpath)</td></tr>
+<tr class="memdesc:ga768b99cd973473c988396e6c91af98da"><td class="mdescLeft">&#160;</td><td class="mdescRight">エントリの名前や位置を変更します  <a href="#ga768b99cd973473c988396e6c91af98da">[詳解]</a><br /></td></tr>
+<tr class="separator:ga768b99cd973473c988396e6c91af98da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga65957daeeb127f62bd7b647b3bfb8889"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga65957daeeb127f62bd7b647b3bfb8889">xvfs_rmtree</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path)</td></tr>
+<tr class="memdesc:ga65957daeeb127f62bd7b647b3bfb8889"><td class="mdescLeft">&#160;</td><td class="mdescRight">ディレクトリツリーを削除します  <a href="#ga65957daeeb127f62bd7b647b3bfb8889">[詳解]</a><br /></td></tr>
+<tr class="separator:ga65957daeeb127f62bd7b647b3bfb8889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4cee8299cc93baca9b177a75e5e66da2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga4cee8299cc93baca9b177a75e5e66da2">xvfs_seek</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp, <a class="el" href="group__xstddef.html#ga0bdeff19d49868d285c1bb23ca87bf76">XOffset</a> pos, <a class="el" href="group__xstddef.html#ga988c074c9467b48a58b58808cd980ea7">XSeekMode</a> whence)</td></tr>
+<tr class="memdesc:ga4cee8299cc93baca9b177a75e5e66da2"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイル位置を変更します  <a href="#ga4cee8299cc93baca9b177a75e5e66da2">[詳解]</a><br /></td></tr>
+<tr class="separator:ga4cee8299cc93baca9b177a75e5e66da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8db2123dc934a4bb6ed5070c8b1c8114"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga8db2123dc934a4bb6ed5070c8b1c8114">xvfs_stat</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path, <a class="el" href="struct_x_stat.html">XStat</a> *statbuf)</td></tr>
+<tr class="memdesc:ga8db2123dc934a4bb6ed5070c8b1c8114"><td class="mdescLeft">&#160;</td><td class="mdescRight">エントリの状態を取得します  <a href="#ga8db2123dc934a4bb6ed5070c8b1c8114">[詳解]</a><br /></td></tr>
+<tr class="separator:ga8db2123dc934a4bb6ed5070c8b1c8114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f9c849768cfed8ae181a1e9afde58de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga8f9c849768cfed8ae181a1e9afde58de">xvfs_tell</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp, <a class="el" href="group__xstddef.html#gadcc4f92c69a1bbdb4449015227943685">XSize</a> *pos)</td></tr>
+<tr class="memdesc:ga8f9c849768cfed8ae181a1e9afde58de"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイル位置を取得します  <a href="#ga8f9c849768cfed8ae181a1e9afde58de">[詳解]</a><br /></td></tr>
+<tr class="separator:ga8f9c849768cfed8ae181a1e9afde58de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac93fa9664be488b850c0ad0a5bc77f9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#gac93fa9664be488b850c0ad0a5bc77f9a">xvfs_utime</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path, <a class="el" href="group__xstddef.html#ga0546cc405ace3f593aa4a09ccc2c88bb">XTime</a> time)</td></tr>
+<tr class="memdesc:gac93fa9664be488b850c0ad0a5bc77f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">エントリのタイムスタンプを変更します  <a href="#gac93fa9664be488b850c0ad0a5bc77f9a">[詳解]</a><br /></td></tr>
+<tr class="separator:gac93fa9664be488b850c0ad0a5bc77f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b2078783baf382572ae0f05972daf80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5b2078783baf382572ae0f05972daf80"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga5b2078783baf382572ae0f05972daf80">xvfs_vprintf</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp, const char *fmt, va_list args)</td></tr>
+<tr class="memdesc:ga5b2078783baf382572ae0f05972daf80"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルにvprintf形式で文字列を書き込みます <br /></td></tr>
+<tr class="separator:ga5b2078783baf382572ae0f05972daf80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58ec2a6c28aa1d5c4a900f74e4552042"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga58ec2a6c28aa1d5c4a900f74e4552042">xvfs_walktree</a> (<a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs, const char *path, <a class="el" href="group__xfscore.html#ga7f4f16ed79eaa08a401d5eb561fac3a6">XFsTreeWalker</a> walker, void *userptr)</td></tr>
+<tr class="memdesc:ga58ec2a6c28aa1d5c4a900f74e4552042"><td class="mdescLeft">&#160;</td><td class="mdescRight">ディレクトリツリーを走査します  <a href="#ga58ec2a6c28aa1d5c4a900f74e4552042">[詳解]</a><br /></td></tr>
+<tr class="separator:ga58ec2a6c28aa1d5c4a900f74e4552042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ffef677a070ebb1ba5dd6ac812a5fd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xvfs.html#ga4ffef677a070ebb1ba5dd6ac812a5fd5">xvfs_write</a> (<a class="el" href="struct_x_file.html">XFile</a> *fp, const void *src, size_t size, size_t *nwritten)</td></tr>
+<tr class="memdesc:ga4ffef677a070ebb1ba5dd6ac812a5fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルにデータを書き込みます  <a href="#ga4ffef677a070ebb1ba5dd6ac812a5fd5">[詳解]</a><br /></td></tr>
+<tr class="separator:ga4ffef677a070ebb1ba5dd6ac812a5fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<p>異なるファイルシステムを共通のインターフェースで操作するための抽象化層です </p>
+<p>LinuxやWindowsではfopen()等の標準のファイル操作APIの下位実装にファイルシステ ムの違いを隠蔽する抽象化層が存在しているため、ユーザーアプリケーションからは 、アプリケーションからはファイルシステムの違いを意識せず扱うことができます。</p>
+<p>しかし、特定のランタイムライブラリを持たない小規模な組込みシステムでは、ファ イルシステムドライバ(FatFs等)は抽象化層なしで直接使用できるように実装されま す。</p>
+<p>これらのドライバをpicoxが定義する仮想ファイルシステムインターフェースにに合 わせてラップすることで、特定のファイルシステムに依存しない共通のファイル操作 を実現します。 </p>
+<h2 class="groupheader">関数詳解</h2>
+<a class="anchor" id="ga79bfd60579ae3e465780953a9d3d2def"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_chdir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *&#160;</td>
+          <td class="paramname"><em>vfs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>カレントディレクトリを変更します </p>
+<dl class="section pre"><dt>事前条件</dt><dd>+path != NULL </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaeb63fd227eb02fd07446ba7a76dcfb4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_close </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_file.html">XFile</a> *&#160;</td>
+          <td class="paramname"><em>fp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ファイルをクローズします </p>
+<p>クローズされたXFileオブジェクトは無効となり、以降のあらゆる操作は不正となります。 クローズに失敗した場合も、無効となるため、書き込みを行ったファイルはクローズ の前に明示的にフラッシュを行ったほうがエラー処理を行いやすいです。</p>
+<p>fpがNULLを指す場合は何も処理をせずに正常終了を返します。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga71bc611d87c9da69536da8cc1bdf53c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_closedir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_dir.html">XDir</a> *&#160;</td>
+          <td class="paramname"><em>dir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ディレクトリをクローズします </p>
+<p>クローズされたディレクトリは無効となり、以降のあらゆる操作は不正となります。</p>
+<p>dirがNULLを指す場合は何も処理をせずに正常終了を返します。 </p>
+
+</div>
+</div>
+<a class="anchor" id="gae9597f50d535527984f08d567397f1c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_copyfile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *&#160;</td>
+          <td class="paramname"><em>vfs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ファイルをコピーします </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>src != NULL</li>
+<li>dst != NULL</li>
+</ul>
+</dd></dl>
+<p>srcからdstにコピーを行います。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga7c1d4fc80acec9eef1edc6ac2949d7d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_copyfile2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_file.html">XFile</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_x_file.html">XFile</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ファイルをコピーします </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>src != NULL</li>
+<li>dst != NULL</li>
+</ul>
+</dd></dl>
+<p>srcからdstにコピーを行います。 </p>
+
+</div>
+</div>
+<a class="anchor" id="gaed739af858126aaaa631086d59c60a6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_copytree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *&#160;</td>
+          <td class="paramname"><em>vfs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ディレクトリツリーをコピーします </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>src != NULL</li>
+<li>dst != NULL</li>
+</ul>
+</dd></dl>
+<p>dstが示すターゲットディレクトリは、既存のもので無い必要があります。</p>
+<p>失敗した場合でも、途中で作成されたファイルはそのまま残ります。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga6716d0494e9ee364da4bc9dbc55f5aae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_exists </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *&#160;</td>
+          <td class="paramname"><em>vfs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>exists</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>パスが存在するかどうかを判定します </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>path != NULL </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7af89aa71af3d27e4b036a0c73d72714"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_flush </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_file.html">XFile</a> *&#160;</td>
+          <td class="paramname"><em>fp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>バッファされたデータを出力します </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>fp != NULL</li>
+</ul>
+</dd></dl>
+<p>ファイルシステムの実装次第ですが、通常はIOアクセスを減らすために、writeされ たデータはある程度メモリ上にバッファリングされます。</p>
+<p>ファイルへの書き込みを確実にしたいタイミングではこの関数でバッファリングを強 制的にフラッシュしてください。</p>
+<p>クローズやシークの際には暗黙的にフラッシュが呼び出されます。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga11e3b8ac67a90d30b37f0ee5d9650a1d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_getcwd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *&#160;</td>
+          <td class="paramname"><em>vfs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>カレントディレクトリを取得します </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>buf != NULL</li>
+</ul>
+</dd></dl>
+<p>カレントディレクトリパスがsizeバイトに収まらない場合はエラーとなります。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga4f59a0630a1e3d928eff9033b042533d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_gets </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_file.html">XFile</a> *&#160;</td>
+          <td class="paramname"><em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>overflow</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ファイルから1行を読み込みます </p>
+<dl class="section see"><dt>参照</dt><dd><a class="el" href="group__xstream.html#gae99cb19d94fcd462c58011897706691d" title="ストリームから1行を取り出します ">xstream_gets</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga38242d6be44be8ab5797db2c9b4e5c6d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_x_stream.html">XStream</a>* xvfs_init_stream </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_stream.html">XStream</a> *&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_x_file.html">XFile</a> *&#160;</td>
+          <td class="paramname"><em>fp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ストリームをファイルストリームとして初期化します </p>
+
+</div>
+</div>
+<a class="anchor" id="gab897dceef1d46e2def7c83384fc940e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_is_directory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *&#160;</td>
+          <td class="paramname"><em>vfs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>isdir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>パスがディレクトリかどうかを判定します </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>path != NULL </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga58f3b2ca0c1638ec33ce6ce1effc47da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_is_regular </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *&#160;</td>
+          <td class="paramname"><em>vfs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>isreg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>パスが通常ファイルかどうかを判定します </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>path != NULL </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gabd60a9b4c9bcd329380f076049d7400e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_makedirs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *&#160;</td>
+          <td class="paramname"><em>vfs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>exist_ok</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ディレクトリを作成します </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>path != NULL</li>
+</ul>
+</dd></dl>
+<p>パスの末端のディレクトリを作成するために必要な中間のディレクトリも含めて作成 します。</p>
+<p><code>exist_ok == true</code>の場合は、末端のディレクトリが既に存在していた場合も正常終 了を返します。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga202958fd2255973eaf823edd3e9957d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_mkdir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *&#160;</td>
+          <td class="paramname"><em>vfs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ディレクトリを作成します </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>path != NULL</li>
+</ul>
+</dd></dl>
+<p>pathが示すディレクトリの作成を試みます。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga6b0b71e8995a1f12a54ee83d0dd085b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_open </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *&#160;</td>
+          <td class="paramname"><em>vfs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__xstddef.html#ga5cc0f4c9468cbd29423c6d9bdb59d6e1">XOpenMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_x_file.html">XFile</a> **&#160;</td>
+          <td class="paramname"><em>o_fp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ファイルをオープンします </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>path != NULL</li>
+<li>o_fp != NULL</li>
+</ul>
+</dd></dl>
+<p>pathが示すファイルをオープンし、そのポインタを*o_fpにセットします。失敗した 場合は、*o_fpにはNULLがセットされます。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga3391848c56c1503097c6652bf8f3238f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_opendir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *&#160;</td>
+          <td class="paramname"><em>vfs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_x_dir.html">XDir</a> **&#160;</td>
+          <td class="paramname"><em>o_dir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ディレクトリをオープンします </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>path != NULL</li>
+<li>o_dir != NULL</li>
+</ul>
+</dd></dl>
+<p>pathが示すディレクトリをオープンし、そのポインタを*o_dirにセットします。 失敗した場合は、*o_dirにはNULLがセットされます。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga58984709d55b60424c75d7e0f55c98d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_read </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_file.html">XFile</a> *&#160;</td>
+          <td class="paramname"><em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>nread</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ファイルからデータを読み込みます </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>fp != NULL</li>
+<li>dst != NULL</li>
+</ul>
+</dd></dl>
+<p>dstにsizeバイトの読み込みを試み、nreadがNULLでなければ、読み込みに成功したバ イト数を格納します。</p>
+<p>関数が正常に終了し、size != *nreadであった場合は、ファイル終端に達したことを 意味します。 </p>
+
+</div>
+</div>
+<a class="anchor" id="gab6301c3f59e328276c0a02fc9acc17b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_readdir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_dir.html">XDir</a> *&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_x_dir_ent.html">XDirEnt</a> *&#160;</td>
+          <td class="paramname"><em>dirent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_x_dir_ent.html">XDirEnt</a> **&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ディレクトリから要素を読み込みます </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>dir != NULL</li>
+<li>dirent != NULL</li>
+<li>result != NULL</li>
+</ul>
+</dd></dl>
+<p>読み込みはdirentが指す領域に行われ、読み込みに成功すると、*resultにはdirent が格納されます。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga0b11e8d18fe2b01350bd47fd422bc1df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *&#160;</td>
+          <td class="paramname"><em>vfs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エントリを削除します </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>path != NULL</li>
+</ul>
+</dd></dl>
+<p>パスが示すエントリをファイルシステムから削除します。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga768b99cd973473c988396e6c91af98da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_rename </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *&#160;</td>
+          <td class="paramname"><em>vfs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>oldpath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>newpath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エントリの名前や位置を変更します </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>oldpath != NULL</li>
+<li>newpath != NULL</li>
+</ul>
+</dd></dl>
+<p>oldpathが示すエントリをnewpathに移動します。</p>
+<dl class="section note"><dt>覚え書き</dt><dd>ファイルシステムにとって名前や位置の変更は、通常はコストの低い処理ですが、 xunionfs_rename()で移動がファイルシステムをまたがる場合、ファイルをコピーし 、元ファイルを削除するという処理が行われます。思わぬ高負荷の要因となることが あるため注意しましょう。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga65957daeeb127f62bd7b647b3bfb8889"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_rmtree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *&#160;</td>
+          <td class="paramname"><em>vfs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ディレクトリツリーを削除します </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>path != NULL</li>
+</ul>
+</dd></dl>
+<p>失敗した場合でも、途中で削除されたファイルは元にはもどりません。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga4cee8299cc93baca9b177a75e5e66da2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_seek </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_file.html">XFile</a> *&#160;</td>
+          <td class="paramname"><em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__xstddef.html#ga0bdeff19d49868d285c1bb23ca87bf76">XOffset</a>&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__xstddef.html#ga988c074c9467b48a58b58808cd980ea7">XSeekMode</a>&#160;</td>
+          <td class="paramname"><em>whence</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ファイル位置を変更します </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>fp != NULL</li>
+</ul>
+</dd></dl>
+<p>新たな位置はwhenceで指定された位置にoffsetバイトを加えることによって与えられ ます。</p>
+<p>ファイル位置が0未満となる場合はエラーを返しますが、ファイルサイズを越える位 置へのシークは有効です。</p>
+<p>ファイルサイズを超えた位置に書き込むを行うと、空き空間は不定のデータで埋めら れます。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga8db2123dc934a4bb6ed5070c8b1c8114"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_stat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *&#160;</td>
+          <td class="paramname"><em>vfs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_x_stat.html">XStat</a> *&#160;</td>
+          <td class="paramname"><em>statbuf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エントリの状態を取得します </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>path != NULL</li>
+<li>statbuf != NULL</li>
+</ul>
+</dd></dl>
+<p>パスが示すエントリの状態を*statbufに格納します。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga8f9c849768cfed8ae181a1e9afde58de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_tell </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_file.html">XFile</a> *&#160;</td>
+          <td class="paramname"><em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__xstddef.html#gadcc4f92c69a1bbdb4449015227943685">XSize</a> *&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ファイル位置を取得します </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>fp != NULL</li>
+<li>pos != NULL</li>
+</ul>
+</dd></dl>
+<p>read, write, seek等で移動するファイル位置の現在値をposに格納します。 </p>
+
+</div>
+</div>
+<a class="anchor" id="gac93fa9664be488b850c0ad0a5bc77f9a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_utime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *&#160;</td>
+          <td class="paramname"><em>vfs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__xstddef.html#ga0546cc405ace3f593aa4a09ccc2c88bb">XTime</a>&#160;</td>
+          <td class="paramname"><em>time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エントリのタイムスタンプを変更します </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>path != NULL</li>
+</ul>
+</dd></dl>
+<p>パスが示すエントリのタイムスタンプをtimeに変更します </p>
+
+</div>
+</div>
+<a class="anchor" id="ga58ec2a6c28aa1d5c4a900f74e4552042"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_walktree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *&#160;</td>
+          <td class="paramname"><em>vfs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__xfscore.html#ga7f4f16ed79eaa08a401d5eb561fac3a6">XFsTreeWalker</a>&#160;</td>
+          <td class="paramname"><em>walker</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ディレクトリツリーを走査します </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>path != NULL</li>
+<li>walker != NULL</li>
+</ul>
+</dd></dl>
+<p>パスが示すディレクトリを再帰的にたどり、各エントリに対してwalker()を呼び出し ます。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga4ffef677a070ebb1ba5dd6ac812a5fd5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xvfs_write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_file.html">XFile</a> *&#160;</td>
+          <td class="paramname"><em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>nwritten</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ファイルにデータを書き込みます </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>fp != NULL</li>
+<li>src != NULL</li>
+</ul>
+</dd></dl>
+<p>srcからファイルにsizeバイトの書き込みを試み、nwrittenがNULLでなければ、書き 込みに成功したバイト数を格納します。 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">2016年05月06日(金) 17時21分23秒作成 - picox / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

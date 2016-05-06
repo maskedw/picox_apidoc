@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>picox: xfatfs.c ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">picox
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('xfatfs_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">xfatfs.c ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="xfatfs_8h_source.html">picox/filesystem/xfatfs.h</a>&gt;</code><br />
+<code>#include &lt;ff.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+xfatfs.c の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="xfatfs_8c__incl.png" border="0" usemap="#xfatfs_8c" alt=""/></div>
+<map name="xfatfs_8c" id="xfatfs_8c">
+<area shape="rect" id="node3" href="xfatfs_8h.html" title="FatFsをバックエンドとするファイル操作定義 " alt="" coords="968,80,1131,107"/>
+<area shape="rect" id="node5" href="xfscore_8h.html" title="picox/filesystem/xfscore.h" alt="" coords="963,155,1136,181"/>
+<area shape="rect" id="node7" href="xcore_8h.html" title="picox/core/xcore.h" alt="" coords="985,304,1113,331"/>
+<area shape="rect" id="node51" href="xfpath_8h.html" title="ファイルパス操作ユーティリティ定義 " alt="" coords="1027,229,1193,256"/>
+<area shape="rect" id="node27" href="xconfig_8h.html" title="picox/xconfig.h" alt="" coords="821,379,931,405"/>
+<area shape="rect" id="node29" href="xcompiler_8h_source.html" title="picox/core/detail/xcompiler.h" alt="" coords="955,379,1143,405"/>
+<area shape="rect" id="node31" href="xpreprocessor_8h.html" title="プリプロセッサユーティリティ " alt="" coords="1167,379,1381,405"/>
+<area shape="rect" id="node33" href="xstddef_8h.html" title="共通の型やマクロ定義等 " alt="" coords="1406,379,1580,405"/>
+<area shape="rect" id="node35" href="xdebug_8h.html" title="デバッグログやassert等の定義 " alt="" coords="1605,379,1779,405"/>
+<area shape="rect" id="node37" href="xutils_8h.html" title="低レベルなあれこれ雑多なユーティリティ集 " alt="" coords="1804,379,1967,405"/>
+<area shape="rect" id="node39" href="xstring_8h.html" title="標準Cライブラリstring.hの拡張定義 " alt="" coords="1991,379,2161,405"/>
+<area shape="rect" id="node41" href="xstdlib_8h.html" title="主にmalloc系関数の定義 " alt="" coords="2185,379,2356,405"/>
+<area shape="rect" id="node43" href="xstream_8h.html" title="入出力を抽象化するストリーム定義 " alt="" coords="2380,379,2559,405"/>
+<area shape="rect" id="node45" href="xstdio_8h.html" title="stdio.h系関数定義 " alt="" coords="2583,379,2749,405"/>
+<area shape="rect" id="node47" href="xrandom_8h.html" title="擬似乱数生成定義 " alt="" coords="2774,379,2956,405"/>
+<area shape="rect" id="node49" href="xtime_8h.html" title="picox/core/detail/xtime.h" alt="" coords="2981,379,3144,405"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a782af811b059bce3e5416e094dba90c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a782af811b059bce3e5416e094dba90c2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__ASSERT_TAG</b>(p)            &#160;&#160;&#160;(X_ASSERT(((const <a class="el" href="struct_x_fat_fs.html">XFatFs</a>*)p)-&gt;m_tag == X_FATFS_TAG))</td></tr>
+<tr class="separator:a782af811b059bce3e5416e094dba90c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a384ae8da239b7eab65369d5b6289db8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a384ae8da239b7eab65369d5b6289db8a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__DECLARE_FINFO</b>(name)      &#160;&#160;&#160;FILINFO name</td></tr>
+<tr class="separator:a384ae8da239b7eab65369d5b6289db8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4762f6ba7d02835c673b94501d3f907"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4762f6ba7d02835c673b94501d3f907"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__EXIT_IF</b>(cond,  v)      &#160;&#160;&#160;<a class="el" href="group__xutils.html#ga6366a218d9bb57575f04dcbe50a76be2">X_ASSIGN_AND_GOTO_IF</a>(cond, err, v, x__exit)</td></tr>
+<tr class="separator:ac4762f6ba7d02835c673b94501d3f907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdb37f2e3dd91620ef4f8d1776f4b2a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abdb37f2e3dd91620ef4f8d1776f4b2a1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__GET_DIR_HANDLE</b>(dir)&#160;&#160;&#160;(&amp;(((X__Dir*)dir)-&gt;m_dirhandle))</td></tr>
+<tr class="separator:abdb37f2e3dd91620ef4f8d1776f4b2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5809d01bb84065070b7dbdfccb6d402b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5809d01bb84065070b7dbdfccb6d402b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__GET_FILE_HANDLE</b>(fp)&#160;&#160;&#160;(&amp;(((X__File*)fp)-&gt;m_filehandle))</td></tr>
+<tr class="separator:a5809d01bb84065070b7dbdfccb6d402b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae72321f98084745ec8fb0bf3441c9193"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae72321f98084745ec8fb0bf3441c9193"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__GET_FNAME</b>(finfo)            &#160;&#160;&#160;finfo.fname</td></tr>
+<tr class="separator:ae72321f98084745ec8fb0bf3441c9193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0df9a073b8a1f455cf3bb54bda36878f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0df9a073b8a1f455cf3bb54bda36878f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__VPOS_INVALID</b>&#160;&#160;&#160;(0xFFFFFFFF)</td></tr>
+<tr class="separator:a0df9a073b8a1f455cf3bb54bda36878f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a7d39f3cfc95a302811ce413ef94f3357"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d39f3cfc95a302811ce413ef94f3357"></a>
+static <a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>X__ToXError</b> (FRESULT fres)</td></tr>
+<tr class="separator:a7d39f3cfc95a302811ce413ef94f3357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52f7fbd934a93458da823fa362dd63cd"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xfatfs_chdir</b> (<a class="el" href="struct_x_fat_fs.html">XFatFs</a> *fs, const char *path)</td></tr>
+<tr class="separator:ga52f7fbd934a93458da823fa362dd63cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e6f60ef68dbd1ee100ff3e93e542999"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xfatfs_close</b> (<a class="el" href="struct_x_file.html">XFile</a> *fp)</td></tr>
+<tr class="separator:ga1e6f60ef68dbd1ee100ff3e93e542999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab110139e4b36f2280d2f6c06c037f61d"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xfatfs_closedir</b> (<a class="el" href="struct_x_dir.html">XDir</a> *dir)</td></tr>
+<tr class="separator:gab110139e4b36f2280d2f6c06c037f61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a78926823b78219508dc577148ca9db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfatfs.html#ga5a78926823b78219508dc577148ca9db">xfatfs_deinit</a> (<a class="el" href="struct_x_fat_fs.html">XFatFs</a> *fs)</td></tr>
+<tr class="memdesc:ga5a78926823b78219508dc577148ca9db"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルシステムの終了処理を行います  <a href="group__xfatfs.html#ga5a78926823b78219508dc577148ca9db">[詳解]</a><br /></td></tr>
+<tr class="separator:ga5a78926823b78219508dc577148ca9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga786eeda5a0e307ddb22752b4369bbbaf"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xfatfs_flush</b> (<a class="el" href="struct_x_file.html">XFile</a> *fp)</td></tr>
+<tr class="separator:ga786eeda5a0e307ddb22752b4369bbbaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf119d7dcf50fd2329ba582cebdf05493"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xfatfs_getcwd</b> (<a class="el" href="struct_x_fat_fs.html">XFatFs</a> *fs, char *buf, size_t size)</td></tr>
+<tr class="separator:gaf119d7dcf50fd2329ba582cebdf05493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4cfd1eeafcc2405cf510a1f2e7855a38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfatfs.html#ga4cfd1eeafcc2405cf510a1f2e7855a38">xfatfs_init</a> (<a class="el" href="struct_x_fat_fs.html">XFatFs</a> *fs)</td></tr>
+<tr class="memdesc:ga4cfd1eeafcc2405cf510a1f2e7855a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルシステムを初期化します  <a href="group__xfatfs.html#ga4cfd1eeafcc2405cf510a1f2e7855a38">[詳解]</a><br /></td></tr>
+<tr class="separator:ga4cfd1eeafcc2405cf510a1f2e7855a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67017bc0999bb670e6b96cfead4a90a4"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="struct_x_stream.html">XStream</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>xfatfs_init_stream</b> (<a class="el" href="struct_x_stream.html">XStream</a> *stream, <a class="el" href="struct_x_file.html">XFile</a> *fp)</td></tr>
+<tr class="separator:ga67017bc0999bb670e6b96cfead4a90a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6dfd74590751dbcc14851a2b8dc86f10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfatfs.html#ga6dfd74590751dbcc14851a2b8dc86f10">xfatfs_init_vfs</a> (<a class="el" href="struct_x_fat_fs.html">XFatFs</a> *fs, <a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs)</td></tr>
+<tr class="memdesc:ga6dfd74590751dbcc14851a2b8dc86f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">仮想ファイルシステムを初期化します  <a href="group__xfatfs.html#ga6dfd74590751dbcc14851a2b8dc86f10">[詳解]</a><br /></td></tr>
+<tr class="separator:ga6dfd74590751dbcc14851a2b8dc86f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad73329befbf6f8d479b38151bd481e6c"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xfatfs_mkdir</b> (<a class="el" href="struct_x_fat_fs.html">XFatFs</a> *fs, const char *path)</td></tr>
+<tr class="separator:gad73329befbf6f8d479b38151bd481e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1d4671cdeb6eb1357ba5d92c812b927"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xfatfs_open</b> (<a class="el" href="struct_x_fat_fs.html">XFatFs</a> *fs, const char *path, <a class="el" href="group__xstddef.html#ga5cc0f4c9468cbd29423c6d9bdb59d6e1">XOpenMode</a> mode, <a class="el" href="struct_x_file.html">XFile</a> **o_fp)</td></tr>
+<tr class="separator:gaa1d4671cdeb6eb1357ba5d92c812b927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d6aeb599e6908d001f9db0883f68faf"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xfatfs_opendir</b> (<a class="el" href="struct_x_fat_fs.html">XFatFs</a> *fs, const char *path, <a class="el" href="struct_x_dir.html">XDir</a> **o_dir)</td></tr>
+<tr class="separator:ga2d6aeb599e6908d001f9db0883f68faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga03f225ab9da3695c3bf5edcb56b20a62"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xfatfs_read</b> (<a class="el" href="struct_x_file.html">XFile</a> *fp, void *dst, size_t size, size_t *nread)</td></tr>
+<tr class="separator:ga03f225ab9da3695c3bf5edcb56b20a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9faf5388a39e962ad00db09be9382b49"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xfatfs_readdir</b> (<a class="el" href="struct_x_dir.html">XDir</a> *dir, <a class="el" href="struct_x_dir_ent.html">XDirEnt</a> *dirent, <a class="el" href="struct_x_dir_ent.html">XDirEnt</a> **result)</td></tr>
+<tr class="separator:ga9faf5388a39e962ad00db09be9382b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53009d99354daefc3d67392923497547"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xfatfs_remove</b> (<a class="el" href="struct_x_fat_fs.html">XFatFs</a> *fs, const char *path)</td></tr>
+<tr class="separator:ga53009d99354daefc3d67392923497547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga78302f37e9b9db78b618b7402c93142f"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xfatfs_rename</b> (<a class="el" href="struct_x_fat_fs.html">XFatFs</a> *fs, const char *oldpath, const char *newpath)</td></tr>
+<tr class="separator:ga78302f37e9b9db78b618b7402c93142f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f36fafb566d0ddc6aa1e6f9099cc7e7"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xfatfs_seek</b> (<a class="el" href="struct_x_file.html">XFile</a> *fp, <a class="el" href="group__xstddef.html#ga0bdeff19d49868d285c1bb23ca87bf76">XOffset</a> pos, <a class="el" href="group__xstddef.html#ga988c074c9467b48a58b58808cd980ea7">XSeekMode</a> whence)</td></tr>
+<tr class="separator:ga4f36fafb566d0ddc6aa1e6f9099cc7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c891c39f9dd3f8479860b3cb59415d9"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xfatfs_stat</b> (<a class="el" href="struct_x_fat_fs.html">XFatFs</a> *fs, const char *path, <a class="el" href="struct_x_stat.html">XStat</a> *statbuf)</td></tr>
+<tr class="separator:ga7c891c39f9dd3f8479860b3cb59415d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf6d38eaba824018d3c82f7c659f309d3"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xfatfs_tell</b> (<a class="el" href="struct_x_file.html">XFile</a> *fp, <a class="el" href="group__xstddef.html#gadcc4f92c69a1bbdb4449015227943685">XSize</a> *pos)</td></tr>
+<tr class="separator:gaf6d38eaba824018d3c82f7c659f309d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga80a73fd8862eff74c8f04f3de10e0695"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xfatfs_utime</b> (<a class="el" href="struct_x_fat_fs.html">XFatFs</a> *fs, const char *path, <a class="el" href="group__xstddef.html#ga0546cc405ace3f593aa4a09ccc2c88bb">XTime</a> time)</td></tr>
+<tr class="separator:ga80a73fd8862eff74c8f04f3de10e0695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac50bd563efdc77e9157896f4b19e8cf8"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xfatfs_write</b> (<a class="el" href="struct_x_file.html">XFile</a> *fp, const void *src, size_t size, size_t *nwritten)</td></tr>
+<tr class="separator:gac50bd563efdc77e9157896f4b19e8cf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><dl class="section author"><dt>著者</dt><dd>MaskedW </dd></dl>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_295ce2a6370ae0a688a0222b881c77ca.html">picox</a></li><li class="navelem"><a class="el" href="dir_e3be2385c94fc93b1a1cade2fa68aeff.html">filesystem</a></li><li class="navelem"><a class="el" href="xfatfs_8c.html">xfatfs.c</a></li>
+    <li class="footer">2016年05月06日(金) 17時21分17秒作成 - picox / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>
