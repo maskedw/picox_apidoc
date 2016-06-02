@@ -13,6 +13,9 @@ var xstddef_8h =
     [ "X_MAKE_TAG", "group__xstddef.html#ga0e495ec9a611df7a9dc686ec49aa64be", null ],
     [ "X_MSBOF_CHAR", "group__xstddef.html#gac482d3752968b8d8a48f7c8b2ac3865b", null ],
     [ "X_MSBOF_INT", "group__xstddef.html#ga06d5c197a36521a0319472661425f3a2", null ],
+    [ "X_MSBOF_INT16", "group__xstddef.html#ga8e8f64325fae6d018523e3bc11b87adf", null ],
+    [ "X_MSBOF_INT32", "group__xstddef.html#ga9fc9b6954afbf7b1d8833cca175bf430", null ],
+    [ "X_MSBOF_INT8", "group__xstddef.html#gadf7ade293c33ad205e0bb0857d740d81", null ],
     [ "X_MSBOF_INTPTR", "group__xstddef.html#gaa4af2d35512b4b898242f6810d24fb97", null ],
     [ "X_MSBOF_LONG", "group__xstddef.html#ga2299066b18e6d0c0afd0d4f86fdd9357", null ],
     [ "X_MSBOF_SHORT", "group__xstddef.html#gae869c0e73023a047ac1b4c09667a132f", null ],
@@ -27,7 +30,9 @@ var xstddef_8h =
     [ "X_UINT32_C", "group__xstddef.html#ga96bd3213cce475ab1dd343dc122f266f", null ],
     [ "X_UINT64_C", "group__xstddef.html#gab59bf7ec9d05281780663f568cafe1bb", null ],
     [ "X_XFS_TYPE", "group__xstddef.html#gad145dca6d8bc23f2738a77277c174969", null ],
+    [ "XBits", "group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e", null ],
     [ "XCompareFunc", "group__xstddef.html#ga6fcf544eac0b3b08b87e9c38aaebd7ef", null ],
+    [ "XDeleter", "group__xstddef.html#ga0b10479741338d58a46b0baccbc38800", null ],
     [ "XFreeFunc", "group__xstddef.html#gad5e3964a8a7c61ae4db13ec426bb2677", null ],
     [ "XMallocFunc", "group__xstddef.html#ga9cf5d1449388ee9902b286ba7149c693", null ],
     [ "XMode", "group__xstddef.html#gae3cdee946b51e41cdbb6f813bc811fc8", null ],
@@ -35,7 +40,6 @@ var xstddef_8h =
     [ "XSize", "group__xstddef.html#gadcc4f92c69a1bbdb4449015227943685", null ],
     [ "XSSize", "group__xstddef.html#gadff1e0b2aecaf78abd9345371510d08c", null ],
     [ "XTag", "group__xstddef.html#ga76975b24bab60c0ca3e2cc733693efa3", null ],
-    [ "XTime", "group__xstddef.html#ga0546cc405ace3f593aa4a09ccc2c88bb", null ],
     [ "XError", "group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4", [
       [ "X_ERR_NONE", "group__xstddef.html#gga63aa705ad3f45cf2de1c067026facda4a44ae6975431e88f7086cefbaad9b0567", null ],
       [ "X_ERR_IO", "group__xstddef.html#gga63aa705ad3f45cf2de1c067026facda4a782d35562cd1daa04ef9edf9a193f604", null ],
@@ -86,5 +90,6 @@ var xstddef_8h =
       [ "X_SEEK_SET", "group__xstddef.html#gga988c074c9467b48a58b58808cd980ea7a2b9b712421a0b5364b980c253881baec", null ],
       [ "X_SEEK_CUR", "group__xstddef.html#gga988c074c9467b48a58b58808cd980ea7a9dc8d6010a980b60186b42ca3b232b4f", null ],
       [ "X_SEEK_END", "group__xstddef.html#gga988c074c9467b48a58b58808cd980ea7a001874cb769a70c435d027ce8603ecf0", null ]
-    ] ]
+    ] ],
+    [ "x_null_deleter", "group__xstddef.html#gacbe47013c5ac890b7557915ba2de4d92", null ]
 ];

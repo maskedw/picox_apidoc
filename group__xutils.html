@@ -158,6 +158,10 @@ Xutils 連携図</div>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga35e7297de9f4459a9eefa77533cd13ce">X_CONTINUE_IF</a>(cond)  &#160;&#160;&#160;if(cond) continue</td></tr>
 <tr class="memdesc:ga35e7297de9f4459a9eefa77533cd13ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">cond == trueの時、continue文を実行します。 <br /></td></tr>
 <tr class="separator:ga35e7297de9f4459a9eefa77533cd13ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d17008236feeba3ec26262b771f8675"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga9d17008236feeba3ec26262b771f8675"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga9d17008236feeba3ec26262b771f8675">X_DIV_ROUNDUP</a>(dividend,  divisor)&#160;&#160;&#160;(((dividend) + (divisor) - 1) / (divisor))</td></tr>
+<tr class="memdesc:ga9d17008236feeba3ec26262b771f8675"><td class="mdescLeft">&#160;</td><td class="mdescRight">あまりの切り上げを行う整数除算です <br /></td></tr>
+<tr class="separator:ga9d17008236feeba3ec26262b771f8675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga63674a243978372b78c4e73ffd7ad1c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga63674a243978372b78c4e73ffd7ad1c6"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga63674a243978372b78c4e73ffd7ad1c6">X_EVEN_BITS16</a>(x)&#160;&#160;&#160;(((uint16_t)(x)) &amp; 0xaaaa)</td></tr>
 <tr class="memdesc:ga63674a243978372b78c4e73ffd7ad1c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">xの下位16bitを偶数ビットでマスクした値を返します。 <br /></td></tr>
@@ -695,9 +699,9 @@ static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">(((uint16_t)(<a class="code" href="group__xutils.html#gadb7c5086af7c67343874f667efc5f6da">X_REVERSE_BITS8</a>(<a class="code" href="group__xutils.html#ga41c332d80c1486120244cbae404ee259">X_HIGH_BYTE</a>(x)))) | \</div><div class="line">                            (((uint16_t) <a class="code" href="group__xutils.html#gadb7c5086af7c67343874f667efc5f6da">X_REVERSE_BITS8</a>(<a class="code" href="group__xutils.html#gac668596c261c24093f97a344c834ca1e">X_LOW_BYTE</a>(x)))  &lt;&lt; 8))</div><div class="ttc" id="group__xutils_html_gac668596c261c24093f97a344c834ca1e"><div class="ttname"><a href="group__xutils.html#gac668596c261c24093f97a344c834ca1e">X_LOW_BYTE</a></div><div class="ttdeci">#define X_LOW_BYTE(x)</div><div class="ttdoc">xの下位8bitの値を返します。 </div><div class="ttdef"><b>Definition:</b> xutils.h:449</div></div>
-<div class="ttc" id="group__xutils_html_gadb7c5086af7c67343874f667efc5f6da"><div class="ttname"><a href="group__xutils.html#gadb7c5086af7c67343874f667efc5f6da">X_REVERSE_BITS8</a></div><div class="ttdeci">#define X_REVERSE_BITS8(x)</div><div class="ttdoc">xの下位8bitを逆転した値を返します。 </div><div class="ttdef"><b>Definition:</b> xutils.h:464</div></div>
-<div class="ttc" id="group__xutils_html_ga41c332d80c1486120244cbae404ee259"><div class="ttname"><a href="group__xutils.html#ga41c332d80c1486120244cbae404ee259">X_HIGH_BYTE</a></div><div class="ttdeci">#define X_HIGH_BYTE(x)</div><div class="ttdoc">xの上位8bitの値を返します。 </div><div class="ttdef"><b>Definition:</b> xutils.h:444</div></div>
+<b>値:</b><div class="fragment"><div class="line">(((uint16_t)(<a class="code" href="group__xutils.html#gadb7c5086af7c67343874f667efc5f6da">X_REVERSE_BITS8</a>(<a class="code" href="group__xutils.html#ga41c332d80c1486120244cbae404ee259">X_HIGH_BYTE</a>(x)))) | \</div><div class="line">                            (((uint16_t) <a class="code" href="group__xutils.html#gadb7c5086af7c67343874f667efc5f6da">X_REVERSE_BITS8</a>(<a class="code" href="group__xutils.html#gac668596c261c24093f97a344c834ca1e">X_LOW_BYTE</a>(x)))  &lt;&lt; 8))</div><div class="ttc" id="group__xutils_html_gac668596c261c24093f97a344c834ca1e"><div class="ttname"><a href="group__xutils.html#gac668596c261c24093f97a344c834ca1e">X_LOW_BYTE</a></div><div class="ttdeci">#define X_LOW_BYTE(x)</div><div class="ttdoc">xの下位8bitの値を返します。 </div><div class="ttdef"><b>Definition:</b> xutils.h:454</div></div>
+<div class="ttc" id="group__xutils_html_gadb7c5086af7c67343874f667efc5f6da"><div class="ttname"><a href="group__xutils.html#gadb7c5086af7c67343874f667efc5f6da">X_REVERSE_BITS8</a></div><div class="ttdeci">#define X_REVERSE_BITS8(x)</div><div class="ttdoc">xの下位8bitを逆転した値を返します。 </div><div class="ttdef"><b>Definition:</b> xutils.h:469</div></div>
+<div class="ttc" id="group__xutils_html_ga41c332d80c1486120244cbae404ee259"><div class="ttname"><a href="group__xutils.html#ga41c332d80c1486120244cbae404ee259">X_HIGH_BYTE</a></div><div class="ttdeci">#define X_HIGH_BYTE(x)</div><div class="ttdoc">xの上位8bitの値を返します。 </div><div class="ttdef"><b>Definition:</b> xutils.h:449</div></div>
 </div><!-- fragment -->
 <p>xの下位16bitを逆転した値を返します。 </p>
 
@@ -716,9 +720,9 @@ static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">(((uint32_t)(<a class="code" href="group__xutils.html#gae9d82578b0c13dd4bd5de2c50b121112">X_REVERSE_BITS16</a>(<a class="code" href="group__xutils.html#gab04f272130ee3772752fd0a7f32f7bac">X_HIGH_WORD</a>(x)))) | \</div><div class="line">                            (((uint32_t)(<a class="code" href="group__xutils.html#gae9d82578b0c13dd4bd5de2c50b121112">X_REVERSE_BITS16</a>(<a class="code" href="group__xutils.html#gaef22454d57d242bce12acf1f311a7e96">X_LOW_WORD</a>(x)))) &lt;&lt; 16))</div><div class="ttc" id="group__xutils_html_gae9d82578b0c13dd4bd5de2c50b121112"><div class="ttname"><a href="group__xutils.html#gae9d82578b0c13dd4bd5de2c50b121112">X_REVERSE_BITS16</a></div><div class="ttdeci">#define X_REVERSE_BITS16(x)</div><div class="ttdoc">xの下位16bitを逆転した値を返します。 </div><div class="ttdef"><b>Definition:</b> xutils.h:512</div></div>
-<div class="ttc" id="group__xutils_html_gaef22454d57d242bce12acf1f311a7e96"><div class="ttname"><a href="group__xutils.html#gaef22454d57d242bce12acf1f311a7e96">X_LOW_WORD</a></div><div class="ttdeci">#define X_LOW_WORD(x)</div><div class="ttdoc">xの下位16bitの値を返します。 </div><div class="ttdef"><b>Definition:</b> xutils.h:439</div></div>
-<div class="ttc" id="group__xutils_html_gab04f272130ee3772752fd0a7f32f7bac"><div class="ttname"><a href="group__xutils.html#gab04f272130ee3772752fd0a7f32f7bac">X_HIGH_WORD</a></div><div class="ttdeci">#define X_HIGH_WORD(x)</div><div class="ttdoc">xの上位16bitの値を返します。 </div><div class="ttdef"><b>Definition:</b> xutils.h:434</div></div>
+<b>値:</b><div class="fragment"><div class="line">(((uint32_t)(<a class="code" href="group__xutils.html#gae9d82578b0c13dd4bd5de2c50b121112">X_REVERSE_BITS16</a>(<a class="code" href="group__xutils.html#gab04f272130ee3772752fd0a7f32f7bac">X_HIGH_WORD</a>(x)))) | \</div><div class="line">                            (((uint32_t)(<a class="code" href="group__xutils.html#gae9d82578b0c13dd4bd5de2c50b121112">X_REVERSE_BITS16</a>(<a class="code" href="group__xutils.html#gaef22454d57d242bce12acf1f311a7e96">X_LOW_WORD</a>(x)))) &lt;&lt; 16))</div><div class="ttc" id="group__xutils_html_gae9d82578b0c13dd4bd5de2c50b121112"><div class="ttname"><a href="group__xutils.html#gae9d82578b0c13dd4bd5de2c50b121112">X_REVERSE_BITS16</a></div><div class="ttdeci">#define X_REVERSE_BITS16(x)</div><div class="ttdoc">xの下位16bitを逆転した値を返します。 </div><div class="ttdef"><b>Definition:</b> xutils.h:517</div></div>
+<div class="ttc" id="group__xutils_html_gaef22454d57d242bce12acf1f311a7e96"><div class="ttname"><a href="group__xutils.html#gaef22454d57d242bce12acf1f311a7e96">X_LOW_WORD</a></div><div class="ttdeci">#define X_LOW_WORD(x)</div><div class="ttdoc">xの下位16bitの値を返します。 </div><div class="ttdef"><b>Definition:</b> xutils.h:444</div></div>
+<div class="ttc" id="group__xutils_html_gab04f272130ee3772752fd0a7f32f7bac"><div class="ttname"><a href="group__xutils.html#gab04f272130ee3772752fd0a7f32f7bac">X_HIGH_WORD</a></div><div class="ttdeci">#define X_HIGH_WORD(x)</div><div class="ttdoc">xの上位16bitの値を返します。 </div><div class="ttdef"><b>Definition:</b> xutils.h:439</div></div>
 </div><!-- fragment -->
 <p>xの下位32bitを逆転した値を返します。 </p>
 
@@ -1155,7 +1159,7 @@ static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">2016年05月06日(金) 17時21分21秒作成 - picox / 構成: 
+    <li class="footer">2016年06月03日(金) 00時23分46秒作成 - picox / 構成: 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

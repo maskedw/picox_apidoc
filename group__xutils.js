@@ -9,6 +9,7 @@ var group__xutils =
     [ "X_BREAK_IF", "group__xutils.html#ga73df78c28be4922be0d3b420deb98540", null ],
     [ "X_CONSTRAIN", "group__xutils.html#ga9fc66beae7b933a88dec295ddc39936e", null ],
     [ "X_CONTINUE_IF", "group__xutils.html#ga35e7297de9f4459a9eefa77533cd13ce", null ],
+    [ "X_DIV_ROUNDUP", "group__xutils.html#ga9d17008236feeba3ec26262b771f8675", null ],
     [ "X_EVEN_BITS16", "group__xutils.html#ga63674a243978372b78c4e73ffd7ad1c6", null ],
     [ "X_EVEN_BITS32", "group__xutils.html#ga7cc7c1a38a295dc2c5d914797e29e22f", null ],
     [ "X_EVEN_BITS8", "group__xutils.html#ga793ad3d5b62601d8725c610c35f00572", null ],

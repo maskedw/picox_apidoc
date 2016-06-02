@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['x_5fassertion_5ffailed',['x_assertion_failed',['../group__xdebug.html#gaa5f80f067f7fca89e24d41ddbbf09aad',1,'x_assertion_failed():&#160;xdebug.c'],['../group__xdebug.html#gaa5f80f067f7fca89e24d41ddbbf09aad',1,'x_assertion_failed():&#160;xdebug.c']]],
-  ['x_5fpost_5fassertion_5ffailed',['x_post_assertion_failed',['../group__xdebug.html#gace210ab5a70caa45dd7522d3bd35b5f1',1,'x_post_assertion_failed():&#160;xdebug.c'],['../group__xdebug.html#gace210ab5a70caa45dd7522d3bd35b5f1',1,'x_post_assertion_failed():&#160;xdebug.c']]],
-  ['x_5fpre_5fassertion_5ffailed',['x_pre_assertion_failed',['../group__xdebug.html#ga977c280e4e7adba752754b2641988063',1,'x_pre_assertion_failed():&#160;xdebug.c'],['../group__xdebug.html#ga977c280e4e7adba752754b2641988063',1,'x_pre_assertion_failed():&#160;xdebug.c']]],
-  ['x_5fputc_5fstdout',['x_putc_stdout',['../group__xstdio.html#ga229a01deef7e988e08f7df3af80819b5',1,'x_putc_stdout():&#160;xstdio.c'],['../group__xstdio.html#ga229a01deef7e988e08f7df3af80819b5',1,'x_putc_stdout():&#160;xstdio.c']]]
+  ['tag',['tag',['../struct_x_stream.html#a168267d1da774c99bab25c5be5b09dc6',1,'XStream']]],
+  ['tv_5fusec',['tv_usec',['../group__xtime.html#ga78b854e092076109527b4befb66677a3',1,'XTimeVal']]]
 ];

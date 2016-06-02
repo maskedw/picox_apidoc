@@ -13,6 +13,8 @@ var xintrusive__list_8h =
     [ "xilist_is_singular", "group__xintrusive__list.html#ga59b6ceb03c770f9751d7f22f4dfa9294", null ],
     [ "xilist_move_back", "group__xintrusive__list.html#gac64f07d79e9e8e0cd8197f6b9a5a038b", null ],
     [ "xilist_move_front", "group__xintrusive__list.html#gaaf130dc26d2ec69dc9af5051053ac8df", null ],
+    [ "xilist_pop_back", "group__xintrusive__list.html#ga9d92c394e948b64c2ef5cc929615194e", null ],
+    [ "xilist_pop_front", "group__xintrusive__list.html#ga1442faccaa8044549e4a3d2df8631e9c", null ],
     [ "xilist_push_back", "group__xintrusive__list.html#gabc4990dff2f45d503533b43e21938602", null ],
     [ "xilist_push_front", "group__xintrusive__list.html#gade5ffb40bd6b099df09b85528f0ccce2", null ],
     [ "xilist_size", "group__xintrusive__list.html#ga2cfe86e240546b98a65904905c19fc31", null ],

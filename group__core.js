@@ -9,5 +9,6 @@ var group__core =
     [ "Xstdlib", "group__xstdlib.html", "group__xstdlib" ],
     [ "Xstream", "group__xstream.html", "group__xstream" ],
     [ "Xstring", "group__xstring.html", "group__xstring" ],
+    [ "Xtime", "group__xtime.html", "group__xtime" ],
     [ "Xutils", "group__xutils.html", "group__xutils" ]
 ];

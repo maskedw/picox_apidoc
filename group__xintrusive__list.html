@@ -180,6 +180,14 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:gaaf130dc26d2ec69dc9af5051053ac8df"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xintrusive__list.html#gaaf130dc26d2ec69dc9af5051053ac8df">xilist_move_front</a> (<a class="el" href="struct_x_intrusive_list.html">XIntrusiveList</a> *self, <a class="el" href="struct_x_intrusive_node.html">XIntrusiveNode</a> *node)</td></tr>
 <tr class="memdesc:gaaf130dc26d2ec69dc9af5051053ac8df"><td class="mdescLeft">&#160;</td><td class="mdescRight">ノードのリンクを解除してから先頭に追加しま。  <a href="#gaaf130dc26d2ec69dc9af5051053ac8df">[詳解]</a><br /></td></tr>
 <tr class="separator:gaaf130dc26d2ec69dc9af5051053ac8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d92c394e948b64c2ef5cc929615194e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga9d92c394e948b64c2ef5cc929615194e"></a>
+static <a class="el" href="struct_x_intrusive_node.html">XIntrusiveNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xintrusive__list.html#ga9d92c394e948b64c2ef5cc929615194e">xilist_pop_back</a> (const <a class="el" href="struct_x_intrusive_list.html">XIntrusiveList</a> *self)</td></tr>
+<tr class="memdesc:ga9d92c394e948b64c2ef5cc929615194e"><td class="mdescLeft">&#160;</td><td class="mdescRight">末尾ノードをコンテナから除去して返します <br /></td></tr>
+<tr class="separator:ga9d92c394e948b64c2ef5cc929615194e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1442faccaa8044549e4a3d2df8631e9c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1442faccaa8044549e4a3d2df8631e9c"></a>
+static <a class="el" href="struct_x_intrusive_node.html">XIntrusiveNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xintrusive__list.html#ga1442faccaa8044549e4a3d2df8631e9c">xilist_pop_front</a> (const <a class="el" href="struct_x_intrusive_list.html">XIntrusiveList</a> *self)</td></tr>
+<tr class="memdesc:ga1442faccaa8044549e4a3d2df8631e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">先頭ノードをコンテナから除去して返します <br /></td></tr>
+<tr class="separator:ga1442faccaa8044549e4a3d2df8631e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabc4990dff2f45d503533b43e21938602"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xintrusive__list.html#gabc4990dff2f45d503533b43e21938602">xilist_push_back</a> (<a class="el" href="struct_x_intrusive_list.html">XIntrusiveList</a> *self, <a class="el" href="struct_x_intrusive_node.html">XIntrusiveNode</a> *node)</td></tr>
 <tr class="memdesc:gabc4990dff2f45d503533b43e21938602"><td class="mdescLeft">&#160;</td><td class="mdescRight">ノードを末尾に追加します  <a href="#gabc4990dff2f45d503533b43e21938602">[詳解]</a><br /></td></tr>
 <tr class="separator:gabc4990dff2f45d503533b43e21938602"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -290,7 +298,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> (ite  = <a class="code" href="group__xintrusive__list.html#ga69861f285d16db19d53dd76b17a1305e">xilist_back</a>(list);   \</div><div class="line">         ite != <a class="code" href="group__xintrusive__list.html#ga6cd13e2288fee8ae2b021a5c059d3f05">xilist_end</a>(list);    \</div><div class="line">         ite  = ite-&gt;prev)</div><div class="ttc" id="group__xintrusive__list_html_ga69861f285d16db19d53dd76b17a1305e"><div class="ttname"><a href="group__xintrusive__list.html#ga69861f285d16db19d53dd76b17a1305e">xilist_back</a></div><div class="ttdeci">static XIntrusiveNode * xilist_back(const XIntrusiveList *self)</div><div class="ttdoc">コンテナの末尾ノードを返します </div><div class="ttdef"><b>Definition:</b> xintrusive_list.h:247</div></div>
+<b>値:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> (ite  = <a class="code" href="group__xintrusive__list.html#ga69861f285d16db19d53dd76b17a1305e">xilist_back</a>(list);   \</div><div class="line">         ite != <a class="code" href="group__xintrusive__list.html#ga6cd13e2288fee8ae2b021a5c059d3f05">xilist_end</a>(list);    \</div><div class="line">         ite  = ite-&gt;prev)</div><div class="ttc" id="group__xintrusive__list_html_ga69861f285d16db19d53dd76b17a1305e"><div class="ttname"><a href="group__xintrusive__list.html#ga69861f285d16db19d53dd76b17a1305e">xilist_back</a></div><div class="ttdeci">static XIntrusiveNode * xilist_back(const XIntrusiveList *self)</div><div class="ttdoc">コンテナの末尾ノードを返します </div><div class="ttdef"><b>Definition:</b> xintrusive_list.h:259</div></div>
 <div class="ttc" id="group__xintrusive__list_html_ga6cd13e2288fee8ae2b021a5c059d3f05"><div class="ttname"><a href="group__xintrusive__list.html#ga6cd13e2288fee8ae2b021a5c059d3f05">xilist_end</a></div><div class="ttdeci">static XIntrusiveNode * xilist_end(const XIntrusiveList *self)</div><div class="ttdoc">コンテナの終端を指すノードを返します </div><div class="ttdef"><b>Definition:</b> xintrusive_list.h:227</div></div>
 </div><!-- fragment -->
 <p>コンテナ末尾から逆方向走査します </p>
@@ -752,7 +760,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">2016年05月06日(金) 17時21分21秒作成 - picox / 構成: 
+    <li class="footer">2016年06月03日(金) 00時23分46秒作成 - picox / 構成: 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

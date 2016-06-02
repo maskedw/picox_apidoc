@@ -2,10 +2,12 @@ var searchData=
 [
   ['xargparser',['Xargparser',['../group__xargparser.html',1,'']]],
   ['xbyte_5farray',['Xbyte_array',['../group__xbyte__array.html',1,'']]],
+  ['xcircular_5fbuffer',['Xcircular_buffer',['../group__xcircular__buffer.html',1,'']]],
   ['xcompiler',['Xcompiler',['../group__xcompiler.html',1,'']]],
   ['xdebug',['Xdebug',['../group__xdebug.html',1,'']]],
   ['xdynamic_5fstring',['Xdynamic_string',['../group__xdynamic__string.html',1,'']]],
   ['xfatfs',['Xfatfs',['../group__xfatfs.html',1,'']]],
+  ['xfiber',['Xfiber',['../group__xfiber.html',1,'']]],
   ['xfifo_5fbuffer',['Xfifo_buffer',['../group__xfifo__buffer.html',1,'']]],
   ['xfpath',['Xfpath',['../group__xfpath.html',1,'']]],
   ['xfs',['Xfs',['../group__xfs.html',1,'']]],
@@ -24,8 +26,10 @@ var searchData=
   ['xstdlib',['Xstdlib',['../group__xstdlib.html',1,'']]],
   ['xstream',['Xstream',['../group__xstream.html',1,'']]],
   ['xstring',['Xstring',['../group__xstring.html',1,'']]],
+  ['xtime',['Xtime',['../group__xtime.html',1,'']]],
   ['xtokenizer',['Xtokenizer',['../group__xtokenizer.html',1,'']]],
   ['xunionfs',['Xunionfs',['../group__xunionfs.html',1,'']]],
   ['xutils',['Xutils',['../group__xutils.html',1,'']]],
-  ['xvfs',['Xvfs',['../group__xvfs.html',1,'']]]
+  ['xvfs',['Xvfs',['../group__xvfs.html',1,'']]],
+  ['xvtimer',['Xvtimer',['../group__xvtimer.html',1,'']]]
 ];

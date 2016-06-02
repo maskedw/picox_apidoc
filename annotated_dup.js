@@ -1,6 +1,7 @@
 var annotated_dup =
 [
     [ "XByteArray", "struct_x_byte_array.html", null ],
+    [ "XCircularBuffer", "struct_x_circular_buffer.html", null ],
     [ "XDir", "struct_x_dir.html", null ],
     [ "XDirEnt", "struct_x_dir_ent.html", "struct_x_dir_ent" ],
     [ "XFatFs", "struct_x_fat_fs.html", null ],
@@ -23,5 +24,7 @@ var annotated_dup =
     [ "XStream", "struct_x_stream.html", "struct_x_stream" ],
     [ "XTimeVal", "struct_x_time_val.html", "struct_x_time_val" ],
     [ "XTokenizer", "struct_x_tokenizer.html", null ],
-    [ "XVirtualFs", "struct_x_virtual_fs.html", null ]
+    [ "XVirtualFs", "struct_x_virtual_fs.html", null ],
+    [ "XVTimer", "struct_x_v_timer.html", null ],
+    [ "XVTimerRequest", "struct_x_v_timer_request.html", "struct_x_v_timer_request" ]
 ];

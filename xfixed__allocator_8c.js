@@ -5,5 +5,5 @@ var xfixed__allocator_8c =
     [ "xfalloc_allocate", "xfixed__allocator_8c.html#a32361e0e30926a922cbcc8b300eedd04", null ],
     [ "xfalloc_clear", "xfixed__allocator_8c.html#abbe71461b9f5617ca74e63eea1ade7f7", null ],
     [ "xfalloc_deallocate", "xfixed__allocator_8c.html#a0a1aadb55fb8d93fd65ccfde64a74b7d", null ],
-    [ "xfalloc_init", "xfixed__allocator_8c.html#a9fd73434a6cca9acebdc778067d140ff", null ]
+    [ "xfalloc_init", "xfixed__allocator_8c.html#a4a9e838d659e2204b2d2946f53157824", null ]
 ];

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['xbytearray',['XByteArray',['../struct_x_byte_array.html',1,'']]],
+  ['xcircularbuffer',['XCircularBuffer',['../struct_x_circular_buffer.html',1,'']]],
   ['xdir',['XDir',['../struct_x_dir.html',1,'']]],
   ['xdirent',['XDirEnt',['../struct_x_dir_ent.html',1,'']]],
   ['xfatfs',['XFatFs',['../struct_x_fat_fs.html',1,'']]],
@@ -23,5 +24,7 @@ var searchData=
   ['xstream',['XStream',['../struct_x_stream.html',1,'']]],
   ['xtimeval',['XTimeVal',['../struct_x_time_val.html',1,'']]],
   ['xtokenizer',['XTokenizer',['../struct_x_tokenizer.html',1,'']]],
-  ['xvirtualfs',['XVirtualFs',['../struct_x_virtual_fs.html',1,'']]]
+  ['xvirtualfs',['XVirtualFs',['../struct_x_virtual_fs.html',1,'']]],
+  ['xvtimer',['XVTimer',['../struct_x_v_timer.html',1,'']]],
+  ['xvtimerrequest',['XVTimerRequest',['../struct_x_v_timer_request.html',1,'']]]
 ];

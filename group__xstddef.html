@@ -102,7 +102,8 @@ $(document).ready(function(){initNavTree('group__xstddef.html','');});
 <a href="#nested-classes">データ構造</a> &#124;
 <a href="#define-members">マクロ定義</a> &#124;
 <a href="#typedef-members">型定義</a> &#124;
-<a href="#enum-members">列挙型</a>  </div>
+<a href="#enum-members">列挙型</a> &#124;
+<a href="#func-members">関数</a>  </div>
   <div class="headertitle">
 <div class="title">Xstddef<div class="ingroups"><a class="el" href="group__core.html">Core</a></div></div>  </div>
 </div><!--header-->
@@ -124,9 +125,6 @@ Xstddef 連携図</div>
 データ構造</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_x_max_align.html">XMaxAlign</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">組込み型の最大アライメント型です。  <a href="union_x_max_align.html#details">[詳解]</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_time_val.html">XTimeVal</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct timevalの代替をする高精度のシステム時刻を格納するための型です  <a href="struct_x_time_val.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -183,13 +181,20 @@ Xstddef 連携図</div>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 型定義</h2></td></tr>
+<tr class="memitem:gae73c0c873f078d5cbdd618f689061e0e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae73c0c873f078d5cbdd618f689061e0e"></a>
+typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a></td></tr>
+<tr class="memdesc:gae73c0c873f078d5cbdd618f689061e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">XModeと同じくビットフラグを格納しますが、よりビットを意識した型です <br /></td></tr>
+<tr class="separator:gae73c0c873f078d5cbdd618f689061e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6fcf544eac0b3b08b87e9c38aaebd7ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6fcf544eac0b3b08b87e9c38aaebd7ef"></a>
 typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstddef.html#ga6fcf544eac0b3b08b87e9c38aaebd7ef">XCompareFunc</a>) (const void *a, const void *b)</td></tr>
 <tr class="memdesc:ga6fcf544eac0b3b08b87e9c38aaebd7ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">qsort()互換の比較関数ポインタ型です <br /></td></tr>
 <tr class="separator:ga6fcf544eac0b3b08b87e9c38aaebd7ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b10479741338d58a46b0baccbc38800"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstddef.html#ga0b10479741338d58a46b0baccbc38800">XDeleter</a>) (void *ptr)</td></tr>
+<tr class="memdesc:ga0b10479741338d58a46b0baccbc38800"><td class="mdescLeft">&#160;</td><td class="mdescRight">オブジェクトを削除する関数ポインタ型です  <a href="#ga0b10479741338d58a46b0baccbc38800">[詳解]</a><br /></td></tr>
+<tr class="separator:ga0b10479741338d58a46b0baccbc38800"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad5e3964a8a7c61ae4db13ec426bb2677"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad5e3964a8a7c61ae4db13ec426bb2677"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstddef.html#gad5e3964a8a7c61ae4db13ec426bb2677">XFreeFunc</a>) (void *ptr)</td></tr>
-<tr class="memdesc:gad5e3964a8a7c61ae4db13ec426bb2677"><td class="mdescLeft">&#160;</td><td class="mdescRight">free()互換のメモリ確保関数ポインタ型です <br /></td></tr>
+<tr class="memdesc:gad5e3964a8a7c61ae4db13ec426bb2677"><td class="mdescLeft">&#160;</td><td class="mdescRight">free()互換のメモリ開放関数ポインタ型です <br /></td></tr>
 <tr class="separator:gad5e3964a8a7c61ae4db13ec426bb2677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9cf5d1449388ee9902b286ba7149c693"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga9cf5d1449388ee9902b286ba7149c693"></a>
 typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstddef.html#ga9cf5d1449388ee9902b286ba7149c693">XMallocFunc</a>) (size_t size)</td></tr>
@@ -213,9 +218,6 @@ typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 <tr class="memitem:ga76975b24bab60c0ca3e2cc733693efa3"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstddef.html#ga76975b24bab60c0ca3e2cc733693efa3">XTag</a></td></tr>
 <tr class="memdesc:ga76975b24bab60c0ca3e2cc733693efa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">何らかのIDを格納するための符号なし整数が型です  <a href="#ga76975b24bab60c0ca3e2cc733693efa3">[詳解]</a><br /></td></tr>
 <tr class="separator:ga76975b24bab60c0ca3e2cc733693efa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0546cc405ace3f593aa4a09ccc2c88bb"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstddef.html#ga0546cc405ace3f593aa4a09ccc2c88bb">XTime</a></td></tr>
-<tr class="memdesc:ga0546cc405ace3f593aa4a09ccc2c88bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">time_tの代替をするシステム時刻を格納するための型です  <a href="#ga0546cc405ace3f593aa4a09ccc2c88bb">[詳解]</a><br /></td></tr>
-<tr class="separator:ga0546cc405ace3f593aa4a09ccc2c88bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 列挙型</h2></td></tr>
@@ -289,6 +291,13 @@ typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </td></tr>
 <tr class="separator:ga988c074c9467b48a58b58808cd980ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:gacbe47013c5ac890b7557915ba2de4d92"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gacbe47013c5ac890b7557915ba2de4d92"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstddef.html#gacbe47013c5ac890b7557915ba2de4d92">x_null_deleter</a> (void *ptr)</td></tr>
+<tr class="memdesc:gacbe47013c5ac890b7557915ba2de4d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">何もしないデリータです <br /></td></tr>
+<tr class="separator:gacbe47013c5ac890b7557915ba2de4d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 X_SIZEOF_XXX</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrpd7435cea1601e1b7b520e76ab42b3ee8"></a>プリプロセスで使用するためのsizeof定義です</p>
@@ -324,6 +333,15 @@ X_MSBOF_XXX</h2></td></tr>
 <tr class="memitem:ga349170f1a3051a69caaad2fec084eea6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga349170f1a3051a69caaad2fec084eea6"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>X_MSBOF_SIZE</b>&#160;&#160;&#160;(SIZE_MAX    &amp; (~(SIZE_MAX    &gt;&gt; 1)))</td></tr>
 <tr class="separator:ga349170f1a3051a69caaad2fec084eea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf7ade293c33ad205e0bb0857d740d81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gadf7ade293c33ad205e0bb0857d740d81"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_MSBOF_INT8</b>&#160;&#160;&#160;(1U &lt;&lt; 7)</td></tr>
+<tr class="separator:gadf7ade293c33ad205e0bb0857d740d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e8f64325fae6d018523e3bc11b87adf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8e8f64325fae6d018523e3bc11b87adf"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_MSBOF_INT16</b>&#160;&#160;&#160;(1U &lt;&lt; 15)</td></tr>
+<tr class="separator:ga8e8f64325fae6d018523e3bc11b87adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fc9b6954afbf7b1d8833cca175bf430"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga9fc9b6954afbf7b1d8833cca175bf430"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_MSBOF_INT32</b>&#160;&#160;&#160;(X_UINT32_C(1) &lt;&lt; 31)</td></tr>
+<tr class="separator:ga9fc9b6954afbf7b1d8833cca175bf430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 X_XXX_C</h2></td></tr>
@@ -500,6 +518,21 @@ X_XXX_C</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">型定義詳解</h2>
+<a class="anchor" id="ga0b10479741338d58a46b0baccbc38800"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* XDeleter) (void *ptr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>オブジェクトを削除する関数ポインタ型です </p>
+<p>XFreeFuncと同じインターフェースですが、XFreeFuncがメモリの開放だけを意図して いるのに対して、XDeleterはオブジェクトの終了処理を意識しているという、文脈の 違いがあります。 </p>
+
+</div>
+</div>
 <a class="anchor" id="gadcc4f92c69a1bbdb4449015227943685"></a>
 <div class="memitem">
 <div class="memproto">
@@ -528,21 +561,6 @@ X_XXX_C</h2></td></tr>
 
 <p>何らかのIDを格納するための符号なし整数が型です </p>
 <p>IDには決まった使い道があるわけではないですが、例えばCでC++の仮想クラスのよう な機能を実現したい時の型チェックに使用するといった例があります。 </p>
-
-</div>
-</div>
-<a class="anchor" id="ga0546cc405ace3f593aa4a09ccc2c88bb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef uint32_t <a class="el" href="group__xstddef.html#ga0546cc405ace3f593aa4a09ccc2c88bb">XTime</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>time_tの代替をするシステム時刻を格納するための型です </p>
-<p>POSIX互換システム風にUNIX時間1970年1月1日0時0分0秒(ただしタイムゾーンは考慮 しない)からの経過秒数を表します。 旧いシステムではtime_tは32bit符号ありで実装されることが多く、2038年問題があ りますが、XTimeは符号なしなので2106年まで保持可能です。 </p>
 
 </div>
 </div>
@@ -776,7 +794,7 @@ X_XXX_C</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">2016年05月06日(金) 17時21分21秒作成 - picox / 構成: 
+    <li class="footer">2016年06月03日(金) 00時23分46秒作成 - picox / 構成: 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

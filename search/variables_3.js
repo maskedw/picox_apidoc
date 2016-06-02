@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['mode',['mode',['../struct_x_stat.html#a63758e1cbad54ab5bf00054a7193a582',1,'XStat']]],
-  ['mtime',['mtime',['../struct_x_stat.html#a90c7611467087ff3dab76cf470e52ab3',1,'XStat']]]
+  ['heap',['heap',['../struct_x_fixed_allocator.html#ab3aec1f7f4fb6c8e7a37ec00ca7240bc',1,'XFixedAllocator::heap()'],['../struct_x_pico_allocator.html#ab3aec1f7f4fb6c8e7a37ec00ca7240bc',1,'XPicoAllocator::heap()'],['../struct_x_stack_allocator.html#ab3aec1f7f4fb6c8e7a37ec00ca7240bc',1,'XStackAllocator::heap()']]]
 ];

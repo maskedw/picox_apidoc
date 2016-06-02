@@ -11,10 +11,6 @@ var group__xstddef =
       [ "ll", "union_x_max_align.html#a78dd8c96fe7632134a6dc8665944aa35", null ],
       [ "p", "union_x_max_align.html#a117104b82864d3b23ec174af6d392709", null ]
     ] ],
-    [ "XTimeVal", "struct_x_time_val.html", [
-      [ "tv_sec", "struct_x_time_val.html#a157516493fa3753187f928e093a7ea82", null ],
-      [ "tv_usec", "struct_x_time_val.html#a78b854e092076109527b4befb66677a3", null ]
-    ] ],
     [ "X_ALIGN_OF", "group__xstddef.html#gadeef6290b39bd34860120a0173555374", null ],
     [ "X_CONTAINER_OF", "group__xstddef.html#ga2a4ab69c5232676888a5356358373b00", null ],
     [ "X_COUNT_OF", "group__xstddef.html#ga0a9752ccfbe59894ccf9df78983cc86a", null ],
@@ -30,7 +26,9 @@ var group__xstddef =
     [ "X_SIZEOF_MEM", "group__xstddef.html#ga3837d59de8a57bf3ba38d99b3f8ccd5d", null ],
     [ "X_STATIC_ASSERT", "group__xstddef.html#gad60171a6c500c4a150e6f8a0d6073c09", null ],
     [ "X_XFS_TYPE", "group__xstddef.html#gad145dca6d8bc23f2738a77277c174969", null ],
+    [ "XBits", "group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e", null ],
     [ "XCompareFunc", "group__xstddef.html#ga6fcf544eac0b3b08b87e9c38aaebd7ef", null ],
+    [ "XDeleter", "group__xstddef.html#ga0b10479741338d58a46b0baccbc38800", null ],
     [ "XFreeFunc", "group__xstddef.html#gad5e3964a8a7c61ae4db13ec426bb2677", null ],
     [ "XMallocFunc", "group__xstddef.html#ga9cf5d1449388ee9902b286ba7149c693", null ],
     [ "XMode", "group__xstddef.html#gae3cdee946b51e41cdbb6f813bc811fc8", null ],
@@ -38,7 +36,6 @@ var group__xstddef =
     [ "XSize", "group__xstddef.html#gadcc4f92c69a1bbdb4449015227943685", null ],
     [ "XSSize", "group__xstddef.html#gadff1e0b2aecaf78abd9345371510d08c", null ],
     [ "XTag", "group__xstddef.html#ga76975b24bab60c0ca3e2cc733693efa3", null ],
-    [ "XTime", "group__xstddef.html#ga0546cc405ace3f593aa4a09ccc2c88bb", null ],
     [ "XError", "group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4", [
       [ "X_ERR_IO", "group__xstddef.html#gga63aa705ad3f45cf2de1c067026facda4a782d35562cd1daa04ef9edf9a193f604", null ],
       [ "X_ERR_INVALID", "group__xstddef.html#gga63aa705ad3f45cf2de1c067026facda4aacf8e622966cd6e5581aa7f59f1cb3b3", null ],
@@ -86,5 +83,6 @@ var group__xstddef =
       [ "X_SEEK_SET", "group__xstddef.html#gga988c074c9467b48a58b58808cd980ea7a2b9b712421a0b5364b980c253881baec", null ],
       [ "X_SEEK_CUR", "group__xstddef.html#gga988c074c9467b48a58b58808cd980ea7a9dc8d6010a980b60186b42ca3b232b4f", null ],
       [ "X_SEEK_END", "group__xstddef.html#gga988c074c9467b48a58b58808cd980ea7a001874cb769a70c435d027ce8603ecf0", null ]
-    ] ]
+    ] ],
+    [ "x_null_deleter", "group__xstddef.html#gacbe47013c5ac890b7557915ba2de4d92", null ]
 ];
