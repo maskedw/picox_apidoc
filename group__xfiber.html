@@ -1,0 +1,1234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>picox: Xfiber</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">picox
+   &#160;<span id="projectnumber">0.5</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li class="current"><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('group__xfiber.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#typedef-members">型定義</a>  </div>
+  <div class="headertitle">
+<div class="title">Xfiber<div class="ingroups"><a class="el" href="group__multitask.html">Multitask</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>非リアルタイム協調型マルチタスクモジュール  
+<a href="#details">[詳解]</a></p>
+<div class="dynheader">
+Xfiber 連携図</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="group__xfiber.png" border="0" alt="" usemap="#group____xfiber"/>
+<map name="group____xfiber" id="group____xfiber">
+</map>
+</td></tr></table></center>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:gadae22502eb4a203a8fb88091a3334749"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gadae22502eb4a203a8fb88091a3334749">X_FIBER_ENTER_CRITICAL</a>&#160;&#160;&#160;<a class="el" href="group__config.html#gabf4ae8b972c952f2802a071995794531">X_CONF_FIBER_ENTER_CRITICAL</a></td></tr>
+<tr class="separator:gadae22502eb4a203a8fb88091a3334749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabfb1f0b45bd12d15d57982d165a44380"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gabfb1f0b45bd12d15d57982d165a44380">X_FIBER_EXIT_CRITICAL</a>&#160;&#160;&#160;<a class="el" href="group__config.html#ga58b11c28531095c5118019b3efc0328c">X_CONF_FIBER_EXIT_CRITICAL</a></td></tr>
+<tr class="separator:gabfb1f0b45bd12d15d57982d165a44380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2cfc80e19795d8018b07b5895856638b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2cfc80e19795d8018b07b5895856638b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga2cfc80e19795d8018b07b5895856638b">X_FIBER_PRIORITY_MAX</a>&#160;&#160;&#160;(8)</td></tr>
+<tr class="memdesc:ga2cfc80e19795d8018b07b5895856638b"><td class="mdescLeft">&#160;</td><td class="mdescRight">タスク優先度の最大値です(0 ~ 7の8段階) <br /></td></tr>
+<tr class="separator:ga2cfc80e19795d8018b07b5895856638b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:ga068c61ad508451c70b3196018899268c"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga068c61ad508451c70b3196018899268c">XFiberFunc</a>) (void *)</td></tr>
+<tr class="memdesc:ga068c61ad508451c70b3196018899268c"><td class="mdescLeft">&#160;</td><td class="mdescRight">タスクのメイン関数ポインタ型です  <a href="#ga068c61ad508451c70b3196018899268c">[詳解]</a><br /></td></tr>
+<tr class="separator:ga068c61ad508451c70b3196018899268c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga48f5921ca9dbcdbde426fbb08843ce93"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga48f5921ca9dbcdbde426fbb08843ce93">XFiberIdleHook</a>) (void)</td></tr>
+<tr class="memdesc:ga48f5921ca9dbcdbde426fbb08843ce93"><td class="mdescLeft">&#160;</td><td class="mdescRight">アイドル時に呼び出されるフック関数のポインタ型です  <a href="#ga48f5921ca9dbcdbde426fbb08843ce93">[詳解]</a><br /></td></tr>
+<tr class="separator:ga48f5921ca9dbcdbde426fbb08843ce93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd81e5f5a77b09d869feef51ca901b2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gacd81e5f5a77b09d869feef51ca901b2f"></a>
+typedef <a class="el" href="struct_x_intrusive_node.html">XIntrusiveNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XFiberMessage</b></td></tr>
+<tr class="separator:gacd81e5f5a77b09d869feef51ca901b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+fiber_event_mode</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp0304968760387aae58c4650c2167e14d"></a>XFiberEventのmode引数に指定可能な値です </p>
+</td></tr>
+<tr class="memitem:gabe4b867eb4a14491ae6fdd753ce50d6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gabe4b867eb4a14491ae6fdd753ce50d6b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gabe4b867eb4a14491ae6fdd753ce50d6b">X_FIBER_EVENT_WAIT_OR</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memdesc:gabe4b867eb4a14491ae6fdd753ce50d6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベントのどれかを待ちます(OR待ち) <br /></td></tr>
+<tr class="separator:gabe4b867eb4a14491ae6fdd753ce50d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga392b14da1c1adf145738da2fb726b1e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga392b14da1c1adf145738da2fb726b1e5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga392b14da1c1adf145738da2fb726b1e5">X_FIBER_EVENT_WAIT_AND</a>&#160;&#160;&#160;(1)</td></tr>
+<tr class="memdesc:ga392b14da1c1adf145738da2fb726b1e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベントの全てが成立するまで待ちます(AND待ち) <br /></td></tr>
+<tr class="separator:ga392b14da1c1adf145738da2fb726b1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab96d38e1afdc36401b5dd51f599a5ae5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab96d38e1afdc36401b5dd51f599a5ae5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gab96d38e1afdc36401b5dd51f599a5ae5">X_FIBER_EVENT_CLEAR_ON_EXIT</a>&#160;&#160;&#160;(1 &lt;&lt; 1)</td></tr>
+<tr class="memdesc:gab96d38e1afdc36401b5dd51f599a5ae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベント成立時に、イベントのクリアを行います <br /></td></tr>
+<tr class="separator:gab96d38e1afdc36401b5dd51f599a5ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+fiber_kernel_control</h2></td></tr>
+<tr class="memitem:ga121ed9ae095fa0d744ef41005ae781ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga121ed9ae095fa0d744ef41005ae781ed">xfiber_kernel_init</a> (void *heap, size_t heapsize, <a class="el" href="group__xfiber.html#ga48f5921ca9dbcdbde426fbb08843ce93">XFiberIdleHook</a> idlehook)</td></tr>
+<tr class="memdesc:ga121ed9ae095fa0d744ef41005ae781ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">カーネルを初期化します  <a href="#ga121ed9ae095fa0d744ef41005ae781ed">[詳解]</a><br /></td></tr>
+<tr class="separator:ga121ed9ae095fa0d744ef41005ae781ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7d6b56dad54995445761b1b7de8698a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae7d6b56dad54995445761b1b7de8698a"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gae7d6b56dad54995445761b1b7de8698a">xfiber_kernel_start_scheduler</a> (void)</td></tr>
+<tr class="memdesc:gae7d6b56dad54995445761b1b7de8698a"><td class="mdescLeft">&#160;</td><td class="mdescRight">スケジューリングを開始します <br /></td></tr>
+<tr class="separator:gae7d6b56dad54995445761b1b7de8698a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad485597bb5110cecc2e29aa4005e351c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gad485597bb5110cecc2e29aa4005e351c">xfiber_kernel_end_scheduler</a> (void)</td></tr>
+<tr class="memdesc:gad485597bb5110cecc2e29aa4005e351c"><td class="mdescLeft">&#160;</td><td class="mdescRight">スケジューリングを終了します  <a href="#gad485597bb5110cecc2e29aa4005e351c">[詳解]</a><br /></td></tr>
+<tr class="separator:gad485597bb5110cecc2e29aa4005e351c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+fiber_task_control</h2></td></tr>
+<tr class="memitem:gad27ab53e3745a776f05ea9c4b022144e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gad27ab53e3745a776f05ea9c4b022144e">xfiber_create</a> (XFiber **o_fiber, int priority, const char *name, size_t stack_size, <a class="el" href="group__xfiber.html#ga068c61ad508451c70b3196018899268c">XFiberFunc</a> func, void *arg)</td></tr>
+<tr class="memdesc:gad27ab53e3745a776f05ea9c4b022144e"><td class="mdescLeft">&#160;</td><td class="mdescRight">タスクを生成します  <a href="#gad27ab53e3745a776f05ea9c4b022144e">[詳解]</a><br /></td></tr>
+<tr class="separator:gad27ab53e3745a776f05ea9c4b022144e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27eeb0d669dce6e5bff54127f3ce0411"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga27eeb0d669dce6e5bff54127f3ce0411"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga27eeb0d669dce6e5bff54127f3ce0411">xfiber_delay</a> (<a class="el" href="group__xtime.html#gae634e472d73a6d0dfad431293d2412cc">XTicks</a> time)</td></tr>
+<tr class="memdesc:ga27eeb0d669dce6e5bff54127f3ce0411"><td class="mdescLeft">&#160;</td><td class="mdescRight">タスクの実行を指定時間遅延します <br /></td></tr>
+<tr class="separator:ga27eeb0d669dce6e5bff54127f3ce0411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga337e8593aef2e217ee4399891329ded6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga337e8593aef2e217ee4399891329ded6">xfiber_suspend</a> (XFiber *fiber)</td></tr>
+<tr class="memdesc:ga337e8593aef2e217ee4399891329ded6"><td class="mdescLeft">&#160;</td><td class="mdescRight">タスクをサスペンド状態に遷移させます  <a href="#ga337e8593aef2e217ee4399891329ded6">[詳解]</a><br /></td></tr>
+<tr class="separator:ga337e8593aef2e217ee4399891329ded6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f2e6e31807533f938381c353d514af4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3f2e6e31807533f938381c353d514af4"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga3f2e6e31807533f938381c353d514af4">xfiber_resume</a> (XFiber *fiber)</td></tr>
+<tr class="memdesc:ga3f2e6e31807533f938381c353d514af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">タスクのサスペンド状態を解除します <br /></td></tr>
+<tr class="separator:ga3f2e6e31807533f938381c353d514af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga837c019f6bcef9fa8cf1915c93c1db88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga837c019f6bcef9fa8cf1915c93c1db88"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga837c019f6bcef9fa8cf1915c93c1db88">xfiber_yield</a> ()</td></tr>
+<tr class="memdesc:ga837c019f6bcef9fa8cf1915c93c1db88"><td class="mdescLeft">&#160;</td><td class="mdescRight">タスクの実行を同一優先度の別のタスクにゆずります <br /></td></tr>
+<tr class="separator:ga837c019f6bcef9fa8cf1915c93c1db88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2afbbee8a8c09b352e9a2371adb9a787"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2afbbee8a8c09b352e9a2371adb9a787"></a>
+XFiber *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga2afbbee8a8c09b352e9a2371adb9a787">xfiber_self</a> ()</td></tr>
+<tr class="memdesc:ga2afbbee8a8c09b352e9a2371adb9a787"><td class="mdescLeft">&#160;</td><td class="mdescRight">実行状態のタスクを返します <br /></td></tr>
+<tr class="separator:ga2afbbee8a8c09b352e9a2371adb9a787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6dd1148175ee8f7e4b3ab30d53efc755"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6dd1148175ee8f7e4b3ab30d53efc755"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga6dd1148175ee8f7e4b3ab30d53efc755">xfiber_name</a> (const XFiber *fiber)</td></tr>
+<tr class="memdesc:ga6dd1148175ee8f7e4b3ab30d53efc755"><td class="mdescLeft">&#160;</td><td class="mdescRight">タスクの名前を返します <br /></td></tr>
+<tr class="separator:ga6dd1148175ee8f7e4b3ab30d53efc755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+fiber_event</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp476b9f6890d3881005b3f120cc44f4b3"></a>ビットフラグによるイベント待ちを行いたい場合に使用します </p>
+</td></tr>
+<tr class="memitem:ga21097b771525c590199f17bb9640b076"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga21097b771525c590199f17bb9640b076"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga21097b771525c590199f17bb9640b076">xfiber_event_create</a> (XFiberEvent **o_event)</td></tr>
+<tr class="memdesc:ga21097b771525c590199f17bb9640b076"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベントオブジェクトを生成します <br /></td></tr>
+<tr class="separator:ga21097b771525c590199f17bb9640b076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc372be499fd0e6e8e2a03d1df03aeae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gafc372be499fd0e6e8e2a03d1df03aeae">xfiber_event_destroy</a> (XFiberEvent *event)</td></tr>
+<tr class="memdesc:gafc372be499fd0e6e8e2a03d1df03aeae"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベントオブジェクトを破棄します  <a href="#gafc372be499fd0e6e8e2a03d1df03aeae">[詳解]</a><br /></td></tr>
+<tr class="separator:gafc372be499fd0e6e8e2a03d1df03aeae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga44b56c9dae873f392d46e447b016f3c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga44b56c9dae873f392d46e447b016f3c0">xfiber_event_timed_wait</a> (XFiberEvent *event, <a class="el" href="group__xstddef.html#gae3cdee946b51e41cdbb6f813bc811fc8">XMode</a> mode, <a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> wait_pattern, <a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> *result, <a class="el" href="group__xtime.html#gae634e472d73a6d0dfad431293d2412cc">XTicks</a> timeout)</td></tr>
+<tr class="memdesc:ga44b56c9dae873f392d46e447b016f3c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定のイベントが成立するのをタイムアウト付きで待ちます  <a href="#ga44b56c9dae873f392d46e447b016f3c0">[詳解]</a><br /></td></tr>
+<tr class="separator:ga44b56c9dae873f392d46e447b016f3c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga464158493f5aef419933e9afd72a8099"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga464158493f5aef419933e9afd72a8099">xfiber_event_wait</a> (XFiberEvent *event, <a class="el" href="group__xstddef.html#gae3cdee946b51e41cdbb6f813bc811fc8">XMode</a> mode, <a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> wait_pattern, <a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> *result)</td></tr>
+<tr class="memdesc:ga464158493f5aef419933e9afd72a8099"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定のイベントが成立するのを待ちます  <a href="#ga464158493f5aef419933e9afd72a8099">[詳解]</a><br /></td></tr>
+<tr class="separator:ga464158493f5aef419933e9afd72a8099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga95d6780f1bb6011be70ab254031eb3f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga95d6780f1bb6011be70ab254031eb3f3">xfiber_event_try_wait</a> (XFiberEvent *event, <a class="el" href="group__xstddef.html#gae3cdee946b51e41cdbb6f813bc811fc8">XMode</a> mode, <a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> wait_pattern, <a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> *result)</td></tr>
+<tr class="memdesc:ga95d6780f1bb6011be70ab254031eb3f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定のイベントが成立しているかをポーリングで確認します  <a href="#ga95d6780f1bb6011be70ab254031eb3f3">[詳解]</a><br /></td></tr>
+<tr class="separator:ga95d6780f1bb6011be70ab254031eb3f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab9ecf6dc842d2b9e158a2f3be097e724"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab9ecf6dc842d2b9e158a2f3be097e724"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gab9ecf6dc842d2b9e158a2f3be097e724">xfiber_event_set</a> (XFiberEvent *event, <a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> pattern)</td></tr>
+<tr class="memdesc:gab9ecf6dc842d2b9e158a2f3be097e724"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベントをセットします <br /></td></tr>
+<tr class="separator:gab9ecf6dc842d2b9e158a2f3be097e724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c6808be4a7db78de26c72af2908f57f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga9c6808be4a7db78de26c72af2908f57f"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga9c6808be4a7db78de26c72af2908f57f">xfiber_event_set_isr</a> (XFiberEvent *event, <a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> pattern)</td></tr>
+<tr class="memdesc:ga9c6808be4a7db78de26c72af2908f57f"><td class="mdescLeft">&#160;</td><td class="mdescRight">割込みハンドラから呼び出し可能なxfiber_event_set()です <br /></td></tr>
+<tr class="separator:ga9c6808be4a7db78de26c72af2908f57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7de1e04ac7527658a333dd2b2c3e494b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7de1e04ac7527658a333dd2b2c3e494b"></a>
+<a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga7de1e04ac7527658a333dd2b2c3e494b">xfiber_event_clear</a> (XFiberEvent *event, <a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> pattern)</td></tr>
+<tr class="memdesc:ga7de1e04ac7527658a333dd2b2c3e494b"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定ビットをクリアします <br /></td></tr>
+<tr class="separator:ga7de1e04ac7527658a333dd2b2c3e494b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66b49f6d6fa7c6b9afdd39fc502534cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga66b49f6d6fa7c6b9afdd39fc502534cd"></a>
+<a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga66b49f6d6fa7c6b9afdd39fc502534cd">xfiber_event_clear_isr</a> (XFiberEvent *event, <a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> pattern)</td></tr>
+<tr class="memdesc:ga66b49f6d6fa7c6b9afdd39fc502534cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">割込みハンドラから呼び出し可能なxfiber_event_clear()です <br /></td></tr>
+<tr class="separator:ga66b49f6d6fa7c6b9afdd39fc502534cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf306bafb834a7174116ce988ffdc2d80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf306bafb834a7174116ce988ffdc2d80"></a>
+<a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gaf306bafb834a7174116ce988ffdc2d80">xfiber_event_get</a> (XFiberEvent *event)</td></tr>
+<tr class="memdesc:gaf306bafb834a7174116ce988ffdc2d80"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のビットパターンを返します <br /></td></tr>
+<tr class="separator:gaf306bafb834a7174116ce988ffdc2d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae09514d6852bcfa5224e71106c341aaf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae09514d6852bcfa5224e71106c341aaf"></a>
+<a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gae09514d6852bcfa5224e71106c341aaf">xfiber_event_get_isr</a> (XFiberEvent *event)</td></tr>
+<tr class="memdesc:gae09514d6852bcfa5224e71106c341aaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">割込みハンドラから呼び出し可能なxfiber_event_get()です <br /></td></tr>
+<tr class="separator:gae09514d6852bcfa5224e71106c341aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+fiber_signal</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrpe8271b27996b9e931396aa5176c4877c"></a>ビットフラグによるイベント待ちを行いたい場合に使用します</p>
+<p>イベントと似ていますが、オブジェクトを生成することなく、タスクに直接イベント を発行できる点が異なります。 簡易的なイベントフラグとして使用できます。 </p>
+</td></tr>
+<tr class="memitem:ga0fece232efeaf3ecb6fba53e9b95542f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga0fece232efeaf3ecb6fba53e9b95542f">xfiber_signal_timed_wait</a> (<a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> sigs, <a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> *result, <a class="el" href="group__xtime.html#gae634e472d73a6d0dfad431293d2412cc">XTicks</a> timeout)</td></tr>
+<tr class="memdesc:ga0fece232efeaf3ecb6fba53e9b95542f"><td class="mdescLeft">&#160;</td><td class="mdescRight">シグナルが成立するのをタイムアウト付きで待ちます  <a href="#ga0fece232efeaf3ecb6fba53e9b95542f">[詳解]</a><br /></td></tr>
+<tr class="separator:ga0fece232efeaf3ecb6fba53e9b95542f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf1d4d773ced696c7fdadb8abd2da1fcf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf1d4d773ced696c7fdadb8abd2da1fcf"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gaf1d4d773ced696c7fdadb8abd2da1fcf">xfiber_signal_wait</a> (<a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> sigs, <a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> *result)</td></tr>
+<tr class="memdesc:gaf1d4d773ced696c7fdadb8abd2da1fcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">シグナルが成立するのを待ちます <br /></td></tr>
+<tr class="separator:gaf1d4d773ced696c7fdadb8abd2da1fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae19b618bfda28f83299c13702f8c7b9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae19b618bfda28f83299c13702f8c7b9d"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gae19b618bfda28f83299c13702f8c7b9d">xfiber_signal_try_wait</a> (<a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> sigs, <a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> *result)</td></tr>
+<tr class="memdesc:gae19b618bfda28f83299c13702f8c7b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">シグナルが成立するのをポーリングで待ちます <br /></td></tr>
+<tr class="separator:gae19b618bfda28f83299c13702f8c7b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafac55d3a425cd6ab7fbbe4b80e6bc5d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gafac55d3a425cd6ab7fbbe4b80e6bc5d2"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gafac55d3a425cd6ab7fbbe4b80e6bc5d2">xfiber_signal_raise</a> (XFiber *fiber, <a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> sigs)</td></tr>
+<tr class="memdesc:gafac55d3a425cd6ab7fbbe4b80e6bc5d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">タスクにシグナルを発行します <br /></td></tr>
+<tr class="separator:gafac55d3a425cd6ab7fbbe4b80e6bc5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92687aa7a3e4ecda6d32845d67db92e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga92687aa7a3e4ecda6d32845d67db92e5"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga92687aa7a3e4ecda6d32845d67db92e5">xfiber_signal_raise_isr</a> (XFiber *fiber, <a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> sigs)</td></tr>
+<tr class="memdesc:ga92687aa7a3e4ecda6d32845d67db92e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">割込みハンドラから呼び出し可能なxfiber_signal_raise()です <br /></td></tr>
+<tr class="separator:ga92687aa7a3e4ecda6d32845d67db92e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2d6731f5f36acb132ff7d14d29dd97b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae2d6731f5f36acb132ff7d14d29dd97b"></a>
+<a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gae2d6731f5f36acb132ff7d14d29dd97b">xfiber_signal_get</a> (XFiber *fiber)</td></tr>
+<tr class="memdesc:gae2d6731f5f36acb132ff7d14d29dd97b"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のビットパターンを返します <br /></td></tr>
+<tr class="separator:gae2d6731f5f36acb132ff7d14d29dd97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a0db6f34c0cf37433cdb7e67b1ed8d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1a0db6f34c0cf37433cdb7e67b1ed8d8"></a>
+<a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga1a0db6f34c0cf37433cdb7e67b1ed8d8">xfiber_signal_get_isr</a> (XFiber *fiber)</td></tr>
+<tr class="memdesc:ga1a0db6f34c0cf37433cdb7e67b1ed8d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">割込みハンドラから呼び出し可能なxfiber_signal_get()です <br /></td></tr>
+<tr class="separator:ga1a0db6f34c0cf37433cdb7e67b1ed8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+fiber_queue</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp3b310acaa1618d999526732c54e1b494"></a>固定長のメッセージの受け渡しに使用します。リングバッファで実装されており、デ ータはバッファにコピーされます。 </p>
+</td></tr>
+<tr class="memitem:ga1ef1cac592e57f9a2278680729167a25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga1ef1cac592e57f9a2278680729167a25">xfiber_queue_create</a> (XFiberQueue **o_queue, size_t queue_len, size_t item_size)</td></tr>
+<tr class="memdesc:ga1ef1cac592e57f9a2278680729167a25"><td class="mdescLeft">&#160;</td><td class="mdescRight">キューを生成します  <a href="#ga1ef1cac592e57f9a2278680729167a25">[詳解]</a><br /></td></tr>
+<tr class="separator:ga1ef1cac592e57f9a2278680729167a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga919d4b26ace2ae4f7d33f2a52451acb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga919d4b26ace2ae4f7d33f2a52451acb6">xfiber_queue_destroy</a> (XFiberQueue *queue)</td></tr>
+<tr class="memdesc:ga919d4b26ace2ae4f7d33f2a52451acb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">キューを破棄します  <a href="#ga919d4b26ace2ae4f7d33f2a52451acb6">[詳解]</a><br /></td></tr>
+<tr class="separator:ga919d4b26ace2ae4f7d33f2a52451acb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga812670af0f05a2da1dbbc4ad1f53ab8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga812670af0f05a2da1dbbc4ad1f53ab8f"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga812670af0f05a2da1dbbc4ad1f53ab8f">xfiber_queue_timed_send_back</a> (XFiberQueue *queue, const void *src, <a class="el" href="group__xtime.html#gae634e472d73a6d0dfad431293d2412cc">XTicks</a> timeout)</td></tr>
+<tr class="memdesc:ga812670af0f05a2da1dbbc4ad1f53ab8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">キューの末尾への要素の転送をタイムアウト付きで試みます <br /></td></tr>
+<tr class="separator:ga812670af0f05a2da1dbbc4ad1f53ab8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa24a24ae99bfcb4401ade3caeaba7860"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa24a24ae99bfcb4401ade3caeaba7860"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gaa24a24ae99bfcb4401ade3caeaba7860">xfiber_queue_send_back</a> (XFiberQueue *queue, const void *src)</td></tr>
+<tr class="memdesc:gaa24a24ae99bfcb4401ade3caeaba7860"><td class="mdescLeft">&#160;</td><td class="mdescRight">キューの末尾への要素の転送を試みます <br /></td></tr>
+<tr class="separator:gaa24a24ae99bfcb4401ade3caeaba7860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb31ba85586d6ea73a72c76eb3c74f9b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gadb31ba85586d6ea73a72c76eb3c74f9b"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gadb31ba85586d6ea73a72c76eb3c74f9b">xfiber_queue_try_send_back</a> (XFiberQueue *queue, const void *src)</td></tr>
+<tr class="memdesc:gadb31ba85586d6ea73a72c76eb3c74f9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">キューの末尾への要素の転送をポーリングで試みます <br /></td></tr>
+<tr class="separator:gadb31ba85586d6ea73a72c76eb3c74f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5b1d54500bcb40755809ff4153ea1a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab5b1d54500bcb40755809ff4153ea1a5"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gab5b1d54500bcb40755809ff4153ea1a5">xfiber_queue_send_back_isr</a> (XFiberQueue *queue, const void *src)</td></tr>
+<tr class="memdesc:gab5b1d54500bcb40755809ff4153ea1a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">割込みハンドラから呼び出し可能なxfiber_queue_try_send_back()です <br /></td></tr>
+<tr class="separator:gab5b1d54500bcb40755809ff4153ea1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b7ff67030b8a22a04dbacbd2fd3140a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2b7ff67030b8a22a04dbacbd2fd3140a"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga2b7ff67030b8a22a04dbacbd2fd3140a">xfiber_queue_timed_send_front</a> (XFiberQueue *queue, const void *src, <a class="el" href="group__xtime.html#gae634e472d73a6d0dfad431293d2412cc">XTicks</a> timeout)</td></tr>
+<tr class="memdesc:ga2b7ff67030b8a22a04dbacbd2fd3140a"><td class="mdescLeft">&#160;</td><td class="mdescRight">キューの先頭への要素の転送をタイムアウト付きで試みます <br /></td></tr>
+<tr class="separator:ga2b7ff67030b8a22a04dbacbd2fd3140a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga157dfc0150f9780697185469ada381fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga157dfc0150f9780697185469ada381fd"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga157dfc0150f9780697185469ada381fd">xfiber_queue_send_front</a> (XFiberQueue *queue, const void *src)</td></tr>
+<tr class="memdesc:ga157dfc0150f9780697185469ada381fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">キューの先頭への要素の転送を試みます <br /></td></tr>
+<tr class="separator:ga157dfc0150f9780697185469ada381fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9cc63cf88e7184ca2e736b70bc4bf02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa9cc63cf88e7184ca2e736b70bc4bf02"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gaa9cc63cf88e7184ca2e736b70bc4bf02">xfiber_queue_try_send_front</a> (XFiberQueue *queue, const void *src)</td></tr>
+<tr class="memdesc:gaa9cc63cf88e7184ca2e736b70bc4bf02"><td class="mdescLeft">&#160;</td><td class="mdescRight">キューの先頭への要素の転送をポーリングで試みます <br /></td></tr>
+<tr class="separator:gaa9cc63cf88e7184ca2e736b70bc4bf02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b719247ab1ea7bc08b028e09cb41fea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga9b719247ab1ea7bc08b028e09cb41fea"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga9b719247ab1ea7bc08b028e09cb41fea">xfiber_queue_send_front_isr</a> (XFiberQueue *queue, const void *src)</td></tr>
+<tr class="memdesc:ga9b719247ab1ea7bc08b028e09cb41fea"><td class="mdescLeft">&#160;</td><td class="mdescRight">割込みハンドラから呼び出し可能なxfiber_queue_try_send_front()です <br /></td></tr>
+<tr class="separator:ga9b719247ab1ea7bc08b028e09cb41fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16369c1820b9b81c6a8b5f29896b14dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga16369c1820b9b81c6a8b5f29896b14dc"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga16369c1820b9b81c6a8b5f29896b14dc">xfiber_queue_timed_receive</a> (XFiberQueue *queue, void *dst, <a class="el" href="group__xtime.html#gae634e472d73a6d0dfad431293d2412cc">XTicks</a> timeout)</td></tr>
+<tr class="memdesc:ga16369c1820b9b81c6a8b5f29896b14dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">キューの先頭から要素の受信をタイムアウト付きで試みます <br /></td></tr>
+<tr class="separator:ga16369c1820b9b81c6a8b5f29896b14dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e6426e58f21925ad5cc2f3cae0e7ce1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8e6426e58f21925ad5cc2f3cae0e7ce1"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga8e6426e58f21925ad5cc2f3cae0e7ce1">xfiber_queue_receive</a> (XFiberQueue *queue, void *dst)</td></tr>
+<tr class="memdesc:ga8e6426e58f21925ad5cc2f3cae0e7ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">キューの先頭から要素の受信を試みます <br /></td></tr>
+<tr class="separator:ga8e6426e58f21925ad5cc2f3cae0e7ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga33bae37d1c311743d50cfb4557cfce26"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga33bae37d1c311743d50cfb4557cfce26"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga33bae37d1c311743d50cfb4557cfce26">xfiber_queue_try_receive</a> (XFiberQueue *queue, void *dst)</td></tr>
+<tr class="memdesc:ga33bae37d1c311743d50cfb4557cfce26"><td class="mdescLeft">&#160;</td><td class="mdescRight">キューの先頭から要素の受信をポーリングで試みます <br /></td></tr>
+<tr class="separator:ga33bae37d1c311743d50cfb4557cfce26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga42d1648ce97f4c19921ec96574cbe331"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga42d1648ce97f4c19921ec96574cbe331"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga42d1648ce97f4c19921ec96574cbe331">xfiber_queue_receive_isr</a> (XFiberQueue *queue, void *dst)</td></tr>
+<tr class="memdesc:ga42d1648ce97f4c19921ec96574cbe331"><td class="mdescLeft">&#160;</td><td class="mdescRight">割込みハンドラから呼び出し可能なxfiber_queue_try_receive()です <br /></td></tr>
+<tr class="separator:ga42d1648ce97f4c19921ec96574cbe331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+fiber_channel</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp92552a1a142acbc07432cb7507748bd0"></a>可変長のメッセージの受け渡しに使用します。リングバッファで実装されており、デ ータはバッファにコピーされます。</p>
+<p>queueとの違いは以下の通りです</p><ul>
+<li>可変長のため、要素ごとにsizeof(size_t)バイトの管理領域が必要</li>
+<li>先頭への送信は不可 </li>
+</ul>
+</td></tr>
+<tr class="memitem:gaf213b017e640db62a7888b028ceae9c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gaf213b017e640db62a7888b028ceae9c1">xfiber_channel_create</a> (XFiberChannel **o_channel, size_t capacity, size_t max_item_size)</td></tr>
+<tr class="memdesc:gaf213b017e640db62a7888b028ceae9c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">チャンネルを生成します  <a href="#gaf213b017e640db62a7888b028ceae9c1">[詳解]</a><br /></td></tr>
+<tr class="separator:gaf213b017e640db62a7888b028ceae9c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab77fb49f98d338aa7c6915119b3bf3a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gab77fb49f98d338aa7c6915119b3bf3a7">xfiber_channel_destroy</a> (XFiberChannel *channel)</td></tr>
+<tr class="memdesc:gab77fb49f98d338aa7c6915119b3bf3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">チャンネル破棄します  <a href="#gab77fb49f98d338aa7c6915119b3bf3a7">[詳解]</a><br /></td></tr>
+<tr class="separator:gab77fb49f98d338aa7c6915119b3bf3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2bc6387a093e741decd49e5db3e42771"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2bc6387a093e741decd49e5db3e42771"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga2bc6387a093e741decd49e5db3e42771">xfiber_channel_timed_send</a> (XFiberChannel *channel, const void *src, size_t size, <a class="el" href="group__xtime.html#gae634e472d73a6d0dfad431293d2412cc">XTicks</a> timeout)</td></tr>
+<tr class="memdesc:ga2bc6387a093e741decd49e5db3e42771"><td class="mdescLeft">&#160;</td><td class="mdescRight">チャンネルの末尾へsizeバイトの要素の転送をタイムアウト付きで試みます <br /></td></tr>
+<tr class="separator:ga2bc6387a093e741decd49e5db3e42771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d59c5e7de934a1755ecb6f4a969b732"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0d59c5e7de934a1755ecb6f4a969b732"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga0d59c5e7de934a1755ecb6f4a969b732">xfiber_channel_send</a> (XFiberChannel *channel, const void *src, size_t size)</td></tr>
+<tr class="memdesc:ga0d59c5e7de934a1755ecb6f4a969b732"><td class="mdescLeft">&#160;</td><td class="mdescRight">チャンネルの末尾へsizeバイトの要素の転送を試みます <br /></td></tr>
+<tr class="separator:ga0d59c5e7de934a1755ecb6f4a969b732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1ce1dc4f2e00f0ff0e75af43857d7f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa1ce1dc4f2e00f0ff0e75af43857d7f0"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gaa1ce1dc4f2e00f0ff0e75af43857d7f0">xfiber_channel_try_send</a> (XFiberChannel *channel, const void *src, size_t size)</td></tr>
+<tr class="memdesc:gaa1ce1dc4f2e00f0ff0e75af43857d7f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">チャンネルの末尾へsizeバイトの要素の転送をポーリングで試みます <br /></td></tr>
+<tr class="separator:gaa1ce1dc4f2e00f0ff0e75af43857d7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae67b7ac70bed1a791841fe66e6eed6c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae67b7ac70bed1a791841fe66e6eed6c1"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gae67b7ac70bed1a791841fe66e6eed6c1">xfiber_channel_send_isr</a> (XFiberChannel *channel, const void *src, size_t size)</td></tr>
+<tr class="memdesc:gae67b7ac70bed1a791841fe66e6eed6c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">割込みハンドラから呼び出し可能なxfiber_channel_try_send()です <br /></td></tr>
+<tr class="separator:gae67b7ac70bed1a791841fe66e6eed6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8371ea6aa2e1c08631385ff8b4600db0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8371ea6aa2e1c08631385ff8b4600db0"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga8371ea6aa2e1c08631385ff8b4600db0">xfiber_channel_timed_receive</a> (XFiberChannel *channel, void *dst, size_t *o_size, <a class="el" href="group__xtime.html#gae634e472d73a6d0dfad431293d2412cc">XTicks</a> timeout)</td></tr>
+<tr class="memdesc:ga8371ea6aa2e1c08631385ff8b4600db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">チャンネル先頭から要素の受信をタイムアウト付きで試みます <br /></td></tr>
+<tr class="separator:ga8371ea6aa2e1c08631385ff8b4600db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga067d4f5d8aac2ae324844c3b6008ce94"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga067d4f5d8aac2ae324844c3b6008ce94"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga067d4f5d8aac2ae324844c3b6008ce94">xfiber_channel_receive</a> (XFiberChannel *channel, void *dst, size_t *o_size)</td></tr>
+<tr class="memdesc:ga067d4f5d8aac2ae324844c3b6008ce94"><td class="mdescLeft">&#160;</td><td class="mdescRight">チャンネル先頭から要素の受信を試みます <br /></td></tr>
+<tr class="separator:ga067d4f5d8aac2ae324844c3b6008ce94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga338fd49a0d97d7e42e918f43a38772d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga338fd49a0d97d7e42e918f43a38772d5"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga338fd49a0d97d7e42e918f43a38772d5">xfiber_channel_try_receive</a> (XFiberChannel *channel, void *dst, size_t *o_size)</td></tr>
+<tr class="memdesc:ga338fd49a0d97d7e42e918f43a38772d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">チャンネル先頭から要素の受信をポーリングで試みます <br /></td></tr>
+<tr class="separator:ga338fd49a0d97d7e42e918f43a38772d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga922ce910e1e3f735a6d322071aad911c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga922ce910e1e3f735a6d322071aad911c"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga922ce910e1e3f735a6d322071aad911c">xfiber_channel_receive_isr</a> (XFiberChannel *channel, void *dst, size_t *o_size)</td></tr>
+<tr class="memdesc:ga922ce910e1e3f735a6d322071aad911c"><td class="mdescLeft">&#160;</td><td class="mdescRight">割込みハンドラから呼び出し可能なxfiber_channel_try_receive()です <br /></td></tr>
+<tr class="separator:ga922ce910e1e3f735a6d322071aad911c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+fiber_semaphore</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp00484ba4a8476e8ba7d1e07e1335bcd2"></a>競合資源の排他制御に使用します</p>
+<p>ミューテックスとの違いは、資源が複数ある場合に使用するカウントを持っているこ とです。 </p>
+</td></tr>
+<tr class="memitem:ga89cb5d809f9f77d1f34a2098d1417733"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga89cb5d809f9f77d1f34a2098d1417733">xfiber_semaphore_create</a> (XFiberSemaphore **o_semaphore, int initial_count)</td></tr>
+<tr class="memdesc:ga89cb5d809f9f77d1f34a2098d1417733"><td class="mdescLeft">&#160;</td><td class="mdescRight">セマフォを生成します  <a href="#ga89cb5d809f9f77d1f34a2098d1417733">[詳解]</a><br /></td></tr>
+<tr class="separator:ga89cb5d809f9f77d1f34a2098d1417733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9abae633290b60b738a74636530133e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga9abae633290b60b738a74636530133e3">xfiber_semaphore_destroy</a> (XFiberSemaphore *semaphore)</td></tr>
+<tr class="memdesc:ga9abae633290b60b738a74636530133e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">セマフォを破棄します  <a href="#ga9abae633290b60b738a74636530133e3">[詳解]</a><br /></td></tr>
+<tr class="separator:ga9abae633290b60b738a74636530133e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e72d9d8a54b88d4f0464d3214978e5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0e72d9d8a54b88d4f0464d3214978e5f"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga0e72d9d8a54b88d4f0464d3214978e5f">xfiber_semaphore_timed_take</a> (XFiberSemaphore *semaphore, <a class="el" href="group__xtime.html#gae634e472d73a6d0dfad431293d2412cc">XTicks</a> timeout)</td></tr>
+<tr class="memdesc:ga0e72d9d8a54b88d4f0464d3214978e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">セマフォの獲得をタイムアウト付きで試みます <br /></td></tr>
+<tr class="separator:ga0e72d9d8a54b88d4f0464d3214978e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08dee6018c88db093ab07b1453676759"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga08dee6018c88db093ab07b1453676759"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga08dee6018c88db093ab07b1453676759">xfiber_semaphore_take</a> (XFiberSemaphore *semaphore)</td></tr>
+<tr class="memdesc:ga08dee6018c88db093ab07b1453676759"><td class="mdescLeft">&#160;</td><td class="mdescRight">セマフォの獲得を試みます <br /></td></tr>
+<tr class="separator:ga08dee6018c88db093ab07b1453676759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad591c1e9e87aa1825b4e5fb67f2ff6a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad591c1e9e87aa1825b4e5fb67f2ff6a3"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gad591c1e9e87aa1825b4e5fb67f2ff6a3">xfiber_semaphore_try_take</a> (XFiberSemaphore *semaphore)</td></tr>
+<tr class="memdesc:gad591c1e9e87aa1825b4e5fb67f2ff6a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">セマフォの獲得をポーリングで試みます <br /></td></tr>
+<tr class="separator:gad591c1e9e87aa1825b4e5fb67f2ff6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9980c4d03878afce6b821dbce0da51a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae9980c4d03878afce6b821dbce0da51a"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gae9980c4d03878afce6b821dbce0da51a">xfiber_semaphore_give</a> (XFiberSemaphore *semaphore)</td></tr>
+<tr class="memdesc:gae9980c4d03878afce6b821dbce0da51a"><td class="mdescLeft">&#160;</td><td class="mdescRight">セマフォを返却します <br /></td></tr>
+<tr class="separator:gae9980c4d03878afce6b821dbce0da51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga579537f14d9d6a8e265d75d330bd5fa5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga579537f14d9d6a8e265d75d330bd5fa5"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga579537f14d9d6a8e265d75d330bd5fa5">xfiber_semaphore_give_isr</a> (XFiberSemaphore *semaphore)</td></tr>
+<tr class="memdesc:ga579537f14d9d6a8e265d75d330bd5fa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">割込みハンドラで呼び出し可能なxfiber_semaphore_give()です <br /></td></tr>
+<tr class="separator:ga579537f14d9d6a8e265d75d330bd5fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+fiber_mutex</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrpad92501e8f157b1c86f1e73fa47b7c60"></a>競合資源の排他制御に使用します</p>
+<p>セマフォとの違いはロックされたままタスクが終了すると、自動的にロック解除を行 う点と、優先度逆転防止機構を持つことです。</p>
+<dl class="section attention"><dt>注意</dt><dd>自動ロック解除と、優先度逆転防止機構はまだ未実装です </dd></dl>
+</td></tr>
+<tr class="memitem:ga64d23aaf2ac03a77ef063ed0161f3474"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga64d23aaf2ac03a77ef063ed0161f3474"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga64d23aaf2ac03a77ef063ed0161f3474">xfiber_mutex_create</a> (XFiberMutex **o_mutex)</td></tr>
+<tr class="memdesc:ga64d23aaf2ac03a77ef063ed0161f3474"><td class="mdescLeft">&#160;</td><td class="mdescRight">ミューテックスを生成します <br /></td></tr>
+<tr class="separator:ga64d23aaf2ac03a77ef063ed0161f3474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga02bda43231602e6a34cd58d806e714ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga02bda43231602e6a34cd58d806e714ac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga02bda43231602e6a34cd58d806e714ac">xfiber_mutex_destroy</a> (XFiberMutex *mutex)</td></tr>
+<tr class="memdesc:ga02bda43231602e6a34cd58d806e714ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">ミューテックスを破棄します <br /></td></tr>
+<tr class="separator:ga02bda43231602e6a34cd58d806e714ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19dc217263ed2041be778738c5e45f2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga19dc217263ed2041be778738c5e45f2d"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga19dc217263ed2041be778738c5e45f2d">xfiber_mutex_timed_lock</a> (XFiberMutex *mutex, <a class="el" href="group__xtime.html#gae634e472d73a6d0dfad431293d2412cc">XTicks</a> timeout)</td></tr>
+<tr class="memdesc:ga19dc217263ed2041be778738c5e45f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ミューテックスを獲得をタイムアウト付きで試みます <br /></td></tr>
+<tr class="separator:ga19dc217263ed2041be778738c5e45f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga096f9e681cddf35681a7d11124fe765c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga096f9e681cddf35681a7d11124fe765c"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga096f9e681cddf35681a7d11124fe765c">xfiber_mutex_lock</a> (XFiberMutex *mutex)</td></tr>
+<tr class="memdesc:ga096f9e681cddf35681a7d11124fe765c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ミューテックスを獲得を試みます <br /></td></tr>
+<tr class="separator:ga096f9e681cddf35681a7d11124fe765c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf0fbe851e1ab135c350a74aded7fcf29"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf0fbe851e1ab135c350a74aded7fcf29"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gaf0fbe851e1ab135c350a74aded7fcf29">xfiber_mutex_try_lock</a> (XFiberMutex *mutex)</td></tr>
+<tr class="memdesc:gaf0fbe851e1ab135c350a74aded7fcf29"><td class="mdescLeft">&#160;</td><td class="mdescRight">ミューテックスを獲得をタイムアウト付きで試みます <br /></td></tr>
+<tr class="separator:gaf0fbe851e1ab135c350a74aded7fcf29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga392b2008d886a431d6f805a12be005c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga392b2008d886a431d6f805a12be005c8"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga392b2008d886a431d6f805a12be005c8">xfiber_mutex_unlock</a> (XFiberMutex *mutex)</td></tr>
+<tr class="memdesc:ga392b2008d886a431d6f805a12be005c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">ミューテックスのロック解除を行います <br /></td></tr>
+<tr class="separator:ga392b2008d886a431d6f805a12be005c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga164c80b96f7ef38cf2642e9f5e2c104e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga164c80b96f7ef38cf2642e9f5e2c104e"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga164c80b96f7ef38cf2642e9f5e2c104e">xfiber_mutex_unlock_isr</a> (XFiberMutex *mutex)</td></tr>
+<tr class="memdesc:ga164c80b96f7ef38cf2642e9f5e2c104e"><td class="mdescLeft">&#160;</td><td class="mdescRight">割込みハンドラから呼び出し可能なxfiber_mutex_unlock()です <br /></td></tr>
+<tr class="separator:ga164c80b96f7ef38cf2642e9f5e2c104e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+fiber_mailbox</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrpdcd6ca66c4f4b5082b9e31780c6c8f6b"></a>大きなデータの受け渡しに使用する通信機能です。リンクリストで実装しているので 、データのコピーが行われません。また、送信待ちが絶対に発生しないのも大きな特 徴です。</p>
+<p>ただし、スタック上のデータを送信することができないという制限があり、データの 寿命管理にも気をつける必要があります。 </p>
+</td></tr>
+<tr class="memitem:gaf847d83eacba5b94d45921869ba00f53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf847d83eacba5b94d45921869ba00f53"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gaf847d83eacba5b94d45921869ba00f53">xfiber_mailbox_create</a> (XFiberMailbox **o_mailbox)</td></tr>
+<tr class="memdesc:gaf847d83eacba5b94d45921869ba00f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">メールボックスを生成します <br /></td></tr>
+<tr class="separator:gaf847d83eacba5b94d45921869ba00f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5aec912eae8458395a7a1bf6595b9b43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga5aec912eae8458395a7a1bf6595b9b43">xfiber_mailbox_destroy</a> (XFiberMailbox *mailbox)</td></tr>
+<tr class="memdesc:ga5aec912eae8458395a7a1bf6595b9b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">メールボックスを生成します  <a href="#ga5aec912eae8458395a7a1bf6595b9b43">[詳解]</a><br /></td></tr>
+<tr class="separator:ga5aec912eae8458395a7a1bf6595b9b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacbc7ae6f0a754c96bad93f0d89b409b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gacbc7ae6f0a754c96bad93f0d89b409b5"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gacbc7ae6f0a754c96bad93f0d89b409b5">xfiber_mailbox_send</a> (XFiberMailbox *mailbox, <a class="el" href="struct_x_intrusive_node.html">XFiberMessage</a> *message)</td></tr>
+<tr class="memdesc:gacbc7ae6f0a754c96bad93f0d89b409b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">メールボックス末尾にメッセージを追加します <br /></td></tr>
+<tr class="separator:gacbc7ae6f0a754c96bad93f0d89b409b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72b7249ff12f13820d27a70eb446dc83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga72b7249ff12f13820d27a70eb446dc83"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga72b7249ff12f13820d27a70eb446dc83">xfiber_mailbox_send_isr</a> (XFiberMailbox *mailbox, <a class="el" href="struct_x_intrusive_node.html">XFiberMessage</a> *message)</td></tr>
+<tr class="memdesc:ga72b7249ff12f13820d27a70eb446dc83"><td class="mdescLeft">&#160;</td><td class="mdescRight">割込みハンドラから呼び出し可能なxfiber_mailbox_send()です <br /></td></tr>
+<tr class="separator:ga72b7249ff12f13820d27a70eb446dc83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c92e5f8ceae524fdd30c6e2e5e617e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8c92e5f8ceae524fdd30c6e2e5e617e0"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga8c92e5f8ceae524fdd30c6e2e5e617e0">xfiber_mailbox_timed_receive</a> (XFiberMailbox *mailbox, <a class="el" href="struct_x_intrusive_node.html">XFiberMessage</a> **o_message, <a class="el" href="group__xtime.html#gae634e472d73a6d0dfad431293d2412cc">XTicks</a> timeout)</td></tr>
+<tr class="memdesc:ga8c92e5f8ceae524fdd30c6e2e5e617e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">メールボックス先頭からメッセージの受信をタイムアウト付きで試みます <br /></td></tr>
+<tr class="separator:ga8c92e5f8ceae524fdd30c6e2e5e617e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e039855a8b864d3077f4d1885683a11"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4e039855a8b864d3077f4d1885683a11"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga4e039855a8b864d3077f4d1885683a11">xfiber_mailbox_receive</a> (XFiberMailbox *mailbox, <a class="el" href="struct_x_intrusive_node.html">XFiberMessage</a> **o_message)</td></tr>
+<tr class="memdesc:ga4e039855a8b864d3077f4d1885683a11"><td class="mdescLeft">&#160;</td><td class="mdescRight">メールボックス先頭からメッセージの受信を試みます <br /></td></tr>
+<tr class="separator:ga4e039855a8b864d3077f4d1885683a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab01989202333d2ec930820f1edf2e6d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab01989202333d2ec930820f1edf2e6d9"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gab01989202333d2ec930820f1edf2e6d9">xfiber_mailbox_try_receive</a> (XFiberMailbox *mailbox, <a class="el" href="struct_x_intrusive_node.html">XFiberMessage</a> **o_message)</td></tr>
+<tr class="memdesc:gab01989202333d2ec930820f1edf2e6d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">メールボックス先頭からメッセージの受信をポーリングで試みます <br /></td></tr>
+<tr class="separator:gab01989202333d2ec930820f1edf2e6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga13d1a5cb19f08d7380e714671c9c9057"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga13d1a5cb19f08d7380e714671c9c9057"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga13d1a5cb19f08d7380e714671c9c9057">xfiber_mailbox_receive_isr</a> (XFiberMailbox *mailbox, <a class="el" href="struct_x_intrusive_node.html">XFiberMessage</a> **o_message)</td></tr>
+<tr class="memdesc:ga13d1a5cb19f08d7380e714671c9c9057"><td class="mdescLeft">&#160;</td><td class="mdescRight">割込みハンドラから呼び出し可能なxfiber_mailbox_try_receive()です <br /></td></tr>
+<tr class="separator:ga13d1a5cb19f08d7380e714671c9c9057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+fiber_pool</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp74dfc30c1bc0fe8bcc92bd2adf813104"></a>固定長のメモリブロックを確保と解放を行えます</p>
+<p>メールボックスのメッセージのメモリ確保と相性がいいです。固定長なので、確保と 解放は超高速です。 </p>
+</td></tr>
+<tr class="memitem:ga4877024f92b312560b2ad48455e9ec44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga4877024f92b312560b2ad48455e9ec44">xfiber_pool_create</a> (XFiberPool **o_pool, size_t block_size, size_t num_blocks)</td></tr>
+<tr class="memdesc:ga4877024f92b312560b2ad48455e9ec44"><td class="mdescLeft">&#160;</td><td class="mdescRight">プールを生成します  <a href="#ga4877024f92b312560b2ad48455e9ec44">[詳解]</a><br /></td></tr>
+<tr class="separator:ga4877024f92b312560b2ad48455e9ec44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga395b838d449c2239711fc37ad23f44b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga395b838d449c2239711fc37ad23f44b4">xfiber_pool_destroy</a> (XFiberPool *pool)</td></tr>
+<tr class="memdesc:ga395b838d449c2239711fc37ad23f44b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">プールを解放します  <a href="#ga395b838d449c2239711fc37ad23f44b4">[詳解]</a><br /></td></tr>
+<tr class="separator:ga395b838d449c2239711fc37ad23f44b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4321fd9071a2603a3e78b9987e157d7e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4321fd9071a2603a3e78b9987e157d7e"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga4321fd9071a2603a3e78b9987e157d7e">xfiber_pool_timed_get</a> (XFiberPool *pool, void **o_mem, <a class="el" href="group__xtime.html#gae634e472d73a6d0dfad431293d2412cc">XTicks</a> timeout)</td></tr>
+<tr class="memdesc:ga4321fd9071a2603a3e78b9987e157d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">プールからメモリの確保をタイムアウト付きで試みます <br /></td></tr>
+<tr class="separator:ga4321fd9071a2603a3e78b9987e157d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef06343786c043bbfe41a37371062907"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaef06343786c043bbfe41a37371062907"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gaef06343786c043bbfe41a37371062907">xfiber_pool_get</a> (XFiberPool *pool, void **o_mem)</td></tr>
+<tr class="memdesc:gaef06343786c043bbfe41a37371062907"><td class="mdescLeft">&#160;</td><td class="mdescRight">プールからメモリの確保を試みます <br /></td></tr>
+<tr class="separator:gaef06343786c043bbfe41a37371062907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga083fd7439f8c9ab3ec47d341afa3a65d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga083fd7439f8c9ab3ec47d341afa3a65d"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga083fd7439f8c9ab3ec47d341afa3a65d">xfiber_pool_try_get</a> (XFiberPool *pool, void **o_mem)</td></tr>
+<tr class="memdesc:ga083fd7439f8c9ab3ec47d341afa3a65d"><td class="mdescLeft">&#160;</td><td class="mdescRight">プールからメモリの確保をポーリングで試みます <br /></td></tr>
+<tr class="separator:ga083fd7439f8c9ab3ec47d341afa3a65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29a25a9f97d2ad6375035369c58b2f16"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga29a25a9f97d2ad6375035369c58b2f16"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga29a25a9f97d2ad6375035369c58b2f16">xfiber_pool_get_isr</a> (XFiberPool *pool, void **o_mem)</td></tr>
+<tr class="memdesc:ga29a25a9f97d2ad6375035369c58b2f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">割込みハンドラから呼び出し可能なxfiber_pool_try_get()です <br /></td></tr>
+<tr class="separator:ga29a25a9f97d2ad6375035369c58b2f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd7b96fca7b4b3f9c11852388b68d5ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gabd7b96fca7b4b3f9c11852388b68d5ca"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#gabd7b96fca7b4b3f9c11852388b68d5ca">xfiber_pool_release</a> (XFiberPool *pool, void *mem)</td></tr>
+<tr class="memdesc:gabd7b96fca7b4b3f9c11852388b68d5ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">プールにメモリを返却します <br /></td></tr>
+<tr class="separator:gabd7b96fca7b4b3f9c11852388b68d5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2666033c5b8d5c3ae511e3a95c7e8ad5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2666033c5b8d5c3ae511e3a95c7e8ad5"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xfiber.html#ga2666033c5b8d5c3ae511e3a95c7e8ad5">xfiber_pool_release_isr</a> (XFiberPool *pool, void *mem)</td></tr>
+<tr class="memdesc:ga2666033c5b8d5c3ae511e3a95c7e8ad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">割込みハンドラから呼び出し可能なxfiber_pool_release()です <br /></td></tr>
+<tr class="separator:ga2666033c5b8d5c3ae511e3a95c7e8ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<p>非リアルタイム協調型マルチタスクモジュール </p>
+<p>協調型のマルチタスクをスレッドと区別して、コルーチンやファイバーと呼ぶことが 多いです。</p>
+<p>スクリプト言語を中心に、多くの言語でスレッドとは別にコルーチンやファイバーを サポートしています。</p>
+<p>[コルーチン]</p><ul>
+<li>Lua</li>
+<li>C#</li>
+<li>Python (ジェネレータ)</li>
+</ul>
+<p>[ファイバー]</p><ul>
+<li>Win32API</li>
+<li>Ruby</li>
+</ul>
+<p>コルーチンやファイバーという用語に明確な定義はありませんが、最低限処理を中断 して、後から再開できる機能を持ちます。</p>
+<p>picoxのファイバーでは、RTOS風にタスクの優先順位や待ち合わせ機能を多数用意し ていることが大きな特徴で、RTOSの代替として使用できることを目的としています。</p>
+<p>RTOSの実装はC言語の機能だけでは実現不可能なため、CPUごとコンパイラごとにアセ ンブリ言語を記述する必要があり大変です。 移植部分が最小限になるように考慮して実装されたフリーのRTOSもありますが、それ でも敷居は高いものです。</p>
+<p>このモジュールはC言語の機能のみでマルチタスクを実現しているため、移植作業な しで即座に使用することができます。</p>
+<p>ただし、以下の制限があります。</p>
+<ul>
+<li>リアルタイム性はなし<br />
+ RTOSでは割込みハンドラから即座に高優先度のタスクにスイッチできますが、 xfiberでは、タスクコンテキストからのシステムコール呼び出しまでコンテキス トスイッチが行われません。</li>
+<li>コンテキストスイッチが重い<br />
+ RTOSではいくつかのCPUレジスタの退避とわずかの処理でコンテキストスイッチ が完了しますが、xfiberのコンフィギュレーションが <code>X_CONF_FIBER_IMPL_TYPE == X_FIBER_IMPL_TYPE_COPY_STACK</code>である場合、コン テキストスイッチの度に使用中のスタックのコピーが行われます。 これは非力なCPUでは致命的なオーバーヘッドになる可能性があります。</li>
+<li>C++の例外との共存不可<br />
+ これは巷のRTOSでも同じですが、コンテキストスイッチと例外スタックの整合性 がとれないため、C++で使用する場合は例外をOFFにする必要があります。</li>
+</ul>
+<p>RTOSを移植するまでの一時しのぎや、リソースに余裕のあるプロトタイプ段階でご利 用ください。</p>
+<dl class="section note"><dt>覚え書き</dt><dd>C言語で実装可能なコンテキストスイッチということで、C言語の限界に迫るトリッキ ーで面白い実装になっています。以下の技術資料にあるアイデアを元に実装を行いま した。</dd></dl>
+<p><a href="http://www.atdot.net/~ko1/activities/shiba-prosym2010-paper.pdf">http://www.atdot.net/~ko1/activities/shiba-prosym2010-paper.pdf</a></p>
+<p>興味のある方は是非ソースコードを覗いてみてください。 </p>
+<h2 class="groupheader">マクロ定義詳解</h2>
+<a class="anchor" id="gadae22502eb4a203a8fb88091a3334749"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define X_FIBER_ENTER_CRITICAL&#160;&#160;&#160;<a class="el" href="group__config.html#gabf4ae8b972c952f2802a071995794531">X_CONF_FIBER_ENTER_CRITICAL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参照</dt><dd><a class="el" href="group__config.html#gabf4ae8b972c952f2802a071995794531" title="xfiberモジュールのクリティカルセクション入口関数を指定します ">X_CONF_FIBER_ENTER_CRITICAL</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gabfb1f0b45bd12d15d57982d165a44380"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define X_FIBER_EXIT_CRITICAL&#160;&#160;&#160;<a class="el" href="group__config.html#ga58b11c28531095c5118019b3efc0328c">X_CONF_FIBER_EXIT_CRITICAL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参照</dt><dd><a class="el" href="group__config.html#ga58b11c28531095c5118019b3efc0328c" title="xfiberモジュールのクリティカルセクション出口関数を指定します ">X_CONF_FIBER_EXIT_CRITICAL</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">型定義詳解</h2>
+<a class="anchor" id="ga068c61ad508451c70b3196018899268c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* XFiberFunc) (void *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>タスクのメイン関数ポインタ型です </p>
+<p>引数のポインタが指すアドレスはスタック以外である必要があります。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga48f5921ca9dbcdbde426fbb08843ce93"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* XFiberIdleHook) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>アイドル時に呼び出されるフック関数のポインタ型です </p>
+<p>0以外を返すと、スケジューリングは終了し、xfiber_kernel_start_scheduler()の呼 び出し直後の地点までジャンプします。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a class="anchor" id="gaf213b017e640db62a7888b028ceae9c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xfiber_channel_create </td>
+          <td>(</td>
+          <td class="paramtype">XFiberChannel **&#160;</td>
+          <td class="paramname"><em>o_channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>capacity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>max_item_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>チャンネルを生成します </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o_channel</td><td>生成したチャンネルのアドレスの格納先 </td></tr>
+    <tr><td class="paramname">capacity</td><td>チャンネルバッファのバイト数 </td></tr>
+    <tr><td class="paramname">max_item_size</td><td>1要素の最大バイト数</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>1要素ごとに管理領域が必要なため、capacity == 格納可能な総バイト数ではありま せん。 要素の受信時は、格納先は暗黙的にmax_item_sizeバイト以上の領域を持つことを前 提とします。 </p>
+
+</div>
+</div>
+<a class="anchor" id="gab77fb49f98d338aa7c6915119b3bf3a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xfiber_channel_destroy </td>
+          <td>(</td>
+          <td class="paramtype">XFiberChannel *&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>チャンネル破棄します </p>
+<p>全ての待ちタスクの待ちは解除され、待ちタスクにはX_ERR_CANCELEDが返ります </p>
+
+</div>
+</div>
+<a class="anchor" id="gad27ab53e3745a776f05ea9c4b022144e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xfiber_create </td>
+          <td>(</td>
+          <td class="paramtype">XFiber **&#160;</td>
+          <td class="paramname"><em>o_fiber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>priority</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>stack_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__xfiber.html#ga068c61ad508451c70b3196018899268c">XFiberFunc</a>&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>タスクを生成します </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o_fiber</td><td>生成したタスクのアドレスの格納先 </td></tr>
+    <tr><td class="paramname">priority</td><td>タスク優先度 </td></tr>
+    <tr><td class="paramname">name</td><td>タスク名 </td></tr>
+    <tr><td class="paramname">stack_size</td><td>スタックのバイト数 </td></tr>
+    <tr><td class="paramname">func</td><td>メイン関数 </td></tr>
+    <tr><td class="paramname">arg</td><td>メイン関数の引数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gafc372be499fd0e6e8e2a03d1df03aeae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xfiber_event_destroy </td>
+          <td>(</td>
+          <td class="paramtype">XFiberEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>イベントオブジェクトを破棄します </p>
+<p>全ての待ちタスクの待ちは解除され、待ちタスクにはX_ERR_CANCELEDが返ります </p>
+
+</div>
+</div>
+<a class="anchor" id="ga44b56c9dae873f392d46e447b016f3c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xfiber_event_timed_wait </td>
+          <td>(</td>
+          <td class="paramtype">XFiberEvent *&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__xstddef.html#gae3cdee946b51e41cdbb6f813bc811fc8">XMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a>&#160;</td>
+          <td class="paramname"><em>wait_pattern</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> *&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__xtime.html#gae634e472d73a6d0dfad431293d2412cc">XTicks</a>&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定のイベントが成立するのをタイムアウト付きで待ちます </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参照</dt><dd>fiber_event_mode </dd></dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wait_pattern</td><td>待ちビットパターン </td></tr>
+    <tr><td class="paramname">result</td><td>待ち解除時のビットパターンの格納先 </td></tr>
+    <tr><td class="paramname">timeout</td><td>タイムアウト時間 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga95d6780f1bb6011be70ab254031eb3f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xfiber_event_try_wait </td>
+          <td>(</td>
+          <td class="paramtype">XFiberEvent *&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__xstddef.html#gae3cdee946b51e41cdbb6f813bc811fc8">XMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a>&#160;</td>
+          <td class="paramname"><em>wait_pattern</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定のイベントが成立しているかをポーリングで確認します </p>
+<p><a class="el" href="group__xfiber.html#ga44b56c9dae873f392d46e447b016f3c0" title="指定のイベントが成立するのをタイムアウト付きで待ちます ">xfiber_event_timed_wait()</a>でtimeoutに0を指定した場合と同じです </p>
+
+</div>
+</div>
+<a class="anchor" id="ga464158493f5aef419933e9afd72a8099"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xfiber_event_wait </td>
+          <td>(</td>
+          <td class="paramtype">XFiberEvent *&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__xstddef.html#gae3cdee946b51e41cdbb6f813bc811fc8">XMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a>&#160;</td>
+          <td class="paramname"><em>wait_pattern</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定のイベントが成立するのを待ちます </p>
+<p><a class="el" href="group__xfiber.html#ga44b56c9dae873f392d46e447b016f3c0" title="指定のイベントが成立するのをタイムアウト付きで待ちます ">xfiber_event_timed_wait()</a>でtimeoutにX_TICKS_FOREVERを指定した場合と同じです </p>
+
+</div>
+</div>
+<a class="anchor" id="gad485597bb5110cecc2e29aa4005e351c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xfiber_kernel_end_scheduler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>スケジューリングを終了します </p>
+<p>呼び出し後はxfiber_kernel_start_scheduler()の呼び出し直後の位置までジャンプ します。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga121ed9ae095fa0d744ef41005ae781ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xfiber_kernel_init </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>heap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>heapsize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__xfiber.html#ga48f5921ca9dbcdbde426fbb08843ce93">XFiberIdleHook</a>&#160;</td>
+          <td class="paramname"><em>idlehook</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>カーネルを初期化します </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">heap</td><td>ワークバッファのアドレス </td></tr>
+    <tr><td class="paramname">heapsize</td><td>ワークバッファのサイズ </td></tr>
+    <tr><td class="paramname">idlehook</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参照</dt><dd><a class="el" href="group__xfiber.html#ga48f5921ca9dbcdbde426fbb08843ce93" title="アイドル時に呼び出されるフック関数のポインタ型です ">XFiberIdleHook</a></dd></dl>
+<p>heapにNULLが指定された場合、x_malloc()でメモリを確保します。スタックやファイ バーオブジェクトは全てワークバッファから生成されます。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga5aec912eae8458395a7a1bf6595b9b43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xfiber_mailbox_destroy </td>
+          <td>(</td>
+          <td class="paramtype">XFiberMailbox *&#160;</td>
+          <td class="paramname"><em>mailbox</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>メールボックスを生成します </p>
+<p>全ての待ちタスクの待ちは解除され、待ちタスクにはX_ERR_CANCELEDが返ります </p>
+
+</div>
+</div>
+<a class="anchor" id="ga4877024f92b312560b2ad48455e9ec44"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xfiber_pool_create </td>
+          <td>(</td>
+          <td class="paramtype">XFiberPool **&#160;</td>
+          <td class="paramname"><em>o_pool</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>block_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_blocks</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>プールを生成します </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o_pool</td><td>生成したプールのアドレスの格納先 </td></tr>
+    <tr><td class="paramname">block_size</td><td>1ブロックのサイズ </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>ブロック数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga395b838d449c2239711fc37ad23f44b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xfiber_pool_destroy </td>
+          <td>(</td>
+          <td class="paramtype">XFiberPool *&#160;</td>
+          <td class="paramname"><em>pool</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>プールを解放します </p>
+<p>全ての待ちタスクの待ちは解除され、待ちタスクにはX_ERR_CANCELEDが返ります </p>
+
+</div>
+</div>
+<a class="anchor" id="ga1ef1cac592e57f9a2278680729167a25"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xfiber_queue_create </td>
+          <td>(</td>
+          <td class="paramtype">XFiberQueue **&#160;</td>
+          <td class="paramname"><em>o_queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>queue_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>item_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>キューを生成します </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o_queue</td><td>生成したキューのアドレスの格納先 </td></tr>
+    <tr><td class="paramname">queue_len</td><td>格納可能な要素数 </td></tr>
+    <tr><td class="paramname">item_size</td><td>1要素のバイト数</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>queue_len * item_sizeバイトのバッファが生成されます。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga919d4b26ace2ae4f7d33f2a52451acb6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xfiber_queue_destroy </td>
+          <td>(</td>
+          <td class="paramtype">XFiberQueue *&#160;</td>
+          <td class="paramname"><em>queue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>キューを破棄します </p>
+<p>全ての待ちタスクの待ちは解除され、待ちタスクにはX_ERR_CANCELEDが返ります </p>
+
+</div>
+</div>
+<a class="anchor" id="ga89cb5d809f9f77d1f34a2098d1417733"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xfiber_semaphore_create </td>
+          <td>(</td>
+          <td class="paramtype">XFiberSemaphore **&#160;</td>
+          <td class="paramname"><em>o_semaphore</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>initial_count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>セマフォを生成します </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o_semaphore</td><td>生成したセマフォのアドレスの格納先 </td></tr>
+    <tr><td class="paramname">initial_count</td><td>カウンタの初期値 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga9abae633290b60b738a74636530133e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xfiber_semaphore_destroy </td>
+          <td>(</td>
+          <td class="paramtype">XFiberSemaphore *&#160;</td>
+          <td class="paramname"><em>semaphore</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>セマフォを破棄します </p>
+<p>全ての待ちタスクの待ちは解除され、待ちタスクにはX_ERR_CANCELEDが返ります </p>
+
+</div>
+</div>
+<a class="anchor" id="ga0fece232efeaf3ecb6fba53e9b95542f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xfiber_signal_timed_wait </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a>&#160;</td>
+          <td class="paramname"><em>sigs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__xstddef.html#gae73c0c873f078d5cbdd618f689061e0e">XBits</a> *&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__xtime.html#gae634e472d73a6d0dfad431293d2412cc">XTicks</a>&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>シグナルが成立するのをタイムアウト付きで待ちます </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sigs</td><td>待ちビットパターン </td></tr>
+    <tr><td class="paramname">result</td><td>待ち解除時のビットパターンの格納先 </td></tr>
+    <tr><td class="paramname">timeout</td><td>タイムアウト時間 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga337e8593aef2e217ee4399891329ded6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a> xfiber_suspend </td>
+          <td>(</td>
+          <td class="paramtype">XFiber *&#160;</td>
+          <td class="paramname"><em>fiber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>タスクをサスペンド状態に遷移させます </p>
+<p>サスペンド中のタスクはリジュームされるまで実行状態にはなりません。</p>
+<p>既に待ち状態にあるタスクは、サスペンド・ウエイトという2重待ち状態になります 。この場合、サスペンドだけが解除されてもウエイト状態は継続し、ウエイトだけが 解除されてもサスペンド状態は継続します。 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">2016年07月11日(月) 01時34分45秒作成 - picox / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

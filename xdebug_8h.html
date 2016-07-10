@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>picox: xdebug.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">picox
+   &#160;<span id="projectnumber">0.5</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('xdebug_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#func-members">関数</a> &#124;
+<a href="#var-members">変数</a>  </div>
+  <div class="headertitle">
+<div class="title">xdebug.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>デバッグログやassert等の定義  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="xdebug_8h__dep__incl.png" border="0" usemap="#xdebug_8hdep" alt=""/></div>
+<map name="xdebug_8hdep" id="xdebug_8hdep">
+</map>
+</div>
+</div>
+<p><a href="xdebug_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">log_levels</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>ログの色付けのグループです</p>
+<p><a href="https://en.wikipedia.org/wiki/ANSI_escape_code#Colors">ANSIカラー</a> でログヘッダに色付けをし、ログレベルを視覚的に見やすくします。 </p>
+</div></td></tr>
+<tr class="memitem:ga7c23dad604fa0811044b3bfb08bae7fa"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_LOG_LEVEL_ERR</b>&#160;&#160;&#160;(1)  /* error      */</td></tr>
+<tr class="separator:ga7c23dad604fa0811044b3bfb08bae7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f095e7436163c9f594250f3f7983abe"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_LOG_LEVEL_WARN</b>&#160;&#160;&#160;(2)  /* warning    */</td></tr>
+<tr class="separator:ga3f095e7436163c9f594250f3f7983abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9aa6babdd71be4d8cc0929e010499748"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_LOG_LEVEL_NOTI</b>&#160;&#160;&#160;(3)  /* notice     */</td></tr>
+<tr class="separator:ga9aa6babdd71be4d8cc0929e010499748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1de78594d1aff47e02ccdb3b24f63bf7"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_LOG_LEVEL_INFO</b>&#160;&#160;&#160;(4)  /* infomation */</td></tr>
+<tr class="separator:ga1de78594d1aff47e02ccdb3b24f63bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafec1bc6d72fbb9a52c3416bcb0ece20f"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_LOG_LEVEL_VERB</b>&#160;&#160;&#160;(5)  /* verbose    */</td></tr>
+<tr class="separator:gafec1bc6d72fbb9a52c3416bcb0ece20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga13898d5e58d1a9f3298ef6c4dcb31381"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_LOG_LEVEL</b>&#160;&#160;&#160;<a class="el" href="group__config.html#ga962315965d416876cea7ea4c10087b0f">X_CONF_LOG_LEVEL</a></td></tr>
+<tr class="separator:ga13898d5e58d1a9f3298ef6c4dcb31381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaddea276d50bc95c42f54dca916c4717c"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_ANSI_COLOR_BLACK</b>&#160;&#160;&#160;&quot;\x1b[1;30m&quot;</td></tr>
+<tr class="separator:gaddea276d50bc95c42f54dca916c4717c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga526d82dbdb7f353971e1dbb6909e663c"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_ANSI_COLOR_RED</b>&#160;&#160;&#160;&quot;\x1b[1;31m&quot;</td></tr>
+<tr class="separator:ga526d82dbdb7f353971e1dbb6909e663c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga977890a70460f75f688069bb3505b994"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_ANSI_COLOR_GREEN</b>&#160;&#160;&#160;&quot;\x1b[1;32m&quot;</td></tr>
+<tr class="separator:ga977890a70460f75f688069bb3505b994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06d624e476dec726bf818bd19014bf4b"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_ANSI_COLOR_YELLOW</b>&#160;&#160;&#160;&quot;\x1b[1;33m&quot;</td></tr>
+<tr class="separator:ga06d624e476dec726bf818bd19014bf4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed16bb2cc0440edd81f8a50ebc2a571d"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_ANSI_COLOR_BLUE</b>&#160;&#160;&#160;&quot;\x1b[1;34m&quot;</td></tr>
+<tr class="separator:gaed16bb2cc0440edd81f8a50ebc2a571d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf9a5e63e5f39c30b874bf718640c26e1"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_ANSI_COLOR_MAGENTA</b>&#160;&#160;&#160;&quot;\x1b[1;35m&quot;</td></tr>
+<tr class="separator:gaf9a5e63e5f39c30b874bf718640c26e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5ead24fbbe1801740cf5fe4c13f4177"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_ANSI_COLOR_CYAN</b>&#160;&#160;&#160;&quot;\x1b[1;36m&quot;</td></tr>
+<tr class="separator:gaa5ead24fbbe1801740cf5fe4c13f4177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04f577016108086ac81e5396710df888"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_ANSI_COLOR_WHITE</b>&#160;&#160;&#160;&quot;\x1b[1;37m&quot;</td></tr>
+<tr class="separator:ga04f577016108086ac81e5396710df888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf88ddd06ac6da5dcf7735a2ceb3a0ca1"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_ANSI_COLOR_RESET</b>&#160;&#160;&#160;&quot;\x1b[0m&quot;</td></tr>
+<tr class="separator:gaf88ddd06ac6da5dcf7735a2ceb3a0ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb71b559153c19cdbec26f06c679d243"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_COLOR_BLACK</b></td></tr>
+<tr class="separator:gadb71b559153c19cdbec26f06c679d243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a87c69962ecd8a019000b74c06dedb1"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_COLOR_RED</b></td></tr>
+<tr class="separator:ga5a87c69962ecd8a019000b74c06dedb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa37bac6696fcb8e3f6a6ee5ed5da3f4a"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_COLOR_GREEN</b></td></tr>
+<tr class="separator:gaa37bac6696fcb8e3f6a6ee5ed5da3f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe85613a41bc4b829e616391a226b5aa"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_COLOR_YELLOW</b></td></tr>
+<tr class="separator:gafe85613a41bc4b829e616391a226b5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga512c56aa761368ddca6bab0711755c4b"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_COLOR_BLUE</b></td></tr>
+<tr class="separator:ga512c56aa761368ddca6bab0711755c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9019daebac084498b0dd76d725e76458"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_COLOR_MAGENTA</b></td></tr>
+<tr class="separator:ga9019daebac084498b0dd76d725e76458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d13fbdc510daf5ca577088e37b36d46"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_COLOR_CYAN</b></td></tr>
+<tr class="separator:ga2d13fbdc510daf5ca577088e37b36d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga131d96c85b565dba5ae2159398331772"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_COLOR_WHITE</b></td></tr>
+<tr class="separator:ga131d96c85b565dba5ae2159398331772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace8c0722384c159cc7074042ec3ff0c8"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_COLOR_RESET</b></td></tr>
+<tr class="separator:gace8c0722384c159cc7074042ec3ff0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">log_macros</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>ログ出力マクロのグループです</p>
+<p>X_LOG_XXX()は、printfライクなformat引数を受け付けますが、 X_LOG_XXX((tag, "i = %d",i));という風に、引数を2重で()する必要があります。</p>
+<p>C99の可変長引数マクロを使えばこんな変な書き方をしないですむのですが、 このライブラリの対象にはC++03も含めており、C++03では可変長引数マクロは標準機 能ではありません。</p>
+<p>たいていのコンパイラでは、標準ではなくとも可変長引数マクロをサポートしていま すが、規格に厳格なコンパイラでは使用できません。(例 Renesas C++ compiler) </p>
+</div></td></tr>
+<tr class="memitem:ga6adade94fa91e8f52ad908cb8420b3cf"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_LOG_VERB</b>(args)              &#160;&#160;&#160;(void)0</td></tr>
+<tr class="separator:ga6adade94fa91e8f52ad908cb8420b3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga40133836530721e3b7ac5fe346b33ac0"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_LOG_HEXDUMP_VERB</b>(args)&#160;&#160;&#160;(void)0</td></tr>
+<tr class="separator:ga40133836530721e3b7ac5fe346b33ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf988d8b9e4f9550185c8d32636cb8173"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_LOG_INFO</b>(args)              &#160;&#160;&#160;(void)0</td></tr>
+<tr class="separator:gaf988d8b9e4f9550185c8d32636cb8173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f3927262cd3e8aed22ff4ddcaa4277c"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_LOG_HEXDUMP_INFO</b>(args)&#160;&#160;&#160;(void)0</td></tr>
+<tr class="separator:ga6f3927262cd3e8aed22ff4ddcaa4277c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga244f2e5fdac74cc427ae3741b3d82d41"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_LOG_NOTI</b>(args)              &#160;&#160;&#160;(void)0</td></tr>
+<tr class="separator:ga244f2e5fdac74cc427ae3741b3d82d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga34f70e0aaed934492214482f3430778a"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_LOG_HEXDUMP_NOTI</b>(args)&#160;&#160;&#160;(void)0</td></tr>
+<tr class="separator:ga34f70e0aaed934492214482f3430778a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga652fd9517634bec41e1dfa0d8165f8c6"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_LOG_WARN</b>(args)              &#160;&#160;&#160;(void)0</td></tr>
+<tr class="separator:ga652fd9517634bec41e1dfa0d8165f8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga103542ca562b7ccfa6de2095357a175a"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_LOG_HEXDUMP_WARN</b>(args)&#160;&#160;&#160;(void)0</td></tr>
+<tr class="separator:ga103542ca562b7ccfa6de2095357a175a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga623cea1eb6d8c5233774559c3d51a8ca"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_LOG_ERR</b>(args)                &#160;&#160;&#160;(void)0</td></tr>
+<tr class="separator:ga623cea1eb6d8c5233774559c3d51a8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ca2acfd2b7626d6ff91f0d407dfa5d1"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_LOG_HEXDUMP_ERR</b>(args)&#160;&#160;&#160;(void)0</td></tr>
+<tr class="separator:ga9ca2acfd2b7626d6ff91f0d407dfa5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">assertions</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>assertマクロのグループです </p>
+</div></td></tr>
+<tr class="memitem:ga0b5a254513af89f8bb2f332ab6ce92d7"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xdebug.html#ga0b5a254513af89f8bb2f332ab6ce92d7">X_DEFAULT_ASSERT</a>(expr)                        &#160;&#160;&#160;<a class="el" href="group__xdebug.html#gacf704f05f6c763736cc7bad03266613f">X_DEFAULT_ASSERT_MSG</a>(expr, NULL)</td></tr>
+<tr class="memdesc:ga0b5a254513af89f8bb2f332ab6ce92d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">picoxデフォルトのアサートです <br /></td></tr>
+<tr class="separator:ga0b5a254513af89f8bb2f332ab6ce92d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf704f05f6c763736cc7bad03266613f"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xdebug.html#gacf704f05f6c763736cc7bad03266613f">X_DEFAULT_ASSERT_MSG</a>(expr,  msg)      &#160;&#160;&#160;((expr) ? (void)0 : <a class="el" href="group__xdebug.html#gaa5f80f067f7fca89e24d41ddbbf09aad">x_assertion_failed</a>(#expr, msg, X_FUNC, __FILE__, __LINE__))</td></tr>
+<tr class="memdesc:gacf704f05f6c763736cc7bad03266613f"><td class="mdescLeft">&#160;</td><td class="mdescRight">追加メッセージを指定可能なアサートです <br /></td></tr>
+<tr class="separator:gacf704f05f6c763736cc7bad03266613f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga82d731305755e5846791294539292800"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_ASSERT</b>(expr)                        &#160;&#160;&#160;<a class="el" href="group__xdebug.html#ga0b5a254513af89f8bb2f332ab6ce92d7">X_DEFAULT_ASSERT</a>(expr)</td></tr>
+<tr class="separator:ga82d731305755e5846791294539292800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5bad68560b78c74e1061b4285a02fee4"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_ASSERT_MSG</b>(expr,  msg)      &#160;&#160;&#160;<a class="el" href="group__xdebug.html#gacf704f05f6c763736cc7bad03266613f">X_DEFAULT_ASSERT_MSG</a>(expr, msg)</td></tr>
+<tr class="separator:ga5bad68560b78c74e1061b4285a02fee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e91de4b8a04dbed244a3671f195cf6f"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xdebug.html#ga7e91de4b8a04dbed244a3671f195cf6f">X_ASSERT_SELF</a>(expr)              &#160;&#160;&#160;(void)0</td></tr>
+<tr class="memdesc:ga7e91de4b8a04dbed244a3671f195cf6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">クラス指向モジュールの第一引数のNULLチェック用アサートです <br /></td></tr>
+<tr class="separator:ga7e91de4b8a04dbed244a3671f195cf6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga141c51de55ec546cb7e88f471138cfd0"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xdebug.html#ga141c51de55ec546cb7e88f471138cfd0">X_ASSERT_ARG</a>(expr)                &#160;&#160;&#160;(void)0</td></tr>
+<tr class="memdesc:ga141c51de55ec546cb7e88f471138cfd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">引数の範囲チェック等のためのアサートです <br /></td></tr>
+<tr class="separator:ga141c51de55ec546cb7e88f471138cfd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d034e40285ce328c2252951d1825c6a"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xdebug.html#ga2d034e40285ce328c2252951d1825c6a">X_ASSERT_NULL</a>(expr)              &#160;&#160;&#160;(void)0</td></tr>
+<tr class="memdesc:ga2d034e40285ce328c2252951d1825c6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">引数のNULLチェック用のアサートです <br /></td></tr>
+<tr class="separator:ga2d034e40285ce328c2252951d1825c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07350f63d9222eee4307f73ae5d0c881"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xdebug.html#ga07350f63d9222eee4307f73ae5d0c881">X_ASSERT_TAG</a>(expr)                &#160;&#160;&#160;(void)0</td></tr>
+<tr class="memdesc:ga07350f63d9222eee4307f73ae5d0c881"><td class="mdescLeft">&#160;</td><td class="mdescRight">規定のタグがセットされているかの検査用アサートです <br /></td></tr>
+<tr class="separator:ga07350f63d9222eee4307f73ae5d0c881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4bc22e965953cbf7e9a009977847c1e"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xdebug.html#gad4bc22e965953cbf7e9a009977847c1e">X_ASSERT_ENUM</a>(expr)              &#160;&#160;&#160;(void)0</td></tr>
+<tr class="memdesc:gad4bc22e965953cbf7e9a009977847c1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">不正な列挙値が指定されていないかの検査用アサートです <br /></td></tr>
+<tr class="separator:gad4bc22e965953cbf7e9a009977847c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf0a8cd3eec6930902bb78cf0f80c7892"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xdebug.html#gaf0a8cd3eec6930902bb78cf0f80c7892">X_ASSERT_MALLOC_NULL</a>(expr)          &#160;&#160;&#160;(void)0</td></tr>
+<tr class="memdesc:gaf0a8cd3eec6930902bb78cf0f80c7892"><td class="mdescLeft">&#160;</td><td class="mdescRight">動的メモリ確保のNULL検査用アサートです <br /></td></tr>
+<tr class="separator:gaf0a8cd3eec6930902bb78cf0f80c7892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2934b29e3a8d69828edcab29f09ebfa"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xdebug.html#gae2934b29e3a8d69828edcab29f09ebfa">X_ABORT</a>(msg)                            &#160;&#160;&#160;X_ASSERT_MSG(0, msg)</td></tr>
+<tr class="memdesc:gae2934b29e3a8d69828edcab29f09ebfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">プログラムの実行を強制停止します <br /></td></tr>
+<tr class="separator:gae2934b29e3a8d69828edcab29f09ebfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga201983a90e1e32678c04aafc85134c01"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xdebug.html#ga201983a90e1e32678c04aafc85134c01">X_ABORT_DEFAULT</a>&#160;&#160;&#160;default: <a class="el" href="group__xdebug.html#gae2934b29e3a8d69828edcab29f09ebfa">X_ABORT</a>(&quot;Runtime error&quot;); break</td></tr>
+<tr class="memdesc:ga201983a90e1e32678c04aafc85134c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">switch文でdefaultの時にX_ABORT()を呼び出します <br /></td></tr>
+<tr class="separator:ga201983a90e1e32678c04aafc85134c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadcc026187a55e8f480b6b540e075a27c"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xdebug.html#gadcc026187a55e8f480b6b540e075a27c">X_EXIT</a>(return_code)              &#160;&#160;&#160;<a class="el" href="group__xdebug.html#gae2934b29e3a8d69828edcab29f09ebfa">X_ABORT</a>(&quot;exit:&quot; #return_code)</td></tr>
+<tr class="memdesc:gadcc026187a55e8f480b6b540e075a27c"><td class="mdescLeft">&#160;</td><td class="mdescRight">プログラムの実行を強制停止します <br /></td></tr>
+<tr class="separator:gadcc026187a55e8f480b6b540e075a27c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">log_headers</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>ログヘッダ文字列のグループです </p>
+</div></td></tr>
+<tr class="memitem:ga0df74a5ea8371ca1cf0f91c164bade0a"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_VERB_COLOR</b>&#160;&#160;&#160;&quot;&quot;</td></tr>
+<tr class="separator:ga0df74a5ea8371ca1cf0f91c164bade0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7d7f9b2633250b6a89689e6abc177f0"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_INFO_COLOR</b>&#160;&#160;&#160;X_COLOR_GREEN</td></tr>
+<tr class="separator:gae7d7f9b2633250b6a89689e6abc177f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac55eb17b30fb5841113556f3c433724b"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_NOTI_COLOR</b>&#160;&#160;&#160;X_COLOR_MAGENTA</td></tr>
+<tr class="separator:gac55eb17b30fb5841113556f3c433724b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac667d937a46386f65099b99ea016ed02"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_WARN_COLOR</b>&#160;&#160;&#160;X_COLOR_YELLOW</td></tr>
+<tr class="separator:gac667d937a46386f65099b99ea016ed02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga834cbb487a4ac75286217753b3c37087"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_ERR_COLOR</b>&#160;&#160;&#160;X_COLOR_RED</td></tr>
+<tr class="separator:ga834cbb487a4ac75286217753b3c37087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga168bdd0f4d5eabaf86f4b60999c6828e"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_VERB_HEADER</b>&#160;&#160;&#160;X_VERB_COLOR <a class="el" href="group__config.html#ga71306ed0c347bb03b9a4c09c853c1183">X_CONF_VERB_HEADER</a> X_COLOR_RESET</td></tr>
+<tr class="separator:ga168bdd0f4d5eabaf86f4b60999c6828e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae08f20c7b8015c239ff0ee5dd750a30b"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_INFO_HEADER</b>&#160;&#160;&#160;X_INFO_COLOR <a class="el" href="group__config.html#gabb16f935c975cdb4f9d94d76474f1037">X_CONF_INFO_HEADER</a> X_COLOR_RESET</td></tr>
+<tr class="separator:gae08f20c7b8015c239ff0ee5dd750a30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d4530637742082e5606b37714660996"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_NOTI_HEADER</b>&#160;&#160;&#160;X_NOTI_COLOR <a class="el" href="group__config.html#ga8d835b4232129157a3ac6222974769f1">X_CONF_NOTI_HEADER</a> X_COLOR_RESET</td></tr>
+<tr class="separator:ga6d4530637742082e5606b37714660996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2940e583098aa0d617867071097155a7"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_WARN_HEADER</b>&#160;&#160;&#160;X_WARN_COLOR <a class="el" href="group__config.html#gab1cee7bac404f9cd2aa7149f465ad163">X_CONF_WARN_HEADER</a> X_COLOR_RESET</td></tr>
+<tr class="separator:ga2940e583098aa0d617867071097155a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a54d66b5c9e0b87ce4fa9ceef8c7593"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_ERR_HEADER</b>&#160;&#160;&#160;X_ERR_COLOR  <a class="el" href="group__config.html#gab7ed9677a367c78307a2ba6453d35ba4">X_CONF_ERR_HEADER</a>  X_COLOR_RESET</td></tr>
+<tr class="separator:ga9a54d66b5c9e0b87ce4fa9ceef8c7593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:ga77d6b09c6bf1f5d51b1059075d74fa55"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xdebug.html#ga77d6b09c6bf1f5d51b1059075d74fa55">XAssertionFailedFunc</a>) (const char *expr, const char *msg, const char *func, const char *file, int line)</td></tr>
+<tr class="memdesc:ga77d6b09c6bf1f5d51b1059075d74fa55"><td class="mdescLeft">&#160;</td><td class="mdescRight">アサーションに失敗した時に呼び出される関数のポインタ型です  <a href="group__xdebug.html#ga77d6b09c6bf1f5d51b1059075d74fa55">[詳解]</a><br /></td></tr>
+<tr class="separator:ga77d6b09c6bf1f5d51b1059075d74fa55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ga1b3bb7752fbbbb60cbfee27d1d684689"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_hexdump</b> (const void *src, size_t len, size_t cols)</td></tr>
+<tr class="separator:ga1b3bb7752fbbbb60cbfee27d1d684689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7cb353d1074142a0b0c48525387e773b"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>x_set_log_level</b> (int level)</td></tr>
+<tr class="separator:ga7cb353d1074142a0b0c48525387e773b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">log_functions</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>ログ出力関数のグループです</p>
+<p>コンパイル時に除去できるように、これらの関数は直接呼び出さす、log_macrosのマ クロを使用してください。 </p>
+</div></td></tr>
+<tr class="memitem:gae786be0e1e936f0f8688620069cf4cc8"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_verb_printlog</b> (const char *tag, const char *fmt,...)</td></tr>
+<tr class="separator:gae786be0e1e936f0f8688620069cf4cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06ead208fb8376c2eabe49b4135b13f6"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_info_printlog</b> (const char *tag, const char *fmt,...)</td></tr>
+<tr class="separator:ga06ead208fb8376c2eabe49b4135b13f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca8113594c0470006d8146ac92fb71d9"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_noti_printlog</b> (const char *tag, const char *fmt,...)</td></tr>
+<tr class="separator:gaca8113594c0470006d8146ac92fb71d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae866902a9cf48156f882ce84885b4535"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_warn_printlog</b> (const char *tag, const char *fmt,...)</td></tr>
+<tr class="separator:gae866902a9cf48156f882ce84885b4535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5175918f93bfc611ad710a20d5e9803a"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_err_printlog</b> (const char *tag, const char *fmt,...)</td></tr>
+<tr class="separator:ga5175918f93bfc611ad710a20d5e9803a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae44084a7bd7cd71cdb261399d7bdca2"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_verb_hexdump</b> (const char *tag, const void *src, size_t len, size_t cols, const char *fmt,...)</td></tr>
+<tr class="separator:gaae44084a7bd7cd71cdb261399d7bdca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga805e9a7f065d6d18cd94088237181d7c"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_info_hexdump</b> (const char *tag, const void *src, size_t len, size_t cols, const char *fmt,...)</td></tr>
+<tr class="separator:ga805e9a7f065d6d18cd94088237181d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4bb315b39de5f11f742c48c994c8a180"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_noti_hexdump</b> (const char *tag, const void *src, size_t len, size_t cols, const char *fmt,...)</td></tr>
+<tr class="separator:ga4bb315b39de5f11f742c48c994c8a180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3d9f4ffab5a9b26c629856d3ef1146a"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_warn_hexdump</b> (const char *tag, const void *src, size_t len, size_t cols, const char *fmt,...)</td></tr>
+<tr class="separator:gaf3d9f4ffab5a9b26c629856d3ef1146a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeee76c0532486e8ff990f35768990667"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_err_hexdump</b> (const char *tag, const void *src, size_t len, size_t cols, const char *fmt,...)</td></tr>
+<tr class="separator:gaeee76c0532486e8ff990f35768990667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:gaa5f80f067f7fca89e24d41ddbbf09aad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xdebug.html#ga77d6b09c6bf1f5d51b1059075d74fa55">XAssertionFailedFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xdebug.html#gaa5f80f067f7fca89e24d41ddbbf09aad">x_assertion_failed</a></td></tr>
+<tr class="memdesc:gaa5f80f067f7fca89e24d41ddbbf09aad"><td class="mdescLeft">&#160;</td><td class="mdescRight">アサーション失敗時に呼びされる関数のポインタです  <a href="group__xdebug.html#gaa5f80f067f7fca89e24d41ddbbf09aad">[詳解]</a><br /></td></tr>
+<tr class="separator:gaa5f80f067f7fca89e24d41ddbbf09aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace210ab5a70caa45dd7522d3bd35b5f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xdebug.html#ga77d6b09c6bf1f5d51b1059075d74fa55">XAssertionFailedFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xdebug.html#gace210ab5a70caa45dd7522d3bd35b5f1">x_post_assertion_failed</a></td></tr>
+<tr class="memdesc:gace210ab5a70caa45dd7522d3bd35b5f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">x_assertion_failedの呼び出し後に呼びされる関数のポインタです  <a href="group__xdebug.html#gace210ab5a70caa45dd7522d3bd35b5f1">[詳解]</a><br /></td></tr>
+<tr class="separator:gace210ab5a70caa45dd7522d3bd35b5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga977c280e4e7adba752754b2641988063"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xdebug.html#ga77d6b09c6bf1f5d51b1059075d74fa55">XAssertionFailedFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xdebug.html#ga977c280e4e7adba752754b2641988063">x_pre_assertion_failed</a></td></tr>
+<tr class="memdesc:ga977c280e4e7adba752754b2641988063"><td class="mdescLeft">&#160;</td><td class="mdescRight">x_assertion_failedの呼び出し前に呼びされる関数のポインタです  <a href="group__xdebug.html#ga977c280e4e7adba752754b2641988063">[詳解]</a><br /></td></tr>
+<tr class="separator:ga977c280e4e7adba752754b2641988063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>デバッグログやassert等の定義 </p>
+<dl class="section author"><dt>著者</dt><dd>MaskedW </dd></dl>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_295ce2a6370ae0a688a0222b881c77ca.html">picox</a></li><li class="navelem"><a class="el" href="dir_334975c5f7f258e1ec06bfc6b10c4fd2.html">core</a></li><li class="navelem"><a class="el" href="dir_db566c2ae50ab4e7ff384a2af9bd29a2.html">detail</a></li><li class="navelem"><a class="el" href="xdebug_8h.html">xdebug.h</a></li>
+    <li class="footer">2016年07月11日(月) 01時34分42秒作成 - picox / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

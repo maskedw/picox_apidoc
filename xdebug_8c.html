@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>picox: xdebug.c ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">picox
+   &#160;<span id="projectnumber">0.5</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('xdebug_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">関数</a> &#124;
+<a href="#var-members">変数</a>  </div>
+  <div class="headertitle">
+<div class="title">xdebug.c ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>デバッグログやassert等の実装  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="xcore_8h_source.html">picox/core/xcore.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+xdebug.c の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="xdebug_8c__incl.png" border="0" usemap="#xdebug_8c" alt=""/></div>
+<map name="xdebug_8c" id="xdebug_8c">
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a991056f248c20945431d89dc3e0396c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a991056f248c20945431d89dc3e0396c4"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>X__AssertionFailed</b> (const char *expr, const char *msg, const char *func, const char *file, int line)</td></tr>
+<tr class="separator:a991056f248c20945431d89dc3e0396c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98e0bf4f2859d7d3e4ebd49564e7a5aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98e0bf4f2859d7d3e4ebd49564e7a5aa"></a>
+static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>X__GetHeader</b> (int level)</td></tr>
+<tr class="separator:a98e0bf4f2859d7d3e4ebd49564e7a5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad595c9ae9e4033ec97ecc4219dd97853"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad595c9ae9e4033ec97ecc4219dd97853"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>X__PostAssertionFailed</b> (const char *expr, const char *msg, const char *func, const char *file, int line)</td></tr>
+<tr class="separator:ad595c9ae9e4033ec97ecc4219dd97853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbdaf5f01198b653f99c68d9fdbca475"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbdaf5f01198b653f99c68d9fdbca475"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>X__PreAssertionFailed</b> (const char *expr, const char *msg, const char *func, const char *file, int line)</td></tr>
+<tr class="separator:acbdaf5f01198b653f99c68d9fdbca475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c70ce0bc1f7caa2b3be88c7f4fe3a6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c70ce0bc1f7caa2b3be88c7f4fe3a6a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>X__VHexdump</b> (int level, const char *tag, const char *src, size_t len, size_t cols, const char *fmt, va_list args)</td></tr>
+<tr class="separator:a7c70ce0bc1f7caa2b3be88c7f4fe3a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac418eb3ec60db3f7d1ed6be29701fcb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac418eb3ec60db3f7d1ed6be29701fcb8"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>X__VPrintLog</b> (int level, const char *tag, const char *fmt, va_list args)</td></tr>
+<tr class="separator:ac418eb3ec60db3f7d1ed6be29701fcb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeee76c0532486e8ff990f35768990667"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_err_hexdump</b> (const char *tag, const void *src, size_t len, size_t cols, const char *fmt,...)</td></tr>
+<tr class="separator:gaeee76c0532486e8ff990f35768990667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5175918f93bfc611ad710a20d5e9803a"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_err_printlog</b> (const char *tag, const char *fmt,...)</td></tr>
+<tr class="separator:ga5175918f93bfc611ad710a20d5e9803a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b3bb7752fbbbb60cbfee27d1d684689"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_hexdump</b> (const void *src, size_t len, size_t cols)</td></tr>
+<tr class="separator:ga1b3bb7752fbbbb60cbfee27d1d684689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga805e9a7f065d6d18cd94088237181d7c"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_info_hexdump</b> (const char *tag, const void *src, size_t len, size_t cols, const char *fmt,...)</td></tr>
+<tr class="separator:ga805e9a7f065d6d18cd94088237181d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06ead208fb8376c2eabe49b4135b13f6"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_info_printlog</b> (const char *tag, const char *fmt,...)</td></tr>
+<tr class="separator:ga06ead208fb8376c2eabe49b4135b13f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4bb315b39de5f11f742c48c994c8a180"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_noti_hexdump</b> (const char *tag, const void *src, size_t len, size_t cols, const char *fmt,...)</td></tr>
+<tr class="separator:ga4bb315b39de5f11f742c48c994c8a180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca8113594c0470006d8146ac92fb71d9"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_noti_printlog</b> (const char *tag, const char *fmt,...)</td></tr>
+<tr class="separator:gaca8113594c0470006d8146ac92fb71d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7cb353d1074142a0b0c48525387e773b"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>x_set_log_level</b> (int level)</td></tr>
+<tr class="separator:ga7cb353d1074142a0b0c48525387e773b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae44084a7bd7cd71cdb261399d7bdca2"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_verb_hexdump</b> (const char *tag, const void *src, size_t len, size_t cols, const char *fmt,...)</td></tr>
+<tr class="separator:gaae44084a7bd7cd71cdb261399d7bdca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae786be0e1e936f0f8688620069cf4cc8"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_verb_printlog</b> (const char *tag, const char *fmt,...)</td></tr>
+<tr class="separator:gae786be0e1e936f0f8688620069cf4cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3d9f4ffab5a9b26c629856d3ef1146a"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_warn_hexdump</b> (const char *tag, const void *src, size_t len, size_t cols, const char *fmt,...)</td></tr>
+<tr class="separator:gaf3d9f4ffab5a9b26c629856d3ef1146a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae866902a9cf48156f882ce84885b4535"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>x_warn_printlog</b> (const char *tag, const char *fmt,...)</td></tr>
+<tr class="separator:gae866902a9cf48156f882ce84885b4535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:a9b86844de7a5ea81b86217c71a0e72ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b86844de7a5ea81b86217c71a0e72ba"></a>
+X__Debug&#160;</td><td class="memItemRight" valign="bottom"><b>g_picox_debug</b> = {X_LOG_LEVEL}</td></tr>
+<tr class="separator:a9b86844de7a5ea81b86217c71a0e72ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae18d9396937ad39f8b67061026c546b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae18d9396937ad39f8b67061026c546b0"></a>
+static X__Debug *const&#160;</td><td class="memItemRight" valign="bottom"><b>priv</b> = &amp;g_picox_debug</td></tr>
+<tr class="separator:ae18d9396937ad39f8b67061026c546b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5f80f067f7fca89e24d41ddbbf09aad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xdebug.html#ga77d6b09c6bf1f5d51b1059075d74fa55">XAssertionFailedFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xdebug.html#gaa5f80f067f7fca89e24d41ddbbf09aad">x_assertion_failed</a> = X__AssertionFailed</td></tr>
+<tr class="memdesc:gaa5f80f067f7fca89e24d41ddbbf09aad"><td class="mdescLeft">&#160;</td><td class="mdescRight">アサーション失敗時に呼びされる関数のポインタです  <a href="group__xdebug.html#gaa5f80f067f7fca89e24d41ddbbf09aad">[詳解]</a><br /></td></tr>
+<tr class="separator:gaa5f80f067f7fca89e24d41ddbbf09aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace210ab5a70caa45dd7522d3bd35b5f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xdebug.html#ga77d6b09c6bf1f5d51b1059075d74fa55">XAssertionFailedFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xdebug.html#gace210ab5a70caa45dd7522d3bd35b5f1">x_post_assertion_failed</a> = X__PostAssertionFailed</td></tr>
+<tr class="memdesc:gace210ab5a70caa45dd7522d3bd35b5f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">x_assertion_failedの呼び出し後に呼びされる関数のポインタです  <a href="group__xdebug.html#gace210ab5a70caa45dd7522d3bd35b5f1">[詳解]</a><br /></td></tr>
+<tr class="separator:gace210ab5a70caa45dd7522d3bd35b5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga977c280e4e7adba752754b2641988063"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xdebug.html#ga77d6b09c6bf1f5d51b1059075d74fa55">XAssertionFailedFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xdebug.html#ga977c280e4e7adba752754b2641988063">x_pre_assertion_failed</a> = X__PreAssertionFailed</td></tr>
+<tr class="memdesc:ga977c280e4e7adba752754b2641988063"><td class="mdescLeft">&#160;</td><td class="mdescRight">x_assertion_failedの呼び出し前に呼びされる関数のポインタです  <a href="group__xdebug.html#ga977c280e4e7adba752754b2641988063">[詳解]</a><br /></td></tr>
+<tr class="separator:ga977c280e4e7adba752754b2641988063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>デバッグログやassert等の実装 </p>
+<dl class="section author"><dt>著者</dt><dd>MaskedW </dd></dl>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_295ce2a6370ae0a688a0222b881c77ca.html">picox</a></li><li class="navelem"><a class="el" href="dir_334975c5f7f258e1ec06bfc6b10c4fd2.html">core</a></li><li class="navelem"><a class="el" href="dir_db566c2ae50ab4e7ff384a2af9bd29a2.html">detail</a></li><li class="navelem"><a class="el" href="xdebug_8c.html">xdebug.c</a></li>
+    <li class="footer">2016年07月11日(月) 01時34分42秒作成 - picox / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

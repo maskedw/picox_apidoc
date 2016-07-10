@@ -1,0 +1,11 @@
+digraph "Multitask"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node0 [label="Multitask",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 [label="Xfiber",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xfiber.html",tooltip="非リアルタイム協調型マルチタスクモジュール "];
+  Node2 [label="Xvtimer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xvtimer.html",tooltip="時間管理によるコールバック関数呼び出し "];
+  Node0->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+}

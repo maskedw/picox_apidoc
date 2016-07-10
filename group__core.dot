@@ -1,0 +1,29 @@
+digraph "Core"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node6 [label="Xstdio",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xstdio.html",tooltip="stdio.h系統の機能を提供します "];
+  Node11 [label="Xutils",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xutils.html",tooltip="低レベルのあれこれ雑多なユーティリティ集 "];
+  Node8 [label="Xstream",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xstream.html",tooltip="入出力を抽象化するストリーム機能を提供します "];
+  Node10 [label="Xtime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xtime.html",tooltip="時間を扱うための関数等 "];
+  Node7 [label="Xstdlib",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xstdlib.html",tooltip="主にmalloc系の機能を提供します "];
+  Node3 [label="Xpreprocessor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xpreprocessor.html",tooltip="プロプロセッサのユーティリティ機能を提供します "];
+  Node5 [label="Xstddef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xstddef.html",tooltip="picoxで共通に使用する型や定数、マクロの定義 "];
+  Node1 [label="Xcompiler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xcompiler.html",tooltip="コンパイラごとの依存機能を吸収します "];
+  Node2 [label="Xdebug",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xdebug.html",tooltip="デバッグログやassert等の機能を提供します "];
+  Node9 [label="Xstring",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xstring.html",tooltip="標準Cライブラリstring.hの拡張機能を提供します "];
+  Node0 [label="Core",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node4 [label="Xrandom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xrandom.html",tooltip="擬似乱数値の取得機能を提供します "];
+  Node0->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node11 [shape=plaintext, dir="back", style="solid"];
+}

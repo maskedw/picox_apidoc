@@ -1,0 +1,17 @@
+digraph "Container"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node0 [label="Container",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node5 [label="Xmessage_buffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xmessage__buffer.html",tooltip="可変長バイトデータを格納するコンテナ "];
+  Node2 [label="Xcircular_buffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xcircular__buffer.html",tooltip="循環バッファ "];
+  Node4 [label="Xintrusive_list",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xintrusive__list.html",tooltip="ノード侵入型ダブルリンクリストモジュール "];
+  Node1 [label="Xbyte_array",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xbyte__array.html",tooltip="可変長バイト配列モジュール "];
+  Node3 [label="Xfifo_buffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xfifo__buffer.html",tooltip="FIFOバイトバッファ "];
+  Node0->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+}

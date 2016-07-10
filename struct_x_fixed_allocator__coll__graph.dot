@@ -1,0 +1,6 @@
+digraph "XFixedAllocator"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{XFixedAllocator\n|+ alignment\l+ block_size\l+ heap\l+ next\l+ num_blocks\l+ remain_blocks\l+ top\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

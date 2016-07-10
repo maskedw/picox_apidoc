@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>picox: xgpio.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">picox
+   &#160;<span id="projectnumber">0.5</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('xgpio_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">データ構造</a> &#124;
+<a href="#enum-members">列挙型</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">xgpio.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="xcore_8h_source.html">picox/core/xcore.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+xgpio.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="xgpio_8h__incl.png" border="0" usemap="#xgpio_8h" alt=""/></div>
+<map name="xgpio_8h" id="xgpio_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="xgpio_8h__dep__incl.png" border="0" usemap="#xgpio_8hdep" alt=""/></div>
+<map name="xgpio_8hdep" id="xgpio_8hdep">
+</map>
+</div>
+</div>
+<p><a href="xgpio_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+データ構造</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_gpio.html">XGpio</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">仮想GPIOインターフェース構造体です  <a href="struct_x_gpio.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_gpio_config.html">XGpioConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIOのコンフィグレーション構造体です  <a href="struct_x_gpio_config.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">HAL GPIO virtual functions</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>ユーザはHALが要求するインターフェースを満たす必要があります。 </p>
+</div></td></tr>
+<tr class="memitem:ga2ab3f544a128e4bde1b3056ad3a8797e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xgpio.html#ga2ab3f544a128e4bde1b3056ad3a8797e">XGpioConfigureFunc</a>) (void *driver, const <a class="el" href="struct_x_gpio_config.html">XGpioConfig</a> *config)</td></tr>
+<tr class="separator:ga2ab3f544a128e4bde1b3056ad3a8797e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad59841fcd5b5e1a0c5d255f4d3a9dd4f"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xgpio.html#gad59841fcd5b5e1a0c5d255f4d3a9dd4f">XGpioWriteFunc</a>) (void *driver, <a class="el" href="group__xgpio.html#gaa65245fa2e1537429398cf6dc2d0e180">XGpioLevel</a> level)</td></tr>
+<tr class="separator:gad59841fcd5b5e1a0c5d255f4d3a9dd4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0dd7548cb6a9a52afe6ce91604e0a851"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__xgpio.html#gaa65245fa2e1537429398cf6dc2d0e180">XGpioLevel</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xgpio.html#ga0dd7548cb6a9a52afe6ce91604e0a851">XGpioReadFunc</a>) (void *driver)</td></tr>
+<tr class="separator:ga0dd7548cb6a9a52afe6ce91604e0a851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac7de5803bd102471429f8867019906b5"><td class="memItemLeft" align="right" valign="top">
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xgpio.html#gac7de5803bd102471429f8867019906b5">XGpioEdgeHandler</a>) (void *driver, <a class="el" href="group__xgpio.html#ga1bd883965414ed2dbcb4065010f012c2">XGpioEdge</a> edge)</td></tr>
+<tr class="memdesc:gac7de5803bd102471429f8867019906b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">エッジ変化割込み時に呼び出す割込みハンドラです <br /></td></tr>
+<tr class="separator:gac7de5803bd102471429f8867019906b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac848fcd84625107c71b09306d9a0b12d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xgpio.html#gac848fcd84625107c71b09306d9a0b12d">XGpioAttachEdgeHandlerFunc</a>) (void *driver, <a class="el" href="group__xgpio.html#ga1bd883965414ed2dbcb4065010f012c2">XGpioEdge</a> edge, <a class="el" href="group__xgpio.html#gac7de5803bd102471429f8867019906b5">XGpioEdgeHandler</a> handler)</td></tr>
+<tr class="separator:gac848fcd84625107c71b09306d9a0b12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:ga3afd068010820383f5bd16717cf8eeba"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xgpio.html#ga3afd068010820383f5bd16717cf8eeba">XGpioDirection</a> { <a class="el" href="group__xgpio.html#gga3afd068010820383f5bd16717cf8eebaa1d0323999ba9634fdb20431e4c1c7836">XGPIO_DIRECTION_INPUT</a>, 
+<a class="el" href="group__xgpio.html#gga3afd068010820383f5bd16717cf8eebaac3c2e2beea9ecac22ad8be46ed2861e4">XGPIO_DIRECTION_OUTPUT</a>
+ }<tr class="memdesc:ga3afd068010820383f5bd16717cf8eeba"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIOの入出力方向を表します  <a href="group__xgpio.html#ga3afd068010820383f5bd16717cf8eeba">[詳解]</a><br /></td></tr>
+</td></tr>
+<tr class="separator:ga3afd068010820383f5bd16717cf8eeba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1bd883965414ed2dbcb4065010f012c2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xgpio.html#ga1bd883965414ed2dbcb4065010f012c2">XGpioEdge</a> { <a class="el" href="group__xgpio.html#gga1bd883965414ed2dbcb4065010f012c2a8f07254ba9cd491a92623ceb7a646150">XGPIO_EDGE_FALLING</a>, 
+<a class="el" href="group__xgpio.html#gga1bd883965414ed2dbcb4065010f012c2a539c05449eee7e9910a3c2f76bf9950b">XGPIO_EDGE_RISING</a>, 
+<a class="el" href="group__xgpio.html#gga1bd883965414ed2dbcb4065010f012c2a0bb6d02801c9893ae69c162484b22e0c">XGPIO_EDGE_BOTH</a>
+ }<tr class="memdesc:ga1bd883965414ed2dbcb4065010f012c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIOの信号変化エッジ方向を表します  <a href="group__xgpio.html#ga1bd883965414ed2dbcb4065010f012c2">[詳解]</a><br /></td></tr>
+</td></tr>
+<tr class="separator:ga1bd883965414ed2dbcb4065010f012c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa65245fa2e1537429398cf6dc2d0e180"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xgpio.html#gaa65245fa2e1537429398cf6dc2d0e180">XGpioLevel</a> { <a class="el" href="group__xgpio.html#ggaa65245fa2e1537429398cf6dc2d0e180a26f90ebf9a373ad56385fa986b320c35">XGPIO_LEVEL_LOW</a>, 
+<a class="el" href="group__xgpio.html#ggaa65245fa2e1537429398cf6dc2d0e180aafea2fe83066cf403d84e10c1766fa84">XGPIO_LEVEL_HIGH</a>
+ }<tr class="memdesc:gaa65245fa2e1537429398cf6dc2d0e180"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIOの信号レベルを表します  <a href="group__xgpio.html#gaa65245fa2e1537429398cf6dc2d0e180">[詳解]</a><br /></td></tr>
+</td></tr>
+<tr class="separator:gaa65245fa2e1537429398cf6dc2d0e180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab3a880cdbb6b9d487ddfb797f60fce7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xgpio.html#gaab3a880cdbb6b9d487ddfb797f60fce7">XGpioMode</a> { <a class="el" href="group__xgpio.html#ggaab3a880cdbb6b9d487ddfb797f60fce7a3131ae70d116c18c4ab5c72de3fb657e">XGPIO_MODE_PULLUP</a>, 
+<a class="el" href="group__xgpio.html#ggaab3a880cdbb6b9d487ddfb797f60fce7a51544d4463f07e71abfe715512a9d7fa">XGPIO_MODE_PULLDOWN</a>, 
+<a class="el" href="group__xgpio.html#ggaab3a880cdbb6b9d487ddfb797f60fce7aac9b60cf5d6dd97769a00325ed360996">XGPIO_MODE_PULLNONE</a>, 
+<a class="el" href="group__xgpio.html#ggaab3a880cdbb6b9d487ddfb797f60fce7a0b0cd19c047022f9498f64bb8edf51cd">XGPIO_MODE_OPENDRAIN</a>
+ }<tr class="memdesc:gaab3a880cdbb6b9d487ddfb797f60fce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIOのモードを表します  <a href="group__xgpio.html#gaab3a880cdbb6b9d487ddfb797f60fce7">[詳解]</a><br /></td></tr>
+</td></tr>
+<tr class="separator:gaab3a880cdbb6b9d487ddfb797f60fce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ga59e746cd7ec3f0d5adcbc461386efb9d"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xgpio.html#ga59e746cd7ec3f0d5adcbc461386efb9d">xgpio_attach_edge_handler</a> (<a class="el" href="struct_x_gpio.html">XGpio</a> *gpio, <a class="el" href="group__xgpio.html#ga1bd883965414ed2dbcb4065010f012c2">XGpioEdge</a> edge, <a class="el" href="group__xgpio.html#gac7de5803bd102471429f8867019906b5">XGpioEdgeHandler</a> handler)</td></tr>
+<tr class="memdesc:ga59e746cd7ec3f0d5adcbc461386efb9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">エッジ変化割込みをセットします <br /></td></tr>
+<tr class="separator:ga59e746cd7ec3f0d5adcbc461386efb9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb6aa721120e5236841678d645f5ead2"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xgpio.html#gafb6aa721120e5236841678d645f5ead2">xgpio_config_init</a> (<a class="el" href="struct_x_gpio_config.html">XGpioConfig</a> *config)</td></tr>
+<tr class="memdesc:gafb6aa721120e5236841678d645f5ead2"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンフィグオブジェクトを初期値に設定します <br /></td></tr>
+<tr class="separator:gafb6aa721120e5236841678d645f5ead2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2aca56f562024c13b3280ef630d5931b"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xgpio.html#ga2aca56f562024c13b3280ef630d5931b">xgpio_configure</a> (<a class="el" href="struct_x_gpio.html">XGpio</a> *gpio, const <a class="el" href="struct_x_gpio_config.html">XGpioConfig</a> *config)</td></tr>
+<tr class="memdesc:ga2aca56f562024c13b3280ef630d5931b"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIOの設定を変更します <br /></td></tr>
+<tr class="separator:ga2aca56f562024c13b3280ef630d5931b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga447bf581bb230aa4ae80d1fc4c1e56b2"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xgpio.html#ga447bf581bb230aa4ae80d1fc4c1e56b2">xgpio_init</a> (<a class="el" href="struct_x_gpio.html">XGpio</a> *gpio)</td></tr>
+<tr class="memdesc:ga447bf581bb230aa4ae80d1fc4c1e56b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">仮想GPIOインターフェースを初期値に設定します <br /></td></tr>
+<tr class="separator:ga447bf581bb230aa4ae80d1fc4c1e56b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b4eb843617506ba9234d7870dc2f797"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xgpio.html#gaa65245fa2e1537429398cf6dc2d0e180">XGpioLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xgpio.html#ga3b4eb843617506ba9234d7870dc2f797">xgpio_read</a> (<a class="el" href="struct_x_gpio.html">XGpio</a> *gpio)</td></tr>
+<tr class="memdesc:ga3b4eb843617506ba9234d7870dc2f797"><td class="mdescLeft">&#160;</td><td class="mdescRight">入力ポートから値を読み出します <br /></td></tr>
+<tr class="separator:ga3b4eb843617506ba9234d7870dc2f797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac3bf28c3f601208a0746a99bafca8e98"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xgpio.html#gac3bf28c3f601208a0746a99bafca8e98">xgpio_toggle</a> (<a class="el" href="struct_x_gpio.html">XGpio</a> *gpio)</td></tr>
+<tr class="memdesc:gac3bf28c3f601208a0746a99bafca8e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">出力ポートの値を反転します <br /></td></tr>
+<tr class="separator:gac3bf28c3f601208a0746a99bafca8e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0db73f9175e5805871e3a4f8c6cd9733"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xgpio.html#ga0db73f9175e5805871e3a4f8c6cd9733">xgpio_write</a> (<a class="el" href="struct_x_gpio.html">XGpio</a> *gpio, <a class="el" href="group__xgpio.html#gaa65245fa2e1537429398cf6dc2d0e180">XGpioLevel</a> level)</td></tr>
+<tr class="memdesc:ga0db73f9175e5805871e3a4f8c6cd9733"><td class="mdescLeft">&#160;</td><td class="mdescRight">出力ポートへ値を書き込みます <br /></td></tr>
+<tr class="separator:ga0db73f9175e5805871e3a4f8c6cd9733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><dl class="section author"><dt>著者</dt><dd>MaskedW </dd></dl>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_295ce2a6370ae0a688a0222b881c77ca.html">picox</a></li><li class="navelem"><a class="el" href="dir_d771004b704a885dfebdad5fa03f9126.html">hal</a></li><li class="navelem"><a class="el" href="xgpio_8h.html">xgpio.h</a></li>
+    <li class="footer">2016年07月11日(月) 01時34分43秒作成 - picox / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

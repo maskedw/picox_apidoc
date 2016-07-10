@@ -1,0 +1,6 @@
+digraph "XPicoAllocator"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{XPicoAllocator\n|+ alignment\l+ capacity\l+ heap\l+ max_used\l+ ownmemory\l+ reserve\l+ top\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

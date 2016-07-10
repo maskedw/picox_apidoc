@@ -1,0 +1,6 @@
+digraph "XStream"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{XStream\n|+ close_func\l+ driver\l+ error\l+ error_string_func\l+ flush_func\l+ read_func\l+ seek_func\l+ tag\l+ tell_func\l+ write_func\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

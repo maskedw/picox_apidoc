@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>picox: xposixfs.c ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">picox
+   &#160;<span id="projectnumber">0.5</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('xposixfs_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">xposixfs.c ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="xposixfs_8h_source.html">picox/filesystem/xposixfs.h</a>&gt;</code><br />
+<code>#include &lt;sys/stat.h&gt;</code><br />
+<code>#include &lt;sys/types.h&gt;</code><br />
+<code>#include &lt;dirent.h&gt;</code><br />
+<code>#include &lt;utime.h&gt;</code><br />
+<code>#include &lt;errno.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+xposixfs.c の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="xposixfs_8c__incl.png" border="0" usemap="#xposixfs_8c" alt=""/></div>
+<map name="xposixfs_8c" id="xposixfs_8c">
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:ac5868cf1b8ac6c1296f55871953dfb80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5868cf1b8ac6c1296f55871953dfb80"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__ASSERT_TAG</b>(p)        &#160;&#160;&#160;(X_ASSERT(((const <a class="el" href="struct_x_posix_fs.html">XPosixFs</a>*)p)-&gt;m_tag == X_POSIXFS_TAG))</td></tr>
+<tr class="separator:ac5868cf1b8ac6c1296f55871953dfb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea444334827bd263b293d703f85d1f86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea444334827bd263b293d703f85d1f86"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__GET_REAL_DIR</b>(dir)&#160;&#160;&#160;(((X__DirStorage*)dir)-&gt;realdir)</td></tr>
+<tr class="separator:aea444334827bd263b293d703f85d1f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a56398c644f57e8d9374a3364145bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5a56398c644f57e8d9374a3364145bf"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__GET_REAL_FP</b>(fp)    &#160;&#160;&#160;(((X__FileStorage*)(fp))-&gt;realfp)</td></tr>
+<tr class="separator:af5a56398c644f57e8d9374a3364145bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a5246f35b4a6132834bdb92520fc09635"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5246f35b4a6132834bdb92520fc09635"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>X__DoRmTree</b> (char *path, int size, int tail, struct stat *statbuf)</td></tr>
+<tr class="separator:a5246f35b4a6132834bdb92520fc09635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef8f8c94a06eb2065aead08309774cd5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef8f8c94a06eb2065aead08309774cd5"></a>
+static <a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>X__GetError</b> (void)</td></tr>
+<tr class="separator:aef8f8c94a06eb2065aead08309774cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga227fff78e6f9fe75686e3bcabeb0d713"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xposixfs_chdir</b> (<a class="el" href="struct_x_posix_fs.html">XPosixFs</a> *fs, const char *path)</td></tr>
+<tr class="separator:ga227fff78e6f9fe75686e3bcabeb0d713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98d473452c40585ba5a92de1bf92db54"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xposixfs_close</b> (<a class="el" href="struct_x_file.html">XFile</a> *fp)</td></tr>
+<tr class="separator:ga98d473452c40585ba5a92de1bf92db54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga207eb9ab9980d260102522c34225e5ea"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xposixfs_closedir</b> (<a class="el" href="struct_x_dir.html">XDir</a> *dir)</td></tr>
+<tr class="separator:ga207eb9ab9980d260102522c34225e5ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed92608d952155acd3698933e804fdb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xposixfs.html#gaed92608d952155acd3698933e804fdb6">xposixfs_deinit</a> (<a class="el" href="struct_x_posix_fs.html">XPosixFs</a> *fs)</td></tr>
+<tr class="memdesc:gaed92608d952155acd3698933e804fdb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルシステムの終了処理を行います  <a href="group__xposixfs.html#gaed92608d952155acd3698933e804fdb6">[詳解]</a><br /></td></tr>
+<tr class="separator:gaed92608d952155acd3698933e804fdb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8af648ae125d9b31bb2601f49d5b241f"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xposixfs_flush</b> (<a class="el" href="struct_x_file.html">XFile</a> *fp)</td></tr>
+<tr class="separator:ga8af648ae125d9b31bb2601f49d5b241f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf468fa212dd67dededdd652b7eef6954"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xposixfs_getcwd</b> (<a class="el" href="struct_x_posix_fs.html">XPosixFs</a> *fs, char *buf, size_t size)</td></tr>
+<tr class="separator:gaf468fa212dd67dededdd652b7eef6954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga216c35381d1be88244ec93e320fe770d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xposixfs.html#ga216c35381d1be88244ec93e320fe770d">xposixfs_init</a> (<a class="el" href="struct_x_posix_fs.html">XPosixFs</a> *fs)</td></tr>
+<tr class="memdesc:ga216c35381d1be88244ec93e320fe770d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルシステムを初期化します  <a href="group__xposixfs.html#ga216c35381d1be88244ec93e320fe770d">[詳解]</a><br /></td></tr>
+<tr class="separator:ga216c35381d1be88244ec93e320fe770d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb0d3550fb92c3051ac675d82ea3b34f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xposixfs.html#gabb0d3550fb92c3051ac675d82ea3b34f">xposixfs_init_vfs</a> (<a class="el" href="struct_x_posix_fs.html">XPosixFs</a> *fs, <a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs)</td></tr>
+<tr class="memdesc:gabb0d3550fb92c3051ac675d82ea3b34f"><td class="mdescLeft">&#160;</td><td class="mdescRight">仮想ファイルシステムを初期化します  <a href="group__xposixfs.html#gabb0d3550fb92c3051ac675d82ea3b34f">[詳解]</a><br /></td></tr>
+<tr class="separator:gabb0d3550fb92c3051ac675d82ea3b34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8558648e66e924c08dc203f7a0e62b8f"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xposixfs_mkdir</b> (<a class="el" href="struct_x_posix_fs.html">XPosixFs</a> *fs, const char *path)</td></tr>
+<tr class="separator:ga8558648e66e924c08dc203f7a0e62b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d631dec6c22835d8d848fa0fed907fc"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xposixfs_open</b> (<a class="el" href="struct_x_posix_fs.html">XPosixFs</a> *fs, const char *path, <a class="el" href="group__xstddef.html#ga5cc0f4c9468cbd29423c6d9bdb59d6e1">XOpenMode</a> mode, <a class="el" href="struct_x_file.html">XFile</a> **o_fp)</td></tr>
+<tr class="separator:ga1d631dec6c22835d8d848fa0fed907fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5a8581227da0f6cba4047053a958f22"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xposixfs_opendir</b> (<a class="el" href="struct_x_posix_fs.html">XPosixFs</a> *fs, const char *path, <a class="el" href="struct_x_dir.html">XDir</a> **o_dir)</td></tr>
+<tr class="separator:gab5a8581227da0f6cba4047053a958f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4197c47554c32585d1259bdc8f3a730"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xposixfs_read</b> (<a class="el" href="struct_x_file.html">XFile</a> *fp, void *dst, size_t size, size_t *nread)</td></tr>
+<tr class="separator:gac4197c47554c32585d1259bdc8f3a730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa4b5030ba4b8a6c0d1bc3228ed1b7525"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xposixfs_readdir</b> (<a class="el" href="struct_x_dir.html">XDir</a> *dir, <a class="el" href="struct_x_dir_ent.html">XDirEnt</a> *dirent, <a class="el" href="struct_x_dir_ent.html">XDirEnt</a> **result)</td></tr>
+<tr class="separator:gaa4b5030ba4b8a6c0d1bc3228ed1b7525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad781cd4ab20dab206e58d892e9bd0374"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xposixfs_remove</b> (<a class="el" href="struct_x_posix_fs.html">XPosixFs</a> *fs, const char *path)</td></tr>
+<tr class="separator:gad781cd4ab20dab206e58d892e9bd0374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9aed55ae1b7c4bf01c9cc1a37562ea7"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xposixfs_rename</b> (<a class="el" href="struct_x_posix_fs.html">XPosixFs</a> *fs, const char *oldpath, const char *newpath)</td></tr>
+<tr class="separator:gac9aed55ae1b7c4bf01c9cc1a37562ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08db2a4783f12cb9132c38e6a748fdf4"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xposixfs_rmtree</b> (<a class="el" href="struct_x_posix_fs.html">XPosixFs</a> *fs, const char *path)</td></tr>
+<tr class="separator:ga08db2a4783f12cb9132c38e6a748fdf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac7362150434b6c1e97a2e50283ae57d1"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xposixfs_seek</b> (<a class="el" href="struct_x_file.html">XFile</a> *fp, <a class="el" href="group__xstddef.html#ga0bdeff19d49868d285c1bb23ca87bf76">XOffset</a> pos, <a class="el" href="group__xstddef.html#ga988c074c9467b48a58b58808cd980ea7">XSeekMode</a> whence)</td></tr>
+<tr class="separator:gac7362150434b6c1e97a2e50283ae57d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca7cb7ca84ee66aca344be3df5f500fb"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xposixfs_stat</b> (<a class="el" href="struct_x_posix_fs.html">XPosixFs</a> *fs, const char *path, <a class="el" href="struct_x_stat.html">XStat</a> *statbuf)</td></tr>
+<tr class="separator:gaca7cb7ca84ee66aca344be3df5f500fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c187aa53fe357c4f328b0a501df185f"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xposixfs_tell</b> (<a class="el" href="struct_x_file.html">XFile</a> *fp, <a class="el" href="group__xstddef.html#gadcc4f92c69a1bbdb4449015227943685">XSize</a> *pos)</td></tr>
+<tr class="separator:ga7c187aa53fe357c4f328b0a501df185f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22c5c35d3041f708dfb235082ebff7fe"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xposixfs_utime</b> (<a class="el" href="struct_x_posix_fs.html">XPosixFs</a> *fs, const char *path, <a class="el" href="group__xtime.html#ga0546cc405ace3f593aa4a09ccc2c88bb">XTime</a> time)</td></tr>
+<tr class="separator:ga22c5c35d3041f708dfb235082ebff7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaad41a5edd0455338d0989ffa754f4f7"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xposixfs_write</b> (<a class="el" href="struct_x_file.html">XFile</a> *fp, const void *src, size_t size, size_t *nwritten)</td></tr>
+<tr class="separator:gaaad41a5edd0455338d0989ffa754f4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><dl class="section author"><dt>著者</dt><dd>MaskedW </dd></dl>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_295ce2a6370ae0a688a0222b881c77ca.html">picox</a></li><li class="navelem"><a class="el" href="dir_e3be2385c94fc93b1a1cade2fa68aeff.html">filesystem</a></li><li class="navelem"><a class="el" href="xposixfs_8c.html">xposixfs.c</a></li>
+    <li class="footer">2016年07月11日(月) 01時34分43秒作成 - picox / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>picox: xromfs.c ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">picox
+   &#160;<span id="projectnumber">0.5</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('xromfs_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">xromfs.c ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>RAMファイルシステム実装  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="xromfs_8h_source.html">picox/filesystem/xromfs.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+xromfs.c の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="xromfs_8c__incl.png" border="0" usemap="#xromfs_8c" alt=""/></div>
+<map name="xromfs_8c" id="xromfs_8c">
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a782af811b059bce3e5416e094dba90c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a782af811b059bce3e5416e094dba90c2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__ASSERT_TAG</b>(p)            &#160;&#160;&#160;(<a class="el" href="group__xdebug.html#ga07350f63d9222eee4307f73ae5d0c881">X_ASSERT_TAG</a>(((const <a class="el" href="struct_x_rom_fs.html">XRomFs</a>*)p)-&gt;m_tag == X_ROMFS_TAG))</td></tr>
+<tr class="separator:a782af811b059bce3e5416e094dba90c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc5d4467d120624161bb7503eddbc6ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc5d4467d120624161bb7503eddbc6ad"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__DATA_OFFSET</b>&#160;&#160;&#160;(20)</td></tr>
+<tr class="separator:abc5d4467d120624161bb7503eddbc6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0cf493d977572ea263a30f83856addc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0cf493d977572ea263a30f83856addc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__DATA_SIZE</b>&#160;&#160;&#160;(24)</td></tr>
+<tr class="separator:ac0cf493d977572ea263a30f83856addc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4762f6ba7d02835c673b94501d3f907"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4762f6ba7d02835c673b94501d3f907"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__EXIT_IF</b>(cond,  v)      &#160;&#160;&#160;<a class="el" href="group__xutils.html#ga6366a218d9bb57575f04dcbe50a76be2">X_ASSIGN_AND_GOTO_IF</a>(cond, err, v, x__exit)</td></tr>
+<tr class="separator:ac4762f6ba7d02835c673b94501d3f907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb6b111572a4ea09736851fc3069e2e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb6b111572a4ea09736851fc3069e2e7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__FIRST_CHILD_OFFSET</b>&#160;&#160;&#160;(20)</td></tr>
+<tr class="separator:acb6b111572a4ea09736851fc3069e2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9786d0a0e1710957a356aefc17b742d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9786d0a0e1710957a356aefc17b742d8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__FLAGS</b>&#160;&#160;&#160;(0)</td></tr>
+<tr class="separator:a9786d0a0e1710957a356aefc17b742d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdb37f2e3dd91620ef4f8d1776f4b2a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abdb37f2e3dd91620ef4f8d1776f4b2a1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__GET_DIR_HANDLE</b>(dir)&#160;&#160;&#160;((X__Dir*)dir)</td></tr>
+<tr class="separator:abdb37f2e3dd91620ef4f8d1776f4b2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5809d01bb84065070b7dbdfccb6d402b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5809d01bb84065070b7dbdfccb6d402b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__GET_FILE_HANDLE</b>(fp)&#160;&#160;&#160;((X__File*)fp)</td></tr>
+<tr class="separator:a5809d01bb84065070b7dbdfccb6d402b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a954dc192c15264c8a748c8753e79ebd1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a954dc192c15264c8a748c8753e79ebd1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__GET_PTR_FROM_OFFSET</b>(ptr)        &#160;&#160;&#160;(fs-&gt;m_top + X__LOAD_U32(ptr))</td></tr>
+<tr class="separator:a954dc192c15264c8a748c8753e79ebd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f4da258e2e6fd3d1a1b4ddfd1abcdee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f4da258e2e6fd3d1a1b4ddfd1abcdee"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__INVALID</b>&#160;&#160;&#160;(UINT32_MAX)</td></tr>
+<tr class="separator:a8f4da258e2e6fd3d1a1b4ddfd1abcdee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0869125b2f8bcee2a71d9bf7b4e81b0e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0869125b2f8bcee2a71d9bf7b4e81b0e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__LOAD_U16</b>(ptr)                              &#160;&#160;&#160;<a class="el" href="group__xutils.html#ga52b3fca6a56919f8e33b9853e533e18f">X_LOAD_U16_LIT</a>(ptr)</td></tr>
+<tr class="separator:a0869125b2f8bcee2a71d9bf7b4e81b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0990300830a8d3c3e714342763c1bdeb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0990300830a8d3c3e714342763c1bdeb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__LOAD_U32</b>(ptr)                              &#160;&#160;&#160;<a class="el" href="group__xutils.html#ga36c9d76d339da4c64303efb28cf2a1f4">X_LOAD_U32_LIT</a>(ptr)</td></tr>
+<tr class="separator:a0990300830a8d3c3e714342763c1bdeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8489fe46d868a7795864be198ae77292"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8489fe46d868a7795864be198ae77292"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__LOAD_U32_FROM_OFFSET</b>(ptr)      &#160;&#160;&#160;X__LOAD_U32(X__GET_PTR_FROM_OFFSET(ptr))</td></tr>
+<tr class="separator:a8489fe46d868a7795864be198ae77292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c53c70e46d5795ac9d9293c4a897c1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c53c70e46d5795ac9d9293c4a897c1b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__NAME_OFFSET</b>&#160;&#160;&#160;(12)</td></tr>
+<tr class="separator:a1c53c70e46d5795ac9d9293c4a897c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aff897e99f746ba27ee5ea5d9f1c5db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0aff897e99f746ba27ee5ea5d9f1c5db"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__PARENT_OFFSET</b>&#160;&#160;&#160;(4)</td></tr>
+<tr class="separator:a0aff897e99f746ba27ee5ea5d9f1c5db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ab5f6de05b820dbb84f7f853c0b8ae4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ab5f6de05b820dbb84f7f853c0b8ae4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__SIBLING_OFFSET</b>&#160;&#160;&#160;(8)</td></tr>
+<tr class="separator:a8ab5f6de05b820dbb84f7f853c0b8ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c1bb941ce90eae065a1446b659fb5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1c1bb941ce90eae065a1446b659fb5d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__TIMESTAMP</b>&#160;&#160;&#160;(16)</td></tr>
+<tr class="separator:af1c1bb941ce90eae065a1446b659fb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa66d837d7caaa532b85f8a5ce6d0b6a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa66d837d7caaa532b85f8a5ce6d0b6a2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__TYPE_DIR</b>&#160;&#160;&#160;(0)</td></tr>
+<tr class="separator:aa66d837d7caaa532b85f8a5ce6d0b6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af49728b410008eb7e560842f6cccb8af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af49728b410008eb7e560842f6cccb8af"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X__TYPE_FILE</b>&#160;&#160;&#160;(1)</td></tr>
+<tr class="separator:af49728b410008eb7e560842f6cccb8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:aae4a5736be1774e6d0ca1f3f5c2f7fba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae4a5736be1774e6d0ca1f3f5c2f7fba"></a>
+static <a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>X__FindEntry</b> (const <a class="el" href="struct_x_rom_fs.html">XRomFs</a> *fs, const char *path, char const **o_ent)</td></tr>
+<tr class="separator:aae4a5736be1774e6d0ca1f3f5c2f7fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a700e7439d8a7cfed15aa0337b524cb"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xromfs_chdir</b> (<a class="el" href="struct_x_rom_fs.html">XRomFs</a> *fs, const char *path)</td></tr>
+<tr class="separator:ga4a700e7439d8a7cfed15aa0337b524cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee9f1cb8678c19ed1a5e7ad8ffce0d08"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xromfs_close</b> (<a class="el" href="struct_x_file.html">XFile</a> *fp)</td></tr>
+<tr class="separator:gaee9f1cb8678c19ed1a5e7ad8ffce0d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeaad1d0551b78ee934813692b0eace54"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xromfs_closedir</b> (<a class="el" href="struct_x_dir.html">XDir</a> *dir)</td></tr>
+<tr class="separator:gaeaad1d0551b78ee934813692b0eace54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a77576540ba3320945fdc6be21680f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xromfs.html#ga2a77576540ba3320945fdc6be21680f4">xromfs_deinit</a> (<a class="el" href="struct_x_rom_fs.html">XRomFs</a> *fs)</td></tr>
+<tr class="memdesc:ga2a77576540ba3320945fdc6be21680f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルシステムの終了処理を行います  <a href="group__xromfs.html#ga2a77576540ba3320945fdc6be21680f4">[詳解]</a><br /></td></tr>
+<tr class="separator:ga2a77576540ba3320945fdc6be21680f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab87fe3bb90e6930f2165663c28322d6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab87fe3bb90e6930f2165663c28322d6b"></a>
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xromfs_flush</b> (<a class="el" href="struct_x_file.html">XFile</a> *fp)</td></tr>
+<tr class="separator:ab87fe3bb90e6930f2165663c28322d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3d3008df1610ff6f37a3e76633f3358"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xromfs_getcwd</b> (<a class="el" href="struct_x_rom_fs.html">XRomFs</a> *fs, char *buf, size_t size)</td></tr>
+<tr class="separator:gaa3d3008df1610ff6f37a3e76633f3358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9d4d19ee9932131db2414eddcae25f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xromfs.html#gac9d4d19ee9932131db2414eddcae25f3">xromfs_init</a> (<a class="el" href="struct_x_rom_fs.html">XRomFs</a> *fs, const void *romimage)</td></tr>
+<tr class="memdesc:gac9d4d19ee9932131db2414eddcae25f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルシステムを初期化します  <a href="group__xromfs.html#gac9d4d19ee9932131db2414eddcae25f3">[詳解]</a><br /></td></tr>
+<tr class="separator:gac9d4d19ee9932131db2414eddcae25f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad35d85146d3c5197581b8718d469f5a"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="struct_x_stream.html">XStream</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>xromfs_init_stream</b> (<a class="el" href="struct_x_stream.html">XStream</a> *stream, <a class="el" href="struct_x_file.html">XFile</a> *fp)</td></tr>
+<tr class="separator:gaad35d85146d3c5197581b8718d469f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee66b0840804b3767f100a60192db8f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xromfs.html#gaee66b0840804b3767f100a60192db8f5">xromfs_init_vfs</a> (<a class="el" href="struct_x_rom_fs.html">XRomFs</a> *fs, <a class="el" href="struct_x_virtual_fs.html">XVirtualFs</a> *vfs)</td></tr>
+<tr class="memdesc:gaee66b0840804b3767f100a60192db8f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">仮想ファイルシステムを初期化します  <a href="group__xromfs.html#gaee66b0840804b3767f100a60192db8f5">[詳解]</a><br /></td></tr>
+<tr class="separator:gaee66b0840804b3767f100a60192db8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga734e48e0d4291ac17cda9d3eb7d924aa"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xromfs_open</b> (<a class="el" href="struct_x_rom_fs.html">XRomFs</a> *fs, const char *path, <a class="el" href="group__xstddef.html#ga5cc0f4c9468cbd29423c6d9bdb59d6e1">XOpenMode</a> mode, <a class="el" href="struct_x_file.html">XFile</a> **o_fp)</td></tr>
+<tr class="separator:ga734e48e0d4291ac17cda9d3eb7d924aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacadb20cc5d2decc8fb848f7c23e754b0"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xromfs_opendir</b> (<a class="el" href="struct_x_rom_fs.html">XRomFs</a> *fs, const char *path, <a class="el" href="struct_x_dir.html">XDir</a> **o_dir)</td></tr>
+<tr class="separator:gacadb20cc5d2decc8fb848f7c23e754b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e5a4f6035d2b416eed687c2905819fb"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xromfs_read</b> (<a class="el" href="struct_x_file.html">XFile</a> *fp, void *dst, size_t size, size_t *nread)</td></tr>
+<tr class="separator:ga9e5a4f6035d2b416eed687c2905819fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b6866f891221d454b869130bc8ac92e"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xromfs_readdir</b> (<a class="el" href="struct_x_dir.html">XDir</a> *dir, <a class="el" href="struct_x_dir_ent.html">XDirEnt</a> *dirent, <a class="el" href="struct_x_dir_ent.html">XDirEnt</a> **result)</td></tr>
+<tr class="separator:ga4b6866f891221d454b869130bc8ac92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0165746368394eaa22b1e2d1680429d"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xromfs_seek</b> (<a class="el" href="struct_x_file.html">XFile</a> *fp, <a class="el" href="group__xstddef.html#ga0bdeff19d49868d285c1bb23ca87bf76">XOffset</a> pos, <a class="el" href="group__xstddef.html#ga988c074c9467b48a58b58808cd980ea7">XSeekMode</a> whence)</td></tr>
+<tr class="separator:gad0165746368394eaa22b1e2d1680429d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3221fb8d547aa9503f488ef425b50e86"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xromfs_stat</b> (<a class="el" href="struct_x_rom_fs.html">XRomFs</a> *fs, const char *path, <a class="el" href="struct_x_stat.html">XStat</a> *statbuf)</td></tr>
+<tr class="separator:ga3221fb8d547aa9503f488ef425b50e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f65aac169edcc8cabfd9e30b3eb2554"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__xstddef.html#ga63aa705ad3f45cf2de1c067026facda4">XError</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xromfs_tell</b> (<a class="el" href="struct_x_file.html">XFile</a> *fp, <a class="el" href="group__xstddef.html#gadcc4f92c69a1bbdb4449015227943685">XSize</a> *pos)</td></tr>
+<tr class="separator:ga1f65aac169edcc8cabfd9e30b3eb2554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>RAMファイルシステム実装 </p>
+<dl class="section author"><dt>著者</dt><dd>MaskedW </dd></dl>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_295ce2a6370ae0a688a0222b881c77ca.html">picox</a></li><li class="navelem"><a class="el" href="dir_e3be2385c94fc93b1a1cade2fa68aeff.html">filesystem</a></li><li class="navelem"><a class="el" href="xromfs_8c.html">xromfs.c</a></li>
+    <li class="footer">2016年07月11日(月) 01時34分43秒作成 - picox / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

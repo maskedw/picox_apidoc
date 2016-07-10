@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>picox: xutils.c ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">picox
+   &#160;<span id="projectnumber">0.5</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('xutils_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">xutils.c ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>低レベルなあれこれ雑多なユーティリティ集  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="xcore_8h_source.html">picox/core/xcore.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+xutils.c の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="xutils_8c__incl.png" border="0" usemap="#xutils_8c" alt=""/></div>
+<map name="xutils_8c" id="xutils_8c">
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a6e9a82951898e65a4807be13e812bd64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_DECLARE_BIT_REVERSE_TABLE</b></td></tr>
+<tr class="separator:a6e9a82951898e65a4807be13e812bd64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a842a0fedb167ce3f64e8e92a37ee3752"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_DECLARE_LSB_POS_TABLE</b></td></tr>
+<tr class="separator:a842a0fedb167ce3f64e8e92a37ee3752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af773cd3bb66a3119f16d6703d0151707"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_DECLARE_MSB_POS_TABLE</b></td></tr>
+<tr class="separator:af773cd3bb66a3119f16d6703d0151707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:gaa3337908d4299e55aaaba1cf723b6840"><td class="memItemLeft" align="right" valign="top">
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#gaa3337908d4299e55aaaba1cf723b6840">x_big_to_host16</a> (uint16_t x)</td></tr>
+<tr class="memdesc:gaa3337908d4299e55aaaba1cf723b6840"><td class="mdescLeft">&#160;</td><td class="mdescRight">2Byteビッグエンディアンデータをホストのエンディアンにして返します。 <br /></td></tr>
+<tr class="separator:gaa3337908d4299e55aaaba1cf723b6840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b3535a4572e30d40173db12d694eb8c"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga3b3535a4572e30d40173db12d694eb8c">x_big_to_host32</a> (uint32_t x)</td></tr>
+<tr class="memdesc:ga3b3535a4572e30d40173db12d694eb8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">4Byteビッグエンディアンデータをホストのエンディアンにして返します。 <br /></td></tr>
+<tr class="separator:ga3b3535a4572e30d40173db12d694eb8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81f1df3fb8eb753ae57fcf268c20e99f"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga81f1df3fb8eb753ae57fcf268c20e99f">x_count_bits16</a> (uint16_t x)</td></tr>
+<tr class="memdesc:ga81f1df3fb8eb753ae57fcf268c20e99f"><td class="mdescLeft">&#160;</td><td class="mdescRight">x_count_bits8()の16bit版です <br /></td></tr>
+<tr class="separator:ga81f1df3fb8eb753ae57fcf268c20e99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga457fea9d5643eeb0f0a07493b2c3379e"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga457fea9d5643eeb0f0a07493b2c3379e">x_count_bits32</a> (uint32_t x)</td></tr>
+<tr class="memdesc:ga457fea9d5643eeb0f0a07493b2c3379e"><td class="mdescLeft">&#160;</td><td class="mdescRight">x_count_bits8()の32bit版です <br /></td></tr>
+<tr class="separator:ga457fea9d5643eeb0f0a07493b2c3379e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5b21a36203359c9ed6de0fee2842819"><td class="memItemLeft" align="right" valign="top">
+IGNORE int&#160;</td><td class="memItemRight" valign="bottom"><b>x_count_bits8</b> (uint8_t x)</td></tr>
+<tr class="separator:gae5b21a36203359c9ed6de0fee2842819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga703e2c70c38b3946d490b8e1f985d616"><td class="memItemLeft" align="right" valign="top">
+ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga703e2c70c38b3946d490b8e1f985d616">x_distance_ptr</a> (const void *begin, const void *end)</td></tr>
+<tr class="memdesc:ga703e2c70c38b3946d490b8e1f985d616"><td class="mdescLeft">&#160;</td><td class="mdescRight">void*引数end, beginのバイト単位のアドレス差を返します。 <br /></td></tr>
+<tr class="separator:ga703e2c70c38b3946d490b8e1f985d616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga965ab0394c17a08e05c57a305b5de7d6"><td class="memItemLeft" align="right" valign="top">
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga965ab0394c17a08e05c57a305b5de7d6">x_find_lsb16</a> (uint16_t x)</td></tr>
+<tr class="memdesc:ga965ab0394c17a08e05c57a305b5de7d6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#ga4eece263168eae5b434f35e9e211b31f" title="8bit符号なし整数の下位から最も近くにセットされたビットを返します。 ">x_find_lsb8()</a>の16bit版です <br /></td></tr>
+<tr class="separator:ga965ab0394c17a08e05c57a305b5de7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81da52c6efad9ebacde1679af748f424"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga81da52c6efad9ebacde1679af748f424">x_find_lsb32</a> (uint32_t x)</td></tr>
+<tr class="memdesc:ga81da52c6efad9ebacde1679af748f424"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#ga4eece263168eae5b434f35e9e211b31f" title="8bit符号なし整数の下位から最も近くにセットされたビットを返します。 ">x_find_lsb8()</a>の32bit版です <br /></td></tr>
+<tr class="separator:ga81da52c6efad9ebacde1679af748f424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4eece263168eae5b434f35e9e211b31f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga4eece263168eae5b434f35e9e211b31f">x_find_lsb8</a> (uint8_t x)</td></tr>
+<tr class="memdesc:ga4eece263168eae5b434f35e9e211b31f"><td class="mdescLeft">&#160;</td><td class="mdescRight">8bit符号なし整数の下位から最も近くにセットされたビットを返します。  <a href="group__xutils.html#ga4eece263168eae5b434f35e9e211b31f">[詳解]</a><br /></td></tr>
+<tr class="separator:ga4eece263168eae5b434f35e9e211b31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga508039a98b7c1c45fd43f1fb7b8cca72"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga508039a98b7c1c45fd43f1fb7b8cca72">x_find_lsb_pos16</a> (uint16_t x)</td></tr>
+<tr class="memdesc:ga508039a98b7c1c45fd43f1fb7b8cca72"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#ga4eece263168eae5b434f35e9e211b31f" title="8bit符号なし整数の下位から最も近くにセットされたビットを返します。 ">x_find_lsb8()</a>の16bit版です <br /></td></tr>
+<tr class="separator:ga508039a98b7c1c45fd43f1fb7b8cca72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49e4ee7362cc9ca8f4bd690d5e8b23cd"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga49e4ee7362cc9ca8f4bd690d5e8b23cd">x_find_lsb_pos32</a> (uint32_t x)</td></tr>
+<tr class="memdesc:ga49e4ee7362cc9ca8f4bd690d5e8b23cd"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#ga4eece263168eae5b434f35e9e211b31f" title="8bit符号なし整数の下位から最も近くにセットされたビットを返します。 ">x_find_lsb8()</a>の32bit版です <br /></td></tr>
+<tr class="separator:ga49e4ee7362cc9ca8f4bd690d5e8b23cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga008583838ac8dadaea5687b190af21f6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga008583838ac8dadaea5687b190af21f6">x_find_lsb_pos8</a> (uint8_t x)</td></tr>
+<tr class="memdesc:ga008583838ac8dadaea5687b190af21f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">8bit符号なし整数の下位から最も近くにセットされたビット位置を返します。  <a href="group__xutils.html#ga008583838ac8dadaea5687b190af21f6">[詳解]</a><br /></td></tr>
+<tr class="separator:ga008583838ac8dadaea5687b190af21f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafff5a7ab86da5db19e2be622426f97b2"><td class="memItemLeft" align="right" valign="top">
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#gafff5a7ab86da5db19e2be622426f97b2">x_find_msb16</a> (uint16_t x)</td></tr>
+<tr class="memdesc:gafff5a7ab86da5db19e2be622426f97b2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#gaa8b24a507534d4c19d56a1aa462070a6" title="8bit符号なし整数の上位から最も近くにセットされたビットを返します。 ">x_find_msb8()</a>の16bit版です <br /></td></tr>
+<tr class="separator:gafff5a7ab86da5db19e2be622426f97b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75c58bbc1ee5c438c94467c7208330e4"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga75c58bbc1ee5c438c94467c7208330e4">x_find_msb32</a> (uint32_t x)</td></tr>
+<tr class="memdesc:ga75c58bbc1ee5c438c94467c7208330e4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#gaa8b24a507534d4c19d56a1aa462070a6" title="8bit符号なし整数の上位から最も近くにセットされたビットを返します。 ">x_find_msb8()</a>の32bit版です <br /></td></tr>
+<tr class="separator:ga75c58bbc1ee5c438c94467c7208330e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa8b24a507534d4c19d56a1aa462070a6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#gaa8b24a507534d4c19d56a1aa462070a6">x_find_msb8</a> (uint8_t x)</td></tr>
+<tr class="memdesc:gaa8b24a507534d4c19d56a1aa462070a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">8bit符号なし整数の上位から最も近くにセットされたビットを返します。  <a href="group__xutils.html#gaa8b24a507534d4c19d56a1aa462070a6">[詳解]</a><br /></td></tr>
+<tr class="separator:gaa8b24a507534d4c19d56a1aa462070a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61a35cb224c73f1a54ceb908a67053fa"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga61a35cb224c73f1a54ceb908a67053fa">x_find_msb_pos16</a> (uint16_t x)</td></tr>
+<tr class="memdesc:ga61a35cb224c73f1a54ceb908a67053fa"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#gaa8b24a507534d4c19d56a1aa462070a6" title="8bit符号なし整数の上位から最も近くにセットされたビットを返します。 ">x_find_msb8()</a>の16bit版です <br /></td></tr>
+<tr class="separator:ga61a35cb224c73f1a54ceb908a67053fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00e0918613b623f2f2a1a8fbc6ec2898"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga00e0918613b623f2f2a1a8fbc6ec2898">x_find_msb_pos32</a> (uint32_t x)</td></tr>
+<tr class="memdesc:ga00e0918613b623f2f2a1a8fbc6ec2898"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#gaa8b24a507534d4c19d56a1aa462070a6" title="8bit符号なし整数の上位から最も近くにセットされたビットを返します。 ">x_find_msb8()</a>の32bit版です <br /></td></tr>
+<tr class="separator:ga00e0918613b623f2f2a1a8fbc6ec2898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59dd6d67c258c85d651c1ded8f86a795"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga59dd6d67c258c85d651c1ded8f86a795">x_find_msb_pos8</a> (uint8_t x)</td></tr>
+<tr class="memdesc:ga59dd6d67c258c85d651c1ded8f86a795"><td class="mdescLeft">&#160;</td><td class="mdescRight">8bit符号なし整数の上位から最も近くにセットされたビット位置を返します。  <a href="group__xutils.html#ga59dd6d67c258c85d651c1ded8f86a795">[詳解]</a><br /></td></tr>
+<tr class="separator:ga59dd6d67c258c85d651c1ded8f86a795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa8021710eacdaf37f6f9d8a5f172ced4"><td class="memItemLeft" align="right" valign="top">
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#gaa8021710eacdaf37f6f9d8a5f172ced4">x_host_to_big16</a> (uint16_t x)</td></tr>
+<tr class="memdesc:gaa8021710eacdaf37f6f9d8a5f172ced4"><td class="mdescLeft">&#160;</td><td class="mdescRight">2Byteホストエンディアンデータをビッグエンディアンにして返します。 <br /></td></tr>
+<tr class="separator:gaa8021710eacdaf37f6f9d8a5f172ced4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4189cffdd171114d74d25791317c8585"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga4189cffdd171114d74d25791317c8585">x_host_to_big32</a> (uint32_t x)</td></tr>
+<tr class="memdesc:ga4189cffdd171114d74d25791317c8585"><td class="mdescLeft">&#160;</td><td class="mdescRight">4Byteホストエンディアンデータをビッグエンディアンにして返します。 <br /></td></tr>
+<tr class="separator:ga4189cffdd171114d74d25791317c8585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a3d9e5bdf637bd2bbabf6a022704326"><td class="memItemLeft" align="right" valign="top">
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga1a3d9e5bdf637bd2bbabf6a022704326">x_host_to_little16</a> (uint16_t x)</td></tr>
+<tr class="memdesc:ga1a3d9e5bdf637bd2bbabf6a022704326"><td class="mdescLeft">&#160;</td><td class="mdescRight">2Byteホストエンディアンデータをリトルエンディアンにして返します。 <br /></td></tr>
+<tr class="separator:ga1a3d9e5bdf637bd2bbabf6a022704326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec8bc8a2f18816c0def7c5c1486c396d"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#gaec8bc8a2f18816c0def7c5c1486c396d">x_host_to_little32</a> (uint32_t x)</td></tr>
+<tr class="memdesc:gaec8bc8a2f18816c0def7c5c1486c396d"><td class="mdescLeft">&#160;</td><td class="mdescRight">4Byteホストエンディアンデータをリトルエンディアンにして返します。 <br /></td></tr>
+<tr class="separator:gaec8bc8a2f18816c0def7c5c1486c396d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08c1d52eeb9767515c6b0267b1733cba"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga08c1d52eeb9767515c6b0267b1733cba">x_is_aligned</a> (const void *ptr, size_t alignment)</td></tr>
+<tr class="memdesc:ga08c1d52eeb9767515c6b0267b1733cba"><td class="mdescLeft">&#160;</td><td class="mdescRight">ptrが指すアドレスがalignmentの倍数かどうかをBool値で返します。 <br /></td></tr>
+<tr class="separator:ga08c1d52eeb9767515c6b0267b1733cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16d1491a3ac4c49566ac95a7eab9c844"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga16d1491a3ac4c49566ac95a7eab9c844">x_is_alignment</a> (uint32_t x)</td></tr>
+<tr class="memdesc:ga16d1491a3ac4c49566ac95a7eab9c844"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#ga1a604b48e40b64616b0d958a377b9aa2" title="xが1または2のべき乗かどうかをBool値で返します。 ">X_IS_ALIGNMENT()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:ga16d1491a3ac4c49566ac95a7eab9c844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9c3356e56b0d8461f97b90cf0815e2f"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#gac9c3356e56b0d8461f97b90cf0815e2f">x_is_big_endian</a> (void)</td></tr>
+<tr class="memdesc:gac9c3356e56b0d8461f97b90cf0815e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイトオーダーがビッグエンディアンかどうかを返します。 <br /></td></tr>
+<tr class="separator:gac9c3356e56b0d8461f97b90cf0815e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa7452d4c623c78d82ea99b5e7c1dcf2"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#gafa7452d4c623c78d82ea99b5e7c1dcf2">x_is_little_endian</a> (void)</td></tr>
+<tr class="memdesc:gafa7452d4c623c78d82ea99b5e7c1dcf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイトオーダーがリトルエンディアンかどうかを返します。 <br /></td></tr>
+<tr class="separator:gafa7452d4c623c78d82ea99b5e7c1dcf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf3af3aac85712b932e7fc678ef45181"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#gadf3af3aac85712b932e7fc678ef45181">x_is_multiple</a> (uint32_t x, uint32_t m)</td></tr>
+<tr class="memdesc:gadf3af3aac85712b932e7fc678ef45181"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#gaefc68eba8927e45a4f7cafc574894479" title="xがmの倍数かどうかをBool値で返します。 ">X_IS_MULTIPLE()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:gadf3af3aac85712b932e7fc678ef45181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0fc9e772e9a14635bc56704baa27b46"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#gac0fc9e772e9a14635bc56704baa27b46">x_is_multiple_ptr</a> (const void *x, uint32_t m)</td></tr>
+<tr class="memdesc:gac0fc9e772e9a14635bc56704baa27b46"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#ga7006b2d664242a2a6a5ec68b6aac1cd4" title="X_IS_MULTIPLE()のポインタ版です。 ">X_IS_MULTIPLE_PTR()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:gac0fc9e772e9a14635bc56704baa27b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga590617b4e6a6333c022d73a832afd33c"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga590617b4e6a6333c022d73a832afd33c">x_is_power_of_two</a> (uint32_t x)</td></tr>
+<tr class="memdesc:ga590617b4e6a6333c022d73a832afd33c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#ga7749a4f6f926a30e78c227bb13bc27d5" title="xが2のべき乗かどうかをBool値で返します。 ">X_IS_POWER_OF_TWO()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:ga590617b4e6a6333c022d73a832afd33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec498c54a9c233e82f7418c3f0e4883b"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#gaec498c54a9c233e82f7418c3f0e4883b">x_is_power_of_two_ptr</a> (const void *x)</td></tr>
+<tr class="memdesc:gaec498c54a9c233e82f7418c3f0e4883b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#ga9f5b3f134307b6f4a1c9fddf6d01565c" title="X_IS_POWER_OF_TWO()のポインタ版です。 ">X_IS_POWER_OF_TWO_PTR()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:gaec498c54a9c233e82f7418c3f0e4883b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92e5bac5682df9c752129dd3978d40ad"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga92e5bac5682df9c752129dd3978d40ad">x_is_uwithin</a> (uint32_t x, uint32_t begin, uint32_t end)</td></tr>
+<tr class="memdesc:ga92e5bac5682df9c752129dd3978d40ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">(begin &lt;= x) &amp;&amp; (x &lt; end)を判定します。 <br /></td></tr>
+<tr class="separator:ga92e5bac5682df9c752129dd3978d40ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa999ac142e96b0c0b5a1785b44d51006"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#gaa999ac142e96b0c0b5a1785b44d51006">x_is_within</a> (int32_t x, int32_t begin, int32_t end)</td></tr>
+<tr class="memdesc:gaa999ac142e96b0c0b5a1785b44d51006"><td class="mdescLeft">&#160;</td><td class="mdescRight">(begin &lt;= x) &amp;&amp; (x &lt; end)を判定します。 <br /></td></tr>
+<tr class="separator:gaa999ac142e96b0c0b5a1785b44d51006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacee41b99af774180e0a82c4f61ad69ef"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#gacee41b99af774180e0a82c4f61ad69ef">x_is_within_ptr</a> (const void *ptr, const void *begin, const void *end)</td></tr>
+<tr class="memdesc:gacee41b99af774180e0a82c4f61ad69ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">ptrが指すアドレスがbegin とendの範囲内かどうかをBool値で返します。 <br /></td></tr>
+<tr class="separator:gacee41b99af774180e0a82c4f61ad69ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7546ae82aca8f083fab9868d5156f66e"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga7546ae82aca8f083fab9868d5156f66e">x_is_within_uptr</a> (uintptr_t x, uintptr_t begin, uintptr_t end)</td></tr>
+<tr class="memdesc:ga7546ae82aca8f083fab9868d5156f66e"><td class="mdescLeft">&#160;</td><td class="mdescRight">(begin &lt;= x) &amp;&amp; (x &lt; end)を判定します。 <br /></td></tr>
+<tr class="separator:ga7546ae82aca8f083fab9868d5156f66e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0157d14c327fee0203aa0cc86e0ccb9e"><td class="memItemLeft" align="right" valign="top">
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga0157d14c327fee0203aa0cc86e0ccb9e">x_little_to_host16</a> (uint16_t x)</td></tr>
+<tr class="memdesc:ga0157d14c327fee0203aa0cc86e0ccb9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">2Byteリトルエンディアンデータをホストのエンディアンにして返します。 <br /></td></tr>
+<tr class="separator:ga0157d14c327fee0203aa0cc86e0ccb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac98fef5fc34a3efcb591bceb21627d89"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#gac98fef5fc34a3efcb591bceb21627d89">x_little_to_host32</a> (uint32_t x)</td></tr>
+<tr class="memdesc:gac98fef5fc34a3efcb591bceb21627d89"><td class="mdescLeft">&#160;</td><td class="mdescRight">4Byteリトルエンディアンデータをホストのエンディアンにして返します。 <br /></td></tr>
+<tr class="separator:gac98fef5fc34a3efcb591bceb21627d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafacfcd7ed3d19ba6fb611660fda16348"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#gafacfcd7ed3d19ba6fb611660fda16348">x_map</a> (int32_t x, int32_t in_min, int32_t in_max, int32_t out_min, int32_t out_max)</td></tr>
+<tr class="memdesc:gafacfcd7ed3d19ba6fb611660fda16348"><td class="mdescLeft">&#160;</td><td class="mdescRight">数値をある範囲から別の範囲に変換します  <a href="group__xutils.html#gafacfcd7ed3d19ba6fb611660fda16348">[詳解]</a><br /></td></tr>
+<tr class="separator:gafacfcd7ed3d19ba6fb611660fda16348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga23cbbd4a6542c7a248204f3d891a98c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga23cbbd4a6542c7a248204f3d891a98c0">x_reverse_2byte</a> (void *x)</td></tr>
+<tr class="memdesc:ga23cbbd4a6542c7a248204f3d891a98c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">xが指す先頭2バイトを逆転します  <a href="group__xutils.html#ga23cbbd4a6542c7a248204f3d891a98c0">[詳解]</a><br /></td></tr>
+<tr class="separator:ga23cbbd4a6542c7a248204f3d891a98c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5a497c3918f711e704157c948465ff3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#gaf5a497c3918f711e704157c948465ff3">x_reverse_4byte</a> (void *x)</td></tr>
+<tr class="memdesc:gaf5a497c3918f711e704157c948465ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">xが指す先頭4バイトを逆転します  <a href="group__xutils.html#gaf5a497c3918f711e704157c948465ff3">[詳解]</a><br /></td></tr>
+<tr class="separator:gaf5a497c3918f711e704157c948465ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf9ea01cb2d18759b69518d45f650012"><td class="memItemLeft" align="right" valign="top">
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#gacf9ea01cb2d18759b69518d45f650012">x_reverse_bits16</a> (uint16_t x)</td></tr>
+<tr class="memdesc:gacf9ea01cb2d18759b69518d45f650012"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#gae9d82578b0c13dd4bd5de2c50b121112" title="xの下位16bitを逆転した値を返します。 ">X_REVERSE_BITS16()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:gacf9ea01cb2d18759b69518d45f650012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9120de124585515c6723eacc8bc7a737"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga9120de124585515c6723eacc8bc7a737">x_reverse_bits32</a> (register uint32_t x)</td></tr>
+<tr class="memdesc:ga9120de124585515c6723eacc8bc7a737"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#ga1c0fb3032ecb1ff229497086097da7a6" title="xの下位32bitを逆転した値を返します。 ">X_REVERSE_BITS32()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:ga9120de124585515c6723eacc8bc7a737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ce484fe342559f74208838465d6e54b"><td class="memItemLeft" align="right" valign="top">
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga2ce484fe342559f74208838465d6e54b">x_reverse_bits8</a> (uint8_t x)</td></tr>
+<tr class="memdesc:ga2ce484fe342559f74208838465d6e54b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#gadb7c5086af7c67343874f667efc5f6da" title="xの下位8bitを逆転した値を返します。 ">X_REVERSE_BITS8()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:ga2ce484fe342559f74208838465d6e54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabdce4657521d925e58dfcf274d7a738c"><td class="memItemLeft" align="right" valign="top">
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#gabdce4657521d925e58dfcf274d7a738c">x_reverse_endian16</a> (register uint16_t x)</td></tr>
+<tr class="memdesc:gabdce4657521d925e58dfcf274d7a738c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#ga174f16a015677d518c1c7b8129106e1e" title="xの下位2バイトのバイトオーダーを逆転した値を返します。 ">X_REVERSE_ENDIAN16()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:gabdce4657521d925e58dfcf274d7a738c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1c7117a7c99492bfcefb52d9c2992a1"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#gab1c7117a7c99492bfcefb52d9c2992a1">x_reverse_endian32</a> (uint32_t x)</td></tr>
+<tr class="memdesc:gab1c7117a7c99492bfcefb52d9c2992a1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#ga9ad8c6031b0adc53c648a7bb63dc9f38" title="xの下位4バイトのバイトオーダーを逆転した値を返します。 ">X_REVERSE_ENDIAN32()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:gab1c7117a7c99492bfcefb52d9c2992a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a8a2cd6e56d64e694db8e3edf7a8372"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga4a8a2cd6e56d64e694db8e3edf7a8372">x_rounddown_alignment</a> (uint32_t x, uint32_t a)</td></tr>
+<tr class="memdesc:ga4a8a2cd6e56d64e694db8e3edf7a8372"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#ga4d4ca69c6b5c6a9e3231b4879c99a430" title="xをアライメントの倍数に切り下げた値を返します。 ">X_ROUNDDOWN_ALIGNMENT()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:ga4a8a2cd6e56d64e694db8e3edf7a8372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7dd71ede6dd68c4107972bf9684710d8"><td class="memItemLeft" align="right" valign="top">
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga7dd71ede6dd68c4107972bf9684710d8">x_rounddown_alignment_ptr</a> (const void *x, uint32_t a)</td></tr>
+<tr class="memdesc:ga7dd71ede6dd68c4107972bf9684710d8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#gae4d891fa8e99a5ca86a0f5b4f351b198" title="X_ROUNDDOWN_ALIGNMENT()のポインタ版です。 ">X_ROUNDDOWN_ALIGNMENT_PTR()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:ga7dd71ede6dd68c4107972bf9684710d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga703314387ef0db3bfb8efeb912758090"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga703314387ef0db3bfb8efeb912758090">x_rounddown_multiple</a> (uint32_t x, uint32_t m)</td></tr>
+<tr class="memdesc:ga703314387ef0db3bfb8efeb912758090"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#ga35eb6ca8931eb24d163e98ca7c40efd6" title="xをmの倍数に切り下げた値を返します。 ">X_ROUNDDOWN_MULTIPLE()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:ga703314387ef0db3bfb8efeb912758090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaefb417ccf39bdf5e7b4be9700083d405"><td class="memItemLeft" align="right" valign="top">
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#gaefb417ccf39bdf5e7b4be9700083d405">x_rounddown_multiple_ptr</a> (const void *x, uintptr_t m)</td></tr>
+<tr class="memdesc:gaefb417ccf39bdf5e7b4be9700083d405"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#ga35eb6ca8931eb24d163e98ca7c40efd6" title="xをmの倍数に切り下げた値を返します。 ">X_ROUNDDOWN_MULTIPLE()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:gaefb417ccf39bdf5e7b4be9700083d405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f4059b4f124823d6154c23221e12b1a"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga0f4059b4f124823d6154c23221e12b1a">x_rounddown_power_of_two</a> (uint32_t x)</td></tr>
+<tr class="memdesc:ga0f4059b4f124823d6154c23221e12b1a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#gaa3657282c6f73e75df5b90010bee880c" title="xを最も近い2のべき乗に切り下げた値を返します。 ">X_ROUNDDOWN_POWER_OF_TWO()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:ga0f4059b4f124823d6154c23221e12b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1136f3de63cf3b83781d488b858681d8"><td class="memItemLeft" align="right" valign="top">
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga1136f3de63cf3b83781d488b858681d8">x_rounddown_power_of_two_ptr</a> (const void *x)</td></tr>
+<tr class="memdesc:ga1136f3de63cf3b83781d488b858681d8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#ga0866d21038866e9325e33e1c53be3a74" title="X_ROUNDDOWN_POWER_OF_TWO()のポインタ版です。 ">X_ROUNDDOWN_POWER_OF_TWO_PTR()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:ga1136f3de63cf3b83781d488b858681d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf97948bee62e8fb51e8055664b4f39f8"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#gaf97948bee62e8fb51e8055664b4f39f8">x_roundup_alignment</a> (uint32_t x, uint32_t a)</td></tr>
+<tr class="memdesc:gaf97948bee62e8fb51e8055664b4f39f8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#gad1968d8024fe8deaa7a79eda8584e563" title="xをアライメントの倍数に切り上げた値を返します。 ">X_ROUNDUP_ALIGNMENT()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:gaf97948bee62e8fb51e8055664b4f39f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94ce443f39aab59c3bfd00ca5a232324"><td class="memItemLeft" align="right" valign="top">
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga94ce443f39aab59c3bfd00ca5a232324">x_roundup_alignment_ptr</a> (const void *x, size_t a)</td></tr>
+<tr class="memdesc:ga94ce443f39aab59c3bfd00ca5a232324"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#ga83e7982870de3f5d22453099e5b5d352" title="X_ROUNDUP_ALIGNMENT()のポインタ版です。 ">X_ROUNDUP_ALIGNMENT_PTR()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:ga94ce443f39aab59c3bfd00ca5a232324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74aa84c734a4f64380421c8ceba5f346"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga74aa84c734a4f64380421c8ceba5f346">x_roundup_multiple</a> (uint32_t x, uint32_t m)</td></tr>
+<tr class="memdesc:ga74aa84c734a4f64380421c8ceba5f346"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#ga9e77091681532d89758d2f82f91c32d3" title="xをmの倍数に切り上げた値を返します。 ">X_ROUNDUP_MULTIPLE()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:ga74aa84c734a4f64380421c8ceba5f346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf83f0dcf5a815366c4c4d5f755bd87ff"><td class="memItemLeft" align="right" valign="top">
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#gaf83f0dcf5a815366c4c4d5f755bd87ff">x_roundup_multiple_ptr</a> (const void *x, uint32_t m)</td></tr>
+<tr class="memdesc:gaf83f0dcf5a815366c4c4d5f755bd87ff"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#gaa35b27c41ff02c01c686ac095da25ec7" title="X_ROUNDUP_MULTIPLE()のポインタ版です。 ">X_ROUNDUP_MULTIPLE_PTR()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:gaf83f0dcf5a815366c4c4d5f755bd87ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga825d7b3ccf033921311785af7bf207a2"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga825d7b3ccf033921311785af7bf207a2">x_roundup_power_of_two</a> (uint32_t x)</td></tr>
+<tr class="memdesc:ga825d7b3ccf033921311785af7bf207a2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#ga7da28f12213853473dc3c8d43cc86dbb" title="xを最も近い2のべき乗に切り上げた値を返します。 ">X_ROUNDUP_POWER_OF_TWO()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:ga825d7b3ccf033921311785af7bf207a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45d0df6b45f1192c6584f427c9c9bfee"><td class="memItemLeft" align="right" valign="top">
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga45d0df6b45f1192c6584f427c9c9bfee">x_roundup_power_of_two_ptr</a> (const void *x)</td></tr>
+<tr class="memdesc:ga45d0df6b45f1192c6584f427c9c9bfee"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#gabd467db652bb47195cb3dee1c8a2c4cd" title="X_ROUNDUP_POWER_OF_TWO()のポインタ版です。 ">X_ROUNDUP_POWER_OF_TWO_PTR()</a>の関数版です。 <br /></td></tr>
+<tr class="separator:ga45d0df6b45f1192c6584f427c9c9bfee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d20b016070cdbcbeef2011ce1f6012f"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xutils.html#ga5d20b016070cdbcbeef2011ce1f6012f">x_umap</a> (uint32_t x, uint32_t in_min, uint32_t in_max, uint32_t out_min, uint32_t out_max)</td></tr>
+<tr class="memdesc:ga5d20b016070cdbcbeef2011ce1f6012f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__xutils.html#gafacfcd7ed3d19ba6fb611660fda16348" title="数値をある範囲から別の範囲に変換します ">x_map()</a>の符号なし版です。 <br /></td></tr>
+<tr class="separator:ga5d20b016070cdbcbeef2011ce1f6012f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>低レベルなあれこれ雑多なユーティリティ集 </p>
+<dl class="section author"><dt>著者</dt><dd>MaskedW </dd></dl>
+</div><h2 class="groupheader">マクロ定義詳解</h2>
+<a class="anchor" id="a6e9a82951898e65a4807be13e812bd64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define X_DECLARE_BIT_REVERSE_TABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><span class="keyword">const</span> uint8_t bit_reverse_table[16] = \</div><div class="line">        {                                 \</div><div class="line">            0,  <span class="comment">/* 0000 -&gt; 0000 */</span>        \</div><div class="line">            8,  <span class="comment">/* 0001 -&gt; 1000 */</span>        \</div><div class="line">            4,  <span class="comment">/* 0010 -&gt; 0100 */</span>        \</div><div class="line">            12, <span class="comment">/* 0011 -&gt; 1100 */</span>        \</div><div class="line">            2,  <span class="comment">/* 0100 -&gt; 0010 */</span>        \</div><div class="line">            10, <span class="comment">/* 0101 -&gt; 1010 */</span>        \</div><div class="line">            6,  <span class="comment">/* 0110 -&gt; 0110 */</span>        \</div><div class="line">            14, <span class="comment">/* 0111 -&gt; 1110 */</span>        \</div><div class="line">            1,  <span class="comment">/* 1000 -&gt; 0001 */</span>        \</div><div class="line">            9,  <span class="comment">/* 1001 -&gt; 1001 */</span>        \</div><div class="line">            5,  <span class="comment">/* 1010 -&gt; 0101 */</span>        \</div><div class="line">            13, <span class="comment">/* 1011 -&gt; 1101 */</span>        \</div><div class="line">            3,  <span class="comment">/* 1100 -&gt; 0011 */</span>        \</div><div class="line">            11, <span class="comment">/* 1101 -&gt; 1011 */</span>        \</div><div class="line">            7,  <span class="comment">/* 1110 -&gt; 0111 */</span>        \</div><div class="line">            15, <span class="comment">/* 1111 -&gt; 1111 */</span>        \</div><div class="line">        }</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a842a0fedb167ce3f64e8e92a37ee3752"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define X_DECLARE_LSB_POS_TABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><span class="keyword">const</span> uint8_t lsb_pos_table[15] =      \</div><div class="line">        {                                  \</div><div class="line">            0, <span class="comment">/* (0001 &amp; 1 &lt;&lt; 0) != 0 */</span>  \</div><div class="line">            1, <span class="comment">/* (0010 &amp; 1 &lt;&lt; 1) != 0 */</span>  \</div><div class="line">            0, <span class="comment">/* (0011 &amp; 1 &lt;&lt; 0) != 0 */</span>  \</div><div class="line">            2, <span class="comment">/* (0100 &amp; 1 &lt;&lt; 2) != 0 */</span>  \</div><div class="line">            0, <span class="comment">/* (0101 &amp; 1 &lt;&lt; 0) != 0 */</span>  \</div><div class="line">            1, <span class="comment">/* (0110 &amp; 1 &lt;&lt; 1) != 0 */</span>  \</div><div class="line">            0, <span class="comment">/* (0111 &amp; 1 &lt;&lt; 0) != 0 */</span>  \</div><div class="line">            3, <span class="comment">/* (1000 &amp; 1 &lt;&lt; 3) != 0 */</span>  \</div><div class="line">            0, <span class="comment">/* (1001 &amp; 1 &lt;&lt; 0) != 0 */</span>  \</div><div class="line">            1, <span class="comment">/* (1010 &amp; 1 &lt;&lt; 1) != 0 */</span>  \</div><div class="line">            0, <span class="comment">/* (1011 &amp; 1 &lt;&lt; 0) != 0 */</span>  \</div><div class="line">            2, <span class="comment">/* (1100 &amp; 1 &lt;&lt; 2) != 0 */</span>  \</div><div class="line">            0, <span class="comment">/* (1101 &amp; 1 &lt;&lt; 0) != 0 */</span>  \</div><div class="line">            1, <span class="comment">/* (1110 &amp; 1 &lt;&lt; 1) != 0 */</span>  \</div><div class="line">            0, <span class="comment">/* (1111 &amp; 1 &lt;&lt; 0) != 0 */</span>  \</div><div class="line">        }</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="af773cd3bb66a3119f16d6703d0151707"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define X_DECLARE_MSB_POS_TABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><span class="keyword">const</span> uint8_t msb_pos_table[15] =          \</div><div class="line">    {                                      \</div><div class="line">        0,  <span class="comment">/* (0001 &amp; 1 &lt;&lt; 0) != 0 */</span>     \</div><div class="line">        1,  <span class="comment">/* (0010 &amp; 1 &lt;&lt; 1) != 0 */</span>     \</div><div class="line">        1,  <span class="comment">/* (0011 &amp; 1 &lt;&lt; 1) != 0 */</span>     \</div><div class="line">        2,  <span class="comment">/* (0100 &amp; 1 &lt;&lt; 2) != 0 */</span>     \</div><div class="line">        2,  <span class="comment">/* (0101 &amp; 1 &lt;&lt; 2) != 0 */</span>     \</div><div class="line">        2,  <span class="comment">/* (0110 &amp; 1 &lt;&lt; 2) != 0 */</span>     \</div><div class="line">        2,  <span class="comment">/* (0111 &amp; 1 &lt;&lt; 2) != 0 */</span>     \</div><div class="line">        3,  <span class="comment">/* (1000 &amp; 1 &lt;&lt; 3) != 0 */</span>     \</div><div class="line">        3,  <span class="comment">/* (1001 &amp; 1 &lt;&lt; 3) != 0 */</span>     \</div><div class="line">        3,  <span class="comment">/* (1010 &amp; 1 &lt;&lt; 3) != 0 */</span>     \</div><div class="line">        3,  <span class="comment">/* (1011 &amp; 1 &lt;&lt; 3) != 0 */</span>     \</div><div class="line">        3,  <span class="comment">/* (1100 &amp; 1 &lt;&lt; 3) != 0 */</span>     \</div><div class="line">        3,  <span class="comment">/* (1101 &amp; 1 &lt;&lt; 3) != 0 */</span>     \</div><div class="line">        3,  <span class="comment">/* (1110 &amp; 1 &lt;&lt; 3) != 0 */</span>     \</div><div class="line">        3,  <span class="comment">/* (1111 &amp; 1 &lt;&lt; 3) != 0 */</span>     \</div><div class="line">    }</div></div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_295ce2a6370ae0a688a0222b881c77ca.html">picox</a></li><li class="navelem"><a class="el" href="dir_334975c5f7f258e1ec06bfc6b10c4fd2.html">core</a></li><li class="navelem"><a class="el" href="dir_db566c2ae50ab4e7ff384a2af9bd29a2.html">detail</a></li><li class="navelem"><a class="el" href="xutils_8c.html">xutils.c</a></li>
+    <li class="footer">2016年07月11日(月) 01時34分44秒作成 - picox / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>picox: xfixed_allocator.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">picox
+   &#160;<span id="projectnumber">0.5</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('xfixed__allocator_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">xfixed_allocator.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="xfixed__allocator_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> * License: MIT license</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> * Copyright (c) &lt;2015&gt; &lt;MaskedW [maskedw00@gmail.com]&gt;</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> * Permission is hereby granted, free of charge, to any person</span></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> * obtaining a copy of self software and associated documentation</span></div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> * files (the &quot;Software&quot;), to deal in the Software without</span></div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> * restriction, including without limitation the rights to use, copy,</span></div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> * modify, merge, publish, distribute, sublicense, and/or sell copies</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> * of the Software, and to permit persons to whom the Software is</span></div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> * furnished to do so, subject to the following conditions:</span></div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> * The above copyright notice and self permission notice shall be</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> * included in all copies or substantial portions of the Software.</span></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> * THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,</span></div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF</span></div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND</span></div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS</span></div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> * BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> * ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE</span></div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> * SOFTWARE.</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#ifndef picox_allocator_xfixed_allocator_h_</span></div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#define picox_allocator_xfixed_allocator_h_</span></div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="xcore_8h.html">picox/core/xcore.h</a>&gt;</span></div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="struct_x_fixed_allocator.html">   92</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_x_fixed_allocator.html">XFixedAllocator</a></div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div><div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="struct_x_fixed_allocator.html#ab3aec1f7f4fb6c8e7a37ec00ca7240bc">   95</a></span>&#160;    uint8_t*    <a class="code" href="struct_x_fixed_allocator.html#ab3aec1f7f4fb6c8e7a37ec00ca7240bc">heap</a>;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    uint8_t*    top;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    uint8_t*    next;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">size_t</span>      block_size;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">size_t</span>      num_blocks;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">size_t</span>      remain_blocks;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">size_t</span>      alignment;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;} <a class="code" href="struct_x_fixed_allocator.html">XFixedAllocator</a>;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#define XFALLOC_MIN_ALIGNMENT   (X_ALIGN_OF(size_t))</span></div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keywordtype">void</span> <a class="code" href="xfixed__allocator_8h.html#a4a9e838d659e2204b2d2946f53157824">xfalloc_init</a>(<a class="code" href="struct_x_fixed_allocator.html">XFixedAllocator</a>* <span class="keyword">self</span>, <span class="keywordtype">void</span>* <a class="code" href="struct_x_fixed_allocator.html#ab3aec1f7f4fb6c8e7a37ec00ca7240bc">heap</a>, <span class="keywordtype">size_t</span> heap_size, <span class="keywordtype">size_t</span> block_size);</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keywordtype">void</span>* <a class="code" href="xfixed__allocator_8h.html#a32361e0e30926a922cbcc8b300eedd04">xfalloc_allocate</a>(<a class="code" href="struct_x_fixed_allocator.html">XFixedAllocator</a>* <span class="keyword">self</span>);</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keywordtype">void</span> <a class="code" href="xfixed__allocator_8h.html#a0a1aadb55fb8d93fd65ccfde64a74b7d">xfalloc_deallocate</a>(<a class="code" href="struct_x_fixed_allocator.html">XFixedAllocator</a>* <span class="keyword">self</span>, <span class="keywordtype">void</span>* ptr);</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keywordtype">void</span> <a class="code" href="xfixed__allocator_8h.html#abbe71461b9f5617ca74e63eea1ade7f7">xfalloc_clear</a>(<a class="code" href="struct_x_fixed_allocator.html">XFixedAllocator</a>* <span class="keyword">self</span>);</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keywordtype">void</span> * <a class="code" href="xfixed__allocator_8h.html#a35769353e107d48feeedc0b2bee15e59">xfalloc_heap</a>(<span class="keyword">const</span> <a class="code" href="struct_x_fixed_allocator.html">XFixedAllocator</a>* <span class="keyword">self</span>);</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="xfixed__allocator_8h.html#abb0da4ef1cac089efdd62f0e78e9efa3">xfalloc_block_size</a>(<span class="keyword">const</span> <a class="code" href="struct_x_fixed_allocator.html">XFixedAllocator</a>* <span class="keyword">self</span>);</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="xfixed__allocator_8h.html#ae2575afcf1e805366ce4e3fca3870a6d">xfalloc_num_blocks</a>(<span class="keyword">const</span> <a class="code" href="struct_x_fixed_allocator.html">XFixedAllocator</a>* <span class="keyword">self</span>);</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="xfixed__allocator_8h.html#af74519591cebb58c93831e97c284c5cd">xfalloc_remain_blocks</a>(<span class="keyword">const</span> <a class="code" href="struct_x_fixed_allocator.html">XFixedAllocator</a>* <span class="keyword">self</span>);</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#endif // picox_allocator_xfixed_allocator_h_</span></div><div class="ttc" id="xfixed__allocator_8h_html_a32361e0e30926a922cbcc8b300eedd04"><div class="ttname"><a href="xfixed__allocator_8h.html#a32361e0e30926a922cbcc8b300eedd04">xfalloc_allocate</a></div><div class="ttdeci">void * xfalloc_allocate(XFixedAllocator *self)</div><div class="ttdoc">ヒープから1ブロックを取り出して返します </div><div class="ttdef"><b>Definition:</b> xfixed_allocator.c:90</div></div>
+<div class="ttc" id="xfixed__allocator_8h_html_abb0da4ef1cac089efdd62f0e78e9efa3"><div class="ttname"><a href="xfixed__allocator_8h.html#abb0da4ef1cac089efdd62f0e78e9efa3">xfalloc_block_size</a></div><div class="ttdeci">size_t xfalloc_block_size(const XFixedAllocator *self)</div><div class="ttdoc">1ブロックのサイズを返します </div><div class="ttdef"><b>Definition:</b> xfixed_allocator.c:135</div></div>
+<div class="ttc" id="struct_x_fixed_allocator_html_ab3aec1f7f4fb6c8e7a37ec00ca7240bc"><div class="ttname"><a href="struct_x_fixed_allocator.html#ab3aec1f7f4fb6c8e7a37ec00ca7240bc">XFixedAllocator::heap</a></div><div class="ttdeci">uint8_t * heap</div><div class="ttdoc">privatesection </div><div class="ttdef"><b>Definition:</b> xfixed_allocator.h:95</div></div>
+<div class="ttc" id="struct_x_fixed_allocator_html"><div class="ttname"><a href="struct_x_fixed_allocator.html">XFixedAllocator</a></div><div class="ttdoc">固定サイズメモリアロケータ管理クラスです </div><div class="ttdef"><b>Definition:</b> xfixed_allocator.h:92</div></div>
+<div class="ttc" id="xfixed__allocator_8h_html_abbe71461b9f5617ca74e63eea1ade7f7"><div class="ttname"><a href="xfixed__allocator_8h.html#abbe71461b9f5617ca74e63eea1ade7f7">xfalloc_clear</a></div><div class="ttdeci">void xfalloc_clear(XFixedAllocator *self)</div><div class="ttdoc">ヒープを初期状態に戻します </div><div class="ttdef"><b>Definition:</b> xfixed_allocator.c:81</div></div>
+<div class="ttc" id="xfixed__allocator_8h_html_ae2575afcf1e805366ce4e3fca3870a6d"><div class="ttname"><a href="xfixed__allocator_8h.html#ae2575afcf1e805366ce4e3fca3870a6d">xfalloc_num_blocks</a></div><div class="ttdeci">size_t xfalloc_num_blocks(const XFixedAllocator *self)</div><div class="ttdoc">heapの総ブロック数を返します </div><div class="ttdef"><b>Definition:</b> xfixed_allocator.c:142</div></div>
+<div class="ttc" id="xfixed__allocator_8h_html_af74519591cebb58c93831e97c284c5cd"><div class="ttname"><a href="xfixed__allocator_8h.html#af74519591cebb58c93831e97c284c5cd">xfalloc_remain_blocks</a></div><div class="ttdeci">size_t xfalloc_remain_blocks(const XFixedAllocator *self)</div><div class="ttdoc">heapの残りブロック数を返します </div><div class="ttdef"><b>Definition:</b> xfixed_allocator.c:149</div></div>
+<div class="ttc" id="xfixed__allocator_8h_html_a0a1aadb55fb8d93fd65ccfde64a74b7d"><div class="ttname"><a href="xfixed__allocator_8h.html#a0a1aadb55fb8d93fd65ccfde64a74b7d">xfalloc_deallocate</a></div><div class="ttdeci">void xfalloc_deallocate(XFixedAllocator *self, void *ptr)</div><div class="ttdoc">ヒープにブロックを返却します </div><div class="ttdef"><b>Definition:</b> xfixed_allocator.c:108</div></div>
+<div class="ttc" id="xfixed__allocator_8h_html_a35769353e107d48feeedc0b2bee15e59"><div class="ttname"><a href="xfixed__allocator_8h.html#a35769353e107d48feeedc0b2bee15e59">xfalloc_heap</a></div><div class="ttdeci">void * xfalloc_heap(const XFixedAllocator *self)</div><div class="ttdoc">ヒープメモリを返します </div><div class="ttdef"><b>Definition:</b> xfixed_allocator.c:128</div></div>
+<div class="ttc" id="xcore_8h_html"><div class="ttname"><a href="xcore_8h.html">xcore.h</a></div></div>
+<div class="ttc" id="xfixed__allocator_8h_html_a4a9e838d659e2204b2d2946f53157824"><div class="ttname"><a href="xfixed__allocator_8h.html#a4a9e838d659e2204b2d2946f53157824">xfalloc_init</a></div><div class="ttdeci">void xfalloc_init(XFixedAllocator *self, void *heap, size_t heap_size, size_t block_size)</div><div class="ttdoc">メモリブロックを初期化します </div><div class="ttdef"><b>Definition:</b> xfixed_allocator.c:46</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_295ce2a6370ae0a688a0222b881c77ca.html">picox</a></li><li class="navelem"><a class="el" href="dir_1650413cd754fade3fb0b4bd9f31c0b4.html">allocator</a></li><li class="navelem"><a class="el" href="xfixed__allocator_8h.html">xfixed_allocator.h</a></li>
+    <li class="footer">2016年07月11日(月) 01時34分40秒作成 - picox / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

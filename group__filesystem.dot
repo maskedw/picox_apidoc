@@ -1,0 +1,29 @@
+digraph "Filesystem"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node2 [label="Xfpath",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xfpath.html",tooltip="ファイルパス文字列の操作を提供します "];
+  Node10 [label="Xunionfs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xunionfs.html",tooltip="複数のファイルシステムを透過的に扱うインターフェースを提供します "];
+  Node0 [label="Filesystem",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node5 [label="Xposixfs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xposixfs.html",tooltip="POSIX APIを使用するファイルシステムモジュールです "];
+  Node3 [label="Xfs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xfs.html",tooltip="picox標準のファイルシステムインターフェースです "];
+  Node7 [label="Xromfs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xromfs.html",tooltip="ROM上に作成するファイルシステムモジュールです "];
+  Node6 [label="Xramfs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xramfs.html",tooltip="RAM上に作成するファイルシステムモジュールです "];
+  Node9 [label="Xspiffs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xspiffs.html",tooltip="spiffsをバックエンドとするファイルシステムモジュールです "];
+  Node8 [label="Xsinglefs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xsinglefs.html",tooltip="単一のXVirtualFsを保持し、インターフェースを簡素化します "];
+  Node1 [label="Xfatfs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xfatfs.html",tooltip="FatFsをバックエンドとするファイルシステムモジュールです "];
+  Node4 [label="Xfscore",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xfscore.html",tooltip="ファイルシステム関連の共通定義 "];
+  Node11 [label="Xvfs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__xvfs.html",tooltip="異なるファイルシステムを共通のインターフェースで操作するための抽象化層です "];
+  Node0->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node11 [shape=plaintext, dir="back", style="solid"];
+}

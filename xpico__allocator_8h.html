@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>picox: xpico_allocator.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">picox
+   &#160;<span id="projectnumber">0.5</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('xpico__allocator_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">データ構造</a> &#124;
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">xpico_allocator.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Pico variable memory allocator.  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="xcore_8h_source.html">picox/core/xcore.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+xpico_allocator.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="xpico__allocator_8h__incl.png" border="0" usemap="#xpico__allocator_8h" alt=""/></div>
+<map name="xpico__allocator_8h" id="xpico__allocator_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="xpico__allocator_8h__dep__incl.png" border="0" usemap="#xpico__allocator_8hdep" alt=""/></div>
+<map name="xpico__allocator_8hdep" id="xpico__allocator_8hdep">
+</map>
+</div>
+</div>
+<p><a href="xpico__allocator_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+データ構造</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_pico_allocator.html">XPicoAllocator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">可変長メモリアロケータ管理クラスです  <a href="struct_x_pico_allocator.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:ae15a4a0afa3523bafb0cc0572eda58e1"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xpico__allocator_8h.html#ae15a4a0afa3523bafb0cc0572eda58e1">XPicoAllocatorWalker</a>) (const uint8_t *chunk, size_t size, void *user)</td></tr>
+<tr class="memdesc:ae15a4a0afa3523bafb0cc0572eda58e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ヒープの空きブロック走査用コールバック関数です  <a href="#ae15a4a0afa3523bafb0cc0572eda58e1">[詳解]</a><br /></td></tr>
+<tr class="separator:ae15a4a0afa3523bafb0cc0572eda58e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ac062b67baabe0e11a7282d120edc66da"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xpico__allocator_8h.html#ac062b67baabe0e11a7282d120edc66da">xpalloc_allocate</a> (<a class="el" href="struct_x_pico_allocator.html">XPicoAllocator</a> *self, size_t size)</td></tr>
+<tr class="memdesc:ac062b67baabe0e11a7282d120edc66da"><td class="mdescLeft">&#160;</td><td class="mdescRight">ヒープからsizeバイトのメモリを切り出して返します  <a href="#ac062b67baabe0e11a7282d120edc66da">[詳解]</a><br /></td></tr>
+<tr class="separator:ac062b67baabe0e11a7282d120edc66da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad03916f66a40d0521dc3f9937b136b70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad03916f66a40d0521dc3f9937b136b70"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xpico__allocator_8h.html#ad03916f66a40d0521dc3f9937b136b70">xpalloc_allocation_overhead</a> (const <a class="el" href="struct_x_pico_allocator.html">XPicoAllocator</a> *self, size_t n)</td></tr>
+<tr class="memdesc:ad03916f66a40d0521dc3f9937b136b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">nバイトのメモリ確保を行った場合に必要な余分なメモリサイズを返します。 <br /></td></tr>
+<tr class="separator:ad03916f66a40d0521dc3f9937b136b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3baeaeaa199f62e5d8e4b357ae6b232"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3baeaeaa199f62e5d8e4b357ae6b232"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xpico__allocator_8h.html#ad3baeaeaa199f62e5d8e4b357ae6b232">xpalloc_capacity</a> (const <a class="el" href="struct_x_pico_allocator.html">XPicoAllocator</a> *self)</td></tr>
+<tr class="memdesc:ad3baeaeaa199f62e5d8e4b357ae6b232"><td class="mdescLeft">&#160;</td><td class="mdescRight">ヒープのサイズを返します <br /></td></tr>
+<tr class="separator:ad3baeaeaa199f62e5d8e4b357ae6b232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51a0b3e8d079a31e3a08766d6eda996f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51a0b3e8d079a31e3a08766d6eda996f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xpico__allocator_8h.html#a51a0b3e8d079a31e3a08766d6eda996f">xpalloc_clear</a> (<a class="el" href="struct_x_pico_allocator.html">XPicoAllocator</a> *self)</td></tr>
+<tr class="memdesc:a51a0b3e8d079a31e3a08766d6eda996f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ヒープを初期状態に戻します <br /></td></tr>
+<tr class="separator:a51a0b3e8d079a31e3a08766d6eda996f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81a693124e4ed7e4259ed6a5220b6bc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xpico__allocator_8h.html#a81a693124e4ed7e4259ed6a5220b6bc9">xpalloc_deallocate</a> (<a class="el" href="struct_x_pico_allocator.html">XPicoAllocator</a> *self, void *ptr)</td></tr>
+<tr class="memdesc:a81a693124e4ed7e4259ed6a5220b6bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ヒープにメモリを返却します  <a href="#a81a693124e4ed7e4259ed6a5220b6bc9">[詳解]</a><br /></td></tr>
+<tr class="separator:a81a693124e4ed7e4259ed6a5220b6bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae524012e4b00b18f66dc2de8b44c682f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae524012e4b00b18f66dc2de8b44c682f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xpico__allocator_8h.html#ae524012e4b00b18f66dc2de8b44c682f">xpalloc_deinit</a> (<a class="el" href="struct_x_pico_allocator.html">XPicoAllocator</a> *self)</td></tr>
+<tr class="memdesc:ae524012e4b00b18f66dc2de8b44c682f"><td class="mdescLeft">&#160;</td><td class="mdescRight">オブジェクトの終了処理を行います <br /></td></tr>
+<tr class="separator:ae524012e4b00b18f66dc2de8b44c682f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cf96a5a6811a2a4e9897b1802e7b7ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4cf96a5a6811a2a4e9897b1802e7b7ce"></a>
+uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xpico__allocator_8h.html#a4cf96a5a6811a2a4e9897b1802e7b7ce">xpalloc_heap</a> (const <a class="el" href="struct_x_pico_allocator.html">XPicoAllocator</a> *self)</td></tr>
+<tr class="memdesc:a4cf96a5a6811a2a4e9897b1802e7b7ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">ヒープメモリ自身を返します <br /></td></tr>
+<tr class="separator:a4cf96a5a6811a2a4e9897b1802e7b7ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abba3fc879319979c6020867c20f3667e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xpico__allocator_8h.html#abba3fc879319979c6020867c20f3667e">xpalloc_init</a> (<a class="el" href="struct_x_pico_allocator.html">XPicoAllocator</a> *self, void *heap, size_t size, size_t alignment)</td></tr>
+<tr class="memdesc:abba3fc879319979c6020867c20f3667e"><td class="mdescLeft">&#160;</td><td class="mdescRight">メモリブロックを初期化します  <a href="#abba3fc879319979c6020867c20f3667e">[詳解]</a><br /></td></tr>
+<tr class="separator:abba3fc879319979c6020867c20f3667e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cfc486ffd75e0776770f37481ce8d6c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5cfc486ffd75e0776770f37481ce8d6c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xpico__allocator_8h.html#a5cfc486ffd75e0776770f37481ce8d6c">xpalloc_is_owner</a> (const <a class="el" href="struct_x_pico_allocator.html">XPicoAllocator</a> *self, const void *ptr)</td></tr>
+<tr class="memdesc:a5cfc486ffd75e0776770f37481ce8d6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ポインタがヒープ領域の範囲内かどうかを返します。 <br /></td></tr>
+<tr class="separator:a5cfc486ffd75e0776770f37481ce8d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c56c96fe5136fc8038818e1b33ea5fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c56c96fe5136fc8038818e1b33ea5fe"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xpico__allocator_8h.html#a4c56c96fe5136fc8038818e1b33ea5fe">xpalloc_max_used</a> (const <a class="el" href="struct_x_pico_allocator.html">XPicoAllocator</a> *self)</td></tr>
+<tr class="memdesc:a4c56c96fe5136fc8038818e1b33ea5fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">ヒープの最大使用バイト数を返します <br /></td></tr>
+<tr class="separator:a4c56c96fe5136fc8038818e1b33ea5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40c22974c9d3d1698d31e77146a4f809"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40c22974c9d3d1698d31e77146a4f809"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xpico__allocator_8h.html#a40c22974c9d3d1698d31e77146a4f809">xpalloc_reallocate</a> (<a class="el" href="struct_x_pico_allocator.html">XPicoAllocator</a> *self, void *old_mem, size_t size)</td></tr>
+<tr class="memdesc:a40c22974c9d3d1698d31e77146a4f809"><td class="mdescLeft">&#160;</td><td class="mdescRight">realloc()相当の処理を行います <br /></td></tr>
+<tr class="separator:a40c22974c9d3d1698d31e77146a4f809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2b22561f395598f0856b63ef58086cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2b22561f395598f0856b63ef58086cb"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xpico__allocator_8h.html#ae2b22561f395598f0856b63ef58086cb">xpalloc_reserve</a> (const <a class="el" href="struct_x_pico_allocator.html">XPicoAllocator</a> *self)</td></tr>
+<tr class="memdesc:ae2b22561f395598f0856b63ef58086cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">空きメモリバイト数を返します <br /></td></tr>
+<tr class="separator:ae2b22561f395598f0856b63ef58086cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae13ab4aa36988616e479d515c9a7f502"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xpico__allocator_8h.html#ae13ab4aa36988616e479d515c9a7f502">xpalloc_walk_heap</a> (const <a class="el" href="struct_x_pico_allocator.html">XPicoAllocator</a> *self, <a class="el" href="xpico__allocator_8h.html#ae15a4a0afa3523bafb0cc0572eda58e1">XPicoAllocatorWalker</a> walker, void *user)</td></tr>
+<tr class="memdesc:ae13ab4aa36988616e479d515c9a7f502"><td class="mdescLeft">&#160;</td><td class="mdescRight">ヒープ内の空きブロックを走査し、ブロックごとにwalkerを呼び出します  <a href="#ae13ab4aa36988616e479d515c9a7f502">[詳解]</a><br /></td></tr>
+<tr class="separator:ae13ab4aa36988616e479d515c9a7f502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Pico variable memory allocator. </p>
+<p>最低限の機能を備えた可変長メモリアロケータです。最低限の機能というのは、 断片化対策を一切していないという意味です。色々なメモリアロケータのアルゴ リズム(TLSF, dlmalloc, etc..)では断片化しづらいようにしたり、断片化して も性能が劣化しないように等、色々と工夫を凝らしているようですが、小規模な 組み込み環境を想定した場合、最低限の機能で十分なことが多いと思われます。</p>
+<p>また、復数のヒープを使って機能ごとに専用アロケータを用意する等、柔軟な使 い方ができる。ヒープの使用状況を確認できるインターフェースが用意されてい るといった点もこのモジュールの利点です。</p>
+<p>実装も超シンプルなので、メモリアロケータ実装に興味のある人の入門用にも ピッタリでしょう。</p>
+<pre class="fragment">@author  MaskedW</pre></div><h2 class="groupheader">型定義詳解</h2>
+<a class="anchor" id="ae15a4a0afa3523bafb0cc0572eda58e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* XPicoAllocatorWalker) (const uint8_t *chunk, size_t size, void *user)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ヒープの空きブロック走査用コールバック関数です </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chunk</td><td>空きブロックのポインタ </td></tr>
+    <tr><td class="paramname">size</td><td>空きブロックのサイズ </td></tr>
+    <tr><td class="paramname">user</td><td>ユーザーデータポインタ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a class="anchor" id="ac062b67baabe0e11a7282d120edc66da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* xpalloc_allocate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_pico_allocator.html">XPicoAllocator</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ヒープからsizeバイトのメモリを切り出して返します </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>size &gt; 0 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a81a693124e4ed7e4259ed6a5220b6bc9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xpalloc_deallocate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_pico_allocator.html">XPicoAllocator</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ヒープにメモリを返却します </p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>xpallloc_is_owner(self, ptr) == true </li>
+</ul>
+</dd></dl>
+<dl class="section note"><dt>覚え書き</dt><dd>ptr == NULLの時は何もしません。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abba3fc879319979c6020867c20f3667e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool xpalloc_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_pico_allocator.html">XPicoAllocator</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>heap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>alignment</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>メモリブロックを初期化します </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">heap</td><td>heapとして利用するメモリ領域 </td></tr>
+    <tr><td class="paramname">size</td><td>heap領域のサイズ </td></tr>
+    <tr><td class="paramname">alignment</td><td>allocatorが返すメモリアドレスのアライメント</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>heap == NULLの場合はsizeバイトのメモリをx_malloc()で確保します。</p>
+<dl class="section pre"><dt>事前条件</dt><dd><ul>
+<li>heapをアライメント調整したあとのサイズ &gt; 0</li>
+<li>alignment == 2のべき乗</li>
+</ul>
+</dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>初期化成功 </td></tr>
+    <tr><td class="paramname">false</td><td>メモリ確保失敗</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>覚え書き</dt><dd>heapが指すアドレスはalignmentに切り上げられます。そのため、可能であればheap をあらかじめalignmentに合わせておくと無駄がありません。 また、alocation時にもalignmentに応じた切り上げが行われるので、sizeで指定した バイト数を余すことなく動的メモリとして使用することはできないことに注意してく ださい。</dd></dl>
+<p>alignmentには特殊なアラインメントが必要な時以外はX_ALIGN_OF(XMaxAlign)を指定 しておくのが無難です。例えば文字列等のバイトデータしか扱わないということがわ かっているなら、アライメントを1とすることができますが、管理データの格納用に 内部的には最低でもX_ALIGN_OF(size_t)まで、切り上げが行われます。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae13ab4aa36988616e479d515c9a7f502"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xpalloc_walk_heap </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_x_pico_allocator.html">XPicoAllocator</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="xpico__allocator_8h.html#ae15a4a0afa3523bafb0cc0572eda58e1">XPicoAllocatorWalker</a>&#160;</td>
+          <td class="paramname"><em>walker</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ヒープ内の空きブロックを走査し、ブロックごとにwalkerを呼び出します </p>
+<p>デバッグ用です。walkerがデータを収集することで、断片化状況等を確認できます。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">walker</td><td>空きブロック検出毎に呼び出される関数 </td></tr>
+    <tr><td class="paramname">user</td><td>walker呼び出し時に渡されるポインタ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_295ce2a6370ae0a688a0222b881c77ca.html">picox</a></li><li class="navelem"><a class="el" href="dir_1650413cd754fade3fb0b4bd9f31c0b4.html">allocator</a></li><li class="navelem"><a class="el" href="xpico__allocator_8h.html">xpico_allocator.h</a></li>
+    <li class="footer">2016年07月11日(月) 01時34分43秒作成 - picox / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

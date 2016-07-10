@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>picox: xstdio.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">picox
+   &#160;<span id="projectnumber">0.5</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('xstdio_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">xstdio.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>stdio.h系関数定義  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="xstdio_8h__dep__incl.png" border="0" usemap="#xstdio_8hdep" alt=""/></div>
+<map name="xstdio_8hdep" id="xstdio_8hdep">
+</map>
+</div>
+</div>
+<p><a href="xstdio_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+printf</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrpafa0ff8b27b87666a6bde87251c5fde7"></a>printf系関数のグループです</p>
+<p>printf系関数は使用頻度が高いですが、標準ライブラリの実装によって、メモリの 使い方(スタック使用量や、mallocの使用の有無)や対応しているフォーマット指定 にかなりのバラつきがあるという問題があります。 このライブラリが提供するprintfを使用することで、環境によって異なるライブラリ の実装に悩まされることなく安定して使用することができます。 mallocは未使用で、スタック使用量は可変引数の分を除くと、sizeof(int) == 2の 環境では80バイト程度。sizeof(int) == 4の環境では100バイト程度です。</p>
+<p>ただし、printfのすべてのフォーマット指定には対応しておらず、厳選した使用頻 度の高いもののみを実装しています。 </p><hr/>
+ <h2>対応format</h2>
+<p>フォーマット指定の用語は以下リンク先から参照しています&lt;<br />
+ <a href="https://linuxjm.osdn.jp/html/LDP_man-pages/man3/printf.3.html">https://linuxjm.osdn.jp/html/LDP_man-pages/man3/printf.3.html</a></p>
+<h2>対応フラグ文字<br />
+</h2>
+<ul>
+<li>'0' 0パディング</li>
+<li>'-' 左揃え</li>
+</ul>
+<h2>対応精度<br />
+</h2>
+<ul>
+<li>'*' int引数による精度指定</li>
+<li>'.'のみは精度0とみなす</li>
+</ul>
+<h2>対応長さ修飾子<br />
+</h2>
+<ul>
+<li>'h' 引数は short or unsigned short</li>
+<li>'l' 引数は long or unsigned long</li>
+<li>'z' 引数は size_t (ssize_tには未対応なので、"zd"指定は不正です)</li>
+</ul>
+<h2>対応変換指定子<br />
+</h2>
+<ul>
+<li>'d' 符号あり10進数表記</li>
+<li>'u' 符号なし10進数表記</li>
+<li>'o' 符号なし8進数表記</li>
+<li>'b' 符号なし2進数表記(独自拡張)</li>
+<li>'x' 符号なし小文字16進数表記</li>
+<li>'X' 符号なし大文字16進数表記</li>
+<li>'c' 引数をunsigned charに変換して出力する</li>
+<li>'s' const char*へのポインタ型の引数であると期待して終端('\0')まで出力する</li>
+<li>'p' 引数をポインタ型であると期待して、アドレスを小文字16進数で出力する</li>
+<li>'' ''自身を出力する</li>
+</ul>
+<h2>その他対応<br />
+</h2>
+<ul>
+<li>フィールド幅指定</li>
+</ul>
+<div class="fragment"><div class="line"><a class="code" href="group__xstdio.html#gabddc6094b4f997b323d951ce69ebf2b9">x_printf</a>(<span class="stringliteral">&quot;%d&quot;</span>, 1234);             <span class="stringliteral">&quot;1234&quot;</span></div><div class="line"><a class="code" href="group__xstdio.html#gabddc6094b4f997b323d951ce69ebf2b9">x_printf</a>(<span class="stringliteral">&quot;%6d,%3d%%&quot;</span>, -200, 5);   <span class="stringliteral">&quot;  -200,  5%&quot;</span></div><div class="line"><a class="code" href="group__xstdio.html#gabddc6094b4f997b323d951ce69ebf2b9">x_printf</a>(<span class="stringliteral">&quot;%-6u&quot;</span>, 100);            <span class="stringliteral">&quot;100   &quot;</span></div><div class="line"><a class="code" href="group__xstdio.html#gabddc6094b4f997b323d951ce69ebf2b9">x_printf</a>(<span class="stringliteral">&quot;%ld&quot;</span>, 12345678L);       <span class="stringliteral">&quot;12345678&quot;</span></div><div class="line"><a class="code" href="group__xstdio.html#gabddc6094b4f997b323d951ce69ebf2b9">x_printf</a>(<span class="stringliteral">&quot;%04x&quot;</span>, 0xA3);           <span class="stringliteral">&quot;00a3&quot;</span></div><div class="line"><a class="code" href="group__xstdio.html#gabddc6094b4f997b323d951ce69ebf2b9">x_printf</a>(<span class="stringliteral">&quot;%08LX&quot;</span>, 0x123ABC);      <span class="stringliteral">&quot;00123ABC&quot;</span></div><div class="line"><a class="code" href="group__xstdio.html#gabddc6094b4f997b323d951ce69ebf2b9">x_printf</a>(<span class="stringliteral">&quot;%016b&quot;</span>, 0x550F);        <span class="stringliteral">&quot;0101010100001111&quot;</span></div><div class="line"><a class="code" href="group__xstdio.html#gabddc6094b4f997b323d951ce69ebf2b9">x_printf</a>(<span class="stringliteral">&quot;%s&quot;</span>, <span class="stringliteral">&quot;String&quot;</span>);         <span class="stringliteral">&quot;String&quot;</span></div><div class="line"><a class="code" href="group__xstdio.html#gabddc6094b4f997b323d951ce69ebf2b9">x_printf</a>(<span class="stringliteral">&quot;%-4s&quot;</span>, <span class="stringliteral">&quot;abc&quot;</span>);          <span class="stringliteral">&quot;abc &quot;</span></div><div class="line"><a class="code" href="group__xstdio.html#gabddc6094b4f997b323d951ce69ebf2b9">x_printf</a>(<span class="stringliteral">&quot;%4s&quot;</span>, <span class="stringliteral">&quot;abc&quot;</span>);           <span class="stringliteral">&quot; abc&quot;</span></div><div class="line"><a class="code" href="group__xstdio.html#gabddc6094b4f997b323d951ce69ebf2b9">x_printf</a>(<span class="stringliteral">&quot;%c&quot;</span>, <span class="charliteral">&#39;a&#39;</span>);              <span class="stringliteral">&quot;a&quot;</span></div><div class="line"><span class="preprocessor">#if X_CONFIG_USE_FLOATING_POINT_PRINTF</span></div><div class="line"><a class="code" href="group__xstdio.html#gabddc6094b4f997b323d951ce69ebf2b9">x_printf</a>(<span class="stringliteral">&quot;%f&quot;</span>, 10.0);             <span class="stringliteral">&quot;10.000000&quot;</span></div><div class="line"><a class="code" href="group__xstdio.html#gabddc6094b4f997b323d951ce69ebf2b9">x_printf</a>(<span class="stringliteral">&quot;%.2f&quot;</span>, 12.345678);      <span class="stringliteral">&quot;12.34&quot;</span></div><div class="line"><span class="preprocessor">#endif</span></div></div><!-- fragment --> </td></tr>
+<tr class="memitem:ga76ac89ddba76d1fd499e0ef4196bd20e"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstdio.html#ga76ac89ddba76d1fd499e0ef4196bd20e">XCharPutFunc</a>) (int c)</td></tr>
+<tr class="memdesc:ga76ac89ddba76d1fd499e0ef4196bd20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">1文字出力を行う関数ポインタ型です  <a href="group__xstdio.html#ga76ac89ddba76d1fd499e0ef4196bd20e">[詳解]</a><br /></td></tr>
+<tr class="separator:ga76ac89ddba76d1fd499e0ef4196bd20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga229a01deef7e988e08f7df3af80819b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__xstdio.html#ga76ac89ddba76d1fd499e0ef4196bd20e">XCharPutFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstdio.html#ga229a01deef7e988e08f7df3af80819b5">x_putc_stdout</a></td></tr>
+<tr class="memdesc:ga229a01deef7e988e08f7df3af80819b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">1文字出力関数ポインタです  <a href="group__xstdio.html#ga229a01deef7e988e08f7df3af80819b5">[詳解]</a><br /></td></tr>
+<tr class="separator:ga229a01deef7e988e08f7df3af80819b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga443da361e076679c6726c826c0bbee75"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstdio.html#ga443da361e076679c6726c826c0bbee75">x_putc</a> (int c)</td></tr>
+<tr class="memdesc:ga443da361e076679c6726c826c0bbee75"><td class="mdescLeft">&#160;</td><td class="mdescRight">cをuint8_tにキャストして出力先に書き込みます  <a href="group__xstdio.html#ga443da361e076679c6726c826c0bbee75">[詳解]</a><br /></td></tr>
+<tr class="separator:ga443da361e076679c6726c826c0bbee75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga547375ee6729d167643598d4c35d0527"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstdio.html#ga547375ee6729d167643598d4c35d0527">x_puts</a> (const char *str)</td></tr>
+<tr class="memdesc:ga547375ee6729d167643598d4c35d0527"><td class="mdescLeft">&#160;</td><td class="mdescRight">strと改行を出力します  <a href="group__xstdio.html#ga547375ee6729d167643598d4c35d0527">[詳解]</a><br /></td></tr>
+<tr class="separator:ga547375ee6729d167643598d4c35d0527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f93176cbd408535c5006fd6dff6002f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstdio.html#ga1f93176cbd408535c5006fd6dff6002f">x_puts2</a> (const char *str)</td></tr>
+<tr class="memdesc:ga1f93176cbd408535c5006fd6dff6002f"><td class="mdescLeft">&#160;</td><td class="mdescRight">strを出力します  <a href="group__xstdio.html#ga1f93176cbd408535c5006fd6dff6002f">[詳解]</a><br /></td></tr>
+<tr class="separator:ga1f93176cbd408535c5006fd6dff6002f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d090803a8fe353fea8f5e1b9cff66a9"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstdio.html#ga8d090803a8fe353fea8f5e1b9cff66a9">x_snprintf</a> (char *buf, size_t size, const char *fmt,...)</td></tr>
+<tr class="memdesc:ga8d090803a8fe353fea8f5e1b9cff66a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">fmtに従って、出力をsizeバイトの領域を持つbufに書き込みます <br /></td></tr>
+<tr class="separator:ga8d090803a8fe353fea8f5e1b9cff66a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1369094681e6d811c59d9bdb021229ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstdio.html#ga1369094681e6d811c59d9bdb021229ea">x_sprintf</a> (char *buf, const char *fmt,...)</td></tr>
+<tr class="memdesc:ga1369094681e6d811c59d9bdb021229ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">fmtに従って、出力をbufに書き込みます  <a href="group__xstdio.html#ga1369094681e6d811c59d9bdb021229ea">[詳解]</a><br /></td></tr>
+<tr class="separator:ga1369094681e6d811c59d9bdb021229ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22c9110d9f69dfafba4fba48a54b0bce"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstdio.html#ga22c9110d9f69dfafba4fba48a54b0bce">x_vsnprintf</a> (char *buf, size_t size, const char *fmt, va_list args)</td></tr>
+<tr class="memdesc:ga22c9110d9f69dfafba4fba48a54b0bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">fmtに従って、出力をsizeバイトの領域を持つbufに書き込みます <br /></td></tr>
+<tr class="separator:ga22c9110d9f69dfafba4fba48a54b0bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ef29699cfccf3a3753aea4d65f3839d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstdio.html#ga8ef29699cfccf3a3753aea4d65f3839d">x_vsprintf</a> (char *buf, const char *fmt, va_list args)</td></tr>
+<tr class="memdesc:ga8ef29699cfccf3a3753aea4d65f3839d"><td class="mdescLeft">&#160;</td><td class="mdescRight">fmtに従って、出力をbufに書き込みます  <a href="group__xstdio.html#ga8ef29699cfccf3a3753aea4d65f3839d">[詳解]</a><br /></td></tr>
+<tr class="separator:ga8ef29699cfccf3a3753aea4d65f3839d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabddc6094b4f997b323d951ce69ebf2b9"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstdio.html#gabddc6094b4f997b323d951ce69ebf2b9">x_printf</a> (const char *fmt,...)</td></tr>
+<tr class="memdesc:gabddc6094b4f997b323d951ce69ebf2b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">fmtに従って出力先に書き込みます <br /></td></tr>
+<tr class="separator:gabddc6094b4f997b323d951ce69ebf2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadcaa46609ac7e076db6356f4a807469c"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstdio.html#gadcaa46609ac7e076db6356f4a807469c">x_vprintf</a> (const char *fmt, va_list args)</td></tr>
+<tr class="memdesc:gadcaa46609ac7e076db6356f4a807469c"><td class="mdescLeft">&#160;</td><td class="mdescRight">fmtに従って出力先に書き込みます <br /></td></tr>
+<tr class="separator:gadcaa46609ac7e076db6356f4a807469c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac596779caaf2746c7a6199b8f77440d"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstdio.html#gaac596779caaf2746c7a6199b8f77440d">x_printf_to_cputter</a> (<a class="el" href="group__xstdio.html#ga76ac89ddba76d1fd499e0ef4196bd20e">XCharPutFunc</a> cputter, const char *fmt,...)</td></tr>
+<tr class="memdesc:gaac596779caaf2746c7a6199b8f77440d"><td class="mdescLeft">&#160;</td><td class="mdescRight">fmtに従ってcputterに書き込みます <br /></td></tr>
+<tr class="separator:gaac596779caaf2746c7a6199b8f77440d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7dbbb814edd09ca45342bb90fecdf420"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstdio.html#ga7dbbb814edd09ca45342bb90fecdf420">x_vprintf_to_cputter</a> (<a class="el" href="group__xstdio.html#ga76ac89ddba76d1fd499e0ef4196bd20e">XCharPutFunc</a> cputter, const char *fmt, va_list args)</td></tr>
+<tr class="memdesc:ga7dbbb814edd09ca45342bb90fecdf420"><td class="mdescLeft">&#160;</td><td class="mdescRight">fmtに従ってcputterに書き込みます <br /></td></tr>
+<tr class="separator:ga7dbbb814edd09ca45342bb90fecdf420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacdfdf4bbb92928b84eaae4f97a14da5a"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstdio.html#gacdfdf4bbb92928b84eaae4f97a14da5a">x_printf_to_stream</a> (<a class="el" href="struct_x_stream.html">XStream</a> *stream, const char *fmt,...)</td></tr>
+<tr class="memdesc:gacdfdf4bbb92928b84eaae4f97a14da5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">fmtに従ってstreamに書き込みます <br /></td></tr>
+<tr class="separator:gacdfdf4bbb92928b84eaae4f97a14da5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac35194851678cbde915768609f434f46"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__xstdio.html#gac35194851678cbde915768609f434f46">x_vprintf_to_stream</a> (<a class="el" href="struct_x_stream.html">XStream</a> *stream, const char *fmt, va_list args)</td></tr>
+<tr class="memdesc:gac35194851678cbde915768609f434f46"><td class="mdescLeft">&#160;</td><td class="mdescRight">fmtに従ってstreamに書き込みます <br /></td></tr>
+<tr class="separator:gac35194851678cbde915768609f434f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>stdio.h系関数定義 </p>
+<dl class="section author"><dt>著者</dt><dd>MaskedW </dd></dl>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_295ce2a6370ae0a688a0222b881c77ca.html">picox</a></li><li class="navelem"><a class="el" href="dir_334975c5f7f258e1ec06bfc6b10c4fd2.html">core</a></li><li class="navelem"><a class="el" href="dir_db566c2ae50ab4e7ff384a2af9bd29a2.html">detail</a></li><li class="navelem"><a class="el" href="xstdio_8h.html">xstdio.h</a></li>
+    <li class="footer">2016年07月11日(月) 01時34分43秒作成 - picox / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

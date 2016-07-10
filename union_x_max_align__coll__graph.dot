@@ -1,0 +1,6 @@
+digraph "XMaxAlign"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{XMaxAlign\n|+ c\l+ d\l+ f\l+ fp\l+ i\l+ l\l+ ld\l+ ll\l+ p\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}
